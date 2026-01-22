@@ -1,0 +1,631 @@
+/* TN CyberTech Bank - Landing Page Styles */
+
+/* CSS Variables - Brand Colors */
+:root {
+  --gold: rgb(255, 222, 74);
+  --gold-light: rgb(255, 222, 74);
+  --gold-dark: rgb(174, 106, 6);
+  --gold-gradient: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  --gold-btn-gradient: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  --black: #000000;
+  --dark-bg: #0a0a0a;
+  --white: #ffffff;
+  --gray: #888888;
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================
+   MOBILE VIEW STYLES
+   ======================================== */
+
+.mobile-container {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Mobile Header */
+.mobile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  z-index: 100;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.8) 50%, transparent 100%);
+}
+
+.mobile-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.mobile-logo-icon {
+  height: 36px;
+  width: auto;
+}
+
+.mobile-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.mobile-logo-tn {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.mobile-logo-sub {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--gold);
+  opacity: 0.8;
+}
+
+.mobile-menu-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.98);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.mobile-menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2rem;
+}
+
+.mobile-menu-icon-container {
+  width: 80px;
+  height: 80px;
+}
+
+.mobile-menu-icon {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 30px rgba(255, 222, 74, 0.5));
+}
+
+.mobile-menu-icon.spinning {
+  animation: spin 4s linear infinite;
+}
+
+.mobile-menu-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.mobile-menu-link {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:active {
+  color: var(--gold);
+}
+
+/* Mobile Main Content */
+.mobile-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem 4rem;
+  width: 100%;
+}
+
+/* Gold Accent Elements */
+.gold-accent {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--gold-gradient);
+  opacity: 0.1;
+  filter: blur(60px);
+}
+
+.accent-top-left {
+  top: -100px;
+  left: -100px;
+}
+
+.accent-bottom-right {
+  bottom: -100px;
+  right: -100px;
+}
+
+/* Spinning Icon - Mobile */
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.spinning-icon {
+  width: 120px;
+  height: 120px;
+  animation: spin 8s linear infinite;
+  filter: drop-shadow(0 0 30px rgba(255, 222, 74, 0.3));
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* CTA Buttons - Mobile */
+.mobile-main-content .cta-button {
+  width: 100%;
+  max-width: 280px;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid var(--gold);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.mobile-main-content .cta-app {
+  background: var(--gold-btn-gradient);
+  background-size: 200% 100%;
+  color: var(--black);
+  border: none;
+  font-weight: 700;
+}
+
+.mobile-main-content .cta-app:hover,
+.mobile-main-content .cta-app:active {
+  transform: scale(1.02);
+  box-shadow: 0 8px 30px rgba(255, 222, 74, 0.4);
+  background-position: 100% 0;
+}
+
+.mobile-main-content .cta-browser {
+  background: transparent;
+  color: var(--gold);
+}
+
+.mobile-main-content .cta-browser:hover,
+.mobile-main-content .cta-browser:active {
+  background: rgba(255, 222, 74, 0.1);
+}
+
+.mobile-tagline {
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--gold);
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+/* ========================================
+   DESKTOP VIEW STYLES
+   ======================================== */
+
+.desktop-container {
+  min-height: 100vh;
+  background: url('/landing-BG-2.jpg') no-repeat center bottom;
+  background-size: cover;
+  background-color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Pattern/Overlay */
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 40%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  z-index: 100;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, transparent 100%);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-icon {
+  height: 50px;
+  width: auto;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo-tn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.logo-cybertech {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.logo-bank {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--gold);
+  opacity: 0.8;
+}
+
+/* Navigation & Menu Button */
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.menu-button:hover {
+  background: rgba(255, 222, 74, 0.1);
+}
+
+.menu-text {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 24px;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  background: var(--gold);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger span:nth-child(1) { width: 100%; }
+.hamburger span:nth-child(2) { width: 75%; }
+.hamburger span:nth-child(3) { width: 50%; }
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  width: 100%;
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Menu Overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.98);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.menu-icon-container {
+  width: 100px;
+  height: 100px;
+}
+
+.menu-icon-container.spinning .menu-icon {
+  animation: spin 4s linear infinite;
+}
+
+.menu-icon {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 40px rgba(255, 222, 74, 0.5));
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu-link {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.menu-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.menu-link:hover {
+  color: var(--gold);
+}
+
+.menu-link:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--gray);
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.cta-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* CTA Buttons - Desktop */
+.desktop-container .cta-button {
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 160px;
+}
+
+.cta-primary {
+  background: var(--gold-btn-gradient);
+  background-size: 200% 100%;
+  color: var(--black);
+  border: none;
+  font-weight: 700;
+  transition: all 0.4s ease;
+}
+
+.cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 40px rgba(255, 222, 74, 0.4);
+  background-position: 100% 0;
+}
+
+.cta-secondary {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.cta-secondary:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 4rem;
+  text-align: center;
+}
+
+.footer p {
+  color: #ffffff;
+  font-size: 0.75rem;
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  .footer {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-icon {
+    height: 40px;
+  }
+
+  .logo-tn {
+    font-size: 1.25rem;
+  }
+
+  .logo-cybertech {
+    font-size: 1rem;
+  }
+
+  .logo-bank {
+    font-size: 0.625rem;
+  }
+}
+
+/* Animation for page load */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.mobile-main-content .cta-button,
+.mobile-main-content .icon-container {
+  animation: fadeIn 0.6s ease-out backwards;
+}
+
+.mobile-main-content .cta-app { animation-delay: 0.2s; }
+.mobile-main-content .icon-container { animation-delay: 0.4s; }
+.mobile-main-content .cta-browser { animation-delay: 0.6s; }
