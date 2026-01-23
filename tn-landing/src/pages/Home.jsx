@@ -25,7 +25,7 @@ function Home() {
         {/* Mobile Header */}
         <header className="mobile-header">
           <div className="mobile-logo">
-            <img src="/logo.png" alt="TN CyberTech Bank" className="mobile-logo-img" />
+            <img src="/bank-logo.png" alt="TN CyberTech Bank" className="mobile-logo-img" />
           </div>
           <button className="mobile-menu-button" onClick={toggleMenu}>
             <div className={`hamburger ${menuOpen ? 'open' : ''}`}>
@@ -93,7 +93,7 @@ function Home() {
       {/* Header */}
       <header className="header">
         <div className="logo-container">
-          <img src="/logo.png" alt="TN CyberTech Bank" className="header-logo-img" />
+          <img src="/bank-logo.png" alt="TN CyberTech Bank" className="header-logo-img" />
         </div>
 
         <nav className="nav-container">
