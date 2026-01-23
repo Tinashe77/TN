@@ -40,7 +40,7 @@ function Home() {
         <div className={`mobile-menu-overlay ${menuOpen ? 'active' : ''}`}>
           <div className="mobile-menu-content">
             <div className="mobile-menu-icon-container">
-              <img src="/gifgif.gif" alt="TN CyberTech Bank" className="mobile-menu-icon" />
+              <img src="/logo_transparent.gif" alt="TN CyberTech Bank" className="mobile-menu-icon" />
             </div>
             <nav className="mobile-menu-nav">
               <Link to="/" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>Home</Link>
@@ -66,7 +66,7 @@ function Home() {
           {/* Animated Icon */}
           <div className="icon-container">
             <img
-              src="/gifgif.gif"
+              src="/logo_transparent.gif"
               alt="TN CyberTech Bank"
               className="animated-icon"
             />
@@ -112,7 +112,7 @@ function Home() {
       <div className={`menu-overlay ${menuOpen ? 'active' : ''}`}>
         <div className="menu-content">
           <div className="menu-icon-container">
-            <img src="/gifgif.gif" alt="TN CyberTech Bank" className="menu-icon" />
+            <img src="/logo_transparent.gif" alt="TN CyberTech Bank" className="menu-icon" />
           </div>
           <nav className="menu-nav">
             <Link to="/" className="menu-link" onClick={() => setMenuOpen(false)}>Home</Link>
