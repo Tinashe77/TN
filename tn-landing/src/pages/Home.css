@@ -63,31 +63,11 @@ body {
 .mobile-logo {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
 }
 
-.mobile-logo-icon {
-  height: 36px;
+.mobile-logo-img {
+  height: 40px;
   width: auto;
-}
-
-.mobile-logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-.mobile-logo-tn {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: var(--gold);
-}
-
-.mobile-logo-sub {
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: var(--gold);
-  opacity: 0.8;
 }
 
 .mobile-menu-button {
@@ -306,37 +286,11 @@ body {
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 1rem;
 }
 
-.header-icon {
+.header-logo-img {
   height: 50px;
   width: auto;
-}
-
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-.logo-tn {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--gold);
-}
-
-.logo-cybertech {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--gold);
-}
-
-.logo-bank {
-  font-size: 0.75rem;
-  font-weight: 400;
-  color: var(--gold);
-  opacity: 0.8;
 }
 
 /* Navigation & Menu Button */
@@ -579,20 +533,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  .header-icon {
+  .header-logo-img {
     height: 40px;
-  }
-
-  .logo-tn {
-    font-size: 1.25rem;
-  }
-
-  .logo-cybertech {
-    font-size: 1rem;
-  }
-
-  .logo-bank {
-    font-size: 0.625rem;
   }
 }
 

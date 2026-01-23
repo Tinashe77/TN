@@ -25,11 +25,7 @@ function Home() {
         {/* Mobile Header */}
         <header className="mobile-header">
           <div className="mobile-logo">
-            <img src="/icon.png" alt="TN CyberTech Bank" className="mobile-logo-icon" />
-            <div className="mobile-logo-text">
-              <span className="mobile-logo-tn">TN</span>
-              <span className="mobile-logo-sub">CyberTech</span>
-            </div>
+            <img src="/logo.png" alt="TN CyberTech Bank" className="mobile-logo-img" />
           </div>
           <button className="mobile-menu-button" onClick={toggleMenu}>
             <div className={`hamburger ${menuOpen ? 'open' : ''}`}>
@@ -97,12 +93,7 @@ function Home() {
       {/* Header */}
       <header className="header">
         <div className="logo-container">
-          <img src="/icon.png" alt="TN CyberTech Bank" className="header-icon" />
-          <div className="logo-text">
-            <span className="logo-tn">TN</span>
-            <span className="logo-cybertech">CyberTech</span>
-            <span className="logo-bank">Bank Limited</span>
-          </div>
+          <img src="/logo.png" alt="TN CyberTech Bank" className="header-logo-img" />
         </div>
 
         <nav className="nav-container">

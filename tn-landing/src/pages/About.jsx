@@ -7,11 +7,7 @@ function About() {
       {/* Header */}
       <header className="about-header">
         <Link to="/" className="header-logo">
-          <img src="/icon.png" alt="TN CyberTech Bank" />
-          <div className="header-logo-text">
-            <span className="logo-name">TN CyberTech</span>
-            <span className="logo-sub">Bank Limited</span>
-          </div>
+          <img src="/logo.png" alt="TN CyberTech Bank" className="header-logo-img" />
         </Link>
         <nav className="header-nav">
           <Link to="/" className="nav-link">Home</Link>
