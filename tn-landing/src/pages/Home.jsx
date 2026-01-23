@@ -44,7 +44,7 @@ function Home() {
         <div className={`mobile-menu-overlay ${menuOpen ? 'active' : ''}`}>
           <div className="mobile-menu-content">
             <div className="mobile-menu-icon-container">
-              <img src="/icon.png" alt="TN CyberTech Bank" className="mobile-menu-icon spinning" />
+              <img src="/gifgif.gif" alt="TN CyberTech Bank" className="mobile-menu-icon" />
             </div>
             <nav className="mobile-menu-nav">
               <Link to="/" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>Home</Link>
@@ -67,12 +67,12 @@ function Home() {
             Continue in App
           </button>
 
-          {/* Spinning Icon */}
+          {/* Animated Icon */}
           <div className="icon-container">
             <img
-              src="/icon.png"
+              src="/gifgif.gif"
               alt="TN CyberTech Bank"
-              className="spinning-icon"
+              className="animated-icon"
             />
           </div>
 
@@ -120,8 +120,8 @@ function Home() {
       {/* Menu Overlay */}
       <div className={`menu-overlay ${menuOpen ? 'active' : ''}`}>
         <div className="menu-content">
-          <div className={`menu-icon-container ${menuOpen ? 'spinning' : ''}`}>
-            <img src="/icon.png" alt="TN CyberTech Bank" className="menu-icon" />
+          <div className="menu-icon-container">
+            <img src="/gifgif.gif" alt="TN CyberTech Bank" className="menu-icon" />
           </div>
           <nav className="menu-nav">
             <Link to="/" className="menu-link" onClick={() => setMenuOpen(false)}>Home</Link>

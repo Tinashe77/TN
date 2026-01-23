@@ -138,10 +138,6 @@ body {
   filter: drop-shadow(0 0 30px rgba(255, 222, 74, 0.5));
 }
 
-.mobile-menu-icon.spinning {
-  animation: spin 4s linear infinite;
-}
-
 .mobile-menu-nav {
   display: flex;
   flex-direction: column;
@@ -203,10 +199,9 @@ body {
   margin: 3rem 0;
 }
 
-.spinning-icon {
+.animated-icon {
   width: 120px;
   height: 120px;
-  animation: spin 8s linear infinite;
   filter: drop-shadow(0 0 30px rgba(255, 222, 74, 0.3));
 }
 
@@ -436,10 +431,6 @@ body {
 .menu-icon-container {
   width: 100px;
   height: 100px;
-}
-
-.menu-icon-container.spinning .menu-icon {
-  animation: spin 4s linear infinite;
 }
 
 .menu-icon {
