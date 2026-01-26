@@ -267,6 +267,100 @@
 }
 
 /* ========================================
+   HISTORY TIMELINE SECTION
+   ======================================== */
+
+.history-section {
+  padding-bottom: 5rem;
+}
+
+.history-timeline {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.history-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.history-item:hover {
+  background: rgba(255, 222, 74, 0.05);
+  border-color: rgba(255, 222, 74, 0.2);
+  transform: translateY(-4px);
+}
+
+.history-year {
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.history-content h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.history-content p {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #9ca3af;
+  margin: 0;
+}
+
+/* ========================================
+   BUILDING SECTION (White Background)
+   ======================================== */
+
+.building-section {
+  background: #ffffff;
+}
+
+.building-section .centered-content.dark-text h2 {
+  color: #111827;
+}
+
+.building-section .centered-content.dark-text p {
+  color: #4b5563;
+}
+
+.building-section .features-grid.dark-cards .feature-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.building-section .features-grid.dark-cards .feature-card:hover {
+  background: #ffffff;
+  border-color: rgba(255, 222, 74, 0.4);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.building-section .features-grid.dark-cards .feature-card h3 {
+  color: #111827;
+}
+
+.building-section .features-grid.dark-cards .feature-card p {
+  color: #6b7280;
+}
+
+/* ========================================
    WHAT WE'RE BUILDING SECTION
    ======================================== */
 
@@ -396,6 +490,25 @@
   font-size: 1rem;
   line-height: 1.7;
   color: #4b5563;
+}
+
+/* VM Cards in Dark Section */
+.dark-section .vm-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.dark-section .vm-card:hover {
+  background: rgba(255, 222, 74, 0.05);
+  border-color: rgba(255, 222, 74, 0.2);
+}
+
+.dark-section .vm-card h3 {
+  color: #ffffff;
+}
+
+.dark-section .vm-card p {
+  color: #9ca3af;
 }
 
 /* ========================================
@@ -657,8 +770,21 @@
   .features-grid,
   .values-grid,
   .vm-grid,
-  .promise-grid {
+  .promise-grid,
+  .history-timeline {
     grid-template-columns: 1fr;
+  }
+
+  .history-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .history-year {
+    width: 60px;
+    height: 60px;
+    font-size: 0.875rem;
   }
 
   .image-break-section {
@@ -712,3 +838,12 @@
 .promise-item:nth-child(2) { animation-delay: 0.15s; }
 .promise-item:nth-child(3) { animation-delay: 0.2s; }
 .promise-item:nth-child(4) { animation-delay: 0.25s; }
+
+.history-item {
+  animation: fadeInUp 0.6s ease-out backwards;
+}
+
+.history-item:nth-child(1) { animation-delay: 0.1s; }
+.history-item:nth-child(2) { animation-delay: 0.2s; }
+.history-item:nth-child(3) { animation-delay: 0.3s; }
+.history-item:nth-child(4) { animation-delay: 0.4s; }

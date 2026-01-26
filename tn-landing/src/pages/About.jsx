@@ -12,7 +12,9 @@ function About() {
         <nav className="header-nav">
           <Link to="/" className="nav-link">Home</Link>
           <Link to="/about" className="nav-link active">About</Link>
-          <a href="#" className="nav-link">Services</a>
+          <a href="#" className="nav-link">For You</a>
+          <a href="#" className="nav-link">For Business</a>
+          <Link to="/partners" className="nav-link">Partners</Link>
           <a href="#" className="nav-link">Contact</a>
         </nav>
       </header>
@@ -35,13 +37,13 @@ function About() {
         </div>
       </div>
 
-      {/* Our Story Section - White Background */}
+      {/* Our Belief Section - White Background */}
       <section className="content-section white-section">
         <div className="container">
           <div className="story-grid">
             <div className="story-content">
-              <span className="section-label">Our Story</span>
-              <h2>We Believe Banking Should Move With Life</h2>
+              <span className="section-label">Our Belief</span>
+              <h2>The Future Of Banking Is Not A Place</h2>
               <p>
                 Banking should not interrupt life. It should move with it. It should be present
                 where people live, work, play, and travel — not behind walls, queues, or complexity.
@@ -59,11 +61,69 @@ function About() {
         </div>
       </section>
 
-      {/* What We're Building - Dark Section */}
-      <section className="content-section dark-section">
+      {/* Our History - Dark Section */}
+      <section className="content-section dark-section history-section">
         <div className="container">
           <div className="centered-content">
-            <span className="section-label light">What We're Building</span>
+            <span className="section-label light">Our History</span>
+            <h2>A Legacy of Innovation</h2>
+          </div>
+          <div className="history-timeline">
+            <div className="history-item">
+              <div className="history-year">2008</div>
+              <div className="history-content">
+                <h3>The Beginning</h3>
+                <p>
+                  Until 2008, TN CyberTech Bank Limited was a registered Finance House known as Trust Finance
+                  Limited, part of the Trust Holdings Group, founded by Mr William Nyemba. In 2008, TN Financial
+                  Holdings Limited acquired a 75% stake in the Finance House and recapitalised it to prevent its
+                  imminent collapse.
+                </p>
+              </div>
+            </div>
+            <div className="history-item">
+              <div className="history-year">2009</div>
+              <div className="history-content">
+                <h3>Becoming a Commercial Bank</h3>
+                <p>
+                  TN Financial Holdings Limited acquired the remaining 25% in 2009 and sought, and obtained,
+                  the conversion of the Finance House into a Commercial Bank, named TN Bank Limited. The bank
+                  was a pioneer in Zimbabwe in embracing technology as a suitable channel for delivering
+                  banking products and services.
+                </p>
+              </div>
+            </div>
+            <div className="history-item">
+              <div className="history-year">2012</div>
+              <div className="history-content">
+                <h3>Econet Era</h3>
+                <p>
+                  Econet acquired 100% of the Bank's shares. The Bank was renamed Steward Bank Limited
+                  and rolled out several tech products while restructuring its branch network.
+                </p>
+              </div>
+            </div>
+            <div className="history-item">
+              <div className="history-year">2024</div>
+              <div className="history-content">
+                <h3>A New Chapter</h3>
+                <p>
+                  Mr Tawanda Nyambirai acquired a controlling interest in the Bank. The controlling shareholder
+                  resolved to transform the Bank into a tech-driven bank whose products and services are embedded
+                  in the everyday products and services people use. Thus, the bank changed its name from
+                  Steward Bank Limited to TN CyberTech Bank Limited.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What We're Building - White Section */}
+      <section className="content-section white-section building-section">
+        <div className="container">
+          <div className="centered-content dark-text">
+            <span className="section-label">What We're Building</span>
             <h2>A Digital Financial Services Hub</h2>
             <p>
               We are building a digital financial services hub that connects people, businesses,
@@ -71,9 +131,13 @@ function About() {
               A bank that empowers rather than excludes. A bank that is accessible wherever
               life happens and whenever.
             </p>
+            <p>
+              Through technology, partnerships, and secure digital channels, we bring banking
+              to the point of need.
+            </p>
           </div>
 
-          <div className="features-grid">
+          <div className="features-grid dark-cards">
             <div className="feature-card">
               <div className="feature-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -108,8 +172,8 @@ function About() {
         </div>
       </section>
 
-      {/* Vision & Mission - White Section */}
-      <section className="content-section white-section">
+      {/* Vision & Mission - Dark Section */}
+      <section className="content-section dark-section">
         <div className="container">
           <div className="vm-grid">
             <div className="vm-card vision-card">
@@ -147,7 +211,7 @@ function About() {
       <section className="content-section white-section values-section">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">Our Culture</span>
+            <span className="section-label">Our Values</span>
             <h2>Guided by Three Enduring Values</h2>
             <p className="section-subtitle">Our culture is represented by the acronym <strong>IDI</strong></p>
           </div>
@@ -157,7 +221,7 @@ function About() {
               <div className="value-letter-badge">I</div>
               <h3>Innovation</h3>
               <p>
-                We imagine boldly and build for the future. We think independently
+                We imagine boldly and build for the future, and we think independently
                 and create authentically.
               </p>
             </div>
@@ -166,7 +230,7 @@ function About() {
               <div className="value-letter-badge">D</div>
               <h3>Dignity</h3>
               <p>
-                We treat every person with respect and fairness. We operate with
+                We treat every person with respect and fairness, and we operate with
                 purpose, integrity, and belief beyond profit.
               </p>
             </div>
@@ -175,8 +239,8 @@ function About() {
               <div className="value-letter-badge">I</div>
               <h3>Industry</h3>
               <p>
-                We apply discipline, excellence, and accountability in all we do.
-                We serve with grace and learn continuously.
+                We apply discipline, excellence, and accountability in all we do, and we
+                serve with grace, listen deeply, and learn continuously.
               </p>
             </div>
           </div>
@@ -220,7 +284,7 @@ function About() {
                     <polyline points="20 6 9 17 4 12"/>
                   </svg>
                 </div>
-                <p>We will never forget that banking exists to serve people</p>
+                <p>We will never forget that banking and technology exist to serve people — not the other way around</p>
               </div>
             </div>
           </div>

@@ -40,13 +40,14 @@ function Home() {
         <div className={`mobile-menu-overlay ${menuOpen ? 'active' : ''}`}>
           <div className="mobile-menu-content">
             <div className="mobile-menu-icon-container">
-              <img src="/logo_transparent.gif" alt="TN CyberTech Bank" className="mobile-menu-icon" />
+              <img src="/rotating-gif.gif" alt="TN CyberTech Bank" className="mobile-menu-icon" />
             </div>
             <nav className="mobile-menu-nav">
               <Link to="/" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>Home</Link>
               <Link to="/about" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>About Us</Link>
               <a href="#" className="mobile-menu-link">For You</a>
               <a href="#" className="mobile-menu-link">For Business</a>
+              <Link to="/partners" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>Partners</Link>
               <a href="#" className="mobile-menu-link">Contact</a>
             </nav>
           </div>
@@ -66,7 +67,7 @@ function Home() {
           {/* Animated Icon */}
           <div className="icon-container">
             <img
-              src="/logo_transparent.gif"
+              src="/rotating-gif.gif"
               alt="TN CyberTech Bank"
               className="animated-icon"
             />
@@ -112,13 +113,14 @@ function Home() {
       <div className={`menu-overlay ${menuOpen ? 'active' : ''}`}>
         <div className="menu-content">
           <div className="menu-icon-container">
-            <img src="/logo_transparent.gif" alt="TN CyberTech Bank" className="menu-icon" />
+            <img src="/rotating-gif.gif" alt="TN CyberTech Bank" className="menu-icon" />
           </div>
           <nav className="menu-nav">
             <Link to="/" className="menu-link" onClick={() => setMenuOpen(false)}>Home</Link>
             <Link to="/about" className="menu-link" onClick={() => setMenuOpen(false)}>About Us</Link>
             <a href="#" className="menu-link">For You</a>
             <a href="#" className="menu-link">For Business</a>
+            <Link to="/partners" className="menu-link" onClick={() => setMenuOpen(false)}>Partners</Link>
             <a href="#" className="menu-link">Contact</a>
           </nav>
         </div>
