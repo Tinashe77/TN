@@ -19,7 +19,7 @@ const partnersData = {
     name: 'Western Union',
     category: 'Remittance',
     website: 'https://www.westernunion.com',
-    logo: null,
+    logo: '/western-union.jpg',
   },
   'sasai-remit': {
     name: 'Sasai Remit',

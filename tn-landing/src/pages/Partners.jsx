@@ -8,7 +8,7 @@ const partners = [
   { id: 'sasai-remit', name: 'Sasai Remit', category: 'Remittance', logo: '/sasai.jpg' },
   { id: 'world-remit', name: 'World Remit', category: 'Remittance', logo: '/worldremit.jpg' },
   { id: 'thunes', name: 'Thunes', category: 'Remittance', logo: '/thunes.jpg' },
-  { id: 'western-union', name: 'Western Union', category: 'Remittance', logo: null },
+  { id: 'western-union', name: 'Western Union', category: 'Remittance', logo: '/western-union.jpg' },
   { id: 'money-gram', name: 'Money Gram', category: 'Remittance', logo: '/moneygram.jpg' },
   { id: 'shoprite-send', name: 'Shoprite Send', category: 'Remittance', logo: '/shoprite.jpg' },
   { id: 'hello-paisa', name: 'Hello Paisa', category: 'Remittance', logo: '/hellopaisa.jpg' },
