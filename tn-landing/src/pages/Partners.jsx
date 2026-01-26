@@ -3,20 +3,20 @@ import './Partners.css'
 
 // Partner data with logo paths
 const partners = [
+  { id: 'econet', name: 'Econet', category: 'Technology', logo: '/econet.jpg' },
+  { id: 'ecocash', name: 'EcoCash', category: 'Mobile Money', logo: '/ecocash.jpg' },
+  { id: 'sasai-remit', name: 'Sasai Remit', category: 'Remittance', logo: '/sasai.jpg' },
   { id: 'world-remit', name: 'World Remit', category: 'Remittance', logo: '/worldremit.jpg' },
   { id: 'thunes', name: 'Thunes', category: 'Remittance', logo: '/thunes.jpg' },
   { id: 'western-union', name: 'Western Union', category: 'Remittance', logo: null },
-  { id: 'sasai-remit', name: 'Sasai Remit', category: 'Remittance', logo: '/sasai.jpg' },
   { id: 'money-gram', name: 'Money Gram', category: 'Remittance', logo: '/moneygram.jpg' },
   { id: 'shoprite-send', name: 'Shoprite Send', category: 'Remittance', logo: '/shoprite.jpg' },
   { id: 'hello-paisa', name: 'Hello Paisa', category: 'Remittance', logo: '/hellopaisa.jpg' },
   { id: 'mama-money', name: 'Mama Money', category: 'Remittance', logo: '/mamamoney.jpg' },
   { id: 'master-remit', name: 'Master Remit', category: 'Remittance', logo: '/masterremit.jpg' },
   { id: 'ria', name: 'Ria', category: 'Remittance', logo: '/riamoney.jpg' },
-  { id: 'econet', name: 'Econet', category: 'Technology', logo: '/econet.jpg' },
-  { id: 'ecocash', name: 'EcoCash', category: 'Mobile Money', logo: '/ecocash.jpg' },
-  { id: 'visa', name: 'VISA', category: 'Payments', logo: null },
-  { id: 'zimswitch', name: 'Zimswitch', category: 'Payments', logo: null },
+  { id: 'visa', name: 'VISA', category: 'Payments', logo: '/visa.jpg' },
+  { id: 'zimswitch', name: 'Zimswitch', category: 'Payments', logo: '/zimswitch.jpg' },
 ]
 
 function Partners() {

@@ -79,13 +79,13 @@ const partnersData = {
     name: 'VISA',
     category: 'Payments',
     website: 'https://www.visa.com',
-    logo: null,
+    logo: '/visa.jpg',
   },
   'zimswitch': {
     name: 'Zimswitch',
     category: 'Payments',
     website: 'https://www.zimswitch.co.zw',
-    logo: null,
+    logo: '/zimswitch.jpg',
   },
 }
 
