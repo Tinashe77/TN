@@ -1,41 +1,31 @@
 import { Link } from 'react-router-dom'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import '../components/PageStyles.css'
 import './About.css'
 
 function About() {
   return (
     <div className="about-page">
-      {/* Header */}
-      <header className="about-header">
-        <Link to="/" className="header-logo">
-          <img src="/bank-logo.png" alt="TN CyberTech Bank" className="header-logo-img" />
-        </Link>
-        <nav className="header-nav">
-          <Link to="/" className="nav-link">Home</Link>
-          <Link to="/about" className="nav-link active">About</Link>
-          <a href="#" className="nav-link">For You</a>
-          <a href="#" className="nav-link">For Business</a>
-          <Link to="/partners" className="nav-link">Partners</Link>
-          <a href="#" className="nav-link">Contact</a>
-        </nav>
-      </header>
+      <Header />
 
       {/* Hero Banner */}
-      <section className="about-hero">
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
+      <section className="page-hero about-hero">
+        <div className="page-hero-overlay"></div>
+        <div className="page-hero-content">
           <h1>About Us</h1>
           <p>The Future of Banking</p>
         </div>
       </section>
 
       {/* Breadcrumbs */}
-      <div className="breadcrumb-bar">
+      <nav className="breadcrumb">
         <div className="container">
           <Link to="/">Home</Link>
           <span className="separator">/</span>
           <span className="current">About Us</span>
         </div>
-      </div>
+      </nav>
 
       {/* Our Belief Section - White Background */}
       <section className="content-section white-section">
@@ -291,20 +281,7 @@ function About() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="about-footer">
-        <div className="container">
-          <div className="footer-content">
-            <div className="footer-logo">
-              <img src="/icon.png" alt="TN CyberTech Bank" />
-              <span>TN CyberTech Bank Limited</span>
-            </div>
-            <p className="footer-legal">
-              &copy; 2026 TN CyberTech Bank Limited. A Registered Commercial Bank | Member of the Deposit Protection Corporation
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

@@ -80,7 +80,7 @@
 
 .nav-link:hover,
 .nav-link.active {
-  color: rgb(174, 106, 6);
+  color: rgb(255, 222, 74);
 }
 
 .nav-link.active::after {
@@ -90,7 +90,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: rgb(174, 106, 6);
+  background: rgb(255, 222, 74);
 }
 
 /* ========================================
@@ -137,7 +137,7 @@
 
 .about-hero p {
   font-size: 1.25rem;
-  color: rgb(174, 106, 6);
+  color: rgb(255, 222, 74);
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 500;
@@ -304,7 +304,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
   border-radius: 50%;
   font-size: 1rem;
   font-weight: 700;
@@ -411,7 +411,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
   border-radius: 16px;
 }
 
@@ -466,7 +466,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
 }
 
 .vm-label {
@@ -603,7 +603,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
   border-radius: 50%;
   font-size: 1.75rem;
   font-weight: 700;
@@ -666,7 +666,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
   border-radius: 50%;
 }
 

@@ -135,7 +135,7 @@ function Contact() {
                   width: '64px',
                   height: '64px',
                   borderRadius: '50%',
-                  background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 100%)',
+                  background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 100%)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -335,7 +335,7 @@ function Contact() {
               <div style={{
                 marginTop: '2rem',
                 padding: '1.5rem',
-                background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 100%)',
+                background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 100%)',
                 borderRadius: '16px',
               }}>
                 <h3 style={{ color: '#000', marginBottom: '0.5rem' }}>Quick Self-Service</h3>

@@ -137,7 +137,7 @@ function InternationalBanking() {
               <div style={{
                 width: '200px',
                 height: '200px',
-                background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%)',
+                background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%)',
                 borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
@@ -163,7 +163,7 @@ function InternationalBanking() {
             <p>Comprehensive services to support your global business operations.</p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '2rem' }}>
             {services.map((service) => (
               <div key={service.id} className="info-card" id={service.id}>
                 <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>

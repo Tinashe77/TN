@@ -49,12 +49,12 @@
 }
 
 .nav-link:hover {
-  color: rgb(174, 106, 6);
+  color: rgb(255, 222, 74);
   background: rgba(255, 222, 74, 0.1);
 }
 
 .nav-link.active {
-  color: rgb(174, 106, 6);
+  color: rgb(255, 222, 74);
 }
 
 .dropdown-arrow {
@@ -124,7 +124,7 @@
 }
 
 .dropdown-item:hover .dropdown-item-label {
-  color: rgb(174, 106, 6);
+  color: rgb(255, 222, 74);
 }
 
 /* Mobile Menu Button */
@@ -225,7 +225,7 @@
 }
 
 .mobile-nav > a:hover {
-  color: rgb(174, 106, 6);
+  color: rgb(255, 222, 74);
   background: rgba(255, 222, 74, 0.1);
 }
 
@@ -241,7 +241,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: rgb(174, 106, 6);
+  color: rgb(255, 222, 74);
   margin-bottom: 0.75rem;
 }
 

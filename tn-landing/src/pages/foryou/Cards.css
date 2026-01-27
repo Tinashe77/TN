@@ -59,7 +59,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
   border-radius: 10px;
 }
 
@@ -82,11 +82,17 @@
   margin: 0;
 }
 
-/* VISA Cards Grid */
+/* VISA Cards Grid - 3 columns */
 .visa-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .visa-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .visa-card {
@@ -112,7 +118,7 @@
   position: absolute;
   top: -10px;
   right: 20px;
-  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
   color: #000;
   font-size: 0.7rem;
   font-weight: 700;
@@ -199,7 +205,7 @@
   display: block;
   text-align: center;
   padding: 0.875rem;
-  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
   background-size: 200% 100%;
   color: #000;
   font-size: 0.9rem;

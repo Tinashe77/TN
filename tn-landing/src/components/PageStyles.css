@@ -59,7 +59,7 @@
 
 .page-hero p {
   font-size: 1.125rem;
-  color: rgb(174, 106, 6);
+  color: rgb(255, 222, 74);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -160,11 +160,17 @@
   color: #9ca3af;
 }
 
-/* Service Cards Grid */
+/* Service Cards Grid - 4 columns on large, 2 on medium, 1 on small */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .service-card {
@@ -191,7 +197,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
   border-radius: 14px;
   margin-bottom: 1.25rem;
 }
@@ -258,14 +264,25 @@
   border-bottom: none;
 }
 
+/* Direct SVG checkmarks in feature list - styled nicely */
+.feature-list li > svg {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  stroke: rgb(174, 106, 6);
+  margin-top: 2px;
+}
+
 .feature-list .check-icon {
   flex-shrink: 0;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
   border-radius: 50%;
 }
 
@@ -300,7 +317,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
   border-radius: 10px;
 }
 
@@ -397,7 +414,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
   border-radius: 50%;
   font-size: 1rem;
   font-weight: 700;

@@ -32,7 +32,7 @@
   position: absolute;
   top: -12px;
   right: 24px;
-  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
   color: #000;
   font-size: 0.75rem;
   font-weight: 700;
@@ -68,7 +68,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
   border-radius: 16px;
   flex-shrink: 0;
 }
@@ -173,7 +173,7 @@
 
 .cta-code {
   display: inline-block;
-  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
   color: #000;
   font-size: 1rem;
   font-weight: 700;

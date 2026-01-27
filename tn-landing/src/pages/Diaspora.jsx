@@ -66,7 +66,7 @@ function Diaspora() {
             background: 'rgba(255, 222, 74, 0.2)',
             borderRadius: '20px',
             fontSize: '0.875rem',
-            color: 'rgb(174, 106, 6)',
+            color: 'rgb(255, 222, 74)',
             marginBottom: '1rem',
           }}>For Zimbabweans Abroad</span>
           <h1>Diaspora Banking</h1>
@@ -127,7 +127,7 @@ function Diaspora() {
                   position: 'absolute',
                   width: '100%',
                   height: '100%',
-                  background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%)',
+                  background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%)',
                   borderRadius: '50%',
                   opacity: 0.2,
                 }}></div>
@@ -137,7 +137,7 @@ function Diaspora() {
                   left: '20px',
                   right: '20px',
                   bottom: '20px',
-                  background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%)',
+                  background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%)',
                   borderRadius: '50%',
                   display: 'flex',
                   alignItems: 'center',
@@ -289,7 +289,7 @@ function Diaspora() {
                   width: '48px',
                   height: '48px',
                   borderRadius: '50%',
-                  background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 100%)',
+                  background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 100%)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',

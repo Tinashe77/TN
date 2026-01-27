@@ -107,7 +107,7 @@ function MicroLoans() {
               <div style={{
                 width: '200px',
                 height: '200px',
-                background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%)',
+                background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%)',
                 borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
