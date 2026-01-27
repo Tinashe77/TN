@@ -30,10 +30,11 @@ function Partners() {
         <nav className="header-nav">
           <Link to="/" className="nav-link">Home</Link>
           <Link to="/about" className="nav-link">About</Link>
-          <a href="#" className="nav-link">For You</a>
-          <a href="#" className="nav-link">For Business</a>
+          <Link to="/for-you" className="nav-link">For You</Link>
+          <Link to="/for-business" className="nav-link">For Business</Link>
+          <Link to="/diaspora" className="nav-link">Diaspora</Link>
           <Link to="/partners" className="nav-link active">Partners</Link>
-          <a href="#" className="nav-link">Contact</a>
+          <Link to="/contact" className="nav-link">Contact</Link>
         </nav>
       </header>
 

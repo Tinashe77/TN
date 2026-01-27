@@ -55,7 +55,7 @@
 .logo-name {
   font-size: 1rem;
   font-weight: 700;
-  color: rgb(255, 222, 74);
+  color: rgb(174, 106, 6);
 }
 
 .logo-sub {
@@ -80,7 +80,7 @@
 
 .nav-link:hover,
 .nav-link.active {
-  color: rgb(255, 222, 74);
+  color: rgb(174, 106, 6);
 }
 
 .nav-link.active::after {
@@ -90,7 +90,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: rgb(255, 222, 74);
+  background: rgb(174, 106, 6);
 }
 
 /* ========================================
@@ -137,7 +137,7 @@
 
 .about-hero p {
   font-size: 1.25rem;
-  color: rgb(255, 222, 74);
+  color: rgb(174, 106, 6);
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 500;
@@ -167,7 +167,7 @@
 }
 
 .breadcrumb-bar a:hover {
-  color: rgb(255, 222, 74);
+  color: rgb(174, 106, 6);
 }
 
 .breadcrumb-bar .separator {
@@ -175,7 +175,7 @@
 }
 
 .breadcrumb-bar .current {
-  color: rgb(255, 222, 74);
+  color: rgb(174, 106, 6);
   font-weight: 500;
 }
 
@@ -202,7 +202,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: rgb(255, 222, 74);
+  color: rgb(174, 106, 6);
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
   background: rgba(255, 222, 74, 0.1);
@@ -241,7 +241,7 @@
 
 .story-content .highlight {
   font-weight: 600;
-  color: rgb(255, 222, 74);
+  color: rgb(174, 106, 6);
   font-size: 1.125rem;
 }
 
@@ -304,7 +304,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
   border-radius: 50%;
   font-size: 1rem;
   font-weight: 700;
@@ -411,7 +411,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
   border-radius: 16px;
 }
 
@@ -466,7 +466,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
 }
 
 .vm-label {
@@ -475,7 +475,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: rgb(255, 222, 74);
+  color: rgb(174, 106, 6);
   margin-bottom: 1rem;
 }
 
@@ -547,7 +547,7 @@
 
 .image-break-content p {
   font-size: 1.125rem;
-  color: rgb(255, 222, 74);
+  color: rgb(174, 106, 6);
 }
 
 /* ========================================
@@ -572,7 +572,7 @@
 }
 
 .section-subtitle strong {
-  color: rgb(255, 222, 74);
+  color: rgb(174, 106, 6);
 }
 
 .values-grid {
@@ -603,7 +603,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
   border-radius: 50%;
   font-size: 1.75rem;
   font-weight: 700;
@@ -666,7 +666,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
   border-radius: 50%;
 }
 
@@ -713,7 +713,7 @@
 .footer-logo span {
   font-size: 0.875rem;
   font-weight: 600;
-  color: rgb(255, 222, 74);
+  color: rgb(174, 106, 6);
 }
 
 .footer-legal {

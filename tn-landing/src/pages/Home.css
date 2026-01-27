@@ -2,7 +2,7 @@
 
 /* CSS Variables - Brand Colors */
 :root {
-  --gold: rgb(255, 222, 74);
+  --gold: rgb(174, 106, 6);
   --gold-light: rgb(255, 222, 74);
   --gold-dark: rgb(174, 106, 6);
   --gold-gradient: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);

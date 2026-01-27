@@ -45,10 +45,11 @@ function Home() {
             <nav className="mobile-menu-nav">
               <Link to="/" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>Home</Link>
               <Link to="/about" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>About Us</Link>
-              <a href="#" className="mobile-menu-link">For You</a>
-              <a href="#" className="mobile-menu-link">For Business</a>
+              <Link to="/for-you" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>For You</Link>
+              <Link to="/for-business" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>For Business</Link>
+              <Link to="/diaspora" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>Diaspora</Link>
               <Link to="/partners" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>Partners</Link>
-              <a href="#" className="mobile-menu-link">Contact</a>
+              <Link to="/contact" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>Contact</Link>
             </nav>
           </div>
         </div>
@@ -118,10 +119,11 @@ function Home() {
           <nav className="menu-nav">
             <Link to="/" className="menu-link" onClick={() => setMenuOpen(false)}>Home</Link>
             <Link to="/about" className="menu-link" onClick={() => setMenuOpen(false)}>About Us</Link>
-            <a href="#" className="menu-link">For You</a>
-            <a href="#" className="menu-link">For Business</a>
+            <Link to="/for-you" className="menu-link" onClick={() => setMenuOpen(false)}>For You</Link>
+            <Link to="/for-business" className="menu-link" onClick={() => setMenuOpen(false)}>For Business</Link>
+            <Link to="/diaspora" className="menu-link" onClick={() => setMenuOpen(false)}>Diaspora</Link>
             <Link to="/partners" className="menu-link" onClick={() => setMenuOpen(false)}>Partners</Link>
-            <a href="#" className="menu-link">Contact</a>
+            <Link to="/contact" className="menu-link" onClick={() => setMenuOpen(false)}>Contact</Link>
           </nav>
         </div>
       </div>

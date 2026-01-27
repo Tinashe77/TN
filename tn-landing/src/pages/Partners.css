@@ -54,7 +54,7 @@
 
 .partners-header .nav-link:hover,
 .partners-header .nav-link.active {
-  color: rgb(255, 222, 74);
+  color: rgb(174, 106, 6);
 }
 
 .partners-header .nav-link.active::after {
@@ -64,7 +64,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: rgb(255, 222, 74);
+  background: rgb(174, 106, 6);
 }
 
 /* ========================================
@@ -119,7 +119,7 @@
 
 .partners-hero p {
   font-size: 1.25rem;
-  color: rgb(255, 222, 74);
+  color: rgb(174, 106, 6);
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 500;
@@ -152,7 +152,7 @@
 }
 
 .breadcrumb-bar a:hover {
-  color: rgb(255, 222, 74);
+  color: rgb(174, 106, 6);
 }
 
 .breadcrumb-bar .separator {
@@ -186,7 +186,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: rgb(255, 222, 74);
+  color: rgb(174, 106, 6);
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
   background: rgba(255, 222, 74, 0.1);
@@ -268,7 +268,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
   border-radius: 12px;
   font-size: 1.25rem;
   font-weight: 700;
@@ -311,7 +311,7 @@
 }
 
 .partner-card:hover .partner-arrow {
-  background: rgb(255, 222, 74);
+  background: rgb(174, 106, 6);
 }
 
 .partner-card:hover .partner-arrow svg {
@@ -354,7 +354,7 @@
 .partners-cta-section .cta-button {
   display: inline-block;
   padding: 1rem 2.5rem;
-  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
   background-size: 200% 100%;
   color: #000000;
   font-size: 1rem;
@@ -405,7 +405,7 @@
 .partners-footer .footer-logo span {
   font-size: 0.875rem;
   font-weight: 600;
-  color: rgb(255, 222, 74);
+  color: rgb(174, 106, 6);
 }
 
 .partners-footer .footer-legal {
@@ -443,7 +443,7 @@
 .partner-not-found .cta-button {
   display: inline-block;
   padding: 1rem 2rem;
-  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
   color: #000000;
   font-weight: 600;
   text-decoration: none;
@@ -503,7 +503,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
   border-radius: 20px;
   font-size: 2.5rem;
   font-weight: 700;
@@ -521,7 +521,7 @@
 
 .partner-detail-category {
   font-size: 0.875rem;
-  color: rgb(255, 222, 74);
+  color: rgb(174, 106, 6);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
@@ -578,7 +578,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
   border-radius: 50%;
 }
 
@@ -610,7 +610,7 @@
   justify-content: center;
   gap: 0.75rem;
   padding: 1rem 2rem;
-  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  background: linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(174, 106, 6) 50%, rgb(174, 106, 6) 100%);
   background-size: 200% 100%;
   color: #000000;
   font-size: 1rem;
@@ -648,7 +648,7 @@
 }
 
 .partner-back-button:hover {
-  border-color: rgb(255, 222, 74);
+  border-color: rgb(174, 106, 6);
   color: rgb(174, 106, 6);
 }
 
