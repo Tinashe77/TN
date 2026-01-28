@@ -219,7 +219,7 @@ function MobileBanking() {
                 <div style={{
                   fontSize: 'clamp(3rem, 8vw, 5rem)',
                   fontWeight: '700',
-                  color: 'rgb(174, 106, 6)',
+                  color: 'rgb(255, 222, 74)',
                   marginBottom: '1rem'
                 }}>
                   *210#
@@ -232,7 +232,7 @@ function MobileBanking() {
                   borderRadius: '50px',
                   display: 'inline-block'
                 }}>
-                  <span style={{ color: 'rgb(174, 106, 6)', fontWeight: '600' }}>Register: *236#</span>
+                  <span style={{ color: 'rgb(255, 222, 74)', fontWeight: '600' }}>Register: *236#</span>
                 </div>
               </div>
             </div>

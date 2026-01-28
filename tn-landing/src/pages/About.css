@@ -211,6 +211,7 @@
 
 .section-label.light {
   background: rgba(255, 222, 74, 0.15);
+  color:rgb(255, 222, 74) !important
 }
 
 /* ========================================
@@ -475,7 +476,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: rgb(174, 106, 6);
+  color: rgb(255, 222, 74);
   margin-bottom: 1rem;
 }
 
@@ -547,7 +548,7 @@
 
 .image-break-content p {
   font-size: 1.125rem;
-  color: rgb(174, 106, 6);
+  color: rgb(255, 222, 74);
 }
 
 /* ========================================
