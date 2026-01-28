@@ -1,4 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 import './Partners.css'
 
 // Partner data with details and logos
@@ -96,42 +98,20 @@ function PartnerDetail() {
   if (!partner) {
     return (
       <div className="partners-page">
-        <header className="partners-header">
-          <Link to="/" className="header-logo">
-            <img src="/bank-logo.png" alt="TN CyberTech Bank" className="header-logo-img" />
-          </Link>
-          <nav className="header-nav">
-            <Link to="/" className="nav-link">Home</Link>
-            <Link to="/about" className="nav-link">About</Link>
-            <Link to="/partners" className="nav-link active">Partners</Link>
-          </nav>
-        </header>
+        <Header />
         <div className="partner-not-found">
           <h1>Partner Not Found</h1>
           <p>The partner you're looking for doesn't exist.</p>
           <Link to="/partners" className="cta-button">Back to Partners</Link>
         </div>
+        <Footer />
       </div>
     )
   }
 
   return (
     <div className="partner-detail-page">
-      {/* Header */}
-      <header className="partners-header">
-        <Link to="/" className="header-logo">
-          <img src="/bank-logo.png" alt="TN CyberTech Bank" className="header-logo-img" />
-        </Link>
-        <nav className="header-nav">
-          <Link to="/" className="nav-link">Home</Link>
-          <Link to="/about" className="nav-link">About</Link>
-          <Link to="/for-you" className="nav-link">For You</Link>
-          <Link to="/for-business" className="nav-link">For Business</Link>
-          <Link to="/diaspora" className="nav-link">Diaspora</Link>
-          <Link to="/partners" className="nav-link active">Partners</Link>
-          <Link to="/contact" className="nav-link">Contact</Link>
-        </nav>
-      </header>
+      <Header />
 
       {/* Breadcrumbs */}
       <div className="breadcrumb-bar detail-breadcrumb">
@@ -249,20 +229,7 @@ function PartnerDetail() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="partners-footer">
-        <div className="container">
-          <div className="footer-content">
-            <div className="footer-logo">
-              <img src="/icon.png" alt="TN CyberTech Bank" />
-              <span>TN CyberTech Bank Limited</span>
-            </div>
-            <p className="footer-legal">
-              &copy; 2026 TN CyberTech Bank Limited. A Registered Commercial Bank | Member of the Deposit Protection Corporation
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

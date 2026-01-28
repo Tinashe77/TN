@@ -44,7 +44,7 @@
 }
 
 .partners-header .nav-link {
-  color: #ffffff;
+  color: rgb(255, 222, 74);
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
@@ -54,7 +54,7 @@
 
 .partners-header .nav-link:hover,
 .partners-header .nav-link.active {
-  color: rgb(255, 222, 74);
+  color: #ffffff;
 }
 
 .partners-header .nav-link.active::after {
@@ -417,7 +417,7 @@
 .partners-footer .footer-logo span {
   font-size: 0.875rem;
   font-weight: 600;
-  color: rgb(174, 106, 6);
+  color: rgb(255, 222, 74);
 }
 
 .partners-footer .footer-legal {

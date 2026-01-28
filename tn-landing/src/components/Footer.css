@@ -40,7 +40,7 @@
 .footer-logo span {
   font-size: 1.125rem;
   font-weight: 700;
-  color: rgb(174, 106, 6);
+  color: rgb(255, 222, 74);
 }
 
 .footer-tagline {
@@ -56,14 +56,14 @@
 }
 
 .footer-contact-info strong {
-  color: rgb(174, 106, 6);
+  color: rgb(255, 222, 74);
 }
 
 /* Links Columns */
 .footer-links-col h4 {
   font-size: 0.875rem;
   font-weight: 600;
-  color: rgb(174, 106, 6);
+  color: rgb(255, 222, 74);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 1.25rem;
@@ -109,7 +109,7 @@
 }
 
 .footer-bottom-links a:hover {
-  color: rgb(174, 106, 6);
+  color: rgb(255, 222, 74);
 }
 
 /* Responsive */
