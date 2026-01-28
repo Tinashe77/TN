@@ -33,7 +33,7 @@ function About() {
           <div className="section-header" style={{ marginBottom: '2rem' }}>
             <span className="section-label">About Us</span>
             <h2>About Us</h2>
-            <p>TBA</p>
+         
           </div>
           <div className="story-grid">
             <div className="story-content">
