@@ -40,7 +40,7 @@
 .footer-logo span {
   font-size: 1.125rem;
   font-weight: 700;
-  color: rgb(255, 222, 74);
+  color: rgb(255, 222, 74) !important;
 }
 
 .footer-tagline {

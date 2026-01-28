@@ -12,11 +12,23 @@ import MobileBanking from './pages/foryou/MobileBanking'
 import PersonalAccounts from './pages/foryou/PersonalAccounts'
 import Cards from './pages/foryou/Cards'
 import MicroLoans from './pages/foryou/MicroLoans'
+import CardsTerms from './pages/foryou/CardsTerms'
 
 // For Business pages
 import ForBusiness from './pages/forbusiness/ForBusiness'
 import BusinessAccounts from './pages/forbusiness/BusinessAccounts'
 import InternationalBanking from './pages/forbusiness/InternationalBanking'
+import MerchantServices from './pages/forbusiness/MerchantServices'
+import BusinessLoans from './pages/forbusiness/BusinessLoans'
+import CorporateBanking from './pages/forbusiness/CorporateBanking'
+import VisaCorporateCard from './pages/forbusiness/VisaCorporateCard'
+import AgentBanking from './pages/forbusiness/AgentBanking'
+
+import CustomerService from './pages/CustomerService'
+import MediaCentre from './pages/MediaCentre'
+import BoardOfDirectors from './pages/BoardOfDirectors'
+import CorporateSocialInvestment from './pages/CorporateSocialInvestment'
+import FinancialReports from './pages/FinancialReports'
 
 function App() {
   return (
@@ -36,11 +48,24 @@ function App() {
         <Route path="/for-you/accounts" element={<PersonalAccounts />} />
         <Route path="/for-you/cards" element={<Cards />} />
         <Route path="/for-you/loans" element={<MicroLoans />} />
+        <Route path="/for-you/cards/terms" element={<CardsTerms />} />
 
         {/* For Business section */}
         <Route path="/for-business" element={<ForBusiness />} />
         <Route path="/for-business/accounts" element={<BusinessAccounts />} />
         <Route path="/for-business/international" element={<InternationalBanking />} />
+        <Route path="/for-business/merchant" element={<MerchantServices />} />
+        <Route path="/for-business/loans" element={<BusinessLoans />} />
+        <Route path="/for-business/corporate" element={<CorporateBanking />} />
+        <Route path="/for-business/visa-corporate-card" element={<VisaCorporateCard />} />
+        <Route path="/for-business/agents" element={<AgentBanking />} />
+
+        {/* Support and Media */}
+        <Route path="/customer-service" element={<CustomerService />} />
+        <Route path="/media-centre" element={<MediaCentre />} />
+        <Route path="/board-of-directors" element={<BoardOfDirectors />} />
+        <Route path="/corporate-social-investment" element={<CorporateSocialInvestment />} />
+        <Route path="/financial-reports" element={<FinancialReports />} />
       </Routes>
     </Router>
   )
