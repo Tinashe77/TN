@@ -17,7 +17,8 @@ function PersonalAccounts() {
         'No minimum balance',
         'Automatic EcoCash wallet integration',
         'Instant card issuance',
-        'TN CyberTech Bank Debit Card',
+        'A TN CyberTech Bank Debit Card',
+        'Access to EcoCash Wallet services',
         'Access to Mobile Banking services',
       ],
       cta: 'Dial *236# to open',
@@ -50,8 +51,8 @@ function PersonalAccounts() {
         'Access to Mobile Banking services',
       ],
       requirements: [
-        'Copy of National ID / Driver\'s Licence / Valid Passport',
-        'Student ID / Offer Letter',
+        'A certified copy of the National ID',
+        'Student ID/Offer Letter',
         'Minimal initial deposit $15',
       ],
     },
@@ -72,6 +73,7 @@ function PersonalAccounts() {
         'Child\'s birth certificate (or ID for 16 year olds)',
         'Target group: 13-17 years',
         'Minimum Balance $100',
+        'Monthly maintenance fee $100',
       ],
     },
     {

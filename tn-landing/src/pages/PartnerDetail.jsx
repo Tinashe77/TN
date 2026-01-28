@@ -145,63 +145,6 @@ function PartnerDetail() {
 
             {/* Right Side - Scrollable Content */}
             <div className="partner-content-side">
-            <section className="partner-section">
-              <h2>About {partner.name}</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </section>
-
-         
-
-            <section className="partner-section">
-              <h2>Services & Benefits</h2>
-              <ul className="partner-benefits-list">
-                <li>
-                  <div className="benefit-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <polyline points="20 6 9 17 4 12"/>
-                    </svg>
-                  </div>
-                  <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
-                </li>
-                <li>
-                  <div className="benefit-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <polyline points="20 6 9 17 4 12"/>
-                    </svg>
-                  </div>
-                  <span>Sed do eiusmod tempor incididunt ut labore et dolore</span>
-                </li>
-                <li>
-                  <div className="benefit-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <polyline points="20 6 9 17 4 12"/>
-                    </svg>
-                  </div>
-                  <span>Ut enim ad minim veniam, quis nostrud exercitation</span>
-                </li>
-                <li>
-                  <div className="benefit-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <polyline points="20 6 9 17 4 12"/>
-                    </svg>
-                  </div>
-                  <span>Duis aute irure dolor in reprehenderit in voluptate</span>
-                </li>
-              </ul>
-            </section>
-
-            
-
-          
               {/* CTA Button */}
               <div className="partner-cta-container">
                 <a

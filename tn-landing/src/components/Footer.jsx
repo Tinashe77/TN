@@ -52,8 +52,8 @@ function Footer() {
             &copy; 2026 TN CyberTech Bank Limited. A Registered Commercial Bank | Member of the Deposit Protection Corporation
           </p>
           <div className="footer-bottom-links">
-            <Link to="/for-you/cards">Cards</Link>
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/for-you/cards/terms">Card Terms</Link>
+            <Link to="/customer-service">Customer Service</Link>
           </div>
         </div>
       </div>

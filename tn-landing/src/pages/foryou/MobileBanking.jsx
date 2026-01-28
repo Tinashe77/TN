@@ -16,9 +16,9 @@ function MobileBanking() {
 
   const excitingFeatures = [
     'Fingerprint login to the Mobile App',
-    'Quick Access Menu showing last 3 transactions',
-    'Send queries directly via the App',
-    'Save payment beneficiaries for quick transfers',
+    'A Quick Access Menu that shows the last 3 transactions',
+    'Customer can send queries via the App',
+    'Add payment beneficiaries - Convenient to avoid entering a beneficiary details every time one transfers funds',
   ]
 
   const ussdServices = [
@@ -128,7 +128,7 @@ function MobileBanking() {
                 Online Banking Portal
               </h2>
               <p style={{ color: '#4b5563', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-                The online banking portal has been re-designed to be user-friendly. Access your accounts, make transfers, pay bills, and manage your finances from any web browser.
+                The online banking portal has been re-designed to be user-friendly. The online banking portal has the same features and functionalities as before.
               </p>
 
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
@@ -175,6 +175,12 @@ function MobileBanking() {
                       <span className="step-number">3</span>
                       <div className="step-content">
                         <p>Receive verification code and set up profile</p>
+                      </div>
+                    </div>
+                    <div className="step-item">
+                      <span className="step-number">4</span>
+                      <div className="step-content">
+                        <p>Each individual receives that One-Time code and uses it to set-up his/her profile</p>
                       </div>
                     </div>
                   </div>

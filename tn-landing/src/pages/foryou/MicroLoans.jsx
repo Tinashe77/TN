@@ -6,9 +6,9 @@ import '../../components/PageStyles.css'
 function MicroLoans() {
   const bankSteps = [
     { step: 1, action: 'Dial *236#' },
-    { step: 2, action: 'Select Option 3 – Micro Loans' },
-    { step: 3, action: 'Select Option 1 – Micro Loan' },
-    { step: 4, action: 'Select Option 1 – Apply for Micro Loan' },
+    { step: 2, action: 'Select Option 3 - Micro Loans' },
+    { step: 3, action: 'Select Option 1 - Micro Loan' },
+    { step: 4, action: 'Select Option 1 - Apply for Micro Loan' },
     { step: 5, action: 'Your pre-approved loan amount will be displayed' },
     { step: 6, action: 'Select amount you would like to borrow' },
     { step: 7, action: 'Funds deposited into your account!' },
@@ -17,8 +17,8 @@ function MicroLoans() {
   const ecocashSteps = [
     { step: 1, action: 'Dial *151#' },
     { step: 2, action: 'Enter your EcoCash PIN' },
-    { step: 3, action: 'Select Option 6 – EcoCash Save' },
-    { step: 4, action: 'Select Option 3 – EcoCash Micro Loan' },
+    { step: 3, action: 'Select Option 6 - EcoCash Save' },
+    { step: 4, action: 'Select Option 3 - EcoCash Micro Loan' },
     { step: 5, action: 'Select Option 1 (Request loan), 2 (Repay), or 3 (Check limit)' },
     { step: 6, action: 'Enter Amount' },
     { step: 7, action: 'Select Tenure (1 month)' },
@@ -59,7 +59,7 @@ function MicroLoans() {
                 Bridge Your Financial Gaps
               </h2>
               <p style={{ color: '#4b5563', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-                Our short-term loan is designed to take care of those moments where you need to bridge gaps in your finances for a short while. The loan application and disbursement process takes place in <strong style={{ color: 'rgb(174, 106, 6)' }}>under 60 seconds</strong>.
+                Our short term term loan is designed to take care of those moments where you need to bridge gaps in one's finances for a short while. The loan application and disbursement process takes place in <strong style={{ color: 'rgb(174, 106, 6)' }}>under 60 seconds</strong>.
               </p>
 
               <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', flexWrap: 'wrap' }}>

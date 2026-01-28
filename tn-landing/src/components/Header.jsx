@@ -18,7 +18,12 @@ function Header() {
 
   const forBusinessItems = [
     { label: 'Business Accounts', path: '/for-business/accounts', desc: 'SME, Corporate & Non-profit' },
-    { label: 'International Banking', path: '/for-business/international', desc: 'Trade Finance & FX' },
+    { label: 'Merchant Services - POS', path: '/for-business/merchant', desc: 'Point of Sale Machines' },
+    { label: 'Business Loans', path: '/for-business/loans', desc: 'Loans and Bank Guarantees' },
+    { label: 'Corporate & Investment Banking', path: '/for-business/corporate', desc: 'Corporate & Investment Banking' },
+    { label: 'Visa Corporate Card', path: '/for-business/visa-corporate-card', desc: 'Reloadable prepaid card' },
+    { label: 'International Banking', path: '/for-business/international', desc: 'Exchange Control & Payments' },
+    { label: 'Agent Banking', path: '/for-business/agents', desc: 'Become an Agent' },
   ]
 
   return (

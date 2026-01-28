@@ -30,13 +30,18 @@ function About() {
       {/* Our Belief Section - White Background */}
       <section className="content-section white-section">
         <div className="container">
+          <div className="section-header" style={{ marginBottom: '2rem' }}>
+            <span className="section-label">About Us</span>
+            <h2>About Us</h2>
+            <p>TBA</p>
+          </div>
           <div className="story-grid">
             <div className="story-content">
               <span className="section-label">Our Belief</span>
               <h2>The Future Of Banking Is Not A Place</h2>
               <p>
                 Banking should not interrupt life. It should move with it. It should be present
-                where people live, work, play, and travel — not behind walls, queues, or complexity.
+                where people live, work, play, and travel - not behind walls, queues, or complexity.
               </p>
               <p>
                 The future of banking is not a place. It is an experience. It is embedded. It is
@@ -64,10 +69,7 @@ function About() {
               <div className="history-content">
                 <h3>The Beginning</h3>
                 <p>
-                  Until 2008, TN CyberTech Bank Limited was a registered Finance House known as Trust Finance
-                  Limited, part of the Trust Holdings Group, founded by Mr William Nyemba. In 2008, TN Financial
-                  Holdings Limited acquired a 75% stake in the Finance House and recapitalised it to prevent its
-                  imminent collapse.
+                  Until 2008, TN CyberTech Bank Limited was a registered Finance House known as Trust Finance Limited, part of the Trust Holdings Group, founded by Mr William Nyemba.
                 </p>
               </div>
             </div>
@@ -76,10 +78,7 @@ function About() {
               <div className="history-content">
                 <h3>Becoming a Commercial Bank</h3>
                 <p>
-                  TN Financial Holdings Limited acquired the remaining 25% in 2009 and sought, and obtained,
-                  the conversion of the Finance House into a Commercial Bank, named TN Bank Limited. The bank
-                  was a pioneer in Zimbabwe in embracing technology as a suitable channel for delivering
-                  banking products and services.
+                  In 2008, the TN Financial Holdings Limited acquired a 75% stake in the Finance House and recapitalised it to prevent its imminent collapse. TN Financial Holdings Limited acquired the remaining 25% in 2009 and sought, and obtained, the conversion of the Finance House into a Commercial Bank, named TN Bank Limited. TN Bank Limited's channel strategy was based on delivering banking convenience through standalone banking branches, in-store banking branches, the TN Cash Card with online and offline capabilities, through EcoCash, and through salespersons who delivered cash withdrawals, picked up cash deposits, and delivered other banking services to customers in the comfort of their homes or offices. Thus, the bank was a pioneer in Zimbabwe in embracing technology as a suitable channel for delivering banking products and services.
                 </p>
               </div>
             </div>
@@ -88,8 +87,7 @@ function About() {
               <div className="history-content">
                 <h3>Econet Era</h3>
                 <p>
-                  Econet acquired 100% of the Bank's shares. The Bank was renamed Steward Bank Limited
-                  and rolled out several tech products while restructuring its branch network.
+                  Econet acquired 100% of the Bank's shares in 2012. The Bank was renamed Steward Bank Limited. The bank closed its in-store branches and discontinued the TN Cash Card. The number of stand-alone branches was reduced. The Bank rolled out several tech products.
                 </p>
               </div>
             </div>
@@ -98,10 +96,7 @@ function About() {
               <div className="history-content">
                 <h3>A New Chapter</h3>
                 <p>
-                  Mr Tawanda Nyambirai acquired a controlling interest in the Bank. The controlling shareholder
-                  resolved to transform the Bank into a tech-driven bank whose products and services are embedded
-                  in the everyday products and services people use. Thus, the bank changed its name from
-                  Steward Bank Limited to TN CyberTech Bank Limited.
+                  In 2024, Mr Tawanda Nyambirai acquired a controlling interest in the Bank, which he distributed to discretionary trusts established for the benefit of his family members, some of his Senior Executives, and an Employee Trust intended to promote good customer care and innovation. The controlling shareholder resolved to transform the Bank into a tech-driven bank whose products and services are embedded in the everyday products and services people use. This entails integrating the bank's systems with the platforms of partners that provide everyday products and services people use. Thus, the bank changed its name from Steward Bank Limited to TN CyberTech Bank Limited.
                 </p>
               </div>
             </div>
@@ -171,7 +166,7 @@ function About() {
               <span className="vm-label">Our Vision</span>
               <h3>Embedded Banking for Everyone</h3>
               <p>
-                To embed banking seamlessly — through trusted partnerships and digital technology —
+                To embed banking seamlessly - through trusted partnerships and digital technology -
                 into the products and services people everywhere use every day.
               </p>
             </div>
@@ -181,7 +176,7 @@ function About() {
               <h3>Innovative Banking Services</h3>
               <p>
                 To design, operate, and securely integrate innovative banking services into partner
-                platforms — enabling effortless financial access through trusted technology channels.
+                platforms - enabling effortless financial access through trusted technology channels.
               </p>
             </div>
           </div>
@@ -274,7 +269,7 @@ function About() {
                     <polyline points="20 6 9 17 4 12"/>
                   </svg>
                 </div>
-                <p>We will never forget that banking and technology exist to serve people — not the other way around</p>
+                <p>We will never forget that banking and technology exist to serve people - not the other way around</p>
               </div>
             </div>
           </div>

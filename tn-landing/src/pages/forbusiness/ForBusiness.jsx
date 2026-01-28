@@ -20,45 +20,52 @@ function ForBusiness() {
       link: '/for-business/accounts',
     },
     {
-      title: 'Merchant Services',
-      description: 'POS machines and payment solutions for your retail operations.',
+      title: 'Merchant Services - POS',
+      description: 'Point of Sale Machines and POS application support.',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <rect x="2" y="4" width="20" height="16" rx="2"/>
-          <path d="M6 8h.01"/>
-          <path d="M10 8h.01"/>
-          <path d="M14 8h.01"/>
-          <path d="M6 12h12"/>
-          <path d="M6 16h8"/>
+          <path d="M2 10h20"/>
         </svg>
       ),
-      link: '/contact',
+      link: '/for-business/merchant',
     },
     {
       title: 'Business Loans',
-      description: 'Working capital, asset finance, commercial mortgages, and bank guarantees.',
+      description: 'Working capital, commercial mortgages, asset finance, and bank guarantees.',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <line x1="12" y1="1" x2="12" y2="23"/>
           <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
         </svg>
       ),
-      link: '/contact',
+      link: '/for-business/loans',
     },
     {
-      title: 'Corporate Banking',
-      description: 'Investment banking, advisory services, and specialized financing.',
+      title: 'Corporate & Investment Banking',
+      description: 'Corporate banking, research, capital markets and advisory services.',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M3 21h18M9 8h1M9 12h1M9 16h1M14 8h1M14 12h1M14 16h1"/>
           <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/>
         </svg>
       ),
-      link: '/contact',
+      link: '/for-business/corporate',
+    },
+    {
+      title: 'Visa Corporate Card',
+      description: 'Reloadable international prepaid card for secure global transactions.',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="M2 10h20"/>
+        </svg>
+      ),
+      link: '/for-business/visa-corporate-card',
     },
     {
       title: 'International Banking',
-      description: 'Foreign payments, trade finance, and structured finance solutions.',
+      description: 'Exchange control, international payments, and structured finance solutions.',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <circle cx="12" cy="12" r="10"/>
@@ -77,17 +84,14 @@ function ForBusiness() {
           <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
         </svg>
       ),
-      link: '/contact',
+      link: '/for-business/agents',
     },
   ]
 
   const sectors = [
-    { name: 'Healthcare', desc: 'Diagnostic centers, hospitals, clinics' },
-    { name: 'Renewable Energy', desc: 'Solar, waste management, smart cities' },
-    { name: 'Agriculture', desc: 'Farming and agri-business financing' },
-    { name: 'Mining', desc: 'Mining equipment and operations' },
-    { name: 'Retail', desc: 'Point of sale and working capital' },
-    { name: 'Construction', desc: 'Commercial and residential projects' },
+    { name: 'Healthcare', desc: 'Diagnostic centers, hospitals, clinics, laboratories, and specialist practitioners' },
+    { name: 'Renewable Energy', desc: 'Solar installations, waste management, and smart city projects' },
+    { name: 'Exporters/Foreign Currency Generators', desc: 'Agriculture, mining, and tourism export businesses' },
   ]
 
   return (
