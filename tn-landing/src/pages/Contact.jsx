@@ -34,7 +34,7 @@ function Contact() {
       title: 'Call Centre',
       primary: '+263 242 886 646-53',
       secondary: '08080 36100 (Toll Free)',
-      action: { label: 'Call Now', href: 'tel:+2632428866460' },
+      action: { label: 'Call Now', href: 'tel:+263242886646' },
     },
     {
       icon: (
@@ -410,7 +410,7 @@ function Contact() {
             <a href="tel:+2632428866460" className="cta-btn cta-btn-primary">
               Call +263 242 886 646
             </a>
-            <a href="tel:08080 36100" className="cta-btn cta-btn-secondary">
+            <a href="tel:0808036100" className="cta-btn cta-btn-secondary">
               Toll Free: 08080 36100
             </a>
           </div>

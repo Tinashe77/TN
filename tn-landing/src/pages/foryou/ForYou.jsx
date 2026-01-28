@@ -89,7 +89,7 @@ function ForYou() {
             <p>From everyday banking to smart savings, we have products tailored for every stage of your life.</p>
           </div>
 
-          <div className="services-grid">
+          <div className="services-grid-4">
             {services.map((service) => (
               <Link to={service.link} key={service.title} className="service-card">
                 <div className="service-card-icon">{service.icon}</div>
@@ -115,7 +115,7 @@ function ForYou() {
             <h2>Banking That Moves With You</h2>
           </div>
 
-          <div className="services-grid">
+          <div className="services-grid-4">
             {features.map((feature) => (
               <div key={feature.title} className="service-card" style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)' }}>
                 <h3 style={{ color: '#fff' }}>{feature.title}</h3>

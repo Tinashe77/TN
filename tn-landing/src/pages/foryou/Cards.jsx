@@ -239,7 +239,7 @@ function Cards() {
             <h2>Card Services</h2>
           </div>
 
-          <div className="services-grid">
+          <div className="services-grid-3">
             <div className="service-card">
               <div className="service-card-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -276,9 +276,13 @@ function Cards() {
       {/* Terms Link */}
       <section className="content-section white-section" style={{ textAlign: 'center', padding: '2rem 0' }}>
         <div className="container">
-          <Link to="/for-you/cards/terms" className="cta-btn cta-btn-secondary" style={{ border: '1px solid #e5e7eb', color: '#6b7280' }}>
-            View Card Terms & Conditions
-          </Link>
+          <p style={{ color: '#6b7280', fontSize: '0.875rem' }}>
+            For card terms and conditions, please contact us at{' '}
+            <a href="mailto:cards@tncybertechbank.co.zw" style={{ color: 'rgb(174, 106, 6)' }}>
+              cards@tncybertechbank.co.zw
+            </a>{' '}
+            or call <a href="tel:08088888" style={{ color: 'rgb(174, 106, 6)' }}>0808 8888</a>
+          </p>
         </div>
       </section>
 

@@ -61,9 +61,9 @@ function Home() {
         {/* Main Content Area */}
         <div className="mobile-main-content">
           {/* Continue in App CTA */}
-          <button className="cta-button cta-app">
-            Continue in App
-          </button>
+          <Link to="/for-you/mobile-banking" className="cta-button cta-app">
+            Get the App
+          </Link>
 
           {/* Animated Icon */}
           <div className="icon-container">
@@ -140,9 +140,9 @@ function Home() {
             <Link to="/about" className="cta-button cta-primary">
               Learn More
             </Link>
-            <button className="cta-button cta-secondary">
+            <Link to="/for-you/mobile-banking" className="cta-button cta-secondary">
               Get the App
-            </button>
+            </Link>
           </div>
         </div>
       </main>

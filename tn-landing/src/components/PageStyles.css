@@ -160,17 +160,46 @@
   color: #9ca3af;
 }
 
-/* Service Cards Grid - 4 columns on large, 2 on medium, 1 on small */
+/* Service Cards Grids - Balanced and Responsive */
+
+/* 6 items: 3 columns → 2 columns → 1 column */
 .services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 4 items: 4 columns → 2 columns → 1 column */
+.services-grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
 }
 
 @media (max-width: 1200px) {
-  .services-grid {
+  .services-grid-4 {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* 3 items: 3 columns → 1 column */
+.services-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* 2 items: 2 columns → 1 column */
+.services-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
 
 .service-card {
@@ -501,7 +530,10 @@
     padding: 0 1.5rem;
   }
 
-  .services-grid {
+  .services-grid,
+  .services-grid-4,
+  .services-grid-3,
+  .services-grid-2 {
     grid-template-columns: 1fr;
   }
 }

@@ -33,6 +33,7 @@ function Diaspora() {
     { name: 'World Remit', logo: '/worldremit.jpg' },
     { name: 'Western Union', logo: '/western-union.jpg' },
     { name: 'Money Gram', logo: '/moneygram.jpg' },
+    { name: 'Remitly', logo: '/remitly.jpg' },
     { name: 'Sasai Remit', logo: '/sasai.jpg' },
     { name: 'Mama Money', logo: '/mamamoney.jpg' },
     { name: 'Hello Paisa', logo: '/hellopaisa.jpg' },
@@ -98,7 +99,7 @@ function Diaspora() {
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem', marginTop: '2rem' }}>
                 {[
-                  { value: '10+', label: 'Remittance Partners' },
+                  { value: '9+', label: 'Remittance Partners' },
                   { value: '24/7', label: 'Mobile Access' },
                   { value: '0%', label: 'Receiving Fees' },
                   { value: '<5min', label: 'Transfer Time' },

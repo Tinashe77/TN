@@ -32,7 +32,7 @@ function ForBusiness() {
           <path d="M6 16h8"/>
         </svg>
       ),
-      link: '/for-business/merchant',
+      link: '/contact',
     },
     {
       title: 'Business Loans',
@@ -43,7 +43,7 @@ function ForBusiness() {
           <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
         </svg>
       ),
-      link: '/for-business/loans',
+      link: '/contact',
     },
     {
       title: 'Corporate Banking',
@@ -54,7 +54,7 @@ function ForBusiness() {
           <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"/>
         </svg>
       ),
-      link: '/for-business/corporate',
+      link: '/contact',
     },
     {
       title: 'International Banking',
@@ -77,7 +77,7 @@ function ForBusiness() {
           <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
         </svg>
       ),
-      link: '/for-business/agents',
+      link: '/contact',
     },
   ]
 

@@ -78,6 +78,7 @@ function Header() {
           </div>
 
           <Link to="/diaspora" className={`nav-link ${isActive('/diaspora') ? 'active' : ''}`}>Diaspora</Link>
+          <Link to="/partners" className={`nav-link ${isActive('/partners') ? 'active' : ''}`}>Partners</Link>
           <Link to="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`}>About</Link>
           <Link to="/contact" className={`nav-link ${isActive('/contact') ? 'active' : ''}`}>Contact</Link>
         </nav>
@@ -116,6 +117,7 @@ function Header() {
               ))}
             </div>
             <Link to="/diaspora" onClick={() => setMenuOpen(false)}>Diaspora</Link>
+            <Link to="/partners" onClick={() => setMenuOpen(false)}>Partners</Link>
             <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
             <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
           </nav>

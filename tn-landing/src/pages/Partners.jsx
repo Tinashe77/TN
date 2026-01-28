@@ -5,18 +5,8 @@ import './Partners.css'
 const partners = [
   { id: 'econet', name: 'Econet', category: 'Technology', logo: '/econet.jpg' },
   { id: 'ecocash', name: 'EcoCash', category: 'Mobile Money', logo: '/ecocash.jpg' },
-  { id: 'sasai-remit', name: 'Sasai Remit', category: 'Remittance', logo: '/sasai.jpg' },
-  { id: 'world-remit', name: 'World Remit', category: 'Remittance', logo: '/worldremit.jpg' },
-  { id: 'thunes', name: 'Thunes', category: 'Remittance', logo: '/thunes.jpg' },
-  { id: 'western-union', name: 'Western Union', category: 'Remittance', logo: '/western-union.jpg' },
-  { id: 'money-gram', name: 'Money Gram', category: 'Remittance', logo: '/moneygram.jpg' },
-  { id: 'shoprite-send', name: 'Shoprite Send', category: 'Remittance', logo: '/shoprite.jpg' },
-  { id: 'hello-paisa', name: 'Hello Paisa', category: 'Remittance', logo: '/hellopaisa.jpg' },
-  { id: 'mama-money', name: 'Mama Money', category: 'Remittance', logo: '/mamamoney.jpg' },
-  { id: 'master-remit', name: 'Master Remit', category: 'Remittance', logo: '/masterremit.jpg' },
-  { id: 'ria', name: 'Ria', category: 'Remittance', logo: '/riamoney.jpg' },
-  { id: 'visa', name: 'VISA', category: 'Payments', logo: '/visa.jpg' },
-  { id: 'zimswitch', name: 'Zimswitch', category: 'Payments', logo: '/zimswitch.jpg' },
+  { id: 'churches', name: 'Churches', category: 'Community', logo: null },
+  { id: 'tobacco', name: 'Tobacco Companies', category: 'Agriculture', logo: null },
 ]
 
 function Partners() {
@@ -61,12 +51,12 @@ function Partners() {
         <div className="container">
           <div className="intro-content">
             <span className="section-label">Strategic Partnerships</span>
-            <h2>Trusted Partners, Global Reach</h2>
+            <h2>Trusted Partners, Shared Vision</h2>
             <p>
-              TN CyberTech Bank has established strong partnerships with leading financial
-              institutions and technology providers worldwide. These partnerships enable us
-              to offer our customers seamless international remittances, secure payment
-              solutions, and innovative banking services.
+              TN CyberTech Bank has established strong partnerships with leading technology
+              providers, mobile money platforms, and community organisations. These partnerships
+              enable us to embed banking into everyday life and deliver innovative financial
+              services to all Zimbabweans.
             </p>
           </div>
         </div>
