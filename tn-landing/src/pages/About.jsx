@@ -50,7 +50,7 @@ function About() {
               <p className="highlight">We are the future of banking.</p>
             </div>
             <div className="story-image">
-              <img src="/LADY.jpg" alt="TN CyberTech Bank" className="story-img" />
+              <img src="/about-us-image.jpg" alt="TN CyberTech Bank" className="story-img" />
             </div>
           </div>
         </div>

@@ -99,7 +99,7 @@ function PersonalAccounts() {
       <Header />
 
       {/* Hero */}
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/personal-banking.jpg')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>Personal Accounts</h1>
