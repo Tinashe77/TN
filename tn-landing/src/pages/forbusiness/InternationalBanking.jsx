@@ -8,22 +8,22 @@ function InternationalBanking() {
     {
       id: 'exchange-control',
       title: 'Exchange Control',
-      description: 'TN CyberTech Bank assists with advice on Exchange Control regulations as they affect local and international investors. We also assist in the processing of Exchange Control applications where possible. For related enquiries, please contact us on customerservice@tncybertechbank.co.zw and our International Banking team will gladly assist.',
+      description: <>TN CyberTech Bank assists with advice on Exchange Control regulations as they affect local and international investors. We also assist in the processing of Exchange Control applications where possible. For related enquiries, please <a href="mailto:customerservice@tncybertechbank.co.zw" style={{ color: '#1e40af', textDecoration: 'underline' }}>contact us</a> and our International Banking team will gladly assist.</>,
     },
     {
       id: 'export-import',
       title: 'Export and Import',
-      description: 'Through its foreign correspondents and international partners, TN CyberTech Bank can arrange finance to assist its clients in funding their working capital and capital expenditure requirements. For related enquiries, please contact us on International_Banking@tncybertechbank.co.zw and our International Banking team will gladly assist.',
+      description: <>Through its foreign correspondents and international partners, TN CyberTech Bank can arrange finance to assist its clients in funding their working capital and capital expenditure requirements. For related enquiries, please <a href="mailto:International_Banking@tncybertechbank.co.zw" style={{ color: '#1e40af', textDecoration: 'underline' }}>contact us</a> and our International Banking team will gladly assist.</>,
     },
     {
       id: 'international-payments',
       title: 'International Payments',
-      description: 'As a member of SWIFT (Society of Worldwide Interbank Funds Transfers), the Bank handles client incoming and outgoing electronic foreign payments and thus facilitates international trade. Where a client elects the Bank, we can also effect the payments by Bank Draft. Our SWIFT Code for international payments is STBLZWHX For related enquiries, please contact us on international_banking@tncybertechbank.co.zw and our International Banking team will gladly assist.',
+      description: <>As a member of SWIFT (Society of Worldwide Interbank Funds Transfers), the Bank handles client incoming and outgoing electronic foreign payments and thus facilitates international trade. Where a client elects the Bank, we can also effect the payments by Bank Draft. Our SWIFT Code for international payments is STBLZWHX. For related enquiries, please <a href="mailto:international_banking@tncybertechbank.co.zw" style={{ color: '#1e40af', textDecoration: 'underline' }}>contact us</a> and our International Banking team will gladly assist.</>,
     },
     {
       id: 'structured-finance',
       title: 'Structured Finance',
-      description: 'The Bank can structure complex trade finance transactions and place such businesses on the International Capital Markets through correspondent banks. For related enquiries, please contact us on International_Banking@tncybertechbank.co.zw and our International Banking team will gladly assist.',
+      description: <>The Bank can structure complex trade finance transactions and place such businesses on the International Capital Markets through correspondent banks. For related enquiries, please <a href="mailto:International_Banking@tncybertechbank.co.zw" style={{ color: '#1e40af', textDecoration: 'underline' }}>contact us</a> and our International Banking team will gladly assist.</>,
     },
   ]
 
