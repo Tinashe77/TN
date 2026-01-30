@@ -60,7 +60,7 @@ function MobileBanking() {
         <div className="container">
           <div className="two-col-layout">
             <div>
-              <span className="section-label">Square App</span>
+              <span className="section-label">TN CyberCash App</span>
               <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', color: '#111827', marginBottom: '1rem' }}>
                 Mobile Banking Application
               </h2>
@@ -265,13 +265,13 @@ function MobileBanking() {
       <section className="content-section white-section" style={{ textAlign: 'center' }}>
         <div className="container">
           <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', marginBottom: '1rem', color: '#111827' }}>
-            Download the Square App Today
+            Download the TN CyberCash App Today
           </h2>
           <p style={{ color: '#6b7280', marginBottom: '2rem', maxWidth: '500px', margin: '0 auto 2rem' }}>
             Experience seamless banking at your fingertips.
           </p>
           <p style={{ color: '#6b7280', fontSize: '0.875rem', marginBottom: '1.5rem' }}>
-            Search for <strong>"Square Omni"</strong> or <strong>"TN CyberTech Bank"</strong> in your app store
+            Search for <strong>"TN CyberCash App"</strong> or <strong>"TN CyberTech Bank"</strong> in your app store
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="https://apps.apple.com/search?term=square+omni" target="_blank" rel="noopener noreferrer" className="cta-btn cta-btn-primary">

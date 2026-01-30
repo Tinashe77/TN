@@ -37,7 +37,7 @@ function About() {
           <div className="story-grid">
             <div className="story-content">
               <span className="section-label">Our Belief</span>
-              <h2>The Future Of Banking Is Not A Place</h2>
+              <h2>The Future Of Banking </h2>
               <p>
                 Banking should not interrupt life. It should move with it. It should be present where people live, work, play, and travel —not behind walls, queues, or complexity. The future of banking is not a place. It is an experience. It is embedded. It is digital. It is trusted. It is everywhere. We are the future of banking.
               </p>
@@ -120,38 +120,6 @@ In 2024, Mr Tawanda Nyambirai acquired a controlling interest in the Bank.  TN p
             </p>
           </div>
 
-          <div className="features-grid dark-cards">
-            <div className="feature-card">
-              <div className="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                </svg>
-              </div>
-              <h3>Secure</h3>
-              <p>Built on robust security frameworks to protect your financial data</p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <circle cx="12" cy="12" r="10"/>
-                  <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                </svg>
-              </div>
-              <h3>Accessible</h3>
-              <p>Banking wherever life happens, whenever you need it</p>
-            </div>
-            <div className="feature-card">
-              <div className="feature-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                  <circle cx="9" cy="7" r="4"/>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
-                </svg>
-              </div>
-              <h3>Partnered</h3>
-              <p>Open partnerships and responsible collaborations</p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -165,7 +133,7 @@ In 2024, Mr Tawanda Nyambirai acquired a controlling interest in the Bank.  TN p
               <h3>Embedded Banking for Everyone</h3>
               <p>
                 To embed banking seamlessly - through trusted partnerships and digital technology -
-                into the products and services people everywhere use every day.
+                into the products and services that people everywhere use every day.
               </p>
             </div>
             <div className="vm-card mission-card">

@@ -26,7 +26,7 @@ function PersonalAccounts() {
     },
     {
       id: 'current',
-      name: 'iAccount (Current)',
+      name: 'iCurrent(Account)',
       tagline: 'For everyday transactions',
       description: 'A flexible current account for all your daily banking needs.',
       features: [
