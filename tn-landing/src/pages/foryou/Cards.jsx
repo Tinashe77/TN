@@ -27,7 +27,7 @@ function Cards() {
         'Card-to-Card Transfers: Send funds to any TN CyberTech Bank VISA card using TN CyberCash, internet banking, or *236#.',
         'High Spending Limits: Enjoy a monthly limit of up to USD 10,000 for POS transactions or $35,000 for other transactions. The daily limit is $5,000.',
         'No Monthly Fees: No hidden costs or monthly service fees-just the freedom to spend.',
-        'The upper limit of $35,000 is subject to submission of acceptible(sp) KYC documentation.',
+        'The upper limit of $35,000 is subject to submission of acceptable KYC documentation.',
       ],
     },
     {
