@@ -59,24 +59,58 @@ function Contact() {
     { name: 'Loans', email: 'loans@tncybertechbank.co.zw' },
   ]
 
+  // Helper function to mask email addresses
+  const maskEmail = (email) => {
+    const [local, domain] = email.split('@')
+    const maskedLocal = local.slice(0, 3) + '***'
+    return `${maskedLocal}@${domain}`
+  }
+
   const branches = [
     {
-      name: 'Head Office',
-      address: '1st Floor, Joina City, Corner Jason Moyo & Inez Terrace, Harare',
-      phone: '+263 242 886 646-53',
-      hours: 'Mon-Fri: 8:00 AM - 4:30 PM',
+      name: 'Avondale',
+      address: '7 King George Road, Cnr Lanark, Avondale, Harare',
+      email: 'avondale@tncybertechbank.co.zw',
     },
     {
-      name: 'Bulawayo Branch',
-      address: '8th Avenue, Corner Fife Street, Bulawayo',
-      phone: '+263 292 123 456',
-      hours: 'Mon-Fri: 8:00 AM - 3:30 PM',
+      name: 'Borrowdale',
+      address: '48 Borrowdale Road, Borrowdale, Harare',
+      email: 'Borrowdale.Platinum@tncybertechbank.co.zw',
     },
     {
-      name: 'Mutare Branch',
-      address: 'Herbert Chitepo Street, Mutare',
-      phone: '+263 202 123 456',
-      hours: 'Mon-Fri: 8:00 AM - 3:30 PM',
+      name: 'Eastgate',
+      address: 'Eastgate Shopping Complex, Corner of Robert Mugabe & 3rd Street, Harare',
+      email: 'eastgatebranch@tncybertechbank.co.zw',
+    },
+    {
+      name: 'Joina City',
+      address: 'Upper Ground Floor, Joina City, on Jason Moyo Avenue, Harare',
+      email: 'Joina@tncybertechbank.co.zw',
+    },
+    {
+      name: 'Mutare',
+      address: '56-52, Second St, Mutare',
+      email: 'Mutarebranch@tncybertechbank.co.zw',
+    },
+    {
+      name: 'Masvingo',
+      address: '22 Robert Mugabe Street, Masvingo',
+      email: 'Masvingobranch@tncybertechbank.co.zw',
+    },
+    {
+      name: 'Gweru',
+      address: '124 Main Street, Gweru',
+      email: 'Gwerubranch@tncybertechbank.co.zw',
+    },
+    {
+      name: 'Bulawayo',
+      address: 'Bambanani Centre, Corner 9th Avenue and Jason Moyo, Bulawayo',
+      email: 'bulawayobranch@tncybertechbank.co.zw',
+    },
+    {
+      name: 'Victoria Falls',
+      address: '6-7 Sopers Arcade, Victoria Falls',
+      email: 'victoriafalls@tncybertechbank.co.zw',
     },
   ]
 
@@ -314,7 +348,7 @@ function Contact() {
                         textDecoration: 'none',
                       }}
                     >
-                      {dept.email}
+                      {maskEmail(dept.email)}
                     </a>
                   </div>
                 ))}
@@ -370,8 +404,17 @@ function Contact() {
                 </h3>
                 <div style={{ marginLeft: '3rem' }}>
                   <p style={{ color: '#4b5563', marginBottom: '0.5rem' }}>{branch.address}</p>
-                  <p style={{ color: 'rgb(174, 106, 6)', fontWeight: '500', marginBottom: '0.25rem' }}>{branch.phone}</p>
-                  <p style={{ color: '#6b7280', fontSize: '0.875rem' }}>{branch.hours}</p>
+                  <a
+                    href={`mailto:${branch.email}`}
+                    style={{
+                      color: 'rgb(174, 106, 6)',
+                      fontWeight: '500',
+                      textDecoration: 'none',
+                      fontSize: '0.875rem'
+                    }}
+                  >
+                    {maskEmail(branch.email)}
+                  </a>
                 </div>
               </div>
             ))}

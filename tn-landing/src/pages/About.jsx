@@ -31,7 +31,6 @@ function About() {
       <section className="content-section white-section">
         <div className="container">
           <div className="section-header" style={{ marginBottom: '2rem' }}>
-            <span className="section-label">About Us</span>
             <h2>About Us</h2>
          
           </div>

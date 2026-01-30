@@ -29,6 +29,8 @@ import MediaCentre from './pages/MediaCentre'
 import BoardOfDirectors from './pages/BoardOfDirectors'
 import CorporateSocialInvestment from './pages/CorporateSocialInvestment'
 import FinancialReports from './pages/FinancialReports'
+import PrivacyStatement from './pages/PrivacyStatement'
+import TermsOfUse from './pages/TermsOfUse'
 
 function App() {
   return (
@@ -66,6 +68,10 @@ function App() {
         <Route path="/board-of-directors" element={<BoardOfDirectors />} />
         <Route path="/corporate-social-investment" element={<CorporateSocialInvestment />} />
         <Route path="/financial-reports" element={<FinancialReports />} />
+
+        {/* Legal pages */}
+        <Route path="/privacy-statement" element={<PrivacyStatement />} />
+        <Route path="/terms-of-use" element={<TermsOfUse />} />
       </Routes>
     </Router>
   )

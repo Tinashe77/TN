@@ -564,3 +564,133 @@
 .service-card:nth-child(4) { animation-delay: 0.25s; }
 .service-card:nth-child(5) { animation-delay: 0.3s; }
 .service-card:nth-child(6) { animation-delay: 0.35s; }
+
+/* ========================================
+   LEGAL CONTENT STYLES
+   ======================================== */
+
+.legal-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.legal-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgba(255, 222, 74, 0.3);
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: rgb(174, 106, 6);
+  margin: 1.5rem 0 0.75rem;
+}
+
+.legal-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 1rem 0 0.5rem;
+}
+
+.legal-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.legal-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.legal-content ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.legal-content ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 6px;
+  height: 6px;
+  background: rgb(174, 106, 6);
+  border-radius: 50%;
+}
+
+.legal-content a {
+  color: rgb(174, 106, 6);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.legal-content a:hover {
+  color: rgb(255, 222, 74);
+  text-decoration: underline;
+}
+
+.legal-content strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+.rights-table {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.rights-item {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.rights-item h4 {
+  color: rgb(174, 106, 6);
+  margin-top: 0;
+}
+
+.rights-item p {
+  margin-bottom: 0;
+}
+
+.address-block {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.address-block p {
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .legal-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .legal-content h3 {
+    font-size: 1rem;
+  }
+}
