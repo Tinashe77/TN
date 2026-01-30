@@ -17,24 +17,25 @@ function Cards() {
 
   const visaCards = [
     {
-      name: 'VISA Globetrotter Prepaid',
+      name: 'VISA Prepaid',
       type: 'Prepaid',
       limit: 'USD 10,000/month',
       features: [
         'Instant Issuance: No need for a bank account-simply provide an ID and get your card instantly.',
-        'Easy Fund Transfers: Load funds via local nostro account via RTGS and ZIPIT. Seamlessly transfer from any mobile wallet (Ecocash, One Money, Omari, Innbucks) via ZIPIT to your Visa Card.',
+        'Easy Funds Transfers: Load funds in the currency that you wish to use. Seamlessly transfer from any mobile wallet (Ecocash, One Money, Omari, Innbucks) via ZIPIT to your Visa Card, provided that the funds are in the currency you wish to use, or in a readily convertible currency.',
         'Receive Funds Globally: Get money from any VISA card via VISA Direct.',
-        'Card-to-Card Transfers: Send funds to any TN CyberTech Bank VISA card using Square Omni, internet banking, or *236#.',
-        'High Spending Limits: Enjoy a monthly limit of up to USD 10,000.',
+        'Card-to-Card Transfers: Send funds to any TN CyberTech Bank VISA card using TN CyberCash, internet banking, or *236#.',
+        'High Spending Limits: Enjoy a monthly limit of up to USD 10,000 for POS transactions or $35,000 for other transactions. The daily limit is $5,000.',
         'No Monthly Fees: No hidden costs or monthly service fees-just the freedom to spend.',
+        'The upper limit of $35,000 is subject to submission of acceptible KYC documentation.',
       ],
     },
     {
-      name: 'VISA Debit Gold',
+      name: 'VISA Debit (Blue, Platinum, Black)',
       type: 'Debit',
       limit: 'USD 100,000/month',
       features: [
-        'PIN Management: Set, change, or reset your PIN easily via the Square Omni app or any TN CyberTech Bank ATM.',
+        'PIN Management: Set, change, or reset your PIN easily via the TN CyberCash app or any TN CyberTech Bank ATM.',
         'Supplementary Cards: Add up to two additional cardholders to your account.',
         'High Transaction Limits: Enjoy up to USD 100,000 in monthly transaction limits.',
         'Seamless Spending: Linked to your foreign currency (USD) account for smooth transactions.',
@@ -46,7 +47,7 @@ function Cards() {
       limit: 'USD 250,000/month',
       premium: true,
       features: [
-        'PIN Management: Set, change, or reset your PIN via the Square Omni app or any TN CyberTech Bank ATM.',
+        'PIN Management: Set, change, or reset your PIN via the TN CyberCash app or any TN CyberTech Bank ATM.',
         'Supplementary Cards: Add up to two supplementary cards for family or business needs.',
         'High Spending Power: Monthly transaction limit of up to USD 250,000.',
         'Exclusive Travel Benefits: Enjoy up to 12% off hotel bookings via Agoda.com.',
@@ -61,9 +62,9 @@ function Cards() {
       type: 'Credit',
       limit: 'USD 20,000/month',
       features: [
-        'Easy Transfers: Perform card-to-card transfers via Square Omni, internet banking, or *236#.',
+        'Easy Transfers: Perform card-to-card transfers via TN CyberCash app, internet banking, or *236#.',
         'Receive Funds Globally: Receive money from any VISA card through VISA Direct.',
-        'PIN Management: Manage your PIN via the Square Omni app or any TN CyberTech Bank ATM.',
+        'PIN Management: Manage your PIN via the TN CyberCash app or any TN CyberTech Bank ATM.',
         'Flexible Funding: Load funds from local nostro accounts and mobile wallets via ZIPIT and RTGS.',
         'Higher Limits: Monthly transaction limits of up to USD 20,000.',
       ],
@@ -237,7 +238,7 @@ function Cards() {
                 </svg>
               </div>
               <h3>FCA to VISA</h3>
-              <p>FCA to VISA Transactions on Internet Banking and Square App</p>
+              <p>FCA to VISA Transactions on Internet Banking and TN CyberCash App.</p>
               <p>Transfer funds from your FC Account to your Visa Globetrotter card using Internet Banking and Mobile Application.</p>
               <p>Internet Banking</p>
               <ol className="feature-list">
@@ -265,7 +266,7 @@ function Cards() {
               <h3>Digital Card Linking</h3>
               <p>Card linking process on Mobile Application</p>
               <ol className="feature-list">
-                <li>Log on to Square App</li>
+                <li>Log on to TN CyberCash App</li>
                 <li>Click more on Cards Management</li>
                 <li>Select the Zimswitch card you want to link to an account</li>
                 <li>Select link account to card option</li>

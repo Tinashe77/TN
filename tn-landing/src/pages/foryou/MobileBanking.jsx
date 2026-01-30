@@ -68,7 +68,7 @@ function MobileBanking() {
                 Our mobile app is an integrated solution that gives TN CyberTech Bank customers the power to transact <strong>whenever</strong> and <strong>wherever</strong> they are. The App enables paperless and branchless banking.
               </p>
 
-              <h4 style={{ fontSize: '1rem', fontWeight: '600', color: '#111827', marginBottom: '1rem' }}>With the Square App you can:</h4>
+              <h4 style={{ fontSize: '1rem', fontWeight: '600', color: '#111827', marginBottom: '1rem' }}>With the TN CyberCash, you can do the following:</h4>
               <ul className="feature-list">
                 {appFeatures.map((feature) => (
                   <li key={feature}>
@@ -128,8 +128,7 @@ function MobileBanking() {
                 Online Banking Portal
               </h2>
               <p style={{ color: '#4b5563', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-                The online banking portal has been re-designed to be user-friendly. The online banking portal has the same features and functionalities as before.
-              </p>
+                The online banking portal is user-friendly. The online banking portal has the following functionalities.               </p>
 
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
                 <div className="info-card">

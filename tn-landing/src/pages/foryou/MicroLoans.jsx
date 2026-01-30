@@ -54,7 +54,6 @@ function MicroLoans() {
         <div className="container">
           <div className="two-col-layout">
             <div>
-              <span className="section-label">Short-Term Finance</span>
               <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', color: '#111827', marginBottom: '1rem' }}>
                 Bridge Your Financial Gaps
               </h2>
@@ -73,7 +72,7 @@ function MicroLoans() {
                   minWidth: '140px'
                 }}>
                   <div style={{ fontSize: '2rem', fontWeight: '700', color: 'rgb(174, 106, 6)' }}>*236#</div>
-                  <div style={{ fontSize: '0.875rem', color: '#6b7280' }}>TN Bank</div>
+                  <div style={{ fontSize: '0.875rem', color: '#6b7280' }}>TN CyberTech</div>
                 </div>
                 <div style={{
                   padding: '1.5rem 2rem',

@@ -40,13 +40,9 @@ function About() {
               <span className="section-label">Our Belief</span>
               <h2>The Future Of Banking Is Not A Place</h2>
               <p>
-                Banking should not interrupt life. It should move with it. It should be present
-                where people live, work, play, and travel - not behind walls, queues, or complexity.
+                Banking should not interrupt life. It should move with it. It should be present where people live, work, play, and travel —not behind walls, queues, or complexity. The future of banking is not a place. It is an experience. It is embedded. It is digital. It is trusted. It is everywhere. We are the future of banking.
               </p>
-              <p>
-                The future of banking is not a place. It is an experience. It is embedded. It is
-                digital. It is trusted. It is everywhere.
-              </p>
+             
               <p className="highlight">We are the future of banking.</p>
             </div>
             <div className="story-image">
@@ -69,29 +65,32 @@ function About() {
               <div className="history-content">
                 <h3>The Beginning</h3>
                 <p>
-                  Until 2008, TN CyberTech Bank Limited was a registered Finance House known as Trust Finance Limited, part of the Trust Holdings Group, founded by Mr William Nyemba.
+Until 2008, TN CyberTech Bank Limited was a registered Finance House known as Trust Finance Limited, part of the Trust Holdings Group.  In 2008, the TN Financial Holdings Limited acquired a 75% stake in the Finance House and recapitalised it to prevent its imminent collapse.  TN Financial Holdings Limited acquired the remaining 25% in 2009 and sought, and obtained, the conversion of the Finance House into a Commercial Bank, named TN Bank Limited.
                 </p>
+                <p>TN Bank Limited’s channel strategy was based on delivering banking convenience through standalone banking branches, in-store banking branches, the TN Cash Card with online and offline capabilities, through EcoCash, and through salespersons who delivered cash withdrawals, picked up cash deposits, and delivered other banking services to customers in the comfort of their homes or offices.  Thus, the bank was a pioneer in Zimbabwe in embracing technology as a suitable channel for delivering banking products and services.
+</p>
               </div>
             </div>
             <div className="history-item">
-              <div className="history-year">2009</div>
+              <div className="history-year">2011</div>
               <div className="history-content">
-                <h3>Becoming a Commercial Bank</h3>
+                <h3>Acquisition by Econet</h3>
                 <p>
-                  In 2008, the TN Financial Holdings Limited acquired a 75% stake in the Finance House and recapitalised it to prevent its imminent collapse. TN Financial Holdings Limited acquired the remaining 25% in 2009 and sought, and obtained, the conversion of the Finance House into a Commercial Bank, named TN Bank Limited. TN Bank Limited's channel strategy was based on delivering banking convenience through standalone banking branches, in-store banking branches, the TN Cash Card with online and offline capabilities, through EcoCash, and through salespersons who delivered cash withdrawals, picked up cash deposits, and delivered other banking services to customers in the comfort of their homes or offices. Thus, the bank was a pioneer in Zimbabwe in embracing technology as a suitable channel for delivering banking products and services.
-                </p>
+In 2011 the bank launched Ecocash in partnership with Econet, In addition to being a trustee for the physical money against which Ecocash issued electronic money, TN Bank also held the EcoCash license. This was followed by the acquisition of a 20% stake in the Bank by Econet. In 2012, Econet eventually acquired 100% of TN Bank. The Bank was renamed Steward Bank Limited.  The bank closed its in-store branches and discontinued the TN Cash Card.  The number of stand-alone branches was reduced.  The Bank rolled out several tech products.                  </p>
               </div>
             </div>
             <div className="history-item">
-              <div className="history-year">2012</div>
+              <div className="history-year">2024</div>
               <div className="history-content">
-                <h3>Econet Era</h3>
+                <h3>Repurchase by TN</h3>
                 <p>
-                  Econet acquired 100% of the Bank's shares in 2012. The Bank was renamed Steward Bank Limited. The bank closed its in-store branches and discontinued the TN Cash Card. The number of stand-alone branches was reduced. The Bank rolled out several tech products.
+In 2024, Mr Tawanda Nyambirai acquired a controlling interest in the Bank.  TN proceeded to distribute the shares to discretionary trusts established for the benefit of his family members, some of his Senior Executives, and an Employee Trust intended to promote good customer care and innovation.  
                 </p>
+                <p>The Bank will transform into a tech-driven bank whose products and services are embedded in the everyday products and services people use.  This entails integrating the bank’s systems with the platforms of partners that provide everyday products and services people use.  Thus, the bank changed its name from Steward Bank Limited to TN CyberTech Bank Limited.        
+</p>
               </div>
             </div>
-            <div className="history-item">
+            {/* <div className="history-item">
               <div className="history-year">2024</div>
               <div className="history-content">
                 <h3>A New Chapter</h3>
@@ -99,7 +98,7 @@ function About() {
                   In 2024, Mr Tawanda Nyambirai acquired a controlling interest in the Bank, which he distributed to discretionary trusts established for the benefit of his family members, some of his Senior Executives, and an Employee Trust intended to promote good customer care and innovation. The controlling shareholder resolved to transform the Bank into a tech-driven bank whose products and services are embedded in the everyday products and services people use. This entails integrating the bank's systems with the platforms of partners that provide everyday products and services people use. Thus, the bank changed its name from Steward Bank Limited to TN CyberTech Bank Limited.
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -109,11 +108,11 @@ function About() {
         <div className="container">
           <div className="centered-content dark-text">
             <span className="section-label">What We're Building</span>
-            <h2>A Digital Financial Services Hub</h2>
+            <h2>An Embedded Bank</h2>
             <p>
               We are building a digital financial services hub that connects people, businesses,
               and platforms. A bank that integrates into lifestyles, rather than interrupts.
-              A bank that empowers rather than excludes. A bank that is accessible wherever
+              A bank that empowers rather than excludes. An embedded bank that is accessible wherever
               life happens and whenever.
             </p>
             <p>

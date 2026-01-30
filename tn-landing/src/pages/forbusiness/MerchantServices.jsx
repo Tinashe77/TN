@@ -18,7 +18,7 @@ function MerchantServices() {
         'Send a written request to our POS team',
         'Email: posmerchant@tncybertechbank.co.zw',
       ],
-      highlight: 'No additional documentation required',
+      highlight: ' ',
     },
     {
       title: 'For Non-TN CyberTech Bank Corporates',
@@ -80,7 +80,6 @@ function MerchantServices() {
         <div className="container">
           <div className="two-col-layout">
             <div>
-              <span className="section-label">POS Machines</span>
               <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', color: '#111827', marginBottom: '1rem' }}>
                 Accept Card Payments Anywhere
               </h2>
@@ -160,7 +159,6 @@ function MerchantServices() {
       <section className="content-section light-section">
         <div className="container">
           <div className="section-header">
-            <span className="section-label">How to Apply</span>
             <h2>Get Your POS Machine</h2>
             <p>Choose the application method that suits your business type.</p>
           </div>

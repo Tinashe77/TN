@@ -14,7 +14,7 @@ function BusinessLoans() {
         </svg>
       ),
       description: 'The Bank Offers Working Capital and Capital Expenditure loans to businesses in various sectors which include but are not limited to Agriculture, Healthcare, Construction, Retail, Renewable energy and mining. The loans come at very competitive interest rates.',
-      sectors: ['Agriculture', 'Healthcare', 'Construction', 'Retail', 'Renewable Energy', 'Mining'],
+      
     },
     {
       title: 'Commercial Mortgages',
