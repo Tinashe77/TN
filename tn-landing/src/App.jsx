@@ -50,12 +50,30 @@ import BusinessSMEAccount from './pages/forbusiness/BusinessSMEAccount'
 import CorporateAccount from './pages/forbusiness/CorporateAccount'
 import NonProfitAccount from './pages/forbusiness/NonProfitAccount'
 import InternationalBanking from './pages/forbusiness/InternationalBanking'
+import ExchangeControl from './pages/forbusiness/ExchangeControl'
+import ExportImport from './pages/forbusiness/ExportImport'
+import InternationalPayments from './pages/forbusiness/InternationalPayments'
+import TradeFinance from './pages/forbusiness/TradeFinance'
 import MerchantServices from './pages/forbusiness/MerchantServices'
 import MerchantCorporateCustomers from './pages/forbusiness/MerchantCorporateCustomers'
 import MerchantNonCustomers from './pages/forbusiness/MerchantNonCustomers'
 import BusinessLoans from './pages/forbusiness/BusinessLoans'
+import WorkingCapitalLoans from './pages/forbusiness/WorkingCapitalLoans'
+import CommercialMortgages from './pages/forbusiness/CommercialMortgages'
+import AssetFinance from './pages/forbusiness/AssetFinance'
+import BankGuarantees from './pages/forbusiness/BankGuarantees'
 import CorporateBanking from './pages/forbusiness/CorporateBanking'
+import HealthcareFinancing from './pages/forbusiness/HealthcareFinancing'
+import RenewableEnergyFinancing from './pages/forbusiness/RenewableEnergyFinancing'
+import ExportersFinancing from './pages/forbusiness/ExportersFinancing'
+import AdvisoryServices from './pages/forbusiness/AdvisoryServices'
+import CIBProductOfferings from './pages/forbusiness/CIBProductOfferings'
 import VisaCorporateCard from './pages/forbusiness/VisaCorporateCard'
+import VisaCardSecurity from './pages/forbusiness/VisaCardSecurity'
+import VisaCardFlexibility from './pages/forbusiness/VisaCardFlexibility'
+import VisaCardManagement from './pages/forbusiness/VisaCardManagement'
+import VisaCardReporting from './pages/forbusiness/VisaCardReporting'
+import VisaCardApply from './pages/forbusiness/VisaCardApply'
 import AgentBanking from './pages/forbusiness/AgentBanking'
 
 import CustomerService from './pages/CustomerService'
@@ -136,12 +154,30 @@ function App() {
         <Route path="/for-business/accounts/corporate" element={<CorporateAccount />} />
         <Route path="/for-business/accounts/nonprofit" element={<NonProfitAccount />} />
         <Route path="/for-business/international" element={<InternationalBanking />} />
+        <Route path="/for-business/international/exchange-control" element={<ExchangeControl />} />
+        <Route path="/for-business/international/export-import" element={<ExportImport />} />
+        <Route path="/for-business/international/payments" element={<InternationalPayments />} />
+        <Route path="/for-business/international/trade-finance" element={<TradeFinance />} />
         <Route path="/for-business/merchant" element={<MerchantServices />} />
         <Route path="/for-business/merchant/corporate-customers" element={<MerchantCorporateCustomers />} />
         <Route path="/for-business/merchant/non-customers" element={<MerchantNonCustomers />} />
         <Route path="/for-business/loans" element={<BusinessLoans />} />
+        <Route path="/for-business/loans/working-capital" element={<WorkingCapitalLoans />} />
+        <Route path="/for-business/loans/commercial-mortgages" element={<CommercialMortgages />} />
+        <Route path="/for-business/loans/asset-finance" element={<AssetFinance />} />
+        <Route path="/for-business/loans/bank-guarantees" element={<BankGuarantees />} />
         <Route path="/for-business/corporate" element={<CorporateBanking />} />
+        <Route path="/for-business/corporate/healthcare" element={<HealthcareFinancing />} />
+        <Route path="/for-business/corporate/renewable-energy" element={<RenewableEnergyFinancing />} />
+        <Route path="/for-business/corporate/exporters" element={<ExportersFinancing />} />
+        <Route path="/for-business/corporate/advisory" element={<AdvisoryServices />} />
+        <Route path="/for-business/corporate/products" element={<CIBProductOfferings />} />
         <Route path="/for-business/visa-corporate-card" element={<VisaCorporateCard />} />
+        <Route path="/for-business/visa-corporate-card/security" element={<VisaCardSecurity />} />
+        <Route path="/for-business/visa-corporate-card/flexibility" element={<VisaCardFlexibility />} />
+        <Route path="/for-business/visa-corporate-card/management" element={<VisaCardManagement />} />
+        <Route path="/for-business/visa-corporate-card/reporting" element={<VisaCardReporting />} />
+        <Route path="/for-business/visa-corporate-card/apply" element={<VisaCardApply />} />
         <Route path="/for-business/agents" element={<AgentBanking />} />
 
         {/* Support and Media */}
