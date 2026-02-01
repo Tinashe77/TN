@@ -26,6 +26,12 @@ function Header() {
     { label: 'Agent Banking', path: '/for-business/agents', desc: 'Become an Agent' },
   ]
 
+  const aboutItems = [
+    { label: 'About Us', path: '/about', desc: 'Our story and values' },
+    { label: 'Board of Directors', path: '/board-of-directors', desc: 'Our leadership board' },
+    { label: 'Management Team', path: '/management-team', desc: 'Executive management' },
+  ]
+
   return (
     <>
       <header className="site-header">
@@ -84,7 +90,30 @@ function Header() {
 
           <Link to="/diaspora" className={`nav-link ${isActive('/diaspora') ? 'active' : ''}`}>Diaspora</Link>
           <Link to="/partners" className={`nav-link ${isActive('/partners') ? 'active' : ''}`}>Our Partners</Link>
-          <Link to="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`}>About Us</Link>
+
+          <div
+            className="nav-dropdown"
+            onMouseEnter={() => setActiveDropdown('about')}
+            onMouseLeave={() => setActiveDropdown(null)}
+          >
+            <Link to="/about" className={`nav-link ${isActive('/about') || isActive('/board-of-directors') || isActive('/management-team') ? 'active' : ''}`}>
+              About Us
+              <svg className="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </Link>
+            {activeDropdown === 'about' && (
+              <div className="dropdown-menu">
+                {aboutItems.map((item) => (
+                  <Link key={item.path} to={item.path} className="dropdown-item">
+                    <span className="dropdown-item-label">{item.label}</span>
+                    <span className="dropdown-item-desc">{item.desc}</span>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
           <Link to="/contact" className={`nav-link ${isActive('/contact') ? 'active' : ''}`}>Contact</Link>
         </nav>
 
@@ -122,8 +151,15 @@ function Header() {
               ))}
             </div>
             <Link to="/diaspora" onClick={() => setMenuOpen(false)}>Diaspora</Link>
-            <Link to="/partners" onClick={() => setMenuOpen(false)}>Partners</Link>
-            <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
+            <Link to="/partners" onClick={() => setMenuOpen(false)}>Our Partners</Link>
+            <div className="mobile-nav-group">
+              <span className="mobile-nav-label">About Us</span>
+              {aboutItems.map((item) => (
+                <Link key={item.path} to={item.path} onClick={() => setMenuOpen(false)} className="mobile-nav-sub">
+                  {item.label}
+                </Link>
+              ))}
+            </div>
             <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
           </nav>
         </div>

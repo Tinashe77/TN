@@ -2,53 +2,40 @@ import { Link } from 'react-router-dom'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import '../../components/PageStyles.css'
-import './Accounts.css'
+import '../foryou/MobileBanking.css'
 
 function PersonalAccounts() {
-  const accounts = [
+  const sections = [
     {
       id: 'isave',
-      name: 'iSave USD Account',
-      tagline: 'Zero monthly charges, no minimum balance',
-      description: 'The perfect digital savings account with easy account opening via OMNI channel *236#.',
-      features: [
-        'Easy digital account opening on OMNI channel *236#',
-        'Zero monthly charges',
-        'No minimum balance',
-        'Automatic EcoCash wallet integration',
-        'Instant card issuance',
-        'A TN CyberTech Bank Debit Card',
-        'Access to EcoCash Wallet services',
-        'Access to Mobile Banking services',
-      ],
-      cta: 'Dial *236# to open',
+      title: 'iSave USD Account',
+      subtitle: 'Zero monthly charges, no minimum balance',
+      link: '/for-you/accounts/isave',
       highlight: true,
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+        </svg>
+      ),
     },
     {
       id: 'current',
-      name: 'Current Account',
-      tagline: 'For everyday transactions',
-      description: 'A flexible current account for all your daily banking needs.',
-      features: [
-        'TN CyberTech Bank proprietary card',
-        'Access to Online Banking',
-        'No Credit Interest',
-      ],
-      requirements: [
-        'Copy of National ID / Driver\'s Licence / Valid Passport',
-        '2 Passport Size Photos',
-        'Proof of Income',
-        'Proof of Residence',
-      ],
+      title: 'Current Account',
+      subtitle: 'For everyday transactions',
+      link: '/for-you/accounts/current',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+          <line x1="1" y1="10" x2="23" y2="10"/>
+        </svg>
+      ),
     },
-    
   ]
 
   return (
     <div className="page-container">
       <Header />
 
-      {/* Hero */}
       <section className="page-hero" style={{ backgroundImage: "url('/personal-banking.jpg')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
@@ -57,7 +44,6 @@ function PersonalAccounts() {
         </div>
       </section>
 
-      {/* Breadcrumb */}
       <nav className="breadcrumb">
         <div className="container">
           <Link to="/">Home</Link>
@@ -68,75 +54,52 @@ function PersonalAccounts() {
         </div>
       </nav>
 
-      {/* Accounts List */}
       <section className="content-section white-section">
         <div className="container">
-          <div className="section-header">
+          <div className="section-header" style={{ marginBottom: '3rem' }}>
             <span className="section-label">Choose Your Account</span>
-            <h2>Accounts Tailored For You</h2>
-            <p>Whether you're saving for the future, managing daily expenses, or teaching your children about money, we have the right account for you.</p>
+            <h2 style={{ color: '#111827' }}>Accounts Tailored For You</h2>
+            <p style={{ color: '#6b7280', maxWidth: '600px', margin: '0 auto' }}>
+              Whether you're saving for the future or managing daily expenses, we have the right account for you.
+            </p>
           </div>
 
-          <div className="accounts-list">
-            {accounts.map((account, index) => (
-              <div
-                key={account.id}
-                className={`account-card ${account.highlight ? 'highlighted' : ''}`}
-                id={account.id}
-              >
-                {account.highlight && <div className="account-badge">Most Popular</div>}
-                <div className="account-header">
-                  <div>
-                    <h3>{account.name}</h3>
-                    <p className="account-tagline">{account.tagline}</p>
-                  </div>
-                  <div className="account-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                      <circle cx="12" cy="7" r="4"/>
-                    </svg>
-                  </div>
-                </div>
-
-                <p className="account-description">{account.description}</p>
-
-                <div className="account-features">
-                  <h4>Features & Benefits</h4>
-                  <ul>
-                    {account.features.map((feature) => (
-                      <li key={feature}>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                          <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {account.requirements && (
-                  <div className="account-requirements">
-                    <h4>Opening Requirements</h4>
-                    <ul>
-                      {account.requirements.map((req) => (
-                        <li key={req}>{req}</li>
-                      ))}
-                    </ul>
-                  </div>
+          <div className="mobile-banking-hub-grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
+            {sections.map((section) => (
+              <Link to={section.link} key={section.id} className="mobile-banking-hub-card">
+                {section.highlight && (
+                  <span style={{
+                    position: 'absolute',
+                    top: '-12px',
+                    right: '24px',
+                    background: 'linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%)',
+                    color: '#000',
+                    fontSize: '0.7rem',
+                    fontWeight: '700',
+                    padding: '0.4rem 0.8rem',
+                    borderRadius: '20px',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.5px',
+                    zIndex: 2,
+                  }}>Most Popular</span>
                 )}
-
-                {account.cta && (
-                  <div className="account-cta">
-                    <span className="cta-code">{account.cta}</span>
-                  </div>
-                )}
-              </div>
+                <div className="mobile-banking-hub-icon">
+                  {section.icon}
+                </div>
+                <h3>{section.title}</h3>
+                <p>{section.subtitle}</p>
+                <span className="mobile-banking-hub-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                  </svg>
+                </span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
       <section className="content-section dark-section" style={{ textAlign: 'center' }}>
         <div className="container">
           <h2 style={{ color: '#fff', marginBottom: '1rem' }}>Ready to Open Your Account?</h2>

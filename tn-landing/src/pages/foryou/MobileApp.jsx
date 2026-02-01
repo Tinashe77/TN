@@ -4,41 +4,30 @@ import Footer from '../../components/Footer'
 import '../../components/PageStyles.css'
 import './MobileBanking.css'
 
-function MobileBanking() {
+function MobileApp() {
   const sections = [
     {
-      id: 'mobile-app',
-      title: 'TN CyberCash App',
-      subtitle: 'Mobile Banking Application',
-      link: '/for-you/mobile-banking/app',
+      id: 'features',
+      title: 'App Features',
+      subtitle: 'What you can do with the app',
+      link: '/for-you/mobile-banking/app/features',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-          <line x1="12" y1="18" x2="12.01" y2="18"/>
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
         </svg>
       ),
     },
     {
-      id: 'online-banking',
-      title: 'Internet Banking',
-      subtitle: 'Online Banking Portal',
-      link: '/for-you/mobile-banking/online',
+      id: 'register',
+      title: 'How to Register',
+      subtitle: 'Get started with the app',
+      link: '/for-you/mobile-banking/app/register',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-          <line x1="8" y1="21" x2="16" y2="21"/>
-          <line x1="12" y1="17" x2="12" y2="21"/>
-        </svg>
-      ),
-    },
-    {
-      id: 'ussd-banking',
-      title: 'USSD Banking',
-      subtitle: 'Dial *236# from any phone',
-      link: '/for-you/mobile-banking/ussd',
-      icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+          <circle cx="8.5" cy="7" r="4"/>
+          <line x1="20" y1="8" x2="20" y2="14"/>
+          <line x1="23" y1="11" x2="17" y2="11"/>
         </svg>
       ),
     },
@@ -51,8 +40,8 @@ function MobileBanking() {
       <section className="page-hero">
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
-          <h1>Mobile Banking</h1>
-          <p>Bank whenever and wherever you are with our digital channels.</p>
+          <h1>TN CyberCash App</h1>
+          <p>Mobile Banking Application</p>
         </div>
       </section>
 
@@ -62,20 +51,30 @@ function MobileBanking() {
           <span className="separator">/</span>
           <Link to="/for-you">For You</Link>
           <span className="separator">/</span>
-          <span className="current">Mobile Banking</span>
+          <Link to="/for-you/mobile-banking">Mobile Banking</Link>
+          <span className="separator">/</span>
+          <span className="current">TN CyberCash App</span>
         </div>
       </nav>
 
       <section className="content-section white-section">
         <div className="container">
+          <Link to="/for-you/mobile-banking" className="back-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <line x1="19" y1="12" x2="5" y2="12"/>
+              <polyline points="12 19 5 12 12 5"/>
+            </svg>
+            Back to Mobile Banking
+          </Link>
+
           <div className="section-header" style={{ marginBottom: '3rem' }}>
-            <h2 style={{ color: '#111827' }}>Choose Your Banking Channel</h2>
-            <p style={{ color: '#6b7280', maxWidth: '600px', margin: '0 auto' }}>
-              Access your accounts and manage your finances through our convenient digital banking channels.
+            <h2 style={{ color: '#111827' }}>TN CyberCash App</h2>
+            <p style={{ color: '#4b5563', lineHeight: '1.8', maxWidth: '700px', margin: '0 auto' }}>
+              Our mobile app is an integrated solution that gives TN CyberTech Bank customers the power to transact <strong>whenever</strong> and <strong>wherever</strong> they are. The App enables paperless and branchless banking.
             </p>
           </div>
 
-          <div className="mobile-banking-hub-grid">
+          <div className="mobile-banking-hub-grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
             {sections.map((section) => (
               <Link to={section.link} key={section.id} className="mobile-banking-hub-card">
                 <div className="mobile-banking-hub-icon">
@@ -129,4 +128,4 @@ function MobileBanking() {
   )
 }
 
-export default MobileBanking
+export default MobileApp

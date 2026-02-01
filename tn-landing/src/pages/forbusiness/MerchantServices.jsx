@@ -2,48 +2,44 @@ import { Link } from 'react-router-dom'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import '../../components/PageStyles.css'
+import '../About.css'
 
 function MerchantServices() {
-  const applicationMethods = [
+  const sections = [
     {
+      id: 'corporate-customers',
       title: 'For Corporate TN CyberTech Bank Customers',
+      subtitle: 'Existing bank customers',
+      link: '/for-business/merchant/corporate-customers',
       icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16"/>
           <path d="M1 21h22"/>
           <path d="M9 7h6M9 11h6M9 15h6"/>
         </svg>
       ),
-      steps: [
-        'Send a written request to our POS team',
-        'Email: posmerchant@tncybertechbank.co.zw',
-      ],
-      highlight: ' ',
     },
     {
+      id: 'non-customers',
       title: 'For Non-TN CyberTech Bank Corporates',
+      subtitle: 'New to the bank',
+      link: '/for-business/merchant/non-customers',
       icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
           <polyline points="14 2 14 8 20 8"/>
           <line x1="16" y1="13" x2="8" y2="13"/>
           <line x1="16" y1="17" x2="8" y2="17"/>
         </svg>
       ),
-      steps: [
-        'Complete POS Application form',
-        'Submit KYC Documents',
-        'Email: posmerchant@tncybertechbank.co.zw',
-      ],
     },
-    
   ]
 
   return (
-    <div className="page-container">
+    <div className="about-page">
       <Header />
 
-      <section className="page-hero">
+      <section className="page-hero about-hero">
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>Merchant Services - POS</h1>
@@ -61,140 +57,106 @@ function MerchantServices() {
         </div>
       </nav>
 
-      {/* Introduction */}
       <section className="content-section white-section">
         <div className="container">
-          <div className="two-col-layout">
-            <div>
-              <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', color: '#111827', marginBottom: '1rem' }}>
-                Accept Card Payments Anywhere
-              </h2>
-              <p style={{ color: '#4b5563', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-                The Bank offers POS machines for individuals and corporate customers alike. Whether you're a large corporate, small business, or hosting a one-day event, we have a POS solution for you.
-              </p>
+          <div className="section-header" style={{ marginBottom: '3rem', textAlign: 'center' }}>
+            <h2>Accept Card Payments Anywhere</h2>
+            <p style={{ color: '#6b7280', maxWidth: '800px', margin: '1rem auto 2rem', lineHeight: '1.8' }}>
+              The Bank offers POS machines for individuals and corporate customers alike. Whether you're a large corporate, small business, or hosting a one-day event, we have a POS solution for you.
+            </p>
 
-              <div className="info-card" style={{ background: '#f9fafb' }}>
-                <h3>
-                  <span className="icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <rect x="2" y="4" width="20" height="16" rx="2"/>
-                      <path d="M2 10h20"/>
-                    </svg>
-                  </span>
-                  POS Benefits
-                </h3>
-                <ul className="feature-list">
-                  <li>
-                    <span className="check-icon">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                        <polyline points="20 6 9 17 4 12"/>
-                      </svg>
-                    </span>
-                    Accept Zimswitch, VISA cards and Mastercard
-                  </li>
-                  <li>
-                    <span className="check-icon">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                        <polyline points="20 6 9 17 4 12"/>
-                      </svg>
-                    </span>
-                    Real-time transaction processing
-                  </li>
-                  <li>
-                    <span className="check-icon">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                        <polyline points="20 6 9 17 4 12"/>
-                      </svg>
-                    </span>
-                    Dedicated support
-                  </li>
-                  <li>
-                    <span className="check-icon">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                        <polyline points="20 6 9 17 4 12"/>
-                      </svg>
-                    </span>
-                    Competitive transaction rates
-                  </li>
-                </ul>
-              </div>
+            <div className="about-hub-icon" style={{
+              width: '160px',
+              height: '160px',
+              margin: '0 auto 2rem',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}>
+              <svg viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="1.5" style={{ width: '70px', height: '70px' }}>
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M2 10h20"/>
+              </svg>
             </div>
 
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <div style={{
-                width: '200px',
-                height: '200px',
-                background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%)',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                boxShadow: '0 20px 60px rgba(255, 222, 74, 0.3)'
-              }}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="1.5" style={{ width: '80px', height: '80px' }}>
-                  <rect x="2" y="4" width="20" height="16" rx="2"/>
-                  <path d="M2 10h20"/>
-                </svg>
-              </div>
+            <div style={{ background: '#f9fafb', padding: '1.5rem 2rem', borderRadius: '12px', maxWidth: '600px', margin: '0 auto 3rem', textAlign: 'left' }}>
+              <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.1rem', marginBottom: '1rem', color: '#111827' }}>
+                <span style={{
+                  width: '32px',
+                  height: '32px',
+                  background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%)',
+                  borderRadius: '50%',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2" style={{ width: '16px', height: '16px' }}>
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <path d="M2 10h20"/>
+                  </svg>
+                </span>
+                POS Benefits
+              </h3>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                {['Accept Zimswitch, VISA cards and Mastercard', 'Real-time transaction processing', 'Dedicated support', 'Competitive transaction rates'].map((benefit) => (
+                  <li key={benefit} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem', color: '#4b5563' }}>
+                    <span style={{
+                      width: '20px',
+                      height: '20px',
+                      background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%)',
+                      borderRadius: '50%',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      flexShrink: 0
+                    }}>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="3" style={{ width: '10px', height: '10px' }}>
+                        <polyline points="20 6 9 17 4 12"/>
+                      </svg>
+                    </span>
+                    {benefit}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* How to Apply */}
-      <section className="content-section light-section">
-        <div className="container">
-          <div className="section-header">
+          <div className="section-header" style={{ marginBottom: '2rem' }}>
+            <span className="section-label">How to Apply</span>
             <h2>Get Your POS Machine</h2>
-            <p>Choose the application method that suits your business type.</p>
+            <p style={{ color: '#6b7280' }}>Choose the application method that suits your business type.</p>
           </div>
 
-          <div className="services-grid-3">
-            {applicationMethods.map((method) => (
-              <div key={method.title} className="service-card">
-                <div className="service-card-icon">{method.icon}</div>
-                <h3>{method.title}</h3>
-                <div className="steps-list">
-                  {method.steps.map((step, idx) => (
-                    <div key={step} className="step-item">
-                      <span className="step-number">{idx + 1}</span>
-                      <div className="step-content">
-                        <p>{step}</p>
-                      </div>
-                    </div>
-                  ))}
+          <div className="about-hub-grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)', maxWidth: '700px', margin: '0 auto' }}>
+            {sections.map((section) => (
+              <Link to={section.link} key={section.id} className="about-hub-card">
+                <div className="about-hub-icon">
+                  {section.icon}
                 </div>
-                {method.highlight && (
-                  <div style={{
-                    marginTop: '1rem',
-                    padding: '0.75rem',
-                    background: 'rgba(255, 222, 74, 0.1)',
-                    borderRadius: '8px',
-                    fontSize: '0.875rem',
-                    color: 'rgb(174, 106, 6)',
-                    fontWeight: '500',
-                  }}>
-                    {method.highlight}
-                  </div>
-                )}
-                {method.note && (
-                  <p style={{ marginTop: '1rem', fontSize: '0.875rem', color: '#6b7280', fontStyle: 'italic' }}>
-                    {method.note}
-                  </p>
-                )}
-              </div>
+                <h3>{section.title}</h3>
+                <p>{section.subtitle}</p>
+                <span className="about-hub-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                  </svg>
+                </span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="content-section dark-section" style={{ textAlign: 'center' }}>
+      <section className="image-break-section">
+        <div className="image-break-overlay"></div>
+        <div className="image-break-content">
+          <h2>Ready to Accept Card Payments?</h2>
+          <p>Contact our POS team to get started with your merchant services.</p>
+        </div>
+      </section>
+
+      <section className="content-section white-section" style={{ textAlign: 'center' }}>
         <div className="container">
-          <h2 style={{ color: '#fff', marginBottom: '1rem' }}>Ready to Accept Card Payments?</h2>
-          <p style={{ color: '#9ca3af', marginBottom: '2rem', maxWidth: '500px', margin: '0 auto 2rem' }}>
-            Contact our POS team to get started with your merchant services.
-          </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="mailto:posmerchant@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
               Email POS Team

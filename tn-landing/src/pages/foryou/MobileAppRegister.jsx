@@ -2,48 +2,8 @@ import { Link } from 'react-router-dom'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import '../../components/PageStyles.css'
-import './MobileBanking.css'
 
-function MobileBanking() {
-  const sections = [
-    {
-      id: 'mobile-app',
-      title: 'TN CyberCash App',
-      subtitle: 'Mobile Banking Application',
-      link: '/for-you/mobile-banking/app',
-      icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-          <line x1="12" y1="18" x2="12.01" y2="18"/>
-        </svg>
-      ),
-    },
-    {
-      id: 'online-banking',
-      title: 'Internet Banking',
-      subtitle: 'Online Banking Portal',
-      link: '/for-you/mobile-banking/online',
-      icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-          <line x1="8" y1="21" x2="16" y2="21"/>
-          <line x1="12" y1="17" x2="12" y2="21"/>
-        </svg>
-      ),
-    },
-    {
-      id: 'ussd-banking',
-      title: 'USSD Banking',
-      subtitle: 'Dial *236# from any phone',
-      link: '/for-you/mobile-banking/ussd',
-      icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-        </svg>
-      ),
-    },
-  ]
-
+function MobileAppRegister() {
   return (
     <div className="page-container">
       <Header />
@@ -51,8 +11,8 @@ function MobileBanking() {
       <section className="page-hero">
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
-          <h1>Mobile Banking</h1>
-          <p>Bank whenever and wherever you are with our digital channels.</p>
+          <h1>How to Register</h1>
+          <p>Get started with the TN CyberCash App</p>
         </div>
       </section>
 
@@ -62,35 +22,63 @@ function MobileBanking() {
           <span className="separator">/</span>
           <Link to="/for-you">For You</Link>
           <span className="separator">/</span>
-          <span className="current">Mobile Banking</span>
+          <Link to="/for-you/mobile-banking">Mobile Banking</Link>
+          <span className="separator">/</span>
+          <Link to="/for-you/mobile-banking/app">TN CyberCash App</Link>
+          <span className="separator">/</span>
+          <span className="current">How to Register</span>
         </div>
       </nav>
 
       <section className="content-section white-section">
         <div className="container">
+          <Link to="/for-you/mobile-banking/app" className="back-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <line x1="19" y1="12" x2="5" y2="12"/>
+              <polyline points="12 19 5 12 12 5"/>
+            </svg>
+            Back to TN CyberCash App
+          </Link>
+
           <div className="section-header" style={{ marginBottom: '3rem' }}>
-            <h2 style={{ color: '#111827' }}>Choose Your Banking Channel</h2>
-            <p style={{ color: '#6b7280', maxWidth: '600px', margin: '0 auto' }}>
-              Access your accounts and manage your finances through our convenient digital banking channels.
+            <h2 style={{ color: '#111827' }}>How to Register</h2>
+            <p style={{ color: '#4b5563', maxWidth: '600px', margin: '0 auto' }}>
+              Follow these simple steps to get started with the TN CyberCash App
             </p>
           </div>
 
-          <div className="mobile-banking-hub-grid">
-            {sections.map((section) => (
-              <Link to={section.link} key={section.id} className="mobile-banking-hub-card">
-                <div className="mobile-banking-hub-icon">
-                  {section.icon}
+          <div className="info-card" style={{ maxWidth: '600px', margin: '0 auto' }}>
+            <h3>
+              <span className="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="8.5" cy="7" r="4"/>
+                  <line x1="20" y1="8" x2="20" y2="14"/>
+                  <line x1="23" y1="11" x2="17" y2="11"/>
+                </svg>
+              </span>
+              Registration Steps
+            </h3>
+            <div className="steps-list">
+              <div className="step-item">
+                <span className="step-number">1</span>
+                <div className="step-content">
+                  <p>Download the app from Google Play Store or Apple Store</p>
                 </div>
-                <h3>{section.title}</h3>
-                <p>{section.subtitle}</p>
-                <span className="mobile-banking-hub-arrow">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <line x1="5" y1="12" x2="19" y2="12"/>
-                    <polyline points="12 5 19 12 12 19"/>
-                  </svg>
-                </span>
-              </Link>
-            ))}
+              </div>
+              <div className="step-item">
+                <span className="step-number">2</span>
+                <div className="step-content">
+                  <p>Input account number, mobile number and last 4 digits of card number</p>
+                </div>
+              </div>
+              <div className="step-item">
+                <span className="step-number">3</span>
+                <div className="step-content">
+                  <p>Confirm Details</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -129,4 +117,4 @@ function MobileBanking() {
   )
 }
 
-export default MobileBanking
+export default MobileAppRegister
