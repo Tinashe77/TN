@@ -22,7 +22,7 @@ function InternationalBanking() {
     },
     {
       id: 'structured-finance',
-      title: 'Structured Finance',
+      title: 'Trade Finance',
       description: <>The Bank can structure complex trade finance transactions and place such businesses on the International Capital Markets through correspondent banks. For related enquiries, please <a href="mailto:International_Banking@tncybertechbank.co.zw" style={{ color: '#1e40af', textDecoration: 'underline' }}>contact us</a> and our International Banking team will gladly assist.</>,
     },
   ]

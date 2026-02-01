@@ -47,24 +47,23 @@ function Diaspora() {
   const requirements = [
     'Completed account opening form',
     '2 Passport Photos',
-    'Copy of ID and valid Zim passport',
+    'Copy of ID and valid Zimbabwean passport',
     'Proof of Residence (foreign utility bill, bank statement, or lease agreement)',
   ]
 
-  const remittancePartners = [
-    { name: 'World Remit', logo: '/worldremit.jpg' },
-    { name: 'Thunes', logo: '/thunes.jpg' },
-    { name: 'Western Union', logo: '/western-union.jpg' },
-    { name: 'Sasai Remit', logo: '/sasai.jpg' },
-    { name: 'Money Gram', logo: '/moneygram.jpg' },
-    { name: 'Shoprite Send', logo: '/shoprite.jpg' },
-    { name: 'Hello Paisa', logo: '/hellopaisa.jpg' },
-    { name: 'Mama Money', logo: '/mamamoney.jpg' },
-    { name: 'Master Remit', logo: '/masterremit.jpg' },
-    { name: 'Ria', logo: '/riamoney.jpg' },
-    { name: 'Econet', logo: '/econet.jpg' },
-    { name: 'EcoCash', logo: '/ecocash.jpg' },
-  ]
+const remittancePartners = [
+  { name: 'EcoCash', logo: '/ecocash.jpg' },
+  { name: 'Hello Paisa', logo: '/hellopaisa.jpg' },
+  { name: 'Mama Money', logo: '/mamamoney.jpg' },
+  { name: 'Master Remit', logo: '/masterremit.jpg' },
+  { name: 'Money Gram', logo: '/moneygram.jpg' },
+  { name: 'Ria', logo: '/riamoney.jpg' },
+  { name: 'Sasai Remit', logo: '/sasai.jpg' },
+  { name: 'Shoprite Send', logo: '/shoprite.jpg' },
+  { name: 'Thunes', logo: '/thunes.jpg' },
+  { name: 'Western Union', logo: '/western-union.jpg' },
+  { name: 'World Remit', logo: '/worldremit.jpg' }
+];
 
   return (
     <div className="page-container">
@@ -73,7 +72,7 @@ function Diaspora() {
       <section className="page-hero">
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
-          <h1>Non-Resident Banking</h1>
+          <h1>Diaspora Banking</h1>
           <p>Tailored banking solutions for Zimbabweans living abroad</p>
         </div>
       </section>
@@ -96,7 +95,7 @@ function Diaspora() {
                 Stay Connected to Home
               </h2>
               <p style={{ color: '#4b5563', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-                Open a TN CyberTech Bank Non-Resident FCA Account today and unlock unparalleled convenience with our exclusive diaspora offering. This unique service allows individuals to make direct payments to family and friends both within and outside Zimbabwe, as well as to local suppliers, ensuring seamless financial management.
+                Open a TN CyberTech Bank Diaspora FCA Account today and unlock unparalleled convenience with our exclusive diaspora offering. This unique service allows individuals to make direct payments to family and friends both within and outside Zimbabwe, as well as to local suppliers, ensuring seamless financial management.
               </p>
               <p style={{ color: '#4b5563', lineHeight: '1.8', marginBottom: '1.5rem' }}>
                 With our robust online banking platform and mobile banking app, you can enjoy real-time, cost-effective transactions without the need for intermediaries. Furthermore, benefit from the dedicated support of a relationship officer, providing assistance and access to local service providers.
@@ -183,36 +182,7 @@ function Diaspora() {
             </div>
 
             <div>
-              <div className="info-card" style={{ background: 'linear-gradient(135deg, rgba(255, 222, 74, 0.1) 0%, rgba(255, 222, 74, 0.05) 100%)' }}>
-                <h3>
-                  <span className="icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <line x1="12" y1="1" x2="12" y2="23"/>
-                      <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                    </svg>
-                  </span>
-                  Account Conditions
-                </h3>
-
-                <div style={{ marginTop: '1.5rem' }}>
-                  {accountConditions.map((item) => (
-                    <div key={item.label} style={{
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      alignItems: 'center',
-                      padding: '0.875rem 0',
-                      borderBottom: '1px solid rgba(0, 0, 0, 0.08)',
-                    }}>
-                      <span style={{ color: '#6b7280' }}>{item.label}</span>
-                      <span style={{ fontWeight: '600', color: 'rgb(174, 106, 6)' }}>{item.value}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <p style={{ fontSize: '0.75rem', color: '#9ca3af', marginTop: '1rem' }}>
-                  *Monthly maintenance fee applies for more than 2 debit transactions per month
-                </p>
-              </div>
+              
 
               <div className="info-card" style={{ marginTop: '1.5rem' }}>
                 <h3>

@@ -36,21 +36,7 @@ function MerchantServices() {
         'Email: posmerchant@tncybertechbank.co.zw',
       ],
     },
-    {
-      title: 'For Individuals (Event Hire)',
-      icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-          <circle cx="12" cy="7" r="4"/>
-        </svg>
-      ),
-      steps: [
-        'Complete POS application form',
-        'Pay application fee',
-        'Available for single-day event hire',
-      ],
-      note: 'Perfect for markets, fairs, and special events',
-    },
+    
   ]
 
   return (
@@ -104,7 +90,7 @@ function MerchantServices() {
                         <polyline points="20 6 9 17 4 12"/>
                       </svg>
                     </span>
-                    Accept Zimswitch and VISA cards
+                    Accept Zimswitch, VISA cards and Mastercard
                   </li>
                   <li>
                     <span className="check-icon">

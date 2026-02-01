@@ -26,7 +26,7 @@ function PersonalAccounts() {
     },
     {
       id: 'current',
-      name: 'iCurrent(Account)',
+      name: 'Current Account',
       tagline: 'For everyday transactions',
       description: 'A flexible current account for all your daily banking needs.',
       features: [
@@ -41,57 +41,7 @@ function PersonalAccounts() {
         'Proof of Residence',
       ],
     },
-    {
-      id: 'student',
-      name: 'iStudent Account',
-      tagline: 'Designed for students',
-      description: 'The perfect account for students with minimal requirements.',
-      features: [
-        'Linked to EcoCash',
-        'Access to Mobile Banking services',
-      ],
-      requirements: [
-        'A certified copy of the National ID',
-        'Student ID/Offer Letter',
-        'Minimal initial deposit $15',
-      ],
-    },
-    {
-      id: 'savvy-teens',
-      name: 'Savvy Teens',
-      tagline: 'For ages 13-17',
-      description: 'Help your teenager learn financial responsibility with this guided account.',
-      features: [
-        'Account in child\'s name, operated by Parent/Guardian',
-        'Parent/Guardian may grant child authority to operate',
-        'eAlerts to Parent/Guardian/Child',
-        'EcoCash Banking services',
-      ],
-      requirements: [
-        'Parent\'s ID',
-        'Parent\'s proof of residence',
-        'Child\'s birth certificate (or ID for 16 year olds)',
-        'Target group: 13-17 years',
-        'Minimum Balance $100',
-        'Monthly maintenance fee $100',
-      ],
-    },
-    {
-      id: 'savvy-kids',
-      name: 'Savvy Kids',
-      tagline: 'Start saving early',
-      description: 'Teach your children the value of saving from an early age.',
-      features: [
-        'Account in child\'s name, operated by Parent/Guardian',
-        'eAlerts to Parent/Guardian',
-        'EcoCash Banking services (deposits only)',
-      ],
-      requirements: [
-        'Parent\'s ID',
-        'Parent\'s proof of residence',
-        'Child\'s birth certificate',
-      ],
-    },
+    
   ]
 
   return (

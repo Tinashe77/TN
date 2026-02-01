@@ -56,7 +56,7 @@ function MobileBanking() {
       </nav>
 
       {/* Mobile App Section */}
-      <section className="content-section white-section">
+      {/* <section className="content-section white-section">
         <div className="container">
           <div className="two-col-layout">
             <div>
@@ -116,7 +116,7 @@ function MobileBanking() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Online Banking Section */}
       <section className="content-section light-section">
@@ -137,21 +137,10 @@ function MobileBanking() {
                     <div className="step-item">
                       <span className="step-number">1</span>
                       <div className="step-content">
-                        <p>Go to online banking portal</p>
+                        <p><a href="#">Visit our banking portal</a></p>
                       </div>
                     </div>
-                    <div className="step-item">
-                      <span className="step-number">2</span>
-                      <div className="step-content">
-                        <p>Input account number, mobile number and last 4 digits of card</p>
-                      </div>
-                    </div>
-                    <div className="step-item">
-                      <span className="step-number">3</span>
-                      <div className="step-content">
-                        <p>Confirm Details</p>
-                      </div>
-                    </div>
+                
                   </div>
                 </div>
 
@@ -221,7 +210,7 @@ function MobileBanking() {
                   color: 'rgb(255, 222, 74)',
                   marginBottom: '1rem'
                 }}>
-                  *210#
+                  *236#
                 </div>
                 <p style={{ color: '#9ca3af', fontSize: '1.125rem' }}>Dial to access USSD Banking</p>
                 <div style={{
@@ -240,7 +229,7 @@ function MobileBanking() {
               <span className="section-label light">USSD Banking</span>
               <h2 style={{ color: '#fff', marginBottom: '1rem' }}>Bank From Any Phone</h2>
               <p style={{ color: '#9ca3af', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-                USSD banking from TN CyberTech Bank makes it possible for you to do all your banking by dialling <strong style={{ color: 'rgb(174, 106, 6)' }}>*210#</strong> on any type of mobile phone from wherever you are.
+                USSD banking from TN CyberTech Bank makes it possible for you to do all your banking by dialling <strong style={{ color: 'rgb(174, 106, 6)' }}>*236#</strong> on any type of mobile phone from wherever you are.
               </p>
 
               <h4 style={{ color: '#fff', fontSize: '1rem', fontWeight: '600', marginBottom: '1rem' }}>Available Services:</h4>

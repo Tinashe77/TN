@@ -6,23 +6,26 @@ import '../../components/PageStyles.css'
 function MicroLoans() {
   const bankSteps = [
     { step: 1, action: 'Dial *236#' },
-    { step: 2, action: 'Select Option 3 - Micro Loans' },
-    { step: 3, action: 'Select Option 1 - Micro Loan' },
-    { step: 4, action: 'Select Option 1 - Apply for Micro Loan' },
-    { step: 5, action: 'Your pre-approved loan amount will be displayed' },
-    { step: 6, action: 'Select amount you would like to borrow' },
-    { step: 7, action: 'Funds deposited into your account!' },
+    { step: 2, action: 'Enter your PIN' },
+    { step: 3, action: 'Select Option 7 - Nano Loans' },
+    { step: 4, action: 'Choose Account' },
+    { step: 5, action: 'Terms & Conditions ' },
+    { step: 6, action: 'Select Option 1 to accept terms' },
+    { step: 7, action: 'Choose loan package' },
+    { step: 8, action: 'Choose loan package tenure' },
+    { step: 9, action: 'Select amount you would like to borrow' },
+    { step: 10, action: 'Funds deposited into your account!' },
   ]
 
   const ecocashSteps = [
     { step: 1, action: 'Dial *151#' },
-    { step: 2, action: 'Enter your EcoCash PIN' },
-    { step: 3, action: 'Select Option 6 - EcoCash Save' },
-    { step: 4, action: 'Select Option 3 - EcoCash Micro Loan' },
-    { step: 5, action: 'Select Option 1 (Request loan), 2 (Repay), or 3 (Check limit)' },
-    { step: 6, action: 'Enter Amount' },
-    { step: 7, action: 'Select Tenure (1 month)' },
-    { step: 8, action: 'Enter 1 to confirm' },
+    { step: 2, action: 'Select Currency' },
+    { step: 3, action: 'Enter your EcoCash PIN' },
+    { step: 4, action: 'Select Option 6 - Financial Services' },
+    { step: 5, action: 'Select Option 3 - Kashagi' },
+    { step: 6, action: 'Select Option 1 (Request loan), 2 (Repay), or 3 (Check limit)' },
+    { step: 7, action: 'Enter Amount' },
+    { step: 8, action: 'Select Tenure (1 month)' },
   ]
 
   return (
@@ -33,7 +36,7 @@ function MicroLoans() {
       <section className="page-hero">
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
-          <h1>Micro Loans</h1>
+          <h1>Nano Loans</h1>
           <p>Quick loans disbursed in under 60 seconds.</p>
         </div>
       </section>
@@ -45,7 +48,7 @@ function MicroLoans() {
           <span className="separator">/</span>
           <Link to="/for-you">For You</Link>
           <span className="separator">/</span>
-          <span className="current">Micro Loans</span>
+          <span className="current">Nano Loans</span>
         </div>
       </nav>
 

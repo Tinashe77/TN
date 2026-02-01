@@ -13,7 +13,7 @@ function Header() {
     { label: 'Mobile Banking', path: '/for-you/mobile-banking', desc: 'App, Online & USSD Banking' },
     { label: 'Personal Accounts', path: '/for-you/accounts', desc: 'Savings, Current & Student Accounts' },
     { label: 'Cards', path: '/for-you/cards', desc: 'Zimswitch & VISA Cards' },
-    { label: 'Micro Loans', path: '/for-you/loans', desc: 'Quick loans in 60 seconds' },
+    { label: 'Nano Loans', path: '/for-you/loans', desc: 'Quick loans in 60 seconds' },
   ]
 
   const forBusinessItems = [

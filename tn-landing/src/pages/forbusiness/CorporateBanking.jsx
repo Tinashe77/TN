@@ -111,7 +111,7 @@ function CorporateBanking() {
       </section>
 
       {/* Key Facilities */}
-      <section className="content-section light-section">
+      {/* <section className="content-section light-section">
         <div className="container">
           <div className="section-header">
             <span className="section-label">Key Facilities</span>
@@ -128,7 +128,7 @@ function CorporateBanking() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Product Offerings */}
       <section className="content-section white-section">

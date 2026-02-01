@@ -7,15 +7,14 @@ function AgentBanking() {
   const agentTransactions = [
     'Visa card issuance and replacements',
     'Visa card deposits (uploads)',
-    'Zwl card issuance and replacements',
-    'Account opening',
+    'ZWG card issuance and replacements',
+    'Account Opening',
     'Balance Enquiry',
     'Mini Statement',
     'Cash Deposit',
     'Cash Withdrawal',
-    'TN CyberTech Remit (USD local Cash ins and Cash pay outs)',
     'International Remittance Cash pay-outs for World Remit and EcoCash Remit',
-    'Bureau de Change / Currency Exchange',
+    'Bureau de Change / Currency Exchange at selected Agents',
   ]
 
   const additionalServices = [
@@ -72,7 +71,7 @@ function AgentBanking() {
       <section className="page-hero">
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
-          <h1>Agent Banking</h1>
+          <h1>Agency Banking</h1>
           <p>Earn income by processing customer transactions on behalf of the Bank.</p>
         </div>
       </section>
@@ -83,7 +82,7 @@ function AgentBanking() {
           <span className="separator">/</span>
           <Link to="/for-business">For Business</Link>
           <span className="separator">/</span>
-          <span className="current">Agent Banking</span>
+          <span className="current">Agency Banking</span>
         </div>
       </nav>
 
@@ -97,7 +96,7 @@ function AgentBanking() {
                 Partner With TN CyberTech Bank
               </h2>
               <p style={{ color: '#4b5563', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-                The Agent Banking channel enables sole traders and companies to earn income by processing customer transactions on behalf of the Bank. Registered agents will be given access to the bank's systems and will be able to process various transactions.
+                The Agency Banking channel enables sole traders and companies to earn income by processing customer transactions on behalf of the Bank. Registered agents will be given access to the bank's systems and will be able to process various transactions.
               </p>
 
               <h4 style={{ fontSize: '1rem', fontWeight: '600', color: '#111827', marginBottom: '1rem' }}>Agent Transactions:</h4>
@@ -210,7 +209,7 @@ function AgentBanking() {
       </section>
 
       {/* For Customers Section */}
-      <section className="content-section white-section">
+      {/* <section className="content-section white-section">
         <div className="container">
           <div className="two-col-layout reverse">
             <div>
@@ -256,7 +255,7 @@ function AgentBanking() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="content-section dark-section" style={{ textAlign: 'center' }}>

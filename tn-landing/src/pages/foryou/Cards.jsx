@@ -25,9 +25,10 @@ function Cards() {
         'Easy Funds Transfers: Load funds in the currency that you wish to use. Seamlessly transfer from any mobile wallet (Ecocash, One Money, Omari, Innbucks) via ZIPIT to your Visa Card, provided that the funds are in the currency you wish to use, or in a readily convertible currency.',
         'Receive Funds Globally: Get money from any VISA card via VISA Direct.',
         'Card-to-Card Transfers: Send funds to any TN CyberTech Bank VISA card using TN CyberCash, internet banking, or *236#.',
-        'High Spending Limits: Enjoy a monthly limit of up to USD 10,000 for POS transactions or $35,000 for other transactions. The daily limit is $5,000.',
+        'High Spending Limits: Enjoy a monthly limit of up to USD 10,000 for POS transactions or $35,000 for other transactions.',
         'No Monthly Fees: No hidden costs or monthly service fees-just the freedom to spend.',
         'The upper limit of $35,000 is subject to submission of acceptable KYC documentation.',
+        'Daily cash withdrawal limit is USD 5,000 including charges.',
       ],
     },
     {
@@ -131,7 +132,7 @@ function Cards() {
 
               <div style={{ marginTop: '2rem', padding: '1rem', background: '#f9fafb', borderRadius: '12px' }}>
                 <p style={{ color: '#4b5563', fontSize: '0.9rem' }}>
-                  <strong>Get your card today:</strong> To experience ultimate swiping convenience, please call our Customer Contact Centre on <a href="tel:08088888" style={{ color: 'rgb(174, 106, 6)' }}>0808 8888</a> or simply go to your closest TN CyberTech Bank Branch and collect your card today.
+                  <strong>Get your card today:</strong> To experience ultimate swiping convenience, please call our Customer Contact Centre on <a href="tel:08088888" style={{ color: 'rgb(174, 106, 6)' }}>0808 8888</a> or simply go to your closest TN CyberTech Bank Branch, or agent and collect your card today.
                 </p>
               </div>
             </div>
@@ -217,7 +218,7 @@ function Cards() {
 
           <div style={{ textAlign: 'center', marginTop: '3rem' }}>
             <p style={{ color: '#6b7280', marginBottom: '1rem' }}>
-              Email us at <a href="mailto:cards@tncybertechbank.co.zw" style={{ color: 'rgb(174, 106, 6)' }}>cards@tncybertechbank.co.zw</a>
+              Email us at <a href="mailto:cardcentre@tncybertechbank.co.zw" style={{ color: 'rgb(174, 106, 6)' }}>cardcentre@tncybertechbank.co.zw</a>
             </p>
           </div>
         </div>
@@ -295,9 +296,12 @@ function Cards() {
           <p style={{ color: '#6b7280', fontSize: '0.875rem' }}>
             For card terms and conditions, please contact us at{' '}
             <a href="mailto:cards@tncybertechbank.co.zw" style={{ color: 'rgb(174, 106, 6)' }}>
-              cards@tncybertechbank.co.zw
+              cardcentre@tncybertechbank.co.zw
             </a>{' '}
             or call <a href="tel:08088888" style={{ color: 'rgb(174, 106, 6)' }}>0808 8888</a>
+          </p>
+          <p style={{ color: 'black', fontSize: '0.875rem' }}>
+           <strong> <i>Disclaimer: Limits are subject to change without prior notice. Terms and conditions apply.</i></strong>
           </p>
         </div>
       </section>
