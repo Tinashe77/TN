@@ -17,7 +17,7 @@ function MaintenancePage() {
         {/* Logo */}
         <div style={{ marginBottom: '2rem' }}>
           <img
-            src="/logo.png"
+            src="/bank-logo.png"
             alt="TN CyberTech Bank"
             style={{ height: '60px' }}
           />
