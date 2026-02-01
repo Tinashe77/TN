@@ -848,3 +848,177 @@
 .history-item:nth-child(2) { animation-delay: 0.2s; }
 .history-item:nth-child(3) { animation-delay: 0.3s; }
 .history-item:nth-child(4) { animation-delay: 0.4s; }
+
+/* ========================================
+   ABOUT HUB GRID
+   ======================================== */
+
+.about-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.about-hub-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.about-hub-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  border-color: rgba(174, 106, 6, 0.3);
+}
+
+.about-hub-card:hover .about-hub-icon {
+  transform: scale(1.1);
+}
+
+.about-hub-card:hover .about-hub-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about-hub-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.about-hub-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: #000;
+}
+
+.about-hub-card h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.about-hub-card p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.about-hub-arrow {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+.about-hub-arrow svg {
+  width: 16px;
+  height: 16px;
+  stroke: #000;
+}
+
+/* About Hub Grid Responsive */
+@media (max-width: 1024px) {
+  .about-hub-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hub-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .about-hub-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .about-hub-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+  }
+
+  .about-hub-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hub-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================================
+   BACK LINK
+   ======================================== */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 0.75rem 1.25rem;
+  background: #f3f4f6;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  color: #000;
+}
+
+.back-link svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.back-link:hover svg {
+  transform: translateX(-4px);
+}
+
+.back-link.light {
+  background: rgba(255, 255, 255, 0.1);
+  color: #d1d5db;
+}
+
+.back-link.light:hover {
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  color: #000;
+}

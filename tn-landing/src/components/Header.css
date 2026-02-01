@@ -82,9 +82,21 @@
   border: 1px solid rgba(255, 222, 74, 0.2);
   border-radius: 16px;
   padding: 0.75rem;
-  margin-top: 0.5rem;
+  padding-top: 1.25rem;
+  margin-top: 0;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   animation: dropdownFadeIn 0.2s ease;
+}
+
+/* Invisible bridge to maintain hover when moving to dropdown */
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: transparent;
 }
 
 @keyframes dropdownFadeIn {

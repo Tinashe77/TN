@@ -1,0 +1,125 @@
+/* Our Values Page - Hover Interaction Styles */
+
+.values-hover-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.value-hover-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  min-height: 280px;
+}
+
+.value-hover-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+  border-color: rgba(174, 106, 6, 0.3);
+}
+
+.value-hover-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  border-radius: 24px;
+  margin-bottom: 1.5rem;
+  transition: all 0.4s ease;
+}
+
+.value-hover-icon svg {
+  width: 40px;
+  height: 40px;
+  stroke: #000;
+}
+
+.value-hover-card:hover .value-hover-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.value-hover-card .value-letter-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  font-size: 1.25rem;
+  margin: 0;
+  opacity: 0.3;
+  transition: all 0.4s ease;
+}
+
+.value-hover-card:hover .value-letter-badge {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.value-hover-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.value-hover-card:hover h3 {
+  color: rgb(174, 106, 6);
+}
+
+.value-hover-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.value-hover-card:hover .value-hover-content {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+.value-hover-content p {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .values-hover-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .value-hover-card {
+    padding: 2rem 1.5rem;
+    min-height: auto;
+  }
+
+  .value-hover-content {
+    max-height: none;
+    opacity: 1;
+    margin-top: 1rem;
+  }
+
+  .value-hover-card .value-letter-badge {
+    opacity: 1;
+  }
+}

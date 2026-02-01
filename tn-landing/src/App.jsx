@@ -1,6 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
+import OurBelief from './pages/about/OurBelief'
+import OurHistory from './pages/about/OurHistory'
+import WhatWereBuilding from './pages/about/WhatWereBuilding'
+import OurVision from './pages/about/OurVision'
+import OurMission from './pages/about/OurMission'
+import OurValues from './pages/about/OurValues'
+import OurPromise from './pages/about/OurPromise'
 import Partners from './pages/Partners'
 import PartnerDetail from './pages/PartnerDetail'
 import Contact from './pages/Contact'
@@ -54,6 +61,13 @@ function App() {
         {/* Main pages */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/about/our-belief" element={<OurBelief />} />
+        <Route path="/about/our-history" element={<OurHistory />} />
+        <Route path="/about/what-were-building" element={<WhatWereBuilding />} />
+        <Route path="/about/our-vision" element={<OurVision />} />
+        <Route path="/about/our-mission" element={<OurMission />} />
+        <Route path="/about/our-values" element={<OurValues />} />
+        <Route path="/about/our-promise" element={<OurPromise />} />
         <Route path="/partners" element={<Partners />} />
         <Route path="/partners/:partnerId" element={<PartnerDetail />} />
         <Route path="/contact" element={<Contact />} />

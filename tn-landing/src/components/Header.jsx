@@ -83,8 +83,8 @@ function Header() {
           </div>
 
           <Link to="/diaspora" className={`nav-link ${isActive('/diaspora') ? 'active' : ''}`}>Diaspora</Link>
-          <Link to="/partners" className={`nav-link ${isActive('/partners') ? 'active' : ''}`}>Partners</Link>
-          <Link to="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`}>About</Link>
+          <Link to="/partners" className={`nav-link ${isActive('/partners') ? 'active' : ''}`}>Our Partners</Link>
+          <Link to="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`}>About Us</Link>
           <Link to="/contact" className={`nav-link ${isActive('/contact') ? 'active' : ''}`}>Contact</Link>
         </nav>
 
