@@ -34,7 +34,7 @@ import PrivacyStatement from './pages/PrivacyStatement'
 import TermsOfUse from './pages/TermsOfUse'
 
 // Set to true to show maintenance page, false to show normal site
-const MAINTENANCE_MODE = true
+const MAINTENANCE_MODE = false
 
 function App() {
   // Show maintenance page for all routes when maintenance mode is enabled
