@@ -5,6 +5,7 @@ import Partners from './pages/Partners'
 import PartnerDetail from './pages/PartnerDetail'
 import Contact from './pages/Contact'
 import Diaspora from './pages/Diaspora'
+import MaintenancePage from './pages/MaintenancePage'
 
 // For You pages
 import ForYou from './pages/foryou/ForYou'
@@ -32,7 +33,21 @@ import FinancialReports from './pages/FinancialReports'
 import PrivacyStatement from './pages/PrivacyStatement'
 import TermsOfUse from './pages/TermsOfUse'
 
+// Set to true to show maintenance page, false to show normal site
+const MAINTENANCE_MODE = true
+
 function App() {
+  // Show maintenance page for all routes when maintenance mode is enabled
+  if (MAINTENANCE_MODE) {
+    return (
+      <Router>
+        <Routes>
+          <Route path="*" element={<MaintenancePage />} />
+        </Routes>
+      </Router>
+    )
+  }
+
   return (
     <Router>
       <Routes>
