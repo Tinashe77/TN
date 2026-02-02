@@ -1,11 +1,25 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import Search from './Search'
 import './Header.css'
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState(null)
+  const [searchOpen, setSearchOpen] = useState(false)
   const location = useLocation()
+
+  // Handle keyboard shortcut (Cmd/Ctrl + K)
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault()
+        setSearchOpen(true)
+      }
+    }
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
+  }, [])
 
   const isActive = (path) => location.pathname === path || location.pathname.startsWith(path + '/')
 
@@ -117,6 +131,13 @@ function Header() {
           </div>
 
           <Link to="/contact" className={`nav-link ${isActive('/contact') ? 'active' : ''}`}>Contact</Link>
+
+          <button className="search-btn" onClick={() => setSearchOpen(true)} title="Search (Ctrl+K)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </button>
         </nav>
 
         <button className="mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
@@ -134,6 +155,13 @@ function Header() {
           <div className="mobile-menu-logo">
             <img src="/rotating-gif.gif" alt="TN CyberTech Bank" />
           </div>
+          <button className="mobile-search-btn" onClick={() => { setMenuOpen(false); setSearchOpen(true); }}>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <span>Search</span>
+          </button>
           <nav className="mobile-nav">
             <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
             <div className="mobile-nav-group">
@@ -167,6 +195,9 @@ function Header() {
           </nav>
         </div>
       </div>
+
+      {/* Search Modal */}
+      <Search isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
     </>
   )
 }

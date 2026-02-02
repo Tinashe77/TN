@@ -894,8 +894,17 @@
 }
 
 .about-hub-card:hover .about-hub-arrow {
-  opacity: 1;
-  transform: translateX(0);
+  animation: arrowBounce 0.6s ease-in-out infinite;
+  transform: scale(1.1);
+}
+
+@keyframes arrowBounce {
+  0%, 100% {
+    transform: scale(1.1) translateX(0);
+  }
+  50% {
+    transform: scale(1.1) translateX(6px);
+  }
 }
 
 .about-hub-icon {
@@ -941,15 +950,25 @@
   justify-content: center;
   background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
   border-radius: 50%;
-  opacity: 0;
-  transform: translateX(-10px);
+  opacity: 1;
+  transform: translateX(0);
   transition: all 0.3s ease;
+  animation: arrowPulse 2s ease-in-out infinite;
 }
 
 .about-hub-arrow svg {
   width: 16px;
   height: 16px;
   stroke: #000;
+}
+
+@keyframes arrowPulse {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
 }
 
 /* About Hub Grid Responsive */
