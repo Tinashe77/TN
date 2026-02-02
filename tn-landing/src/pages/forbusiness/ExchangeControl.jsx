@@ -12,8 +12,8 @@ function ExchangeControl() {
       <section className="page-hero about-hero">
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
-          <h1>Exchange Control</h1>
-          <p>Expert advice on Exchange Control regulations</p>
+          <h1>Foreign Trade and Investment Facilitation</h1>
+          <p>Facilitating Foreign Trade and Investment transactions</p>
         </div>
       </section>
 
@@ -25,7 +25,7 @@ function ExchangeControl() {
           <span className="separator">/</span>
           <Link to="/for-business/international">International Banking</Link>
           <span className="separator">/</span>
-          <span className="current">Exchange Control</span>
+          <span className="current">Foreign Trade and Investment Facilitation</span>
         </div>
       </nav>
 
@@ -42,9 +42,9 @@ function ExchangeControl() {
           <div className="story-grid">
             <div className="story-content">
               <span className="section-label">International Banking</span>
-              <h2>Exchange Control</h2>
+              <h2>Foreign Trade and Investment Facilitation</h2>
               <p>
-                TN CyberTech Bank assists with advice on Exchange Control regulations as they affect local and international investors. We also assist in the processing of Exchange Control applications where possible.
+                TN CyberTech Bank facilitates Foreign Trade and Investment transactions i.e Imports, Exports, Offshore Loans, and Investment Transactions, on behalf of Corporates and Individuals by processing applications to the Reserve Bank of Zimbabwe Capital Flows, Accounting, Administration, and Management division to obtain authority to process.
               </p>
 
               <div style={{
@@ -55,13 +55,13 @@ function ExchangeControl() {
                 marginTop: '2rem',
               }}>
                 <p style={{ color: '#4b5563', margin: 0 }}>
-                  <strong style={{ color: 'rgb(174, 106, 6)' }}>Our Services:</strong> We provide guidance to both local and international investors on navigating Exchange Control regulations and assist with application processing.
+                  <strong style={{ color: 'rgb(174, 106, 6)' }}>Exchange Control Advisory Services:</strong> TN CyberTech Bank also offers Exchange Control Advisory Services on complex transactions such as cross-border investments, dilutions, mergers, acquisitions, restructuring, and equity investments into existing projects.
                 </p>
               </div>
 
               <div style={{ marginTop: '2rem' }}>
-                <a href="mailto:customerservice@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
-                  Contact Us
+                <a href="mailto:international_banking@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
+                  Contact International Banking
                 </a>
               </div>
             </div>

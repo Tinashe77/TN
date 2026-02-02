@@ -5,34 +5,9 @@ import '../../components/PageStyles.css'
 import '../About.css'
 
 function MerchantServices() {
-  const sections = [
-    {
-      id: 'corporate-customers',
-      title: 'For Corporate TN CyberTech Bank Customers',
-      subtitle: 'Existing bank customers',
-      link: '/for-business/merchant/corporate-customers',
-      icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16"/>
-          <path d="M1 21h22"/>
-          <path d="M9 7h6M9 11h6M9 15h6"/>
-        </svg>
-      ),
-    },
-    {
-      id: 'non-customers',
-      title: 'For Non-TN CyberTech Bank Corporates',
-      subtitle: 'New to the bank',
-      link: '/for-business/merchant/non-customers',
-      icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-          <polyline points="14 2 14 8 20 8"/>
-          <line x1="16" y1="13" x2="8" y2="13"/>
-          <line x1="16" y1="17" x2="8" y2="17"/>
-        </svg>
-      ),
-    },
+  const integratedPOSSteps = [
+    'Send a written request to our POS team',
+    'Email posmerchants@tncybertechbank.co.zw',
   ]
 
   return (
@@ -98,7 +73,7 @@ function MerchantServices() {
                 POS Benefits
               </h3>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                {['Accept Zimswitch, VISA cards and Mastercard', 'Real-time transaction processing', 'Dedicated support', 'Competitive transaction rates'].map((benefit) => (
+                {['Accept Zimswitch, VISA cards, Mastercard and Ecocash', 'Real-time transaction processing', 'Dedicated support', 'Competitive transaction rates'].map((benefit) => (
                   <li key={benefit} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem', color: '#4b5563' }}>
                     <span style={{
                       width: '20px',
@@ -124,25 +99,45 @@ function MerchantServices() {
           <div className="section-header" style={{ marginBottom: '2rem' }}>
             <span className="section-label">How to Apply</span>
             <h2>Get Your POS Machine</h2>
-            <p style={{ color: '#6b7280' }}>Choose the application method that suits your business type.</p>
+            <p style={{ color: '#6b7280' }}>Email: <a href="mailto:posmerchants@tncybertechbank.co.zw" style={{ color: 'rgb(174, 106, 6)' }}>posmerchants@tncybertechbank.co.zw</a></p>
           </div>
 
-          <div className="about-hub-grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)', maxWidth: '700px', margin: '0 auto' }}>
-            {sections.map((section) => (
-              <Link to={section.link} key={section.id} className="about-hub-card">
-                <div className="about-hub-icon">
-                  {section.icon}
+          {/* Integrated Point Of Sale Section */}
+          <div style={{
+            background: '#fff',
+            border: '1px solid #e5e7eb',
+            borderRadius: '16px',
+            padding: '2rem',
+            maxWidth: '700px',
+            margin: '0 auto 2rem',
+          }}>
+            <h3 style={{ fontSize: '1.25rem', fontWeight: '600', color: '#111827', marginBottom: '1.5rem' }}>Integrated Point Of Sale</h3>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              {integratedPOSSteps.map((step, index) => (
+                <div key={step} style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '1rem',
+                }}>
+                  <span style={{
+                    width: '32px',
+                    height: '32px',
+                    background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%)',
+                    borderRadius: '50%',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0,
+                    fontWeight: '700',
+                    color: '#000',
+                    fontSize: '0.875rem'
+                  }}>
+                    {index + 1}
+                  </span>
+                  <span style={{ color: '#4b5563', fontSize: '1rem' }}>{step}</span>
                 </div>
-                <h3>{section.title}</h3>
-                <p>{section.subtitle}</p>
-                <span className="about-hub-arrow">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <line x1="5" y1="12" x2="19" y2="12"/>
-                    <polyline points="12 5 19 12 12 19"/>
-                  </svg>
-                </span>
-              </Link>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -158,7 +153,7 @@ function MerchantServices() {
       <section className="content-section white-section" style={{ textAlign: 'center' }}>
         <div className="container">
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="mailto:posmerchant@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
+            <a href="mailto:posmerchants@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
               Email POS Team
             </a>
             <Link to="/contact" className="cta-btn cta-btn-secondary">

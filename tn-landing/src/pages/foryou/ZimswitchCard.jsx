@@ -70,7 +70,7 @@ function ZimswitchCard() {
               <div style={{ flex: 1, minWidth: '250px' }}>
                 <h2 style={{ color: '#111827', fontSize: '1.75rem', marginBottom: '0.75rem' }}>Zimswitch Debit Card</h2>
                 <p style={{ color: '#4b5563', fontSize: '1rem', lineHeight: '1.6' }}>
-                  The TN CyberTech Bank Debit Card allows customers to transact from any Point of Sale (POS) machine with the TN CyberTech Bank or Zimswitch sign.
+                  The TN CyberTech Bank Debit Card allows customers to transact from any Point of Sale (POS) machine with the TN CyberTech Bank or Zimswitch sign, ATM or e-commerce platform.
                 </p>
               </div>
             </div>

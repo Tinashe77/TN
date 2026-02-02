@@ -7,9 +7,9 @@ import '../About.css'
 function InternationalBanking() {
   const sections = [
     {
-      id: 'exchange-control',
-      title: 'Exchange Control',
-      subtitle: 'Advice on Exchange Control regulations',
+      id: 'foreign-trade',
+      title: 'Foreign Trade and Investment Facilitation',
+      subtitle: 'Foreign Trade and Investment transactions',
       link: '/for-business/international/exchange-control',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -18,22 +18,8 @@ function InternationalBanking() {
       ),
     },
     {
-      id: 'export-import',
-      title: 'Export and Import',
-      subtitle: 'Working capital and capital expenditure',
-      link: '/for-business/international/export-import',
-      icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <rect x="1" y="3" width="15" height="13"/>
-          <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
-          <circle cx="5.5" cy="18.5" r="2.5"/>
-          <circle cx="18.5" cy="18.5" r="2.5"/>
-        </svg>
-      ),
-    },
-    {
-      id: 'international-payments',
-      title: 'International Payments',
+      id: 'cross-border-payments',
+      title: 'Cross-border Payments',
       subtitle: 'SWIFT payments worldwide',
       link: '/for-business/international/payments',
       icon: (
@@ -103,7 +89,7 @@ function InternationalBanking() {
             </div>
           </div>
 
-          <div className="about-hub-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
+          <div className="about-hub-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
             {sections.map((section) => (
               <Link to={section.link} key={section.id} className="about-hub-card">
                 <div className="about-hub-icon">
@@ -134,7 +120,7 @@ function InternationalBanking() {
       <section className="content-section white-section" style={{ textAlign: 'center' }}>
         <div className="container">
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="mailto:International_Banking@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
+            <a href="mailto:international_banking@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
               Email International Banking
             </a>
             <Link to="/contact" className="cta-btn cta-btn-secondary">

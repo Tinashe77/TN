@@ -5,6 +5,16 @@ import '../../components/PageStyles.css'
 import '../About.css'
 
 function TradeFinance() {
+  const services = [
+    'Letters of Credit',
+    'Bank Guarantees',
+    'Structured Trade & Commodity Finance',
+    'Documentary Collections',
+    'Pre-Shipment Export Finance',
+    'Post-shipment Export Finance',
+    'Import Finance',
+  ]
+
   return (
     <div className="about-page">
       <Header />
@@ -44,8 +54,43 @@ function TradeFinance() {
               <span className="section-label">International Banking</span>
               <h2>Trade Finance</h2>
               <p>
-                TN CyberTech Bank has experienced trade professionals that can assist with complex trade finance transactions. This includes letter of credit advising and confirmation.
+                TN CyberTech Bank has experienced trade finance professionals who offer advisory services on complex trade finance transactions. These include:
               </p>
+
+              <div style={{
+                background: '#fff',
+                border: '1px solid #e5e7eb',
+                borderRadius: '16px',
+                overflow: 'hidden',
+                marginTop: '2rem',
+              }}>
+                {services.map((service, index) => (
+                  <div key={service} style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '1rem',
+                    padding: '1rem 1.5rem',
+                    borderBottom: index < services.length - 1 ? '1px solid #f3f4f6' : 'none',
+                  }}>
+                    <span style={{
+                      width: '28px',
+                      height: '28px',
+                      background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 100%)',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      flexShrink: 0,
+                      fontWeight: '700',
+                      color: '#000',
+                      fontSize: '0.875rem',
+                    }}>
+                      {index + 1}
+                    </span>
+                    <span style={{ color: '#4b5563', fontSize: '1rem' }}>{service}</span>
+                  </div>
+                ))}
+              </div>
 
               <div style={{
                 padding: '1.5rem',
@@ -55,12 +100,15 @@ function TradeFinance() {
                 marginTop: '2rem',
               }}>
                 <p style={{ color: '#4b5563', margin: 0 }}>
-                  <strong style={{ color: 'rgb(174, 106, 6)' }}>Expert Support:</strong> Our experienced trade professionals provide comprehensive assistance with letters of credit advising, confirmation, and other complex trade finance solutions.
+                  <strong style={{ color: 'rgb(174, 106, 6)' }}>Email:</strong>{' '}
+                  <a href="mailto:international_banking@tncybertechbank.co.zw" style={{ color: 'rgb(174, 106, 6)' }}>
+                    international_banking@tncybertechbank.co.zw
+                  </a>
                 </p>
               </div>
 
               <div style={{ marginTop: '2rem' }}>
-                <a href="mailto:International_Banking@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
+                <a href="mailto:international_banking@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
                   Contact International Banking
                 </a>
               </div>

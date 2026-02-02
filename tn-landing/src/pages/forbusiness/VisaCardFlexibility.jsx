@@ -6,7 +6,6 @@ import '../About.css'
 
 function VisaCardFlexibility() {
   const features = [
-    'Links up to 3 cards on 1 account',
     'Enabled to receive Visa Direct Funds',
     'Transfer funds between TN CyberTech Bank Visa cards',
     'Reduces time spent on Admin functionalities',

@@ -78,6 +78,19 @@ function DiasporaRemittances() {
                 borderRadius: '12px',
                 marginTop: '2rem',
               }}>
+                <h4 style={{ color: '#111827', marginBottom: '0.5rem' }}>Direct Bank Account Deposit/Transfer</h4>
+                <p style={{ color: '#6b7280', marginBottom: '0' }}>
+                  Through <strong style={{ color: 'rgb(174, 106, 6)' }}>RIA Money Transfer</strong>.
+                </p>
+              </div>
+
+              <div style={{
+                padding: '1.5rem',
+                background: '#fff',
+                border: '1px solid #e5e7eb',
+                borderRadius: '12px',
+                marginTop: '1.5rem',
+              }}>
                 <h4 style={{ color: '#111827', marginBottom: '0.5rem' }}>Sending Money Abroad?</h4>
                 <p style={{ color: '#6b7280', marginBottom: '0' }}>
                   For sending money abroad, we partner with <strong style={{ color: 'rgb(174, 106, 6)' }}>Money Gram</strong> and <strong style={{ color: 'rgb(174, 106, 6)' }}>Western Union</strong>.
@@ -92,7 +105,7 @@ function DiasporaRemittances() {
                 marginTop: '1.5rem',
               }}>
                 <p style={{ color: '#4b5563', margin: 0 }}>
-                  <strong style={{ color: 'rgb(174, 106, 6)' }}>Contact Us:</strong> Visit our branches today to find out more about our expanded diaspora services. Email: diaspora@tncybertechbank.co.zw
+                  <strong style={{ color: 'rgb(174, 106, 6)' }}>Contact Us:</strong> Visit our branches today to find out more about our expanded diaspora services. Email: diasporabanking@tncybertechbank.co.zw
                 </p>
               </div>
 
@@ -100,7 +113,7 @@ function DiasporaRemittances() {
                 <Link to="/diaspora/partners" className="cta-btn cta-btn-primary">
                   View Our Partners
                 </Link>
-                <a href="mailto:diaspora@tncybertechbank.co.zw" className="cta-btn cta-btn-secondary">
+                <a href="mailto:diasporabanking@tncybertechbank.co.zw" className="cta-btn cta-btn-secondary">
                   Contact Diaspora Team
                 </a>
               </div>

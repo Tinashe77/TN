@@ -8,7 +8,7 @@ function AgentBanking() {
   const sections = [
     {
       id: 'about',
-      title: 'About Agent Banking',
+      title: 'About Agency Banking',
       subtitle: 'Benefits and overview',
       link: '/for-business/agents/about',
       icon: (
@@ -20,7 +20,7 @@ function AgentBanking() {
     },
     {
       id: 'services',
-      title: 'Agent Services',
+      title: 'Agency Services',
       subtitle: 'Transactions you can process',
       link: '/for-business/agents/services',
       icon: (
@@ -138,7 +138,7 @@ function AgentBanking() {
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="mailto:agentbanking@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
-              Email Agent Banking
+              Email Agency Banking
             </a>
             <a href="tel:+2638677020267" className="cta-btn cta-btn-secondary">
               Call Now

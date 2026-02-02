@@ -30,7 +30,7 @@ function AgentServices() {
       <section className="page-hero about-hero">
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
-          <h1>Agent Services</h1>
+          <h1>Agency Services</h1>
           <p>Transactions you can process</p>
         </div>
       </section>
@@ -43,7 +43,7 @@ function AgentServices() {
           <span className="separator">/</span>
           <Link to="/for-business/agents">Agency Banking</Link>
           <span className="separator">/</span>
-          <span className="current">Agent Services</span>
+          <span className="current">Agency Services</span>
         </div>
       </nav>
 
@@ -59,8 +59,8 @@ function AgentServices() {
 
           <div className="story-grid">
             <div className="story-content">
-              <span className="section-label">Agent Banking</span>
-              <h2>Agent Transactions</h2>
+              <span className="section-label">Agency Banking</span>
+              <h2>Agency Transactions</h2>
               <p>
                 As a registered agent, you will be given access to the bank's systems and will be able to process the following transactions:
               </p>

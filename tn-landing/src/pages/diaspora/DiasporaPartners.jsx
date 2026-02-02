@@ -6,13 +6,13 @@ import '../About.css'
 
 function DiasporaPartners() {
   const remittancePartners = [
-    { name: 'EcoCash', logo: '/ecocash.jpg' },
     { name: 'Hello Paisa', logo: '/hellopaisa.jpg' },
     { name: 'Mama Money', logo: '/mamamoney.jpg' },
     { name: 'Master Remit', logo: '/masterremit.jpg' },
     { name: 'Money Gram', logo: '/moneygram.jpg' },
+    { name: 'Remitly', logo: '/remitly.jpg' },
     { name: 'Ria', logo: '/riamoney.jpg' },
-    { name: 'Sasai Remit', logo: '/sasai.jpg' },
+    { name: 'Sasai Money Transfer', logo: '/sasai.jpg' },
     { name: 'Shoprite Send', logo: '/shoprite.jpg' },
     { name: 'Thunes', logo: '/thunes.jpg' },
     { name: 'Western Union', logo: '/western-union.jpg' },
@@ -86,7 +86,7 @@ function DiasporaPartners() {
                       marginBottom: '0.5rem',
                     }}
                   />
-                  <span style={{ fontSize: '0.7rem', color: '#6b7280', textAlign: 'center' }}>{partner.name}</span>
+                  <span style={{ fontSize: '0.95rem', color: '#111827', textAlign: 'center', fontWeight: '500' }}>{partner.name}</span>
                 </div>
               ))}
             </div>
@@ -105,7 +105,7 @@ function DiasporaPartners() {
             </div>
 
             <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <a href="mailto:diaspora@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
+              <a href="mailto:diasporabanking@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
                 Contact Diaspora Team
               </a>
               <Link to="/contact" className="cta-btn cta-btn-secondary">

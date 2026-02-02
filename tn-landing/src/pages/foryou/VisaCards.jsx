@@ -55,21 +55,7 @@ function VisaCards() {
         </svg>
       ),
     },
-    {
-      id: 'credit-classic',
-      title: 'VISA Credit Classic',
-      subtitle: 'USD 20,000/month limit',
-      link: '/for-you/cards/visa/credit-classic',
-      icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
-          <line x1="1" y1="10" x2="23" y2="10"/>
-          <line x1="6" y1="14" x2="6" y2="14.01"/>
-          <line x1="10" y1="14" x2="14" y2="14"/>
-        </svg>
-      ),
-    },
-    {
+        {
       id: 'credit-infinite',
       title: 'VISA Credit Infinite',
       subtitle: 'USD 250,000/month limit',

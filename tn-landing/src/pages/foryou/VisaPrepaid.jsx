@@ -12,7 +12,7 @@ function VisaPrepaid() {
     'High Spending Limits: Enjoy a monthly limit of up to USD 10,000 for POS transactions or $35,000 for other transactions.',
     'No Monthly Fees: No hidden costs or monthly service fees-just the freedom to spend.',
     'The upper limit of $35,000 is subject to submission of acceptable KYC documentation.',
-    'Daily cash withdrawal limit is USD 5,000 including charges.',
+    'Daily cash withdrawal limit is USD 1,000 including charges.',
   ]
 
   return (

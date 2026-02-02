@@ -20,7 +20,7 @@ function AgentAbout() {
       <section className="page-hero about-hero">
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
-          <h1>About Agent Banking</h1>
+          <h1>About Agency Banking</h1>
           <p>Benefits and overview</p>
         </div>
       </section>

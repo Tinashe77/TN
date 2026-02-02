@@ -142,17 +142,6 @@ function VisaCorporateCard() {
                 minWidth: '140px',
                 textAlign: 'center',
               }}>
-                <div style={{ fontSize: '1.5rem', fontWeight: '700', color: 'rgb(174, 106, 6)' }}>3</div>
-                <div style={{ fontSize: '0.75rem', color: '#6b7280' }}>Cards per Account</div>
-              </div>
-              <div style={{
-                padding: '1rem 1.5rem',
-                background: 'linear-gradient(135deg, rgba(255, 222, 74, 0.1) 0%, rgba(255, 222, 74, 0.05) 100%)',
-                borderRadius: '12px',
-                border: '1px solid rgba(255, 222, 74, 0.2)',
-                minWidth: '140px',
-                textAlign: 'center',
-              }}>
                 <div style={{ fontSize: '1.5rem', fontWeight: '700', color: 'rgb(174, 106, 6)' }}>30</div>
                 <div style={{ fontSize: '0.75rem', color: '#6b7280' }}>Minutes to Access Funds</div>
               </div>

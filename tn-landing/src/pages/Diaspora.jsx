@@ -131,10 +131,10 @@ function Diaspora() {
       <section className="content-section white-section" style={{ textAlign: 'center' }}>
         <div className="container">
           <p style={{ color: '#4b5563', marginBottom: '2rem' }}>
-            Email: <strong style={{ color: 'rgb(174, 106, 6)' }}>diaspora@tncybertechbank.co.zw</strong>
+            Email: <strong style={{ color: 'rgb(174, 106, 6)' }}>diasporabanking@tncybertechbank.co.zw</strong>
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="mailto:diaspora@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
+            <a href="mailto:diasporabanking@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
               Contact Diaspora Team
             </a>
             <Link to="/contact" className="cta-btn cta-btn-secondary">
