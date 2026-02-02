@@ -89,19 +89,17 @@ function SoleTraderAccount() {
               </div>
             </div>
             <div className="story-image">
-              <div className="about-hub-icon" style={{
-                width: '160px',
-                height: '160px',
-                margin: '0 auto',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="1.5" style={{ width: '80px', height: '80px' }}>
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                  <circle cx="12" cy="7" r="4"/>
-                </svg>
-              </div>
+              <img
+                src="/Business/Sole-trader-under-business.png"
+                alt="Sole Trader Account"
+                style={{
+                  width: '100%',
+                  maxWidth: '400px',
+                  height: 'auto',
+                  borderRadius: '16px',
+                  boxShadow: '0 10px 40px rgba(0,0,0,0.1)'
+                }}
+              />
             </div>
           </div>
         </div>

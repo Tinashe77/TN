@@ -51,22 +51,17 @@ function LoanAbout() {
               <p className="highlight">Quick, convenient, and reliable.</p>
             </div>
             <div className="story-image">
-              <div style={{
-                width: '200px',
-                height: '200px',
-                background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%)',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                margin: '0 auto',
-                boxShadow: '0 20px 60px rgba(255, 222, 74, 0.3)'
-              }}>
-                <div style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '3rem', fontWeight: '700', color: '#000' }}>60</div>
-                  <div style={{ fontSize: '1rem', fontWeight: '600', color: '#000' }}>SECONDS</div>
-                </div>
-              </div>
+              <img
+                src="/Business/nano-loans.png"
+                alt="Nano Loans"
+                style={{
+                  width: '100%',
+                  maxWidth: '400px',
+                  height: 'auto',
+                  borderRadius: '16px',
+                  boxShadow: '0 10px 40px rgba(0,0,0,0.1)'
+                }}
+              />
             </div>
           </div>
         </div>

@@ -56,21 +56,17 @@ function LoanBank() {
               </div>
             </div>
             <div className="story-image">
-              <div className="about-hub-icon" style={{
-                width: '160px',
-                height: '160px',
-                margin: '0 auto',
-                background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%)',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                boxShadow: '0 20px 60px rgba(255, 222, 74, 0.3)'
-              }}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" style={{ width: '80px', height: '80px', stroke: '#000' }}>
-                  <path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/>
-                </svg>
-              </div>
+              <img
+                src="/Business/nano-loans.png"
+                alt="Bank Loans"
+                style={{
+                  width: '100%',
+                  maxWidth: '400px',
+                  height: 'auto',
+                  borderRadius: '16px',
+                  boxShadow: '0 10px 40px rgba(0,0,0,0.1)'
+                }}
+              />
             </div>
           </div>
         </div>

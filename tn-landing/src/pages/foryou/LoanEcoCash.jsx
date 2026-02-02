@@ -56,22 +56,17 @@ function LoanEcoCash() {
               </div>
             </div>
             <div className="story-image">
-              <div className="about-hub-icon" style={{
-                width: '160px',
-                height: '160px',
-                margin: '0 auto',
-                background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%)',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                boxShadow: '0 20px 60px rgba(255, 222, 74, 0.3)'
-              }}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" style={{ width: '80px', height: '80px', stroke: '#000' }}>
-                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-                  <line x1="12" y1="18" x2="12" y2="18.01"/>
-                </svg>
-              </div>
+              <img
+                src="/Business/nano-loans.png"
+                alt="EcoCash Loans"
+                style={{
+                  width: '100%',
+                  maxWidth: '400px',
+                  height: 'auto',
+                  borderRadius: '16px',
+                  boxShadow: '0 10px 40px rgba(0,0,0,0.1)'
+                }}
+              />
             </div>
           </div>
         </div>

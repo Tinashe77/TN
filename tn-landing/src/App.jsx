@@ -10,8 +10,14 @@ import OurValues from './pages/about/OurValues'
 import OurPromise from './pages/about/OurPromise'
 import Partners from './pages/Partners'
 import PartnerDetail from './pages/PartnerDetail'
+import Calculators from './pages/Calculators'
+import FinancialStatements from './pages/FinancialStatements'
 import Contact from './pages/Contact'
 import Diaspora from './pages/Diaspora'
+import DiasporaAccounts from './pages/diaspora/DiasporaAccounts'
+import DiasporaBenefits from './pages/diaspora/DiasporaBenefits'
+import DiasporaRemittances from './pages/diaspora/DiasporaRemittances'
+import DiasporaPartners from './pages/diaspora/DiasporaPartners'
 import MaintenancePage from './pages/MaintenancePage'
 
 // For You pages
@@ -75,6 +81,10 @@ import VisaCardManagement from './pages/forbusiness/VisaCardManagement'
 import VisaCardReporting from './pages/forbusiness/VisaCardReporting'
 import VisaCardApply from './pages/forbusiness/VisaCardApply'
 import AgentBanking from './pages/forbusiness/AgentBanking'
+import AgentAbout from './pages/forbusiness/AgentAbout'
+import AgentServices from './pages/forbusiness/AgentServices'
+import AgentSoleTrader from './pages/forbusiness/AgentSoleTrader'
+import AgentCorporate from './pages/forbusiness/AgentCorporate'
 
 import CustomerService from './pages/CustomerService'
 import MediaCentre from './pages/MediaCentre'
@@ -113,10 +123,16 @@ function App() {
         <Route path="/about/our-mission" element={<OurMission />} />
         <Route path="/about/our-values" element={<OurValues />} />
         <Route path="/about/our-promise" element={<OurPromise />} />
+        <Route path="/calculators" element={<Calculators />} />
         <Route path="/partners" element={<Partners />} />
         <Route path="/partners/:partnerId" element={<PartnerDetail />} />
+        <Route path="/financial-statements" element={<FinancialStatements />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/diaspora" element={<Diaspora />} />
+        <Route path="/diaspora/accounts" element={<DiasporaAccounts />} />
+        <Route path="/diaspora/benefits" element={<DiasporaBenefits />} />
+        <Route path="/diaspora/remittances" element={<DiasporaRemittances />} />
+        <Route path="/diaspora/partners" element={<DiasporaPartners />} />
 
         {/* For You section */}
         <Route path="/for-you" element={<ForYou />} />
@@ -179,6 +195,10 @@ function App() {
         <Route path="/for-business/visa-corporate-card/reporting" element={<VisaCardReporting />} />
         <Route path="/for-business/visa-corporate-card/apply" element={<VisaCardApply />} />
         <Route path="/for-business/agents" element={<AgentBanking />} />
+        <Route path="/for-business/agents/about" element={<AgentAbout />} />
+        <Route path="/for-business/agents/services" element={<AgentServices />} />
+        <Route path="/for-business/agents/sole-trader" element={<AgentSoleTrader />} />
+        <Route path="/for-business/agents/corporate" element={<AgentCorporate />} />
 
         {/* Support and Media */}
         <Route path="/customer-service" element={<CustomerService />} />

@@ -63,7 +63,7 @@ function ForYou() {
       <Header />
 
       {/* Hero */}
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/banners/personal banking.png')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>Personal Banking</h1>

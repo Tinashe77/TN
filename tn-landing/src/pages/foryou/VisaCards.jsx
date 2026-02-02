@@ -89,7 +89,7 @@ function VisaCards() {
     <div className="page-container">
       <Header />
 
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/banners/Visa card.jpg')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>VISA Cards</h1>

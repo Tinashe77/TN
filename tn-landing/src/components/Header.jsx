@@ -30,6 +30,7 @@ function Header() {
     { label: 'About Us', path: '/about', desc: 'Our story and values' },
     { label: 'Board of Directors', path: '/board-of-directors', desc: 'Our leadership board' },
     { label: 'Management Team', path: '/management-team', desc: 'Executive management' },
+    { label: 'Financial Statements', path: '/financial-statements', desc: 'Annual reports and disclosures' },
   ]
 
   return (
@@ -89,6 +90,7 @@ function Header() {
           </div>
 
           <Link to="/diaspora" className={`nav-link ${isActive('/diaspora') ? 'active' : ''}`}>Diaspora</Link>
+          <Link to="/calculators" className={`nav-link ${isActive('/calculators') ? 'active' : ''}`}>Calculators</Link>
           <Link to="/partners" className={`nav-link ${isActive('/partners') ? 'active' : ''}`}>Our Partners</Link>
 
           <div
@@ -96,7 +98,7 @@ function Header() {
             onMouseEnter={() => setActiveDropdown('about')}
             onMouseLeave={() => setActiveDropdown(null)}
           >
-            <Link to="/about" className={`nav-link ${isActive('/about') || isActive('/board-of-directors') || isActive('/management-team') ? 'active' : ''}`}>
+            <Link to="/about" className={`nav-link ${isActive('/about') || isActive('/board-of-directors') || isActive('/management-team') || isActive('/financial-statements') ? 'active' : ''}`}>
               About Us
               <svg className="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M6 9l6 6 6-6"/>
@@ -151,6 +153,7 @@ function Header() {
               ))}
             </div>
             <Link to="/diaspora" onClick={() => setMenuOpen(false)}>Diaspora</Link>
+            <Link to="/calculators" onClick={() => setMenuOpen(false)}>Calculators</Link>
             <Link to="/partners" onClick={() => setMenuOpen(false)}>Our Partners</Link>
             <div className="mobile-nav-group">
               <span className="mobile-nav-label">About Us</span>

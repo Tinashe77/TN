@@ -220,9 +220,9 @@
 
 .story-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: start;
 }
 
 .story-content h2 {
@@ -253,6 +253,8 @@
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 100px;
 }
 
 .story-img {
@@ -736,6 +738,11 @@
   .values-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .story-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -761,6 +768,7 @@
   .story-image {
     order: -1;
     padding: 2rem;
+    position: static;
   }
 
   .story-icon {

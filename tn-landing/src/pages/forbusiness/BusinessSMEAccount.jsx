@@ -93,19 +93,17 @@ function BusinessSMEAccount() {
               </div>
             </div>
             <div className="story-image">
-              <div className="about-hub-icon" style={{
-                width: '160px',
-                height: '160px',
-                margin: '0 auto',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="1.5" style={{ width: '80px', height: '80px' }}>
-                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                  <polyline points="9 22 9 12 15 12 15 22"/>
-                </svg>
-              </div>
+              <img
+                src="/Business/Small-business.png"
+                alt="Business SME Account"
+                style={{
+                  width: '100%',
+                  maxWidth: '400px',
+                  height: 'auto',
+                  borderRadius: '16px',
+                  boxShadow: '0 10px 40px rgba(0,0,0,0.1)'
+                }}
+              />
             </div>
           </div>
         </div>

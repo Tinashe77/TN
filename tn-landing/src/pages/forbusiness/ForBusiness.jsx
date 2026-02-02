@@ -99,7 +99,7 @@ function ForBusiness() {
       <Header />
 
       {/* Hero */}
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/banners/Business.png')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>Business Banking</h1>

@@ -45,7 +45,7 @@ function OurHistory() {
     <div className="about-page">
       <Header />
 
-      <section className="page-hero about-hero">
+      <section className="page-hero about-hero" style={{ backgroundImage: "url('/banners/About-us-op.png')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>Our History</h1>

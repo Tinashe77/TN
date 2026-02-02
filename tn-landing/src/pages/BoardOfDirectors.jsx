@@ -13,7 +13,7 @@ function BoardOfDirectors() {
       name: 'Dr Rev. Titus Murefu',
       title: 'Group Chairman',
       subtitle: '(Independent)',
-      image: '/management-pics/Dr-Rev.-Titus-Murefu.png',
+      image: '/management-pics/Dr-Rev-Titus-Murefu.png',
       bio: `Dr Titus Murufu is a distinguished scholar, renowned university lecturer, and dedicated servant-leader with over 40 years of impactful service in theological education, leadership, and governance. His career has been marked by academic excellence, spiritual growth, and the development of leaders in Zimbabwe and beyond. He has played a vital role in advancing theological education, mentoring leaders, and promoting ethical leadership across communities. His contributions have strengthened institutions and empowered individuals to achieve their full potential.
 
 Dr Murufu holds a rich scholarship from the University of South Africa (UNISA), a Master of Arts in Leadership from Asbury Theological Seminary, and various advanced certifications. He was awarded an Honorary Doctorate from Zion Bible Institute and has completed leadership programs from institutions including Harvard University and Gordon Conwell Theological Seminary.`
@@ -272,7 +272,7 @@ He is a Fellow of the Association of Chartered Certified Accountants (ACCA) and 
     <div className="about-page">
       <Header />
 
-      <section className="page-hero about-hero">
+      <section className="page-hero about-hero" style={{ backgroundImage: "url('/banners/About-us-op.png')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>Board of Directors</h1>
