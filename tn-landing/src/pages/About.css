@@ -104,7 +104,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('/landing-BG-2.jpg') no-repeat center center;
+  background: url('./../../public/banners/About-us-op.jpg') no-repeat center center;
   background-size: cover;
   background-color: #000;
   margin-top: 72px;

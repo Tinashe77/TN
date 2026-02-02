@@ -37,7 +37,7 @@ function Cards() {
     <div className="page-container">
       <Header />
 
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url(/banners/FOR-YOU-CARDS.jpg)" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>Cards</h1>
