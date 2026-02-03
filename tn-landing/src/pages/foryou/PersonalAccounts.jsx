@@ -36,7 +36,7 @@ function PersonalAccounts() {
     <div className="page-container">
       <Header />
 
-      <section className="page-hero" style={{ backgroundImage: "url('/banners/personal banking.png')" }}>
+      <section className="page-hero" style={{ backgroundImage: "url('/banners/personal-banking.jpg')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>Personal Accounts</h1>

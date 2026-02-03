@@ -17,7 +17,7 @@ function Partners() {
       <Header />
 
       {/* Hero Banner */}
-      <section className="partners-hero" style={{ background: "url('/banners/PARTNER.png') no-repeat center center", backgroundSize: 'cover' }}>
+      <section className="partners-hero" style={{ background: "url('/banners/PARTNER.jpg') no-repeat center center", backgroundSize: 'cover' }}>
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <h1>Our Partners</h1>
