@@ -38,7 +38,7 @@ function OnlineBanking() {
     <div className="page-container">
       <Header />
 
-      <section className="page-hero" style={{ backgroundImage: "url('/banners/mobile-banking.png')" }}>
+      <section className="page-hero" style={{ backgroundImage: "url('/banners/mobile-banking.jpg')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>Internet Banking</h1>

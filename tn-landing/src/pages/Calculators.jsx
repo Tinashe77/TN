@@ -9,7 +9,7 @@ function Calculators() {
     <div className="about-page">
       <Header />
 
-      <section className="page-hero about-hero">
+      <section className="page-hero about-hero" style={{ backgroundImage: "url('/banners/calculator.jpg')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>Calculators</h1>

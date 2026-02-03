@@ -25,7 +25,7 @@ function DiasporaBenefits() {
     <div className="about-page">
       <Header />
 
-      <section className="page-hero about-hero" style={{ backgroundImage: "url('/banners/diaspora.png')" }}>
+      <section className="page-hero about-hero" style={{ backgroundImage: "url('/banners/diaspora.jpg')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>Account Benefits</h1>

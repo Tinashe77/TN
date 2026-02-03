@@ -119,7 +119,7 @@ function Contact() {
       <Header />
 
       {/* Hero */}
-      <section className="page-hero" style={{ backgroundImage: "url('/banners/contatct.png')" }}>
+      <section className="page-hero" style={{ backgroundImage: "url('/banners/contatct.jpg')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>Contact Us</h1>

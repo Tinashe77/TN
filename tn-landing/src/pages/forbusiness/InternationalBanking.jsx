@@ -47,7 +47,7 @@ function InternationalBanking() {
     <div className="about-page">
       <Header />
 
-      <section className="page-hero about-hero" style={{ backgroundImage: "url('/banners/Business.png')" }}>
+      <section className="page-hero about-hero" style={{ backgroundImage: "url('/banners/Business.jpg')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>International Banking</h1>
