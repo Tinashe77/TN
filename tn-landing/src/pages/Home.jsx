@@ -131,6 +131,9 @@ function Home() {
       {/* Hero Section */}
       <main className="hero">
         <div className="hero-content">
+          <div className="hero-logo-container">
+            <img src="/rotating-gif.gif" alt="TN CyberTech Bank" className="hero-logo" />
+          </div>
           <h1 className="hero-title">The Future of Banking</h1>
           <p className="hero-subtitle">
             Banking that moves with life. Embedded. Digital. Trusted. Everywhere.
