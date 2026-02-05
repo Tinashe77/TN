@@ -1,0 +1,9 @@
+name: tn-landing
+static_sites:
+  - name: tn-landing
+    build_command: npm run build
+    output_dir: dist
+    routes:
+      - path: /
+        preserve_path_prefix: true
+    catchall_document: index.html

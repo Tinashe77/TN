@@ -211,6 +211,9 @@ function App() {
         {/* Legal pages */}
         <Route path="/privacy-statement" element={<PrivacyStatement />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
+
+        {/* Catch-all route - redirects unknown paths to home */}
+        <Route path="*" element={<Home />} />
       </Routes>
     </Router>
   )
