@@ -47,6 +47,9 @@ import LoanHowItWorks from './pages/foryou/LoanHowItWorks'
 import LoanBank from './pages/foryou/LoanBank'
 import LoanEcoCash from './pages/foryou/LoanEcoCash'
 import CardsTerms from './pages/foryou/CardsTerms'
+import ATMServices from './pages/foryou/ATMServices'
+import ATMLocations from './pages/foryou/ATMLocations'
+import ATMGuides from './pages/foryou/ATMGuides'
 
 // For Business pages
 import ForBusiness from './pages/forbusiness/ForBusiness'
@@ -161,6 +164,9 @@ function App() {
         <Route path="/for-you/loans/how-it-works" element={<LoanHowItWorks />} />
         <Route path="/for-you/loans/bank" element={<LoanBank />} />
         <Route path="/for-you/loans/ecocash" element={<LoanEcoCash />} />
+        <Route path="/for-you/atm" element={<ATMServices />} />
+        <Route path="/for-you/atm/locations" element={<ATMLocations />} />
+        <Route path="/for-you/atm/guides" element={<ATMGuides />} />
 
         {/* For Business section */}
         <Route path="/for-business" element={<ForBusiness />} />

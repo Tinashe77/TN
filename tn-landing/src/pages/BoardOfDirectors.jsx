@@ -258,7 +258,7 @@ Her academic background includes a Master's in Social Innovation and Entrepreneu
       title: 'Non-Executive Director',
       subtitle: '',
       image: '/management-pics/Mr.-Courage-Mashavave.png',
-      bio: `Mr George Mashavave is the former Chief Executive Officer of TN CyberTech Bank (formerly Steward Bank Limited), with more than 30 years of experience in the financial services industry. He has held significant leadership positions in Risk Management, Internal Audit, and Corporate Governance in banking institutions.
+      bio: `Mr. Courage Mashavave is the former Chief Executive Officer of TN CyberTech Bank (formerly Steward Bank Limited), with more than 30 years of experience in the financial services industry. He has held significant leadership positions in Risk Management, Internal Audit, and Corporate Governance in banking institutions.
 
 His expertise and insights have played a critical role in shaping the regulatory and operational frameworks that underpin Zimbabwe's banking sector.
 
