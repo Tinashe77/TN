@@ -1,9 +1,41 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import '../../components/PageStyles.css'
 
 function ZimswitchCard() {
+  const [activeTab, setActiveTab] = useState('isave')
+
+  const cardTypes = [
+    {
+      id: 'isave',
+      title: 'iSave Account Card',
+      description: `The TN CyberTech Zimswitch debit iSave card is a locally issued card linked directly to customer's iSave Bank account. It is available for KYC Lite customers. The card transacts only in local currency.`,
+      features: ['KYC Lite customers', 'Linked to iSave account', 'Local currency transactions only'],
+    },
+    {
+      id: 'isave-usd',
+      title: 'iSave USD Account Card',
+      description: `The TN CyberTech Zimswitch debit iSave USD card is a locally issued card linked directly to customer's iSave USD Bank account. It is available for KYC Lite customers. The card transacts only in USD.`,
+      features: ['KYC Lite customers', 'Linked to iSave USD account', 'USD transactions only'],
+    },
+    {
+      id: 'current',
+      title: 'Current Account Card',
+      description: `The TN CyberTech Zimswitch debit current account card is a locally issued card linked directly to customer's TN CyberTech Bank account. It is available for full KYC customers. The card provides seamless access to customer's funds in both USD and ZWG through a single, dual-currency card.`,
+      features: ['Full KYC customers', 'Dual-currency card (USD & ZWG)', 'Linked to current account'],
+    },
+    {
+      id: 'platinum',
+      title: 'Platinum Account Card',
+      description: `The TN CyberTech Zimswitch debit platinum account card is a locally issued card linked directly to customer's platinum Bank account. It is available for full KYC and High Valued Customers (HVC). The card provides seamless access to higher limits in both USD and local currency through a single, dual-currency card.`,
+      features: ['Full KYC & HVC customers', 'Higher transaction limits', 'Dual-currency card (USD & ZWG)'],
+    },
+  ]
+
+  const activeCard = cardTypes.find(card => card.id === activeTab)
+
   return (
     <div className="page-container">
       <Header />
@@ -46,36 +78,60 @@ function ZimswitchCard() {
               borderRadius: '24px',
               padding: '3rem',
               marginBottom: '3rem',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '3rem',
-              flexWrap: 'wrap',
+              textAlign: 'center',
             }}>
-              <div style={{
-                width: '180px',
-                height: '110px',
-                background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
-                borderRadius: '16px',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                boxShadow: '0 8px 24px rgba(0, 0, 0, 0.2)',
-                flexShrink: 0,
-              }}>
-                <img src="/banners/tn-isave.jpg" alt="Zimswitch" style={{ width: '80px', marginBottom: '0.5rem' }} />
-                <span style={{ color: '#fff', fontSize: '0.75rem', fontWeight: '600' }}>Zimswitch Debit Card</span>
-              </div>
+              <h2 style={{ color: '#111827', fontSize: '1.75rem', marginBottom: '0.75rem' }}>Zimswitch Debit Card</h2>
+              <p style={{ color: '#4b5563', fontSize: '1rem', lineHeight: '1.6', maxWidth: '700px', margin: '0 auto' }}>
+                The TN CyberTech Zimswitch Debit Card is a dual account card linked directly to TN CyberTech Bank's USD and Local Currency accounts. Instantly issued at our branches, this card empowers customers to transact 24/7 at any Point of Sale (POS) terminal or ATM displaying the TN Cybertech Bank or Zimswitch logo.
+              </p>
+            </div>
 
-              <div style={{ flex: 1, minWidth: '250px' }}>
-                <h2 style={{ color: '#111827', fontSize: '1.75rem', marginBottom: '0.75rem' }}>Zimswitch Debit Card</h2>
-                <p style={{ color: '#4b5563', fontSize: '1rem', lineHeight: '1.6' }}>
-                  The TN CyberTech Bank Debit Card allows customers to transact from any Point of Sale (POS) machine with the TN CyberTech Bank or Zimswitch sign, ATM or e-commerce platform.
-                </p>
+            {/* Card Type Tabs */}
+            <div style={{ marginBottom: '2rem' }}>
+              <h3 style={{
+                fontSize: '0.875rem',
+                fontWeight: '600',
+                textTransform: 'uppercase',
+                letterSpacing: '1px',
+                color: '#111827',
+                marginBottom: '1.5rem',
+                textAlign: 'center',
+              }}>Choose Your Card Type</h3>
+
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+                gap: '1rem',
+                marginBottom: '2rem',
+              }}>
+                {cardTypes.map((card) => (
+                  <button
+                    key={card.id}
+                    onClick={() => setActiveTab(card.id)}
+                    style={{
+                      padding: '1.25rem',
+                      background: activeTab === card.id ? 'rgb(174, 106, 6)' : '#fff',
+                      border: activeTab === card.id ? 'none' : '1px solid #e5e7eb',
+                      borderRadius: '12px',
+                      cursor: 'pointer',
+                      textAlign: 'left',
+                      transition: 'all 0.3s ease',
+                    }}
+                  >
+                    <h4 style={{
+                      color: activeTab === card.id ? '#fff' : '#111827',
+                      fontSize: '1rem',
+                      fontWeight: '600',
+                      marginBottom: '0.25rem',
+                    }}>
+                      {card.title}
+                    </h4>
+                  </button>
+                ))}
               </div>
             </div>
 
-            {/* Main Content */}
+            {/* Active Card Details */}
             <div style={{
               background: '#fff',
               border: '1px solid #e5e7eb',
@@ -83,9 +139,35 @@ function ZimswitchCard() {
               padding: '2rem',
               marginBottom: '2rem',
             }}>
+              <h3 style={{ color: '#111827', fontSize: '1.25rem', marginBottom: '1rem' }}>{activeCard.title}</h3>
               <p style={{ color: '#4b5563', lineHeight: '1.8', marginBottom: '1.5rem', fontSize: '1rem' }}>
-                Customers have 24-hour access to money from a wide network of retailers across the country. No need to carry cash to make payments for bills, groceries or fuel. The TN CyberTech Bank Debit card will also allow customers to access the cash-back facility from any TN CyberTech Bank or Zimswitch POS machine whenever they need cash. Now customers no longer need to fill in cash withdrawal slips to access money or deposit it. All one needs to do is walk into any TN CyberTech Bank branch and transact over the counter using their Debit card.
+                {activeCard.description}
               </p>
+
+              <div style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '0.75rem',
+              }}>
+                {activeCard.features.map((feature, index) => (
+                  <span key={index} style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.5rem',
+                    padding: '0.5rem 1rem',
+                    background: 'rgba(174, 106, 6, 0.1)',
+                    borderRadius: '20px',
+                    fontSize: '0.875rem',
+                    color: 'rgb(174, 106, 6)',
+                    fontWeight: '500',
+                  }}>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" style={{ width: '14px', height: '14px' }}>
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                    {feature}
+                  </span>
+                ))}
+              </div>
             </div>
 
             {/* Features Grid */}

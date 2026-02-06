@@ -124,7 +124,10 @@ function AgentServices() {
               </div>
 
               <div style={{ marginTop: '2rem' }}>
-                <a href="mailto:agentbanking@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
+                <p style={{ color: '#6b7280', fontSize: '0.9rem', marginBottom: '1rem' }}>
+                  Send your request to <a href="mailto:AgencyPartnerships@tncybertechbank.co.zw" style={{ color: 'rgb(174, 106, 6)' }}>AgencyPartnerships@tncybertechbank.co.zw</a>
+                </p>
+                <a href="mailto:AgencyPartnerships@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
                   Apply to be an Agent
                 </a>
               </div>

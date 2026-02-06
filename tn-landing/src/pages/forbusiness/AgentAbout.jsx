@@ -7,10 +7,11 @@ import '../About.css'
 function AgentAbout() {
   const agentBenefits = [
     'Dedicated Relationship Officer for bank assistance',
-    'Access to Online Banking, Supervisor Card and EcoCash Banking Services',
+    'Access to Online Banking and EcoCash Banking Services',
     'Commission for each transaction processed',
     'Eligibility to apply for an agent loan',
-    'POS device for retail transactions',
+    'Agent banking portal for transactions',
+    'International remittance (selected agents)',
   ]
 
   return (
@@ -85,7 +86,10 @@ function AgentAbout() {
               </div>
 
               <div style={{ marginTop: '2rem' }}>
-                <a href="mailto:agentbanking@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
+                <p style={{ color: '#6b7280', fontSize: '0.9rem', marginBottom: '1rem' }}>
+                  Send your request to <a href="mailto:AgencyPartnerships@tncybertechbank.co.zw" style={{ color: 'rgb(174, 106, 6)' }}>AgencyPartnerships@tncybertechbank.co.zw</a>
+                </p>
+                <a href="mailto:AgencyPartnerships@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
                   Apply to be an Agent
                 </a>
               </div>

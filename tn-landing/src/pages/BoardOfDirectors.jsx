@@ -14,9 +14,9 @@ function BoardOfDirectors() {
       title: 'Group Chairman',
       subtitle: '(Independent)',
       image: '/management-pics/Dr-Rev-Titus-Murefu.png',
-      bio: `Dr Titus Murufu is a distinguished scholar, renowned university lecturer, and dedicated servant-leader with over 40 years of impactful service in theological education, leadership, and governance. His career has been marked by academic excellence, spiritual growth, and the development of leaders in Zimbabwe and beyond. He has played a vital role in advancing theological education, mentoring leaders, and promoting ethical leadership across communities. His contributions have strengthened institutions and empowered individuals to achieve their full potential.
+      bio: `Dr Titus Murefu is a distinguished scholar, renowned university lecturer, and dedicated servant-leader with over 40 years of impactful service in theological education, leadership, and governance. His career has been marked by academic excellence, spiritual growth, and the development of leaders in Zimbabwe and beyond. He has played a vital role in advancing theological education, mentoring leaders, and promoting ethical leadership across communities. His contributions have strengthened institutions and empowered individuals to achieve their full potential.
 
-Dr Murufu holds a rich scholarship from the University of South Africa (UNISA), a Master of Arts in Leadership from Asbury Theological Seminary, and various advanced certifications. He was awarded an Honorary Doctorate from Zion Bible Institute and has completed leadership programs from institutions including Harvard University and Gordon Conwell Theological Seminary.`
+Dr Murefu holds a rich scholarship from the University of South Africa (UNISA), a Master of Arts in Leadership from Asbury Theological Seminary, and various advanced certifications. He was awarded an Honorary Doctorate from Zion Bible Institute and has completed leadership programs from institutions including Harvard University and Gordon Conwell Theological Seminary.`
     },
     {
       name: 'Mr Dominic Musengi',
@@ -29,7 +29,7 @@ His academic qualifications include an LLB from the University of Zimbabwe and a
     },
     {
       name: 'Mr Tawanda Nyambirai',
-      title: 'Group Chief Executive Officer',
+      title: 'Non-Executive Director',
       subtitle: '',
       image: '/management-pics/Mr-Tawanda-Nyambirai.png',
       bio: `Tawanda Nyambirai is a distinguished business leader with outstanding skills in corporate governance and strategic leadership. As a founder and entrepreneur, he has built and managed successful businesses across multiple sectors, including telecommunications, financial services, and agriculture.
@@ -200,14 +200,23 @@ He holds a Bachelor of Science Degree in Computer Science and is a Certified Inf
     },
     {
       name: 'Mr Hazvinei Kapfunde',
-      title: 'Executive Director',
+      title: 'Chief Executive Officer',
       subtitle: '',
       image: '/management-pics/Mr-Hazvinei-Kapfunde.png',
-      bio: `Mr Hazvinei Kapfunde is the Chief Executive Officer of TN CyberTech Bank, bringing over 22 years of experience in Zimbabwe's financial services sector. His current role as Executive Director for TN Asset Management (Pvt) Ltd has played a pivotal role in enhancing operational efficiencies and expanding the group's footprint within the agricultural and manufacturing sectors.
+      bio: `Mr Hazvinei Kapfunde is the Chief Executive Officer of TN CyberTech Bank, bringing over 22 years of experience in Zimbabwe's financial services sector. His role as an Executive director at TN Asset Management (Pvt) Ltd played a pivotal role in enhancing operational efficiencies and expanding the group's footprint within the agricultural and manufacturing sectors.
 
 As a visionary leader, Mr Kapfunde provides strategic direction for the group's domestic and international markets, focusing on optimizing performance and driving sustainable growth. His expertise spans risk management, financial planning, and corporate governance.
 
 He holds an MBA from ESAMI-Maastricht, a Bachelor of Commerce in Risk Management and Insurance from the University of South Africa, and an Institute of Bankers of Zimbabwe qualification. He also holds an International Certificate in Financial Markets.`
+    },
+    {
+      name: 'Trevor Ramanzi',
+      title: 'Executive Director',
+      subtitle: '',
+      image: '/management-pics/Trevor-Ramanzi.png',
+      bio: `Mr. Ramanzi is the Chief Financial Officer of TN CyberTech Bank Limited, bringing extensive experience in financial leadership within Zimbabwe's banking and investment sectors. Prior to his current role, he served as Group Financial Controller at Masawara, where he worked closely with investee companies across diverse industries, strengthening financial reporting, governance, and compliance frameworks.
+
+As a seasoned Chartered Accountant, Mr. Ramanzi possesses deep expertise in financial reporting, regulatory compliance, risk management and strategic financial planning. He is a member of the Institute of Chartered Accountants of Zimbabwe (ICAZ) and the South African Institute of Chartered Accountants (SAICA).`
     },
     {
       name: 'Mrs Eddright Mujaya',
@@ -232,13 +241,13 @@ Widely respected for her strategic insight, Dr Nyangulu has contributed to numer
 Her academic credentials include a Ph.D. in Development Studies from the University of Zimbabwe, a Master of Management and Leadership from the University of Lancaster (UK), and an MBA from the University of Zimbabwe.`
     },
     {
-      name: 'Mrs Cynthia Mugwira-Jowai',
+      name: 'Ms Cynthia Tendai Mugwira',
       title: 'Non-Executive Director',
       subtitle: '',
       image: '/management-pics/Mrs-Cynthia-Mugwira-Jowai.png',
-      bio: `Mrs Cynthia Mugwira-Jowa is a seasoned legal and governance professional with extensive experience across Zimbabwe's public and private sectors. She currently serves as Deputy Director of Legal Services at the Zimbabwe Revenue Authority (ZIMRA) and is a member of various professional boards and regulatory committees.
+      bio: `Ms Cynthia Tendai Mugwira is a seasoned legal and governance professional with extensive experience across Zimbabwe's public and private sectors. She currently serves as Deputy Director of Legal Services at the Zimbabwe Revenue Authority (ZIMRA) and is a member of various professional boards and regulatory committees.
 
-Widely recognized for her expertise in corporate governance, Mrs Mugwira-Jowa has held leadership roles in numerous organizations, including Vice Chairperson of the Public Entities Corporate Governance Board. She has also represented Zimbabwe at regional and international forums, including the World Bank, Industry Associations, and the African Tax Administration Forum.
+Widely recognized for her expertise in corporate governance, Ms Mugwira has held leadership roles in numerous organizations, including Vice Chairperson of the Public Entities Corporate Governance Board. She has also represented Zimbabwe at regional and international forums, including the World Bank, Industry Associations, and the African Tax Administration Forum.
 
 Her academic qualifications include an LLM in Law from UNISA, an LLB, and an MBA from the University of Zimbabwe.`
     },
@@ -297,7 +306,7 @@ He is a Fellow of the Association of Chartered Certified Accountants (ACCA) and 
             <span className="section-label">Leadership</span>
             <h2>Group Board of Directors</h2>
             <p style={{ color: '#6b7280', maxWidth: '700px', margin: '0 auto' }}>
-              TN CyberTech Bank introduces its new Executive Management Team, marking a pivotal step in its transformation into Zimbabwe's first technology-driven, platform-based digital financial services hub.
+              The introduction of the new Executive Management Team marks a significant milestone in the organisation's transformation toward becoming Zimbabwe's first technology-driven, platform-based digital financial services hub, focused on embedding banking seamlessly into everyday products and services through trusted partnerships and digital technology.
             </p>
           </div>
 

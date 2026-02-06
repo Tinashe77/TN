@@ -7,7 +7,8 @@ function VisaDebitInfinite() {
   const features = [
     'PIN Management: Set, change, or reset your PIN via the TN CyberCash app or any TN CyberTech Bank ATM.',
     'Supplementary Cards: Add up to two supplementary cards for family or business needs.',
-    'High Spending Power: Monthly transaction limit of up to USD 250,000.',
+    'Monthly Limit: USD 200,000.',
+    'Daily cash withdrawal limit: USD 1,000 locally and USD 2,000 internationally.',
     'Exclusive Travel Benefits: Enjoy up to 12% off hotel bookings via Agoda.com.',
     'Airport Lounge Access: Complimentary access to over 1,200 airport lounges worldwide.',
     'Car Hire Services: Access exclusive car rental offers and services.',
@@ -108,7 +109,7 @@ function VisaDebitInfinite() {
                 padding: '1rem 2rem',
               }}>
                 <span style={{ color: '#9ca3af', fontSize: '0.875rem', display: 'block' }}>Monthly Limit</span>
-                <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: '700' }}>USD 250,000</span>
+                <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: '700' }}>USD 200,000</span>
               </div>
             </div>
 

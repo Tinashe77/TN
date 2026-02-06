@@ -12,6 +12,7 @@ function USSDBanking() {
     'View transaction history',
     'Mini-statements',
     'Balance enquiries',
+    'Nano Loans',
   ]
 
   return (

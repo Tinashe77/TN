@@ -46,7 +46,7 @@ function LoanBank() {
                 Access Nano Loans directly from your TN CyberTech Bank account. Simply dial *236# to check your credit limit and apply for a loan instantly.
               </p>
               <p>
-                The approval process takes place in under 60 seconds, and funds are disbursed immediately to your account. You'll receive an SMS with your repayment due date.
+                The approval process takes place in under 60 seconds, and funds are disbursed immediately to your account. You'll receive an SMS with your disbursement amount.
               </p>
               <p className="highlight">Quick, easy, and secure.</p>
               <div style={{ marginTop: '2rem' }}>

@@ -46,7 +46,7 @@ function LoanEcoCash() {
                 Access Nano Loans through your EcoCash wallet. Simply dial *151# to check your credit limit and apply for a loan instantly.
               </p>
               <p>
-                The approval process takes place in under 60 seconds, and funds are disbursed immediately to your EcoCash wallet. You'll receive an SMS with your repayment due date.
+                The approval process takes place in under 60 seconds, and funds are disbursed immediately to your EcoCash wallet. You'll receive an SMS with your disbursement amount.
               </p>
               <p className="highlight">Convenient mobile money access.</p>
               <div style={{ marginTop: '2rem' }}>

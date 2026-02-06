@@ -95,9 +95,7 @@ He is a registered legal practitioner, conveyancer, and notary public, and an As
       title: 'Head: Credit',
       subtitle: '',
       image: '/management-pics/David-Mapangela.png',
-      bio: `David Mapangela, Head of Credit at TN Cybertech Bank, brings 30+ years of banking leadership experience across credit, risk, and operations in local and international markets. He builds resilient portfolios and robust risk governance.
-
-Credentials include a degree in Economics, certificates in Risk Management, Institute of Enterprise Risk Practitioners (Malaysia), and advanced credit-risk certifications.`
+      bio: `With more than 30 years of experience in banking, David rose to become the Regional Head of Retail Credit at a local international financial institution. He joined TN Cybertech Bank in 2013 and has held senior management roles in credit and general risk management. He is currently the Head of Credit at TN Cybertech Bank. He holds a BSc in Economics and certificates in risk management, credit, lending, and general management.`
     },
     {
       name: 'Vimbai Chinyadza',

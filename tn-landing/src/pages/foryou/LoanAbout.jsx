@@ -46,7 +46,7 @@ function LoanAbout() {
                 Our short term loan is designed to take care of those moments where you need to bridge gaps in one's finances for a short while. The loan application and disbursement process takes place in <strong style={{ color: 'rgb(174, 106, 6)' }}>under 60 seconds</strong>.
               </p>
               <p>
-                These loans may be accessed by customers who have an EcoCash wallet or a TN CyberTech Bank account. Approval is instant. An SMS will be sent with your repayment due date.
+                These loans may be accessed by customers who have an EcoCash wallet or a TN CyberTech Bank account. Approval is instant. An SMS will be sent with your disbursement amount.
               </p>
               <p className="highlight">Quick, convenient, and reliable.</p>
             </div>

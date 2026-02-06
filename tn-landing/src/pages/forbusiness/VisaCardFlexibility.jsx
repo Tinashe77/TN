@@ -10,7 +10,7 @@ function VisaCardFlexibility() {
     'Transfer funds between TN CyberTech Bank Visa cards',
     'Reduces time spent on Admin functionalities',
     'It is as good as cash',
-    'Funds accessible 30 minutes after being loaded',
+    'Funds are accessible instantly after being loaded',
   ]
 
   return (

@@ -36,8 +36,9 @@ function Header() {
     { label: 'Business Loans', path: '/for-business/loans', desc: 'Loans and Bank Guarantees' },
     { label: 'Corporate & Investment Banking', path: '/for-business/corporate', desc: 'Corporate & Investment Banking' },
     { label: 'Visa Corporate Card', path: '/for-business/visa-corporate-card', desc: 'Reloadable prepaid card' },
+    { label: 'Zimswitch Corporate Card', path: '/for-business/zimswitch-corporate-card', desc: 'Local business transactions' },
     { label: 'International Banking', path: '/for-business/international', desc: 'Exchange Control & Payments' },
-    { label: 'Agent Banking', path: '/for-business/agents', desc: 'Become an Agent' },
+    { label: 'Agency Banking', path: '/for-business/agents', desc: 'Become an Agent' },
   ]
 
   const aboutItems = [

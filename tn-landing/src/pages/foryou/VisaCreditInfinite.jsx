@@ -8,7 +8,8 @@ function VisaCreditInfinite() {
     'Global Transfers: Send and receive funds using Square Omni, internet banking, or *236#.',
     'PIN Management: Set, change, or reset your PIN easily via the Square Omni app or any TN CyberTech Bank ATM.',
     'No Strings Attached: No need for a USD account-simply load your card and enjoy.',
-    'High Transaction Limits: Monthly limit of up to USD 250,000.',
+    'Monthly Limit: USD 200,000.',
+    'Daily cash withdrawal limit: USD 1,000 locally and USD 2,000 internationally.',
     'No Monthly Fees: Enjoy all the benefits with zero monthly service charges.',
     'Exclusive Travel Benefits: Up to 12% off on hotel bookings through Agoda.com.',
     'Worldwide Lounge Access: Access over 1,200 premium airport lounges across the globe.',
@@ -110,7 +111,7 @@ function VisaCreditInfinite() {
                 padding: '1rem 2rem',
               }}>
                 <span style={{ color: '#9ca3af', fontSize: '0.875rem', display: 'block' }}>Monthly Limit</span>
-                <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: '700' }}>USD 250,000</span>
+                <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: '700' }}>USD 200,000</span>
               </div>
             </div>
 

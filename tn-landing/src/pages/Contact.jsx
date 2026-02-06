@@ -419,9 +419,9 @@ function Contact() {
 
           <div style={{ textAlign: 'center', marginTop: '2rem' }}>
             <p style={{ color: '#6b7280', marginBottom: '1rem' }}>
-              Looking for an Agent Banking location? We have agents across the country.
+              Looking for an Agency Banking location? We have agents across the country.
             </p>
-            <Link to="/for-business" className="cta-btn cta-btn-secondary">
+            <Link to="/for-business/agents" className="cta-btn cta-btn-secondary">
               Find Agent Locations
             </Link>
           </div>

@@ -6,13 +6,13 @@ import '../../components/PageStyles.css'
 function VisaPrepaid() {
   const features = [
     'Instant Issuance: No need for a bank account-simply provide an ID and get your card instantly.',
-    'Easy Funds Transfers: Load funds in the currency that you wish to use. Seamlessly transfer from any mobile wallet (Ecocash, One Money, Omari, Innbucks) via ZIPIT to your Visa Card, provided that the funds are in the currency you wish to use, or in a readily convertible currency.',
+    'Easy Funds Transfers: Load USD funds from any Bank or mobile wallet through ZIPIT, RTGS transfer, Internal transfers (From TNCB USD Account), card to card transfers, ATM deposit and cash deposit in branch or at TNCB agents nationwide.',
     'Receive Funds Globally: Get money from any VISA card via VISA Direct.',
     'Card-to-Card Transfers: Send funds to any TN CyberTech Bank VISA card using TN CyberCash, internet banking, or *236#.',
-    'High Spending Limits: Enjoy a monthly limit of up to USD 10,000 for POS transactions or $35,000 for other transactions.',
+    'High Spending Limits: Transact up to USD10k monthly.',
     'No Monthly Fees: No hidden costs or monthly service fees-just the freedom to spend.',
     'The upper limit of $35,000 is subject to submission of acceptable KYC documentation.',
-    'Daily cash withdrawal limit is USD 1,000 including charges.',
+    'Daily cash withdrawal limit is USD 1,000.',
   ]
 
   return (

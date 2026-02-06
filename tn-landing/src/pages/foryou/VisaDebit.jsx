@@ -7,7 +7,8 @@ function VisaDebit() {
   const features = [
     'PIN Management: Set, change, or reset your PIN easily via the TN CyberCash app or any TN CyberTech Bank ATM.',
     'Supplementary Cards: Add up to two additional cardholders to your account.',
-    'High Transaction Limits: Enjoy up to USD 100,000 in monthly transaction limits.',
+    'Monthly Limit: USD 50,000.',
+    'Daily cash withdrawal limit: USD 1,000 locally and USD 2,000 internationally.',
     'Seamless Spending: Linked to your foreign currency (USD) account for smooth transactions.',
   ]
 
@@ -18,8 +19,8 @@ function VisaDebit() {
       <section className="page-hero">
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
-          <h1>VISA Debit</h1>
-          <p>Blue, Platinum, Black</p>
+          <h1>VISA Debit Gold</h1>
+          <p>USD 50,000 Monthly Limit</p>
         </div>
       </section>
 
@@ -75,7 +76,7 @@ function VisaDebit() {
                 }}>Debit</span>
               </div>
 
-              <h2 style={{ color: '#111827', fontSize: '1.75rem', marginBottom: '0.5rem' }}>VISA Debit (Blue, Platinum, Black)</h2>
+              <h2 style={{ color: '#111827', fontSize: '1.75rem', marginBottom: '0.5rem' }}>VISA Debit Gold</h2>
               <p style={{ color: '#4b5563', fontSize: '1rem', marginBottom: '1.5rem' }}>
                 Linked directly to your USD account for seamless spending.
               </p>
@@ -87,7 +88,7 @@ function VisaDebit() {
                 padding: '1rem 2rem',
               }}>
                 <span style={{ color: '#9ca3af', fontSize: '0.875rem', display: 'block' }}>Monthly Limit</span>
-                <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: '700' }}>USD 100,000</span>
+                <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: '700' }}>USD 50,000</span>
               </div>
             </div>
 

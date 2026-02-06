@@ -10,15 +10,19 @@ function MobileAppFeatures() {
     'Bill payments',
     'Add beneficiaries',
     'View mini statement',
-    'Funds transfers (RTGS, Zipit, Internal Transfer)',
+    'Funds transfers (RTGS, Zipit, Internal Transfer, Visa to Visa Transfer, Visa to FCA, FCA to Visa Transfer)',
     'Alerts on Account activity',
   ]
 
   const excitingFeatures = [
-    'Fingerprint login to the Mobile App',
+    'Biometric login to the Mobile App',
     'A Quick Access Menu that shows the last 3 transactions',
     'Customer can send queries via the App',
     'Add payment beneficiaries - Convenient to avoid entering a beneficiary details every time one transfers funds',
+    'Digital stamp on statement and POP',
+    'You can select Dark and Light mode',
+    'Transaction charges breakdown',
+    'Corporates on Mobile Banking',
   ]
 
   return (

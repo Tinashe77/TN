@@ -88,6 +88,7 @@ import AgentAbout from './pages/forbusiness/AgentAbout'
 import AgentServices from './pages/forbusiness/AgentServices'
 import AgentSoleTrader from './pages/forbusiness/AgentSoleTrader'
 import AgentCorporate from './pages/forbusiness/AgentCorporate'
+import ZimswitchCorporateCard from './pages/forbusiness/ZimswitchCorporateCard'
 
 import CustomerService from './pages/CustomerService'
 import MediaCentre from './pages/MediaCentre'
@@ -205,6 +206,7 @@ function App() {
         <Route path="/for-business/agents/services" element={<AgentServices />} />
         <Route path="/for-business/agents/sole-trader" element={<AgentSoleTrader />} />
         <Route path="/for-business/agents/corporate" element={<AgentCorporate />} />
+        <Route path="/for-business/zimswitch-corporate-card" element={<ZimswitchCorporateCard />} />
 
         {/* Support and Media */}
         <Route path="/customer-service" element={<CustomerService />} />

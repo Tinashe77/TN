@@ -7,7 +7,7 @@ import './MobileBanking.css'
 function VisaCards() {
   const visaKeyFeatures = [
     { title: 'Global Acceptance', desc: 'Use anywhere VISA is accepted worldwide' },
-    { title: 'Multi-Currency', desc: 'Pay in any currency internationally' },
+    { title: 'Multi-Currency Payments', desc: 'Pay in any currency with your VISA card, making international transactions easier than ever' },
     { title: 'Security & Protection', desc: 'Block/unblock instantly if lost' },
     { title: '3D Secure', desc: 'Enhanced authentication for online payments' },
     { title: 'EMV Chip', desc: 'Fraud prevention for in-person transactions' },
@@ -30,8 +30,8 @@ function VisaCards() {
     },
     {
       id: 'debit',
-      title: 'VISA Debit',
-      subtitle: 'USD 100,000/month limit',
+      title: 'VISA Debit Gold',
+      subtitle: 'USD 50,000/month limit',
       link: '/for-you/cards/visa/debit',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -44,7 +44,7 @@ function VisaCards() {
     {
       id: 'debit-infinite',
       title: 'VISA Debit Infinite',
-      subtitle: 'USD 250,000/month limit',
+      subtitle: 'USD 200,000/month limit',
       link: '/for-you/cards/visa/debit-infinite',
       premium: true,
       icon: (
@@ -57,8 +57,8 @@ function VisaCards() {
     },
         {
       id: 'credit-infinite',
-      title: 'VISA Credit Infinite',
-      subtitle: 'USD 250,000/month limit',
+      title: 'VISA Infinite Credit',
+      subtitle: 'USD 200,000/month limit',
       link: '/for-you/cards/visa/credit-infinite',
       premium: true,
       icon: (
