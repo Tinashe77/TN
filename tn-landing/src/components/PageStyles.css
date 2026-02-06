@@ -56,7 +56,9 @@
   margin-bottom: 0.75rem;
   letter-spacing: -1px;
 }
-
+.mobile-banking-hub-card{
+  overflow: visible !important;
+}
 .page-hero p {
   font-size: 1.125rem;
   color: rgb(255, 222, 74);

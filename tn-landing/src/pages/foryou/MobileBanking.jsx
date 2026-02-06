@@ -2,41 +2,53 @@ import { Link } from 'react-router-dom'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import '../../components/PageStyles.css'
+import './MobileBanking.css'
 
 function MobileBanking() {
-  const appFeatures = [
-    'Balance enquiry',
-    'Buy airtime',
-    'Bill payments',
-    'Add beneficiaries',
-    'View mini statement',
-    'Funds transfers (RTGS, Zipit, Internal Transfer)',
-    'Alerts on Account activity',
-  ]
-
-  const excitingFeatures = [
-    'Fingerprint login to the Mobile App',
-    'A Quick Access Menu that shows the last 3 transactions',
-    'Customer can send queries via the App',
-    'Add payment beneficiaries - Convenient to avoid entering a beneficiary details every time one transfers funds',
-  ]
-
-  const ussdServices = [
-    'Bill payments',
-    'Airtime purchase',
-    'Internal transfers & RTGS',
-    'Change PIN',
-    'View transaction history',
-    'Mini-statements',
-    'Balance enquiries',
+  const sections = [
+    {
+      id: 'mobile-app',
+      title: 'TN CyberCash App',
+      subtitle: 'Mobile Banking Application',
+      link: '/for-you/mobile-banking/app',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+          <line x1="12" y1="18" x2="12.01" y2="18"/>
+        </svg>
+      ),
+    },
+    {
+      id: 'online-banking',
+      title: 'Internet Banking',
+      subtitle: 'Online Banking Portal',
+      link: '/for-you/mobile-banking/online',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+          <line x1="8" y1="21" x2="16" y2="21"/>
+          <line x1="12" y1="17" x2="12" y2="21"/>
+        </svg>
+      ),
+    },
+    {
+      id: 'ussd-banking',
+      title: 'USSD Banking',
+      subtitle: 'Dial *236# from any phone',
+      link: '/for-you/mobile-banking/ussd',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+      ),
+    },
   ]
 
   return (
     <div className="page-container">
       <Header />
 
-      {/* Hero */}
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/banners/mobile-banking.jpg')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>Mobile Banking</h1>
@@ -44,7 +56,6 @@ function MobileBanking() {
         </div>
       </section>
 
-      {/* Breadcrumb */}
       <nav className="breadcrumb">
         <div className="container">
           <Link to="/">Home</Link>
@@ -55,214 +66,37 @@ function MobileBanking() {
         </div>
       </nav>
 
-      {/* Mobile App Section */}
       <section className="content-section white-section">
         <div className="container">
-          <div className="two-col-layout">
-            <div>
-              <span className="section-label">TN CyberCash App</span>
-              <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', color: '#111827', marginBottom: '1rem' }}>
-                Mobile Banking Application
-              </h2>
-              <p style={{ color: '#4b5563', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-                Our mobile app is an integrated solution that gives TN CyberTech Bank customers the power to transact <strong>whenever</strong> and <strong>wherever</strong> they are. The App enables paperless and branchless banking.
-              </p>
+          <div className="section-header" style={{ marginBottom: '3rem' }}>
+            <h2 style={{ color: '#111827' }}>Choose Your Banking Channel</h2>
+            <p style={{ color: '#6b7280', maxWidth: '600px', margin: '0 auto' }}>
+              Access your accounts and manage your finances through our convenient digital banking channels.
+            </p>
+          </div>
 
-              <h4 style={{ fontSize: '1rem', fontWeight: '600', color: '#111827', marginBottom: '1rem' }}>With the TN CyberCash, you can do the following:</h4>
-              <ul className="feature-list">
-                {appFeatures.map((feature) => (
-                  <li key={feature}>
-                    <span className="check-icon">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                        <polyline points="20 6 9 17 4 12"/>
-                      </svg>
-                    </span>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="info-card">
-              <h3>
-                <span className="icon">
+          <div className="mobile-banking-hub-grid">
+            {sections.map((section) => (
+              <Link to={section.link} key={section.id} className="mobile-banking-hub-card">
+                <div className="mobile-banking-hub-icon">
+                  {section.icon}
+                </div>
+                <h3>{section.title}</h3>
+                <p>{section.subtitle}</p>
+                <span className="mobile-banking-hub-arrow">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
                   </svg>
                 </span>
-                Exciting Features
-              </h3>
-              <ul className="feature-list">
-                {excitingFeatures.map((feature) => (
-                  <li key={feature}>
-                    <span className="check-icon">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                        <polyline points="20 6 9 17 4 12"/>
-                      </svg>
-                    </span>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-
-              <div className="requirements-box" style={{ marginTop: '1.5rem' }}>
-                <h4>How to Register</h4>
-                <ul>
-                  <li>Download the app from Google Play Store or Apple Store</li>
-                  <li>Input account number, mobile number and last 4 digits of card number</li>
-                  <li>Confirm Details</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Online Banking Section */}
-      <section className="content-section light-section">
-        <div className="container">
-          <div className="two-col-layout reverse">
-            <div>
-              <span className="section-label">Internet Banking</span>
-              <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', color: '#111827', marginBottom: '1rem' }}>
-                Online Banking Portal
-              </h2>
-              <p style={{ color: '#4b5563', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-                The online banking portal is user-friendly. The online banking portal has the following functionalities.               </p>
-
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
-                <div className="info-card">
-                  <h3 style={{ fontSize: '1rem' }}>For Individuals</h3>
-                  <div className="steps-list">
-                    <div className="step-item">
-                      <span className="step-number">1</span>
-                      <div className="step-content">
-                        <p>Go to online banking portal</p>
-                      </div>
-                    </div>
-                    <div className="step-item">
-                      <span className="step-number">2</span>
-                      <div className="step-content">
-                        <p>Input account number, mobile number and last 4 digits of card</p>
-                      </div>
-                    </div>
-                    <div className="step-item">
-                      <span className="step-number">3</span>
-                      <div className="step-content">
-                        <p>Confirm Details</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="info-card">
-                  <h3 style={{ fontSize: '1rem' }}>For Businesses</h3>
-                  <div className="steps-list">
-                    <div className="step-item">
-                      <span className="step-number">1</span>
-                      <div className="step-content">
-                        <p>Fill out Mandate Form & Submit to Account Executive</p>
-                      </div>
-                    </div>
-                    <div className="step-item">
-                      <span className="step-number">2</span>
-                      <div className="step-content">
-                        <p>Bank Operations creates online profile</p>
-                      </div>
-                    </div>
-                    <div className="step-item">
-                      <span className="step-number">3</span>
-                      <div className="step-content">
-                        <p>Receive verification code and set up profile</p>
-                      </div>
-                    </div>
-                    <div className="step-item">
-                      <span className="step-number">4</span>
-                      <div className="step-content">
-                        <p>Each individual receives that One-Time code and uses it to set-up his/her profile</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <div style={{
-                width: '250px',
-                height: '250px',
-                background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%)',
-                borderRadius: '50%',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                boxShadow: '0 20px 60px rgba(255, 222, 74, 0.3)'
-              }}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="1.5" style={{ width: '100px', height: '100px' }}>
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                  <line x1="8" y1="21" x2="16" y2="21"/>
-                  <line x1="12" y1="17" x2="12" y2="21"/>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* USSD Banking Section */}
-      <section className="content-section dark-section">
-        <div className="container">
-          <div className="two-col-layout">
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <div style={{ textAlign: 'center' }}>
-                <div style={{
-                  fontSize: 'clamp(3rem, 8vw, 5rem)',
-                  fontWeight: '700',
-                  color: 'rgb(255, 222, 74)',
-                  marginBottom: '1rem'
-                }}>
-                  *210#
-                </div>
-                <p style={{ color: '#9ca3af', fontSize: '1.125rem' }}>Dial to access USSD Banking</p>
-                <div style={{
-                  marginTop: '1.5rem',
-                  padding: '1rem 2rem',
-                  background: 'rgba(255, 222, 74, 0.1)',
-                  borderRadius: '50px',
-                  display: 'inline-block'
-                }}>
-                  <span style={{ color: 'rgb(255, 222, 74)', fontWeight: '600' }}>Register: *236#</span>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <span className="section-label light">USSD Banking</span>
-              <h2 style={{ color: '#fff', marginBottom: '1rem' }}>Bank From Any Phone</h2>
-              <p style={{ color: '#9ca3af', lineHeight: '1.8', marginBottom: '1.5rem' }}>
-                USSD banking from TN CyberTech Bank makes it possible for you to do all your banking by dialling <strong style={{ color: 'rgb(174, 106, 6)' }}>*210#</strong> on any type of mobile phone from wherever you are.
-              </p>
-
-              <h4 style={{ color: '#fff', fontSize: '1rem', fontWeight: '600', marginBottom: '1rem' }}>Available Services:</h4>
-              <ul className="feature-list" style={{ background: 'rgba(255,255,255,0.03)', padding: '1.5rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)' }}>
-                {ussdServices.map((service) => (
-                  <li key={service} style={{ color: '#d1d5db', borderColor: 'rgba(255,255,255,0.08)' }}>
-                    <span className="check-icon">
-                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                        <polyline points="20 6 9 17 4 12"/>
-                      </svg>
-                    </span>
-                    {service}
-                  </li>
-                ))}
-              </ul>
-            </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="content-section white-section" style={{ textAlign: 'center' }}>
+      <section className="content-section light-section" style={{ textAlign: 'center' }}>
         <div className="container">
           <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', marginBottom: '1rem', color: '#111827' }}>
             Download the TN CyberCash App Today

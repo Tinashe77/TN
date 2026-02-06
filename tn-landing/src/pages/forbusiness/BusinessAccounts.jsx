@@ -2,77 +2,65 @@ import { Link } from 'react-router-dom'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import '../../components/PageStyles.css'
-import '../foryou/Accounts.css'
+import '../About.css'
 
 function BusinessAccounts() {
   const accounts = [
     {
       id: 'sole-trader',
-      name: 'Sole Trader Account',
-      tagline: 'Flexible KYC-lite account',
-      description: 'This is a business account designed to meet the needs of Sole traders. It is a flexible KYC lite account.',
-      features: [
-        'Affordable service fees',
-        'Mobile App and Online Banking',
-        'EcoCash Banking services',
-        'ZimSwitch Debit Card',
-        'TN CyberTech Bank MSME networking events',
-        'VISA pre-paid Card',
-        'Working Capital Loans',
-      ],
+      title: 'Sole Trader Account',
+      subtitle: 'Flexible KYC-lite account',
+      link: '/for-business/accounts/sole-trader',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+      ),
     },
     {
       id: 'business-sme',
-      name: 'Business SME Account',
-      tagline: 'For Small to Medium Enterprises',
-      description: 'The account features have been designed to provide affordable and appropriate products and services to each segment. Product for day to day transactions purposes for small businesses, will provide access to the following services',
-      features: [
-        'Personalised Account Relationship management.',
-        'Affordable monthly service fees',
-        'Mobile App and Online Banking',
-        'ZimSwitch Debit Card',
-        'TN CyberTech Bank MSME networking events',
-        'VISA Debit Card Account Bundles',
-        'Merchant & Agent Loans',
-        'Business Card',
-      ],
-      highlight: true,
+      title: 'Business SME Account',
+      subtitle: 'For Small to Medium Enterprises',
+      link: '/for-business/accounts/sme',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+      ),
     },
     {
       id: 'corporate',
-      name: 'Corporate Current Account',
-      tagline: 'For large corporates',
-      description: 'This is a tailor made business account that is suitable for all large corporates. The account features have been designed to provide appropriate products and services to corporates. Product for day to day transactions purposes for businesses, which provides access to the following services;',
-      features: [
-        'Personalised Account Relationship management.',
-        'Online Banking',
-        'ZimSwitch & Visa Corporate Debit Card',
-        'Working Capital and CAPEX loans',
-        'Business networking events',
-      ],
+      title: 'Corporate Current Account',
+      subtitle: 'For large corporates',
+      link: '/for-business/accounts/corporate',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16"/>
+          <path d="M1 21h22"/>
+          <path d="M9 7h6M9 11h6M9 15h6"/>
+        </svg>
+      ),
     },
     {
       id: 'nonprofit',
-      name: 'Non-Profit Current Account',
-      tagline: 'Schools, Churches, NGOs',
-      description: 'This is a transactional account in which daily financial transactions can be conducted with ease. Account is suitable for schools, churches, NGOs, State owned Enteprises among others.',
-      features: [
-        'A dedicated Personal Banking Banker',
-        'Cash Management Call Account facilities',
-        'Access to Online Banking and eStatements',
-        'Personalised Deposit Books are available on request.',
-        'Eligibility for Loan facilities.',
-        'Payment gateways.',
-      ],
+      title: 'Non-Profit Current Account',
+      subtitle: 'Schools, Churches, NGOs',
+      link: '/for-business/accounts/nonprofit',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      ),
     },
   ]
 
   return (
-    <div className="page-container">
+    <div className="about-page">
       <Header />
 
-      {/* Hero */}
-      <section className="page-hero">
+      <section className="page-hero about-hero" style={{ backgroundImage: "url('/banners/Business.jpg')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>Business Accounts</h1>
@@ -80,7 +68,6 @@ function BusinessAccounts() {
         </div>
       </section>
 
-      {/* Breadcrumb */}
       <nav className="breadcrumb">
         <div className="container">
           <Link to="/">Home</Link>
@@ -91,71 +78,46 @@ function BusinessAccounts() {
         </div>
       </nav>
 
-      {/* Accounts List */}
       <section className="content-section white-section">
         <div className="container">
-          <div className="section-header">
+          <div className="section-header" style={{ marginBottom: '3rem' }}>
             <span className="section-label">Choose Your Account</span>
             <h2>Business Accounts for Every Size</h2>
-            <p>From sole traders to large corporates, we have the right account to power your business.</p>
+            <p style={{ color: '#6b7280', maxWidth: '600px', margin: '0 auto' }}>
+              From sole traders to large corporates, we have the right account to power your business.
+            </p>
           </div>
 
-          <div className="accounts-list">
+          <div className="about-hub-grid">
             {accounts.map((account) => (
-              <div
-                key={account.id}
-                className={`account-card ${account.highlight ? 'highlighted' : ''}`}
-                id={account.id}
-              >
-                {account.highlight && <div className="account-badge">Popular Choice</div>}
-                <div className="account-header">
-                  <div>
-                    <h3>{account.name}</h3>
-                    <p className="account-tagline">{account.tagline}</p>
-                  </div>
-                  <div className="account-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                      <path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16"/>
-                      <path d="M1 21h22"/>
-                      <path d="M9 7h6M9 11h6M9 15h6"/>
-                    </svg>
-                  </div>
+              <Link to={account.link} key={account.id} className="about-hub-card">
+                <div className="about-hub-icon">
+                  {account.icon}
                 </div>
-
-                <p className="account-description">{account.description}</p>
-
-                <div className="account-features">
-                  <h4>Features & Benefits</h4>
-                  <ul>
-                    {account.features.map((feature) => (
-                      <li key={feature}>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                          <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div style={{ marginTop: '1.5rem' }}>
-                  <Link to="/contact" className="cta-btn cta-btn-primary" style={{ fontSize: '0.9rem', padding: '0.75rem 1.5rem' }}>
-                    Open This Account
-                  </Link>
-                </div>
-              </div>
+                <h3>{account.title}</h3>
+                <p>{account.subtitle}</p>
+                <span className="about-hub-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                  </svg>
+                </span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="content-section dark-section" style={{ textAlign: 'center' }}>
+      <section className="image-break-section">
+        <div className="image-break-overlay"></div>
+        <div className="image-break-content">
+          <h2>Need Help Choosing?</h2>
+          <p>Our business banking team can help you find the perfect account for your needs.</p>
+        </div>
+      </section>
+
+      <section className="content-section white-section" style={{ textAlign: 'center' }}>
         <div className="container">
-          <h2 style={{ color: '#fff', marginBottom: '1rem' }}>Need Help Choosing?</h2>
-          <p style={{ color: '#9ca3af', marginBottom: '2rem', maxWidth: '500px', margin: '0 auto 2rem' }}>
-            Our business banking team can help you find the perfect account for your needs.
-          </p>
           <a href="mailto:customerservice@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
             Contact Business Banking
           </a>

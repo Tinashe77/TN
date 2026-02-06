@@ -48,7 +48,7 @@ function Home() {
               <Link to="/for-you" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>For You</Link>
               <Link to="/for-business" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>For Business</Link>
               <Link to="/diaspora" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>Diaspora</Link>
-              <Link to="/partners" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>Partners</Link>
+              <Link to="/partners" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>Our Partners</Link>
               <Link to="/contact" className="mobile-menu-link" onClick={() => setMenuOpen(false)}>Contact</Link>
             </nav>
           </div>

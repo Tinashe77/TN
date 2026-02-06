@@ -43,6 +43,8 @@ function Footer() {
             <Link to="/diaspora">Diaspora Banking</Link>
             <Link to="/partners">Partners</Link>
             <Link to="/about">About Us</Link>
+            <Link to="/board-of-directors">Board of Directors</Link>
+            <Link to="/management-team">Management Team</Link>
             <Link to="/contact">Contact</Link>
           </div>
         </div>

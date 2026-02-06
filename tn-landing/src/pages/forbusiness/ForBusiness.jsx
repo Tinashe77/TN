@@ -99,7 +99,7 @@ function ForBusiness() {
       <Header />
 
       {/* Hero */}
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/banners/Business.jpg')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>Business Banking</h1>
@@ -144,7 +144,7 @@ function ForBusiness() {
       </section>
 
       {/* Sectors */}
-      <section className="content-section dark-section">
+      {/* <section className="content-section dark-section">
         <div className="container">
           <div className="section-header">
             <span className="section-label light">Strategic Focus</span>
@@ -161,7 +161,7 @@ function ForBusiness() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="content-section white-section" style={{ textAlign: 'center' }}>
