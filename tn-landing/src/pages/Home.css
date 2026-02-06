@@ -258,6 +258,129 @@ body {
   overflow: hidden;
 }
 
+/* Desktop Minimal - Plain black like mobile */
+.desktop-container.desktop-minimal {
+  background: none;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Desktop Main Content - Vertical layout like mobile */
+.desktop-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem 4rem;
+  width: 100%;
+  gap: 0;
+}
+
+/* Desktop Icon Container */
+.desktop-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.desktop-animated-icon {
+  width: 180px;
+  height: 180px;
+  filter: drop-shadow(0 0 50px rgba(255, 222, 74, 0.4));
+}
+
+/* Desktop CTA Buttons */
+.desktop-cta-button {
+  width: 100%;
+  max-width: 320px;
+  padding: 1.25rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid var(--gold);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.desktop-cta-app {
+  background: var(--gold-btn-gradient);
+  background-size: 200% 100%;
+  color: var(--black);
+  border: none;
+  font-weight: 700;
+}
+
+.desktop-cta-app:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 40px rgba(255, 222, 74, 0.4);
+  background-position: 100% 0;
+}
+
+.desktop-cta-browser {
+  background: transparent;
+  color: var(--gold);
+}
+
+.desktop-cta-browser:hover {
+  background: rgba(255, 222, 74, 0.1);
+}
+
+/* Desktop Footer */
+.desktop-footer {
+  padding: 1.5rem 2rem 2rem;
+  text-align: center;
+}
+
+.desktop-tagline {
+  color: var(--gold);
+  font-size: 0.875rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+.desktop-footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.desktop-footer-links a {
+  color: var(--gray);
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.desktop-footer-links a:hover {
+  color: var(--gold);
+}
+
+.desktop-copyright {
+  color: var(--gray);
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+/* Desktop Minimal Animations */
+.desktop-main-content .desktop-cta-button,
+.desktop-main-content .desktop-icon-container {
+  animation: fadeIn 0.6s ease-out backwards;
+}
+
+.desktop-main-content .desktop-cta-app { animation-delay: 0.2s; }
+.desktop-main-content .desktop-icon-container { animation-delay: 0.4s; }
+.desktop-main-content .desktop-cta-browser { animation-delay: 0.6s; }
+
 /* Background Pattern/Overlay */
 .background-overlay {
   position: absolute;

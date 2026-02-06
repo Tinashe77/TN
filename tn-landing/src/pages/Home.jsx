@@ -86,12 +86,9 @@ function Home() {
     )
   }
 
-  // Desktop View
+  // Desktop View - Same as mobile with plain black background
   return (
-    <div className="desktop-container">
-      {/* Background overlay */}
-      <div className="background-overlay"></div>
-
+    <div className="desktop-container desktop-minimal">
       {/* Header */}
       <header className="header">
         <div className="logo-container">
@@ -128,31 +125,43 @@ function Home() {
         </div>
       </div>
 
-      {/* Hero Section */}
-      <main className="hero">
-        <div className="hero-content">
-          <div className="hero-logo-container">
-            <img src="/rotating-gif.gif" alt="TN CyberTech Bank" className="hero-logo" />
-          </div>
-          <h1 className="hero-title">The Future of Banking</h1>
-          <p className="hero-subtitle">
-            Banking that moves with life. Embedded. Digital. Trusted. Everywhere.
-          </p>
+      {/* Gold accent elements */}
+      <div className="gold-accent accent-top-left"></div>
+      <div className="gold-accent accent-bottom-right"></div>
 
-          <div className="cta-container">
-            <Link to="/about" className="cta-button cta-primary">
-              Learn More
-            </Link>
-            <Link to="/for-you/mobile-banking" className="cta-button cta-secondary">
-              Get the App
-            </Link>
-          </div>
+      {/* Main Content - Vertical layout like mobile */}
+      <main className="desktop-main-content">
+        {/* Learn More CTA */}
+        <Link to="/about" className="desktop-cta-button desktop-cta-app">
+          Learn More
+        </Link>
+
+        {/* Animated Icon */}
+        <div className="desktop-icon-container">
+          <img
+            src="/rotating-gif.gif"
+            alt="TN CyberTech Bank"
+            className="desktop-animated-icon"
+          />
         </div>
+
+        {/* Get the App CTA */}
+        <Link to="/for-you/mobile-banking" className="desktop-cta-button desktop-cta-browser">
+          Get the App
+        </Link>
       </main>
 
       {/* Footer */}
-      <footer className="footer">
-        <p>&copy; 2026 TN CyberTech Bank Limited. A Registered Commercial Bank | Member of the Deposit Protection Corporation</p>
+      <footer className="desktop-footer">
+        <p className="desktop-tagline">The Future of Banking</p>
+        <div className="desktop-footer-links">
+          <Link to="/privacy-statement">Privacy Statement</Link>
+          <Link to="/terms-of-use">Terms of Use</Link>
+          <Link to="/customer-service">Customer Service</Link>
+        </div>
+        <p className="desktop-copyright">
+          &copy; 2026 TN CyberTech Bank Limited. A Registered Commercial Bank | Member of the Deposit Protection Corporation
+        </p>
       </footer>
     </div>
   )
