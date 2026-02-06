@@ -63,7 +63,7 @@ function ZimswitchCard() {
                 boxShadow: '0 8px 24px rgba(0, 0, 0, 0.2)',
                 flexShrink: 0,
               }}>
-                <img src="/zimswitch.jpg" alt="Zimswitch" style={{ width: '80px', marginBottom: '0.5rem' }} />
+                <img src="/banners/tn-isave.jpg" alt="Zimswitch" style={{ width: '80px', marginBottom: '0.5rem' }} />
                 <span style={{ color: '#fff', fontSize: '0.75rem', fontWeight: '600' }}>Zimswitch Debit Card</span>
               </div>
 

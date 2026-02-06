@@ -201,7 +201,7 @@ function ATMGuides() {
     <div className="page-container">
       <Header />
 
-      <section className="page-hero" style={{ backgroundImage: "url('/banners/atm-services.jpg')" }}>
+      <section className="page-hero" style={{ backgroundImage: "url('/banners/ATM-banner.jpg')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>ATM How-To Guides</h1>
