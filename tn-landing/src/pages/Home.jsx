@@ -131,9 +131,9 @@ function Home() {
 
       {/* Main Content - Vertical layout like mobile */}
       <main className="desktop-main-content">
-        {/* Learn More CTA */}
-        <Link to="/about" className="desktop-cta-button desktop-cta-app">
-          Learn More
+        {/* Get the App CTA */}
+        <Link to="/for-you/mobile-banking" className="desktop-cta-button desktop-cta-app">
+          Get the App
         </Link>
 
         {/* Animated Icon */}
@@ -145,9 +145,9 @@ function Home() {
           />
         </div>
 
-        {/* Get the App CTA */}
-        <Link to="/for-you/mobile-banking" className="desktop-cta-button desktop-cta-browser">
-          Get the App
+        {/* Continue in Browser CTA */}
+        <Link to="/about" className="desktop-cta-button desktop-cta-browser">
+          Continue in Browser
         </Link>
       </main>
 
