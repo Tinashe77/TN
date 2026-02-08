@@ -421,7 +421,7 @@ function Contact() {
             <p style={{ color: '#6b7280', marginBottom: '1rem' }}>
               Looking for an Agency Banking location? We have agents across the country.
             </p>
-            <Link to="/for-business/agents" className="cta-btn cta-btn-secondary">
+            <Link to="/for-business/agents/locator" className="cta-btn cta-btn-secondary">
               Find Agent Locations
             </Link>
           </div>

@@ -48,6 +48,11 @@ function Header() {
     { label: 'Financial Statements', path: '/financial-statements', desc: 'Annual reports and disclosures' },
   ]
 
+  const contactItems = [
+    { label: 'Contact Us', path: '/contact', desc: 'Get in touch with us' },
+    { label: 'Find an Agent', path: '/for-business/agents/locator', desc: 'Search agents near you' },
+  ]
+
   return (
     <>
       <header className="site-header">
@@ -131,7 +136,28 @@ function Header() {
             )}
           </div>
 
-          <Link to="/contact" className={`nav-link ${isActive('/contact') ? 'active' : ''}`}>Contact</Link>
+          <div
+            className="nav-dropdown"
+            onMouseEnter={() => setActiveDropdown('contact')}
+            onMouseLeave={() => setActiveDropdown(null)}
+          >
+            <Link to="/contact" className={`nav-link ${isActive('/contact') || isActive('/for-business/agents/locator') ? 'active' : ''}`}>
+              Contact
+              <svg className="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </Link>
+            {activeDropdown === 'contact' && (
+              <div className="dropdown-menu">
+                {contactItems.map((item) => (
+                  <Link key={item.path} to={item.path} className="dropdown-item">
+                    <span className="dropdown-item-label">{item.label}</span>
+                    <span className="dropdown-item-desc">{item.desc}</span>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
 
           <button className="search-btn" onClick={() => setSearchOpen(true)} title="Search (Ctrl+K)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -192,7 +218,14 @@ function Header() {
                 </Link>
               ))}
             </div>
-            <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+            <div className="mobile-nav-group">
+              <span className="mobile-nav-label">Contact</span>
+              {contactItems.map((item) => (
+                <Link key={item.path} to={item.path} onClick={() => setMenuOpen(false)} className="mobile-nav-sub">
+                  {item.label}
+                </Link>
+              ))}
+            </div>
           </nav>
         </div>
       </div>
