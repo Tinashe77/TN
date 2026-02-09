@@ -95,17 +95,8 @@ function About() {
     <div className="about-page">
       <Header />
 
-      {/* Hero Banner */}
-      <section className="page-hero about-hero" style={{ backgroundImage: "url('/banners/About-us-op.jpg')" }}>
-        <div className="page-hero-overlay"></div>
-        <div className="page-hero-content">
-          <h1>About Us</h1>
-          <p>The Future of Banking</p>
-        </div>
-      </section>
-
-      {/* Breadcrumbs */}
-      <nav className="breadcrumb">
+      {/* Breadcrumb Bar */}
+      <nav className="about-breadcrumb-bar">
         <div className="container">
           <Link to="/">Home</Link>
           <span className="separator">/</span>
@@ -113,28 +104,27 @@ function About() {
         </div>
       </nav>
 
-      {/* Section Hub */}
-      <section className="content-section white-section">
+      {/* Full Screen Hub Section */}
+      <section className="about-fullscreen-section">
         <div className="container">
-          <div className="section-header" style={{ marginBottom: '3rem' }}>
-            <h2>Discover Who We Are</h2>
-            <p style={{ color: '#6b7280', maxWidth: '600px', margin: '0 auto' }}>
-              Learn about our journey, our values, and our commitment to transforming banking in Zimbabwe.
-            </p>
+          <div className="about-fullscreen-header">
+            <h1>Discover Who We Are</h1>
+            <p>Learn about our journey, values, and commitment to transforming banking in Zimbabwe.</p>
           </div>
 
-          <div className="about-hub-grid">
+          <div className="about-fullscreen-grid">
             {sections.map((section) => (
-              <Link to={section.link} key={section.id} className="about-hub-card">
-                <div className="about-hub-icon">
+              <Link to={section.link} key={section.id} className="about-fullscreen-card">
+                <div className="about-fullscreen-icon">
                   {section.icon}
                 </div>
-                <h3>{section.title}</h3>
-                <p>{section.subtitle}</p>
-                <span className="about-hub-arrow">
+                <div className="about-fullscreen-text">
+                  <h3>{section.title}</h3>
+                  <p>{section.subtitle}</p>
+                </div>
+                <span className="about-fullscreen-arrow">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <line x1="5" y1="12" x2="19" y2="12"/>
-                    <polyline points="12 5 19 12 12 19"/>
+                    <polyline points="9 18 15 12 9 6"/>
                   </svg>
                 </span>
               </Link>
