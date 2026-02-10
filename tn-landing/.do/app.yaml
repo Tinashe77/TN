@@ -1,21 +1,35 @@
-name: tn-landing
+alerts:
+- rule: DEPLOYMENT_FAILED
+- rule: DOMAIN_FAILED
+domains:
+- domain: tncybertechbank.co.zw
+  type: PRIMARY
+features:
+- buildpack-stack=ubuntu-22
+ingress:
+  rules:
+  - component:
+      name: tn-tn-landing
+    match:
+      authority:
+        exact: ""
+      path:
+        prefix: /
+maintenance: {}
+name: tn-app
+region: blr
 static_sites:
-  - name: tn-landing
-    build_command: npm run build
-    output_dir: dist
-    routes:
-      - path: /
-        preserve_path_prefix: true
-    catchall_document: index.html
-    cors:
-      allow_origins:
-        - exact: "*"
-    headers:
-      - path: /*
-        headers:
-          Strict-Transport-Security: max-age=31536000; includeSubDomains
-          X-Frame-Options: SAMEORIGIN
-          X-Content-Type-Options: nosniff
-          Referrer-Policy: strict-origin-when-cross-origin
-          Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
-          Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:; frame-ancestors 'self'
+- build_command: |
+    npm ci && npm run build
+  catchall_document: index.html
+  cors:
+    allow_origins:
+    - exact: "*"
+  environment_slug: node-js
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: Tinashe77/TN
+  name: tn-tn-landing
+  output_dir: dist
+  source_dir: tn-landing
