@@ -10,6 +10,8 @@ import OurValues from './pages/about/OurValues'
 import OurPromise from './pages/about/OurPromise'
 import Partners from './pages/Partners'
 import PartnerDetail from './pages/PartnerDetail'
+import VisaCardsGallery from './pages/VisaCardsGallery'
+import ZimswitchCardsGallery from './pages/ZimswitchCardsGallery'
 import Calculators from './pages/Calculators'
 import FinancialStatements from './pages/FinancialStatements'
 import Contact from './pages/Contact'
@@ -130,6 +132,8 @@ function App() {
         <Route path="/about/our-promise" element={<OurPromise />} />
         <Route path="/calculators" element={<Calculators />} />
         <Route path="/partners" element={<Partners />} />
+        <Route path="/partners/visa-cards" element={<VisaCardsGallery />} />
+        <Route path="/partners/zimswitch-cards" element={<ZimswitchCardsGallery />} />
         <Route path="/partners/:partnerId" element={<PartnerDetail />} />
         <Route path="/financial-statements" element={<FinancialStatements />} />
         <Route path="/contact" element={<Contact />} />
