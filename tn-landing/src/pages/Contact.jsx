@@ -119,7 +119,7 @@ function Contact() {
       <Header />
 
       {/* Hero */}
-      <section className="page-hero">
+      <section className="page-hero" style={{ backgroundImage: "url('/banners/contatct.jpg')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>Contact Us</h1>
@@ -366,10 +366,7 @@ function Contact() {
                   Access banking services instantly via USSD
                 </p>
                 <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                  <div style={{ background: 'rgba(0,0,0,0.1)', padding: '0.75rem 1.25rem', borderRadius: '8px' }}>
-                    <div style={{ fontWeight: '700', color: '#000' }}>*210#</div>
-                    <div style={{ fontSize: '0.75rem', color: '#000', opacity: 0.8 }}>Banking</div>
-                  </div>
+                  
                   <div style={{ background: 'rgba(0,0,0,0.1)', padding: '0.75rem 1.25rem', borderRadius: '8px' }}>
                     <div style={{ fontWeight: '700', color: '#000' }}>*236#</div>
                     <div style={{ fontSize: '0.75rem', color: '#000', opacity: 0.8 }}>Registration</div>
@@ -422,9 +419,9 @@ function Contact() {
 
           <div style={{ textAlign: 'center', marginTop: '2rem' }}>
             <p style={{ color: '#6b7280', marginBottom: '1rem' }}>
-              Looking for an Agent Banking location? We have agents across the country.
+              Looking for an Agency Banking location? We have agents across the country.
             </p>
-            <Link to="/for-business" className="cta-btn cta-btn-secondary">
+            <Link to="/for-business/agents/locator" className="cta-btn cta-btn-secondary">
               Find Agent Locations
             </Link>
           </div>

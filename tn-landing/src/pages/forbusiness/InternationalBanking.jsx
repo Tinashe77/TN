@@ -2,36 +2,52 @@ import { Link } from 'react-router-dom'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import '../../components/PageStyles.css'
+import '../About.css'
 
 function InternationalBanking() {
-  const services = [
+  const sections = [
     {
-      id: 'exchange-control',
-      title: 'Exchange Control',
-      description: <>TN CyberTech Bank assists with advice on Exchange Control regulations as they affect local and international investors. We also assist in the processing of Exchange Control applications where possible. For related enquiries, please <a href="mailto:customerservice@tncybertechbank.co.zw" style={{ color: '#1e40af', textDecoration: 'underline' }}>contact us</a> and our International Banking team will gladly assist.</>,
+      id: 'foreign-trade',
+      title: 'Foreign Trade and Investment Facilitation',
+      subtitle: 'Foreign Trade and Investment transactions',
+      link: '/for-business/international/exchange-control',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+      ),
     },
     {
-      id: 'export-import',
-      title: 'Export and Import',
-      description: <>Through its foreign correspondents and international partners, TN CyberTech Bank can arrange finance to assist its clients in funding their working capital and capital expenditure requirements. For related enquiries, please <a href="mailto:International_Banking@tncybertechbank.co.zw" style={{ color: '#1e40af', textDecoration: 'underline' }}>contact us</a> and our International Banking team will gladly assist.</>,
+      id: 'cross-border-payments',
+      title: 'Cross-border Payments',
+      subtitle: 'SWIFT payments worldwide',
+      link: '/for-business/international/payments',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+      ),
     },
     {
-      id: 'international-payments',
-      title: 'International Payments',
-      description: <>As a member of SWIFT (Society of Worldwide Interbank Funds Transfers), the Bank handles client incoming and outgoing electronic foreign payments and thus facilitates international trade. Where a client elects the Bank, we can also effect the payments by Bank Draft. Our SWIFT Code for international payments is STBLZWHX. For related enquiries, please <a href="mailto:international_banking@tncybertechbank.co.zw" style={{ color: '#1e40af', textDecoration: 'underline' }}>contact us</a> and our International Banking team will gladly assist.</>,
-    },
-    {
-      id: 'structured-finance',
-      title: 'Structured Finance',
-      description: <>The Bank can structure complex trade finance transactions and place such businesses on the International Capital Markets through correspondent banks. For related enquiries, please <a href="mailto:International_Banking@tncybertechbank.co.zw" style={{ color: '#1e40af', textDecoration: 'underline' }}>contact us</a> and our International Banking team will gladly assist.</>,
+      id: 'trade-finance',
+      title: 'Trade Finance',
+      subtitle: 'Complex trade finance transactions',
+      link: '/for-business/international/trade-finance',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <line x1="12" y1="1" x2="12" y2="23"/>
+          <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+        </svg>
+      ),
     },
   ]
 
   return (
-    <div className="page-container">
+    <div className="about-page">
       <Header />
 
-      <section className="page-hero">
+      <section className="page-hero about-hero" style={{ backgroundImage: "url('/banners/Business.jpg')" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>International Banking</h1>
@@ -51,18 +67,65 @@ function InternationalBanking() {
 
       <section className="content-section white-section">
         <div className="container">
-          <div className="section-header">
+          <div className="section-header" style={{ marginBottom: '3rem', textAlign: 'center' }}>
             <span className="section-label">International Banking</span>
-            <h2>Services</h2>
+            <h2>Global Banking Services</h2>
+            <p style={{ color: '#6b7280', maxWidth: '800px', margin: '1rem auto 2rem', lineHeight: '1.8' }}>
+              TN CyberTech Bank provides comprehensive international banking services to help your business thrive in the global marketplace.
+            </p>
+
+            <div className="about-hub-icon" style={{
+              width: '160px',
+              height: '160px',
+              margin: '0 auto 3rem',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}>
+              <svg viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="1.5" style={{ width: '70px', height: '70px' }}>
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-            {services.map((service) => (
-              <div key={service.id} className="info-card" id={service.id}>
-                <h3>{service.title}</h3>
-                <p style={{ color: '#6b7280' }}>{service.description}</p>
-              </div>
+          <div className="about-hub-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
+            {sections.map((section) => (
+              <Link to={section.link} key={section.id} className="about-hub-card">
+                <div className="about-hub-icon">
+                  {section.icon}
+                </div>
+                <h3>{section.title}</h3>
+                <p>{section.subtitle}</p>
+                <span className="about-hub-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                  </svg>
+                </span>
+              </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="image-break-section">
+        <div className="image-break-overlay"></div>
+        <div className="image-break-content">
+          <h2>Connect with Our International Banking Team</h2>
+          <p>Expert guidance for your global banking needs.</p>
+        </div>
+      </section>
+
+      <section className="content-section white-section" style={{ textAlign: 'center' }}>
+        <div className="container">
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <a href="mailto:international_banking@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
+              Email International Banking
+            </a>
+            <Link to="/contact" className="cta-btn cta-btn-secondary">
+              Visit a Branch
+            </Link>
           </div>
         </div>
       </section>

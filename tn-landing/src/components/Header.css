@@ -82,9 +82,21 @@
   border: 1px solid rgba(255, 222, 74, 0.2);
   border-radius: 16px;
   padding: 0.75rem;
-  margin-top: 0.5rem;
+  padding-top: 1.25rem;
+  margin-top: 0;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   animation: dropdownFadeIn 0.2s ease;
+}
+
+/* Invisible bridge to maintain hover when moving to dropdown */
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: transparent;
 }
 
 @keyframes dropdownFadeIn {
@@ -125,6 +137,71 @@
 
 .dropdown-item:hover .dropdown-item-label {
   color: rgb(255, 222, 74);
+}
+
+/* Search Button */
+.search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 222, 74, 0.1);
+  border: 1px solid rgba(255, 222, 74, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 0.5rem;
+}
+
+.search-btn svg {
+  width: 18px;
+  height: 18px;
+  stroke: rgb(255, 222, 74);
+  transition: stroke 0.3s ease;
+}
+
+.search-btn:hover {
+  background: rgba(255, 222, 74, 0.2);
+  border-color: rgba(255, 222, 74, 0.5);
+}
+
+.search-btn:hover svg {
+  stroke: #ffffff;
+}
+
+/* Mobile Search Button */
+.mobile-search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto 1.5rem;
+  padding: 0.875rem 1.5rem;
+  background: rgba(255, 222, 74, 0.1);
+  border: 1px solid rgba(255, 222, 74, 0.3);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mobile-search-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke: rgb(255, 222, 74);
+}
+
+.mobile-search-btn span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(255, 222, 74);
+}
+
+.mobile-search-btn:hover {
+  background: rgba(255, 222, 74, 0.2);
+  border-color: rgba(255, 222, 74, 0.5);
 }
 
 /* Mobile Menu Button */

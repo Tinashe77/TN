@@ -1,0 +1,175 @@
+/* Mobile Banking Hub Page Styles */
+
+.mobile-banking-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mobile-banking-hub-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.mobile-banking-hub-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 222, 74, 0.1) 0%, rgba(174, 106, 6, 0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.mobile-banking-hub-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 222, 74, 0.3);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(255, 222, 74, 0.1);
+}
+
+.mobile-banking-hub-card:hover::before {
+  opacity: 1;
+}
+
+.mobile-banking-hub-icon {
+  position: relative;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 24px rgba(255, 222, 74, 0.3);
+}
+
+.mobile-banking-hub-icon svg {
+  width: 36px;
+  height: 36px;
+  stroke: #000;
+  stroke-width: 1.5;
+}
+
+.mobile-banking-hub-card:hover .mobile-banking-hub-icon {
+  transform: scale(1.1);
+  box-shadow:
+    0 12px 32px rgba(255, 222, 74, 0.4),
+    0 0 60px rgba(255, 222, 74, 0.2);
+}
+
+.mobile-banking-hub-card h3 {
+  position: relative;
+  z-index: 1;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.mobile-banking-hub-card:hover h3 {
+  color: rgb(174, 106, 6);
+}
+
+.mobile-banking-hub-card p {
+  position: relative;
+  z-index: 1;
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.5;
+}
+
+.mobile-banking-hub-arrow {
+  position: relative;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  animation: mobileArrowPulse 2s ease-in-out infinite;
+}
+
+.mobile-banking-hub-arrow svg {
+  width: 20px;
+  height: 20px;
+  stroke: #000;
+  transition: all 0.3s ease;
+}
+
+.mobile-banking-hub-card:hover .mobile-banking-hub-arrow {
+  background: linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%);
+  animation: mobileArrowBounce 0.6s ease-in-out infinite;
+  transform: scale(1.1);
+}
+
+.mobile-banking-hub-card:hover .mobile-banking-hub-arrow svg {
+  stroke: #000;
+}
+
+@keyframes mobileArrowPulse {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes mobileArrowBounce {
+  0%, 100% {
+    transform: scale(1.1) translateX(0);
+  }
+  50% {
+    transform: scale(1.1) translateX(6px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .mobile-banking-hub-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .mobile-banking-hub-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .mobile-banking-hub-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .mobile-banking-hub-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .mobile-banking-hub-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+}

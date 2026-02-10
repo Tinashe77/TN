@@ -1,0 +1,112 @@
+/* Cards Gallery Page Styles */
+
+.cards-gallery-section {
+  padding: 3rem 4rem 6rem;
+  background: #f9fafb;
+}
+
+.cards-gallery-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cards-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card-gallery-item {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.card-gallery-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 222, 74, 0.4);
+}
+
+.card-image-container {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.card-image-container img {
+  max-width: 100%;
+  max-height: 160px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+.card-gallery-item:hover .card-image-container img {
+  transform: scale(1.05);
+}
+
+.card-gallery-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.card-gallery-info h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.card-gallery-info p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .cards-gallery-section {
+    padding: 2rem 2rem 4rem;
+  }
+
+  .cards-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .cards-gallery-section {
+    padding: 1.5rem 1.5rem 3rem;
+  }
+
+  .cards-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .card-image-container {
+    padding: 1.5rem;
+    min-height: 150px;
+  }
+
+  .card-image-container img {
+    max-height: 120px;
+  }
+
+  .card-gallery-info {
+    padding: 1.25rem;
+  }
+
+  .card-gallery-info h3 {
+    font-size: 1rem;
+  }
+}

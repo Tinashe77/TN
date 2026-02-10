@@ -331,6 +331,21 @@
   transform: translateX(2px);
 }
 
+/* Static partner card (non-clickable) */
+.partner-card-static {
+  cursor: default;
+}
+
+.partner-card-static:hover {
+  transform: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border-color: #e5e7eb;
+}
+
+.partner-card-static:hover .partner-logo-img {
+  transform: none;
+}
+
 /* ========================================
    PARTNERS CTA SECTION
    ======================================== */
