@@ -80,6 +80,68 @@ function MobileAppRegister() {
               </div>
             </div>
           </div>
+
+          {/* Detailed Registration Steps */}
+          <div style={{
+            maxWidth: '600px',
+            margin: '2rem auto 0',
+            background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%)',
+            borderRadius: '16px',
+            padding: '2rem'
+          }}>
+            <ol style={{ margin: 0, paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              <li style={{ fontSize: '1.0625rem', color: '#000', fontWeight: '500' }}>Step 1 input email address/phone number</li>
+              <li style={{ fontSize: '1.0625rem', color: '#000', fontWeight: '500' }}>Step 2 OTP verification</li>
+              <li style={{ fontSize: '1.0625rem', color: '#000', fontWeight: '500' }}>Step 3 Customer details and validation</li>
+              <li style={{ fontSize: '1.0625rem', color: '#000', fontWeight: '500' }}>Step 4 Set Pin</li>
+              <li style={{ fontSize: '1.0625rem', color: '#000', fontWeight: '500' }}>Step 5 Registration completion</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      {/* Nano Loans Section */}
+      <section className="content-section white-section">
+        <div className="container">
+          <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', fontWeight: '700', color: '#111827', marginBottom: '2rem' }}>
+            Nano loans
+          </h2>
+
+          {/* 60 Seconds Badge */}
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>
+            <div style={{
+              background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%)',
+              borderRadius: '16px',
+              padding: '2rem 3rem',
+              textAlign: 'center',
+              boxShadow: '0 8px 30px rgba(174, 106, 6, 0.3)'
+            }}>
+              <div style={{ fontSize: '3.5rem', fontWeight: '700', color: '#000', lineHeight: 1 }}>60</div>
+              <div style={{ fontSize: '1rem', fontWeight: '700', color: '#000', letterSpacing: '3px', textTransform: 'uppercase', marginTop: '0.25rem' }}>SECONDS</div>
+            </div>
+          </div>
+
+          {/* Instant Approval Card */}
+          <div className="info-card" style={{ maxWidth: '600px', margin: '0 auto 2rem' }}>
+            <h3>
+              <span className="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </span>
+              Instant Approval
+            </h3>
+            <p style={{ color: '#4b5563', lineHeight: '1.8', fontSize: '1.0625rem' }}>
+              These loans may be accessed by customers who have an EcoCash wallet or a TN CyberTech Bank account. Approval is instant. An SMS will be sent with your repayment due date.
+            </p>
+          </div>
+
+          <ol style={{ maxWidth: '600px', margin: '0 auto', paddingLeft: '1.5rem' }}>
+            <li style={{ fontSize: '1.0625rem', color: '#111827', fontWeight: '500', marginBottom: '0.5rem' }}>
+              An SMS will be sent with your disbursement amount.
+            </li>
+          </ol>
         </div>
       </section>
 
