@@ -12,16 +12,39 @@ function Contact() {
     subject: '',
     message: '',
   })
+  const [submitStatus, setSubmitStatus] = useState(null) // 'sending', 'success', 'error'
+  const [submitMessage, setSubmitMessage] = useState('')
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Handle form submission
-    alert('Thank you for your message. We will get back to you soon!')
-    setFormData({ name: '', email: '', phone: '', subject: '', message: '' })
+    setSubmitStatus('sending')
+    setSubmitMessage('')
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setSubmitMessage(data.message || 'Your message has been sent successfully.')
+        setFormData({ name: '', email: '', phone: '', subject: '', message: '' })
+      } else {
+        setSubmitStatus('error')
+        setSubmitMessage(data.error || 'Failed to send message. Please try again.')
+      }
+    } catch {
+      setSubmitStatus('error')
+      setSubmitMessage('Network error. Please check your connection and try again.')
+    }
   }
 
   const contactMethods = [
@@ -314,10 +337,23 @@ function Contact() {
                 <button
                   type="submit"
                   className="cta-btn cta-btn-primary"
-                  style={{ alignSelf: 'flex-start' }}
+                  style={{ alignSelf: 'flex-start', opacity: submitStatus === 'sending' ? 0.7 : 1, pointerEvents: submitStatus === 'sending' ? 'none' : 'auto' }}
                 >
-                  Send Message
+                  {submitStatus === 'sending' ? 'Sending...' : 'Send Message'}
                 </button>
+
+                {submitMessage && (
+                  <div style={{
+                    padding: '1rem',
+                    borderRadius: '8px',
+                    background: submitStatus === 'success' ? '#f0fdf4' : '#fef2f2',
+                    border: `1px solid ${submitStatus === 'success' ? '#bbf7d0' : '#fecaca'}`,
+                    color: submitStatus === 'success' ? '#166534' : '#991b1b',
+                    fontSize: '0.9375rem',
+                  }}>
+                    {submitMessage}
+                  </div>
+                )}
               </form>
             </div>
 
