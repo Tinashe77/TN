@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
+  <url><loc>https://tncybertechbank.co.zw/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/about</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/contact</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/calculators</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/partners</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/partners/visa-cards</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/partners/zimswitch-cards</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/financial-statements</loc><changefreq>quarterly</changefreq><priority>0.6</priority></url>
+
+  <!-- About Us -->
+  <url><loc>https://tncybertechbank.co.zw/about/our-belief</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/about/our-history</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/about/what-were-building</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/about/our-vision</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/about/our-mission</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/about/our-values</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/about/our-promise</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Diaspora Banking -->
+  <url><loc>https://tncybertechbank.co.zw/diaspora</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/diaspora/accounts</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/diaspora/benefits</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/diaspora/remittances</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/diaspora/partners</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- For You - Personal Banking -->
+  <url><loc>https://tncybertechbank.co.zw/for-you</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/mobile-banking</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/mobile-banking/app</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/mobile-banking/app/features</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/mobile-banking/app/register</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/mobile-banking/online</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/mobile-banking/online/individuals</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/mobile-banking/online/businesses</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/mobile-banking/ussd</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/accounts</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/accounts/isave</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/accounts/current</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/cards</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/cards/zimswitch</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/cards/visa</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/cards/visa/prepaid</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/cards/visa/debit</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/cards/visa/debit-infinite</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/cards/visa/credit-classic</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/cards/visa/credit-infinite</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/cards/terms</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/loans</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/loans/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/loans/how-it-works</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/loans/bank</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/loans/ecocash</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/atm</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/atm/locations</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-you/atm/guides</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- For Business -->
+  <url><loc>https://tncybertechbank.co.zw/for-business</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/accounts</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/accounts/sole-trader</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/accounts/sme</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/accounts/corporate</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/accounts/nonprofit</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/international</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/international/exchange-control</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/international/export-import</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/international/payments</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/international/trade-finance</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/merchant</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/merchant/corporate-customers</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/merchant/non-customers</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/loans</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/loans/working-capital</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/loans/commercial-mortgages</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/loans/asset-finance</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/loans/bank-guarantees</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/corporate</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/corporate/healthcare</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/corporate/renewable-energy</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/corporate/exporters</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/corporate/advisory</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/corporate/products</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/visa-corporate-card</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/visa-corporate-card/security</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/visa-corporate-card/flexibility</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/visa-corporate-card/management</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/visa-corporate-card/reporting</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/visa-corporate-card/apply</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/agents</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/agents/about</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/agents/services</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/agents/sole-trader</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/agents/corporate</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/agents/locator</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/for-business/zimswitch-corporate-card</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Corporate & Media -->
+  <url><loc>https://tncybertechbank.co.zw/customer-service</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/media-centre</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/board-of-directors</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/management-team</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/corporate-social-investment</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/financial-reports</loc><changefreq>quarterly</changefreq><priority>0.6</priority></url>
+
+  <!-- Legal -->
+  <url><loc>https://tncybertechbank.co.zw/privacy-statement</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://tncybertechbank.co.zw/terms-of-use</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+</urlset>

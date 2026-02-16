@@ -7,37 +7,27 @@ import './CardsGallery.css'
 const visaCards = [
   {
     name: 'Visa Debit Card',
-    image: '/visa-cards/debit.png',
+    image: '/bank-cards/Visa Debit.jpg',
     description: 'Standard Visa debit card for everyday transactions'
   },
   {
-    name: 'Visa Debit Blue Card',
-    image: '/visa-cards/debit-blue.png',
-    description: 'Classic blue debit card with global acceptance'
+    name: 'Visa Infinite Debit Card',
+    image: '/bank-cards/Visa infinite Debit.jpg',
+    description: 'Premium debit card with exclusive Visa Infinite benefits'
   },
   {
     name: 'Visa Prepaid Card',
-    image: '/visa-cards/prepaid.png',
+    image: '/bank-cards/Visa-Prepaid.jpg',
     description: 'Reloadable prepaid card for controlled spending'
   },
   {
-    name: 'Visa Prepaid Card',
-    image: '/visa-cards/classic-prepaid.png',
-    description: 'Prepaid card with Visa benefits'
-  },
-  {
-    name: 'Visa Credit Card',
-    image: '/visa-cards/credit.png',
-    description: 'Standard credit card for purchases and cash advances'
-  },
-  {
-    name: 'Visa Credit Classic',
-    image: '/visa-cards/credit-visa.png',
-    description: 'Classic Visa credit card with rewards'
+    name: 'Visa Corporate Prepaid Card',
+    image: '/bank-cards/Visa-Corporate-prepaid.jpg',
+    description: 'Corporate prepaid card for business expenses'
   },
   {
     name: 'Visa Infinite Credit Card',
-    image: '/visa-cards/infinite-credit.png',
+    image: '/bank-cards/Visa-infinite-Credit--DI.jpg',
     description: 'Premium credit card with exclusive benefits'
   },
 ]
