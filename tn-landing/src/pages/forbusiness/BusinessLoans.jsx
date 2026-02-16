@@ -108,7 +108,7 @@ function BusinessLoans() {
             <p style={{ color: '#6b7280' }}>Choose the financing solution that suits your business needs.</p>
           </div>
 
-          <div className="about-hub-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
+          <div className="about-hub-grid">
             {sections.map((section) => (
               <Link to={section.link} key={section.id} className="about-hub-card">
                 <div className="about-hub-icon">

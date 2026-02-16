@@ -21,9 +21,9 @@ const visaCards = [
     description: 'Reloadable prepaid card for controlled spending'
   },
   {
-    name: 'Visa Classic Prepaid Card',
+    name: 'Visa Prepaid Card',
     image: '/visa-cards/classic-prepaid.png',
-    description: 'Classic prepaid card with Visa benefits'
+    description: 'Prepaid card with Visa benefits'
   },
   {
     name: 'Visa Credit Card',
