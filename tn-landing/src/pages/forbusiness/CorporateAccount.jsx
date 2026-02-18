@@ -8,7 +8,7 @@ function CorporateAccount() {
   const features = [
     'Personalised Account Relationship management.',
     'Online Banking',
-    'ZimSwitch & Visa Corporate Debit Card',
+    'Visa Corporate Card',
     'Working Capital and CAPEX loans',
     'Business networking events',
   ]

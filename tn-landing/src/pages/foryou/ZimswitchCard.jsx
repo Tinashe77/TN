@@ -189,6 +189,7 @@ function ZimswitchCard() {
               }}>
                 {[
                   '24-hour access to your money',
+                  'Countrywide ATM access for cash withdrawals',
                   'Wide network of retailers',
                   'No need to carry cash',
                   'Cash-back facility at POS',

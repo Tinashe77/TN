@@ -5,13 +5,14 @@ import '../../components/PageStyles.css'
 
 function VisaCreditInfinite() {
   const features = [
-    'Global Transfers: Send and receive funds using Square Omni, internet banking, or *236#.',
-    'PIN Management: Set, change, or reset your PIN easily via the Square Omni app or any TN CyberTech Bank ATM.',
-    'No Strings Attached: No need for a USD account-simply load your card and enjoy.',
+    'Global Transfers: Send and receive funds using TN CyberCash App, internet banking, or *236#.',
+    'PIN Management: Set, change, or reset your PIN easily via the TN CyberCash app or any TN CyberTech Bank ATM.',
+    'Card Funding Options: Load funds via ZIPIT, RTGS transfer, internal transfers, Visa card to card transfers, ATM deposit, and cash deposit at branches or agents.',
+    'No Strings Attached: No need for a USD account - simply load your card and enjoy.',
     'Monthly Limit: USD 200,000.',
     'Daily cash withdrawal limit: USD 1,000 locally and USD 2,000 internationally.',
     'No Monthly Fees: Enjoy all the benefits with zero monthly service charges.',
-    'Exclusive Travel Benefits: Up to 12% off on hotel bookings through Agoda.com.',
+    'Exclusive Travel Benefits: Enjoy exclusive travel benefits when you book using your TNCB Visa card.',
     'Worldwide Lounge Access: Access over 1,200 premium airport lounges across the globe.',
     'Car Hire and Travel Insurance: Access exclusive car hire services and comprehensive travel insurance.',
     'Medical Assistance: Telephone medical advice and referrals to trusted medical providers.',
