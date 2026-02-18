@@ -208,9 +208,9 @@ function Contact() {
       {/* Contact Form & Info */}
       <section className="content-section light-section">
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '3rem' }}>
-            {/* Contact Form */}
-            <div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '3rem', maxWidth: '700px', margin: '0 auto' }}>
+            {/* Contact Form - Hidden for now */}
+            {false && <div>
               <span className="section-label">Send a Message</span>
               <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', color: '#111827', marginBottom: '1.5rem' }}>
                 Contact Form
@@ -355,7 +355,7 @@ function Contact() {
                   </div>
                 )}
               </form>
-            </div>
+            </div>}
 
             {/* Department Emails */}
             <div>
