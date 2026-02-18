@@ -5,14 +5,15 @@ import '../../components/PageStyles.css'
 
 function VisaPrepaid() {
   const features = [
-    'Instant Issuance: No need for a bank account-simply provide an ID and get your card instantly.',
-    'Easy Funds Transfers: Load USD funds from any Bank or mobile wallet through ZIPIT, RTGS transfer, Internal transfers (From TNCB USD Account), card to card transfers, ATM deposit and cash deposit in branch or at TNCB agents nationwide.',
+    'Instant Issuance: No need for a bank account - simply provide an ID or valid Zimbabwean passport and get your card instantly.',
+    'Easy Funds Transfers: Load USD funds from any Bank or mobile wallet through ZIPIT, RTGS transfer, Internal transfers (From TNCB USD Account), Visa card to card transfers, ATM deposit and cash deposit in branch or at TNCB agents nationwide.',
     'Receive Funds Globally: Get money from any VISA card via VISA Direct.',
-    'Card-to-Card Transfers: Send funds to any TN CyberTech Bank VISA card using TN CyberCash, internet banking, or *236#.',
-    'High Spending Limits: Transact up to USD10k monthly.',
-    'No Monthly Fees: No hidden costs or monthly service fees-just the freedom to spend.',
+    'Visa Card-to-Card Transfers: Send funds to any TN CyberTech Bank VISA card using TN CyberCash, internet banking, or *236#.',
+    'PIN Management: Set, change, or reset your PIN via the TN CyberCash app or any TN CyberTech Bank ATM.',
+    'High Spending Limits: Transact up to USD 10,000 monthly.*',
+    'No Monthly Fees: No hidden costs or monthly service fees - just the freedom to spend.',
     'The upper limit of $35,000 is subject to submission of acceptable KYC documentation.',
-    'Daily cash withdrawal limit is USD 1,000.',
+    'Daily cash withdrawal limit: USD 1,000 locally and USD 2,000 internationally.',
   ]
 
   return (
@@ -91,8 +92,11 @@ function VisaPrepaid() {
                 padding: '1rem 2rem',
               }}>
                 <span style={{ color: '#9ca3af', fontSize: '0.875rem', display: 'block' }}>Monthly Limit</span>
-                <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: '700' }}>USD 10,000</span>
+                <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: '700' }}>USD 10,000*</span>
               </div>
+              <p style={{ color: '#6b7280', fontSize: '0.8rem', marginTop: '1rem', fontStyle: 'italic' }}>
+                *Subject to review upon submission of full KYC documentation
+              </p>
             </div>
 
             {/* Features */}

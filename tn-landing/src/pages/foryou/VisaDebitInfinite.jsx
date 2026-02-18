@@ -5,11 +5,12 @@ import '../../components/PageStyles.css'
 
 function VisaDebitInfinite() {
   const features = [
+    'Linked to your Foreign Currency Account for seamless international transactions.',
     'PIN Management: Set, change, or reset your PIN via the TN CyberCash app or any TN CyberTech Bank ATM.',
     'Supplementary Cards: Add up to two supplementary cards for family or business needs.',
     'Monthly Limit: USD 200,000.',
     'Daily cash withdrawal limit: USD 1,000 locally and USD 2,000 internationally.',
-    'Exclusive Travel Benefits: Enjoy up to 12% off hotel bookings via Agoda.com.',
+    'Exclusive Travel Benefits: Enjoy exclusive travel benefits when you book using your TNCB Visa card.',
     'Airport Lounge Access: Complimentary access to over 1,200 airport lounges worldwide.',
     'Car Hire Services: Access exclusive car rental offers and services.',
     'Comprehensive Insurance: Travel insurance, medical service referrals, and more for peace of mind on the go.',

@@ -11,9 +11,7 @@ function BusinessSMEAccount() {
     'Mobile App and Online Banking',
     'ZimSwitch Debit Card',
     'TN CyberTech Bank MSME networking events',
-    'VISA Debit Card Account Bundles',
     'Merchant & Agent Loans',
-    'Business Card',
   ]
 
   return (
