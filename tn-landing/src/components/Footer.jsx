@@ -14,8 +14,8 @@ function Footer() {
             </div>
             <p className="footer-tagline">The Future of Banking</p>
             <div className="footer-contact-info">
-              <p>Toll Free: <strong>08080 36100</strong></p>
-              <p>Phone: +263 242 886 646-53</p>
+              <p>Reception: <strong>+263 867 702 0267</strong></p>
+              <p>Cards: <strong>0772 191 191</strong></p>
               <p>Email: customerservice@tncybertechbank.co.zw</p>
             </div>
           </div>
