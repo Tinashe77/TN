@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -5,6 +6,63 @@ import '../../components/PageStyles.css'
 import './MobileBanking.css'
 
 function VisaCards() {
+  const [openFaq, setOpenFaq] = useState(null)
+
+  const dswtFaqs = [
+    {
+      q: 'What is Digital Services Withholding Tax (DSWT)?',
+      a: 'DSWT is a tax introduced under the Finance Act that applies to payments made to non-resident service providers for electronic digital services.',
+    },
+    {
+      q: 'When does DSWT take effect?',
+      a: 'DSWT will take effect from 1 January 2026.',
+    },
+    {
+      q: 'What is the DSWT rate?',
+      a: 'The tax is charged at a rate of 15.5% of the transaction value.',
+    },
+    {
+      q: 'Which transactions are subject to DSWT?',
+      a: 'DSWT applies to international online payments for electronic digital services provided by offshore (non-resident) companies.',
+    },
+    {
+      q: 'What types of services are considered "electronic digital services"?',
+      a: 'These include, but are not limited to: streaming platforms (e.g., video or music streaming), cloud computing and online storage services, online advertising and digital marketing services, and software subscriptions and other offshore digital platforms.',
+    },
+    {
+      q: 'Does DSWT apply to local service providers?',
+      a: 'No. DSWT only applies where the service provider is not resident in Zimbabwe.',
+    },
+    {
+      q: 'Are physical goods affected by DSWT?',
+      a: 'No. Purchases of tangible or physical goods are exempt from DSWT. Such transactions remain subject to normal customs duties and applicable taxes.',
+    },
+    {
+      q: 'Do I get charged DSWT for services consumed in a foreign country, such as a stay at a lodge, hotel or Airbnb?',
+      a: 'No. Where accommodation services are supplied and consumed in a foreign country, they are generally not regarded as imported services and do not attract DSWT. However, separate offshore platform or booking fees may be subject to DSWT.',
+    },
+    {
+      q: 'Does DSWT apply to car hire or ride-hailing services used in a foreign country?',
+      a: 'No. Car hire and ride-hailing services that are used and consumed in a foreign country are generally not subject to DSWT. However, digital platform or service fees charged by offshore providers may be subject to DSWT.',
+    },
+    {
+      q: 'How will DSWT be collected?',
+      a: 'The tax will be withheld automatically at the point of transaction when payment is made for the digital service.',
+    },
+    {
+      q: 'Will customers need to make a separate tax payment?',
+      a: 'No. DSWT is deducted at the time of payment, and customers do not need to make a separate tax submission.',
+    },
+    {
+      q: 'How will DSWT be treated for transactions processed on or after 1 January 2026?',
+      a: 'All applicable transactions will be subject to DSWT. Where DSWT is applied after the initial transaction date, the tax will be charged retrospectively.',
+    },
+    {
+      q: 'Who can I contact for more information?',
+      a: 'For further enquiries or clarification, customers may contact the Bank via: Email: cardcentre@tncybertechbank.co.zw | WhatsApp: 0772 191 191',
+    },
+  ]
+
   const visaKeyFeatures = [
     { title: 'Global Acceptance', desc: 'Use anywhere VISA is accepted worldwide' },
     { title: 'Multi-Currency Payments', desc: 'Pay in any currency with your VISA card, making international transactions easier than ever' },
@@ -217,6 +275,92 @@ function VisaCards() {
           <div style={{ textAlign: 'center', marginTop: '2rem' }}>
             <p style={{ color: '#6b7280', marginBottom: '1rem' }}>
               Email us at <a href="mailto:cardcentre@tncybertechbank.co.zw" style={{ color: 'rgb(174, 106, 6)' }}>cardcentre@tncybertechbank.co.zw</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* DSWT FAQ Section */}
+      <section className="content-section white-section">
+        <div className="container">
+          <div className="section-header" style={{ marginBottom: '2rem' }}>
+            <span className="section-label">Important Notice</span>
+            <h2 style={{ color: '#111827' }}>Digital Services Withholding Tax (DSWT) — FAQs</h2>
+            
+          </div>
+
+          <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+            {dswtFaqs.map((faq, index) => (
+              <div
+                key={index}
+                style={{
+                  borderBottom: '1px solid #e5e7eb',
+                  overflow: 'hidden',
+                }}
+              >
+                <button
+                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                  style={{
+                    width: '100%',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    padding: '1.25rem 0',
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    textAlign: 'left',
+                    gap: '1rem',
+                  }}
+                >
+                  <span style={{ color: '#111827', fontWeight: '600', fontSize: '0.9375rem', lineHeight: '1.5' }}>
+                    {index + 1}. {faq.q}
+                  </span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="rgb(174, 106, 6)"
+                    strokeWidth="2.5"
+                    style={{
+                      width: '18px',
+                      height: '18px',
+                      flexShrink: 0,
+                      transform: openFaq === index ? 'rotate(180deg)' : 'rotate(0deg)',
+                      transition: 'transform 0.2s ease',
+                    }}
+                  >
+                    <polyline points="6 9 12 15 18 9"/>
+                  </svg>
+                </button>
+
+                {openFaq === index && (
+                  <div style={{
+                    padding: '0 0 1.25rem 0',
+                    color: '#4b5563',
+                    fontSize: '0.9375rem',
+                    lineHeight: '1.7',
+                  }}>
+                    {faq.a}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <div style={{
+            marginTop: '2rem',
+            padding: '1.25rem 1.5rem',
+            background: 'linear-gradient(135deg, rgba(255, 222, 74, 0.08) 0%, rgba(174, 106, 6, 0.04) 100%)',
+            border: '1px solid rgba(255, 222, 74, 0.3)',
+            borderRadius: '12px',
+            maxWidth: '800px',
+            margin: '2rem auto 0',
+          }}>
+            <p style={{ color: '#4b5563', fontSize: '0.875rem', margin: 0 }}>
+              <strong>Still have questions?</strong> Contact our Card Centre at{' '}
+              <a href="mailto:cardcentre@tncybertechbank.co.zw" style={{ color: 'rgb(174, 106, 6)' }}>cardcentre@tncybertechbank.co.zw</a>
+              {' '}or WhatsApp{' '}
+              <a href="https://wa.me/2630772191191" style={{ color: 'rgb(174, 106, 6)' }}>0772 191 191</a>
             </p>
           </div>
         </div>
