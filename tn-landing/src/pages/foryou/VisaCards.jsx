@@ -64,13 +64,14 @@ function VisaCards() {
   ]
 
   const visaKeyFeatures = [
-    { title: 'Global Acceptance', desc: 'Use anywhere VISA is accepted worldwide' },
+    { title: 'Global Acceptance', desc: 'Accepted at Visa ATMs, POS terminals, and online payment gateways globally' },
     { title: 'Multi-Currency Payments', desc: 'Pay in any currency with your VISA card, making international transactions easier than ever' },
     { title: 'Security & Protection', desc: 'Block/unblock instantly if lost' },
     { title: '3D Secure', desc: 'Enhanced authentication for online payments' },
     { title: 'EMV Chip', desc: 'Fraud prevention for in-person transactions' },
     { title: 'Contactless', desc: 'Tap and go for fast payments' },
-    { title: 'Worldwide Accessibility', desc: 'Accepted at Visa ATMs, POS terminals, and online payment gateways globally' },
+    { title: 'PIN Management', desc: 'Set, change, or reset your PIN via the TN CyberCash app or any TN CyberTech Bank ATM' },
+    { title: 'Card Funding Options', desc: 'Load funds via ZIPIT, RTGS transfer, internal transfers, Visa card to card transfers, ATM deposit, and cash deposit at branches or agents' },
   ]
 
   const cardTypes = [

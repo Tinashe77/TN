@@ -5,7 +5,7 @@ import '../../components/PageStyles.css'
 
 function VisaCreditClassic() {
   const features = [
-    'Easy Transfers: Perform card-to-card transfers via TN CyberCash app, internet banking, or *236#.',
+    'Easy Transfers: Perform Visa card to card transfers via TN CyberCash app, internet banking, or *236#.',
     'Receive Funds Globally: Receive money from any VISA card through VISA Direct.',
     'PIN Management: Manage your PIN via the TN CyberCash app or any TN CyberTech Bank ATM.',
     'Flexible Funding: Load funds from local nostro accounts and mobile wallets via ZIPIT and RTGS.',
