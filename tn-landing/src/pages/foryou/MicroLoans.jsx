@@ -35,7 +35,7 @@ function MicroLoans() {
     <div className="about-page">
       <Header />
 
-      <section className="page-hero about-hero" style={{ backgroundImage: "url('/nano-loans-banner.jpg')" }}>
+      <section className="page-hero about-hero" style={{ background: "url('/nano-loans-banner.jpg') no-repeat center center / cover" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
           <h1>Nano Loans</h1>
