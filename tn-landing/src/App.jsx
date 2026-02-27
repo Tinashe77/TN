@@ -1,4 +1,17 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+
+function RouteTracker() {
+  const location = useLocation()
+  useEffect(() => {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'page_view', {
+        page_path: location.pathname + location.search,
+      })
+    }
+  }, [location])
+  return null
+}
 import Home from './pages/Home'
 import About from './pages/About'
 import OurBelief from './pages/about/OurBelief'
@@ -110,6 +123,7 @@ function App() {
   if (MAINTENANCE_MODE) {
     return (
       <Router>
+        <RouteTracker />
         <Routes>
           <Route path="*" element={<MaintenancePage />} />
         </Routes>
@@ -119,6 +133,7 @@ function App() {
 
   return (
     <Router>
+      <RouteTracker />
       <Routes>
         {/* Main pages */}
         <Route path="/" element={<Home />} />
