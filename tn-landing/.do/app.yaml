@@ -4,8 +4,6 @@ alerts:
 domains:
 - domain: tncybertechbank.co.zw
   type: PRIMARY
-- domain: www.tncybertechbank.co.zw
-  type: ALIAS
 features:
 - buildpack-stack=ubuntu-22
 ingress:
