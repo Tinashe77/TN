@@ -95,7 +95,7 @@ function MicroLoans() {
                 Instant Approval
               </h3>
               <p style={{ color: '#4b5563', lineHeight: '1.7', margin: 0 }}>
-                These loans may be accessed by customers who have an EcoCash wallet or a TN CyberTech Bank account. Approval is instant. An SMS will be sent with your repayment due date.
+                These loans may be accessed by customers who have an EcoCash wallet or a TN CyberTech Bank account. Approval is instant.
               </p>
             </div>
           </div>

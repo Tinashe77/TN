@@ -249,7 +249,7 @@ function OnlineBankingBusinesses() {
                 Contact your Account Executive to get your Corporate Online Banking mandate form and start the registration process.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <a href="https://ibanking.tncybertechbank.co.zw" target="_blank" rel="noopener noreferrer" className="cta-btn cta-btn-primary">
+                <a href="https://banking.tncybertechbank.co.zw/login#/" target="_blank" rel="noopener noreferrer" className="cta-btn cta-btn-primary">
                   Visit Banking Portal
                 </a>
                 <Link to="/contact" className="cta-btn cta-btn-secondary">

@@ -149,10 +149,10 @@ function CustomerService() {
                 </svg>
               </div>
               <h3 style={{ color: '#111827', marginBottom: '0.5rem' }}>USSD Banking</h3>
-              <p style={{ color: 'rgb(174, 106, 6)', fontWeight: '600', fontSize: '1.25rem', marginBottom: '0.25rem' }}>*210#</p>
+              <p style={{ color: 'rgb(174, 106, 6)', fontWeight: '600', fontSize: '1.25rem', marginBottom: '0.25rem' }}>*236#</p>
               <p style={{ color: '#6b7280', fontSize: '0.875rem', marginBottom: '1rem' }}>Self-service banking</p>
               <a
-                href="tel:*210%23"
+                href="tel:*236%23"
                 className="cta-btn cta-btn-primary"
                 style={{ fontSize: '0.875rem', padding: '0.625rem 1.25rem' }}
               >

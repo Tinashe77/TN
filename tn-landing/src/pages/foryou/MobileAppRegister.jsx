@@ -47,41 +47,7 @@ function MobileAppRegister() {
             </p>
           </div>
 
-          <div className="info-card" style={{ maxWidth: '600px', margin: '0 auto' }}>
-            <h3>
-              <span className="icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                  <circle cx="8.5" cy="7" r="4"/>
-                  <line x1="20" y1="8" x2="20" y2="14"/>
-                  <line x1="23" y1="11" x2="17" y2="11"/>
-                </svg>
-              </span>
-              Registration Steps
-            </h3>
-            <div className="steps-list">
-              <div className="step-item">
-                <span className="step-number">1</span>
-                <div className="step-content">
-                  <p>Download the app from Google Play Store or Apple Store</p>
-                </div>
-              </div>
-              <div className="step-item">
-                <span className="step-number">2</span>
-                <div className="step-content">
-                  <p>Input account number, mobile number and last 4 digits of card number</p>
-                </div>
-              </div>
-              <div className="step-item">
-                <span className="step-number">3</span>
-                <div className="step-content">
-                  <p>Confirm Details</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Detailed Registration Steps */}
+          {/* Registration Steps */}
           <div style={{
             maxWidth: '600px',
             margin: '2rem auto 0',
@@ -133,7 +99,7 @@ function MobileAppRegister() {
               Instant Approval
             </h3>
             <p style={{ color: '#4b5563', lineHeight: '1.8', fontSize: '1.0625rem' }}>
-              These loans may be accessed by customers who have an EcoCash wallet or a TN CyberTech Bank account. Approval is instant. An SMS will be sent with your repayment due date.
+              These loans may be accessed by customers who have an EcoCash wallet or a TN CyberTech Bank account. Approval is instant.
             </p>
           </div>
 

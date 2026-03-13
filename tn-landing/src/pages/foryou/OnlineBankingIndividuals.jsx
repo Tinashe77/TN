@@ -272,7 +272,7 @@ function OnlineBankingIndividuals() {
                 Register for online banking today and experience the convenience of banking from anywhere.
               </p>
               <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <a href="https://ibanking.tncybertechbank.co.zw" target="_blank" rel="noopener noreferrer" className="cta-btn cta-btn-primary">
+                <a href="https://banking.tncybertechbank.co.zw/login#/" target="_blank" rel="noopener noreferrer" className="cta-btn cta-btn-primary">
                   Register Now
                 </a>
                 <Link to="/contact" className="cta-btn cta-btn-secondary">
