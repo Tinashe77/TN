@@ -114,6 +114,7 @@ import CorporateSocialInvestment from './pages/CorporateSocialInvestment'
 import FinancialReports from './pages/FinancialReports'
 import PrivacyStatement from './pages/PrivacyStatement'
 import TermsOfUse from './pages/TermsOfUse'
+import DigitalBankingTerms from './pages/DigitalBankingTerms'
 
 // Set to true to show maintenance page, false to show normal site
 const MAINTENANCE_MODE = false
@@ -240,6 +241,7 @@ function App() {
         {/* Legal pages */}
         <Route path="/privacy-statement" element={<PrivacyStatement />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
+        <Route path="/digital-banking-terms" element={<DigitalBankingTerms />} />
 
         {/* Catch-all route - redirects unknown paths to home */}
         <Route path="*" element={<Home />} />
