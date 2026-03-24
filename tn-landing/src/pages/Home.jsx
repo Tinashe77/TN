@@ -78,6 +78,17 @@ function Home() {
           <Link to="/about" className="cta-button cta-browser">
             Continue in Browser
           </Link>
+
+          {/* Online Banking Login */}
+          <a
+            href="https://banking.tncybertechbank.co.zw/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-button"
+            style={{ marginTop: '0.75rem', background: 'transparent', border: '1px solid rgba(255,222,74,0.4)', color: 'rgb(255,222,74)', fontSize: '0.8125rem', letterSpacing: '0.5px' }}
+          >
+            Online Banking Login
+          </a>
         </div>
 
         {/* Footer text */}
@@ -149,6 +160,17 @@ function Home() {
         <Link to="/about" className="desktop-cta-button desktop-cta-browser">
           Continue in Browser
         </Link>
+
+        {/* Online Banking Login */}
+        <a
+          href="https://banking.tncybertechbank.co.zw/login"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="desktop-cta-button"
+          style={{ marginTop: '0.75rem', background: 'transparent', border: '1px solid rgba(255,222,74,0.4)', color: 'rgb(255,222,74)', fontSize: '0.8125rem', letterSpacing: '0.5px' }}
+        >
+          Online Banking Login
+        </a>
       </main>
 
       {/* Footer */}

@@ -116,6 +116,7 @@ import PrivacyStatement from './pages/PrivacyStatement'
 import TermsOfUse from './pages/TermsOfUse'
 import DigitalBankingTerms from './pages/DigitalBankingTerms'
 import BusinessTerms from './pages/BusinessTerms'
+import NanoLoansTerms from './pages/NanoLoansTerms'
 
 // Set to true to show maintenance page, false to show normal site
 const MAINTENANCE_MODE = false
@@ -244,6 +245,7 @@ function App() {
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/digital-banking-terms" element={<DigitalBankingTerms />} />
         <Route path="/business-terms" element={<BusinessTerms />} />
+        <Route path="/nano-loans-terms" element={<NanoLoansTerms />} />
 
         {/* Catch-all route - redirects unknown paths to home */}
         <Route path="*" element={<Home />} />
