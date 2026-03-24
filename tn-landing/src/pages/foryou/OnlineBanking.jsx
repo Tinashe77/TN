@@ -95,24 +95,23 @@ function OnlineBanking() {
         </div>
       </section>
 
-      <section className="content-section light-section">
-        <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <div style={{
-            width: '250px',
-            height: '250px',
-            background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%)',
-            borderRadius: '50%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            boxShadow: '0 20px 60px rgba(255, 222, 74, 0.3)'
-          }}>
-            <svg viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="1.5" style={{ width: '100px', height: '100px' }}>
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-              <line x1="8" y1="21" x2="16" y2="21"/>
-              <line x1="12" y1="17" x2="12" y2="21"/>
-            </svg>
-          </div>
+      <section className="content-section light-section" style={{ textAlign: 'center' }}>
+        <div className="container">
+          <h2 style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.75rem)', color: '#111827', marginBottom: '0.75rem' }}>
+            Already Registered?
+          </h2>
+          <p style={{ color: '#6b7280', marginBottom: '2rem', maxWidth: '480px', margin: '0 auto 2rem' }}>
+            Log in to your TN CyberTech Bank Online Banking account.
+          </p>
+          <a
+            href="https://banking.tncybertechbank.co.zw/login#/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-btn cta-btn-primary"
+            style={{ fontSize: '1.0625rem', padding: '0.875rem 2.5rem' }}
+          >
+            Login to Online Banking
+          </a>
         </div>
       </section>
 

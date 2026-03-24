@@ -57,6 +57,7 @@ function Footer() {
             <Link to="/privacy-statement">Privacy Statement</Link>
             <Link to="/terms-of-use">Terms of Use</Link>
             <Link to="/digital-banking-terms">Digital Banking T&amp;Cs</Link>
+            <Link to="/business-terms">Business T&amp;Cs</Link>
             <Link to="/customer-service">Customer Service</Link>
           </div>
         </div>

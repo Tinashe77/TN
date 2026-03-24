@@ -115,6 +115,7 @@ import FinancialReports from './pages/FinancialReports'
 import PrivacyStatement from './pages/PrivacyStatement'
 import TermsOfUse from './pages/TermsOfUse'
 import DigitalBankingTerms from './pages/DigitalBankingTerms'
+import BusinessTerms from './pages/BusinessTerms'
 
 // Set to true to show maintenance page, false to show normal site
 const MAINTENANCE_MODE = false
@@ -242,6 +243,7 @@ function App() {
         <Route path="/privacy-statement" element={<PrivacyStatement />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/digital-banking-terms" element={<DigitalBankingTerms />} />
+        <Route path="/business-terms" element={<BusinessTerms />} />
 
         {/* Catch-all route - redirects unknown paths to home */}
         <Route path="*" element={<Home />} />
