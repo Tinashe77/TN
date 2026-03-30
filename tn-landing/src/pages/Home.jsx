@@ -84,8 +84,7 @@ function Home() {
             href="https://banking.tncybertechbank.co.zw/login"
             target="_blank"
             rel="noopener noreferrer"
-            className="cta-button"
-            style={{ marginTop: '0.75rem', background: 'transparent', border: '1px solid rgba(255,222,74,0.4)', color: 'rgb(255,222,74)', fontSize: '0.8125rem', letterSpacing: '0.5px' }}
+            className="cta-button cta-browser"
           >
             Online Banking Login
           </a>
@@ -166,8 +165,7 @@ function Home() {
           href="https://banking.tncybertechbank.co.zw/login"
           target="_blank"
           rel="noopener noreferrer"
-          className="desktop-cta-button"
-          style={{ marginTop: '0.75rem', background: 'transparent', border: '1px solid rgba(255,222,74,0.4)', color: 'rgb(255,222,74)', fontSize: '0.8125rem', letterSpacing: '0.5px' }}
+          className="desktop-cta-button desktop-cta-browser"
         >
           Online Banking Login
         </a>
