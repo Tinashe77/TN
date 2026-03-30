@@ -85,6 +85,7 @@ function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button cta-browser"
+            style={{ marginTop: '0.625rem' }}
           >
             Online Banking Login
           </a>
@@ -166,6 +167,7 @@ function Home() {
           target="_blank"
           rel="noopener noreferrer"
           className="desktop-cta-button desktop-cta-browser"
+          style={{ marginTop: '0.625rem' }}
         >
           Online Banking Login
         </a>
