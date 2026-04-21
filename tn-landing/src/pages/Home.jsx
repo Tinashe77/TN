@@ -179,6 +179,13 @@ function Home() {
         <div className="desktop-footer-links">
           <Link to="/privacy-statement">Privacy Statement</Link>
           <Link to="/terms-of-use">Terms of Use</Link>
+          <a
+            href="/TNCB-Business-Conditions.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Business Conditions
+          </a>
           <Link to="/customer-service">Customer Service</Link>
         </div>
         <p className="desktop-copyright">

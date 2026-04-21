@@ -56,6 +56,13 @@ function Footer() {
           <div className="footer-bottom-links">
             <Link to="/privacy-statement">Privacy Statement</Link>
             <Link to="/terms-of-use">Terms of Use</Link>
+            <a
+              href="/TNCB-Business-Conditions.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Business Conditions
+            </a>
             <Link to="/digital-banking-terms">Digital Banking T&amp;Cs</Link>
             <Link to="/business-terms">Business T&amp;Cs</Link>
             <Link to="/nano-loans-terms">Nano Loans T&amp;Cs</Link>
