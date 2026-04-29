@@ -60,13 +60,13 @@ function DiasporaPartners() {
 
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
-              gap: '1rem',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+              gap: '1.25rem',
               marginTop: '2rem',
             }}>
               {remittancePartners.map((partner) => (
                 <div key={partner.name} style={{
-                  padding: '1.25rem',
+                  padding: '1.5rem',
                   background: '#fff',
                   borderRadius: '12px',
                   border: '1px solid #e5e7eb',
@@ -80,13 +80,13 @@ function DiasporaPartners() {
                     src={partner.logo}
                     alt={partner.name}
                     style={{
-                      width: '70px',
-                      height: '50px',
+                      width: '110px',
+                      height: '76px',
                       objectFit: 'contain',
-                      marginBottom: '0.5rem',
+                      marginBottom: '0.85rem',
                     }}
                   />
-                  <span style={{ fontSize: '0.95rem', color: '#111827', textAlign: 'center', fontWeight: '500' }}>{partner.name}</span>
+                  <span style={{ fontSize: '1.05rem', color: '#111827', textAlign: 'center', fontWeight: '700', lineHeight: '1.35' }}>{partner.name}</span>
                 </div>
               ))}
             </div>

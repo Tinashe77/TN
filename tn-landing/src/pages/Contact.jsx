@@ -14,6 +14,7 @@ function Contact() {
   })
   const [submitStatus, setSubmitStatus] = useState(null) // 'sending', 'success', 'error'
   const [submitMessage, setSubmitMessage] = useState('')
+  const showContactForm = false
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -77,7 +78,7 @@ function Contact() {
     { name: 'Customer Service', email: 'customerservice@tncybertechbank.co.zw' },
     { name: 'Business Banking', email: 'businessbanking@tncybertechbank.co.zw' },
     { name: 'Treasury', email: 'treasury@tncybertechbank.co.zw' },
-    { name: 'Diaspora Services', email: 'diaspora@tncybertechbank.co.zw' },
+    { name: 'Diaspora Services', email: 'diasporabanking@tncybertechbank.co.zw' },
     { name: 'Card Services', email: 'cards@tncybertechbank.co.zw' },
     { name: 'Loans', email: 'loans@tncybertechbank.co.zw' },
   ]
@@ -210,7 +211,7 @@ function Contact() {
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '3rem', maxWidth: '700px', margin: '0 auto' }}>
             {/* Contact Form - Hidden for now */}
-            {false && <div>
+            {showContactForm && <div>
               <span className="section-label">Send a Message</span>
               <h2 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', color: '#111827', marginBottom: '1.5rem' }}>
                 Contact Form

@@ -15,6 +15,22 @@ function DiasporaAccounts() {
         </svg>
       ),
       desc: 'For everyday transactions and payments',
+      features: [
+        'Everyday FCA transactions and payments',
+        'Direct payments to family, friends and local suppliers',
+      ],
+      requirements: [
+        'Completed account opening form',
+        '2 passport photos',
+        'Copy of ID and valid Zimbabwean passport',
+        'Proof of residence, such as a foreign utility bill, foreign bank statement or lease agreement',
+        'Initial deposit of $20',
+      ],
+      conditions: [
+        { label: 'Minimum Balance', value: '$20' },
+        { label: 'Withdrawal Fee', value: '3% (minimum $5)' },
+        { label: 'Monthly Maintenance Fee', value: '$5' },
+      ],
     },
     {
       name: 'Diaspora FCA Savings Account',
@@ -25,15 +41,24 @@ function DiasporaAccounts() {
         </svg>
       ),
       desc: 'Earn interest on your savings',
+      features: [
+        'Savings-focused FCA account',
+        'Monthly interest earned at 2.5% p.a.',
+      ],
+      requirements: [
+        'Completed account opening form',
+        '2 passport photos',
+        'Copy of ID and valid Zimbabwean passport',
+        'Proof of residence, such as a foreign utility bill, foreign bank statement or lease agreement',
+        'Initial deposit of $50',
+      ],
+      conditions: [
+        { label: 'Minimum Balance', value: '$100' },
+        { label: 'Withdrawal Fee', value: '3% (minimum $5)' },
+        { label: 'Monthly Maintenance Fee', value: '$5 for more than 2 debit transactions a month' },
+        { label: 'Monthly Interest', value: '2.5% p.a.' },
+      ],
     },
-  ]
-
-  const accountConditions = [
-    { label: 'Initial Deposit', value: '$50' },
-    { label: 'Minimum Balance', value: '$100' },
-    { label: 'Withdrawal Fee', value: '3% (min $5)' },
-    { label: 'Monthly Fee', value: '$5*' },
-    { label: 'Interest Rate', value: '2.5% p.a.' },
   ]
 
   return (
@@ -68,94 +93,146 @@ function DiasporaAccounts() {
             Back to Diaspora Banking
           </Link>
 
-          <div className="story-grid">
-            <div className="story-content">
+          <div className="story-content" style={{ maxWidth: '100%' }}>
               <span className="section-label">Available Accounts</span>
               <h2>Choose Your Account Type</h2>
-              <p>
+              <p style={{ maxWidth: '820px' }}>
                 Open a TN CyberTech Bank Diaspora FCA Account today and unlock unparalleled convenience with our exclusive diaspora offering. This unique service allows individuals to make direct payments to family and friends both within and outside Zimbabwe, as well as to local suppliers, ensuring seamless financial management.
               </p>
 
               <div style={{
                 display: 'grid',
-                gap: '1.5rem',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+                gap: '1.25rem',
                 marginTop: '2rem',
               }}>
                 {accountTypes.map((account) => (
                   <div key={account.name} style={{
                     display: 'flex',
-                    alignItems: 'flex-start',
-                    gap: '1.5rem',
-                    padding: '1.5rem',
+                    flexDirection: 'column',
+                    minHeight: '100%',
                     background: '#fff',
                     border: '1px solid #e5e7eb',
-                    borderRadius: '16px',
+                    borderRadius: '18px',
+                    overflow: 'hidden',
+                    boxShadow: '0 16px 36px rgba(17, 24, 39, 0.06)',
                   }}>
                     <div style={{
-                      width: '60px',
-                      height: '60px',
-                      background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 100%)',
-                      borderRadius: '12px',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      flexShrink: 0,
+                      padding: '1.5rem',
+                      background: 'linear-gradient(135deg, rgba(255, 222, 74, 0.18) 0%, rgba(174, 106, 6, 0.08) 100%)',
+                      borderBottom: '1px solid rgba(174, 106, 6, 0.12)',
                     }}>
-                      <div style={{ width: '30px', height: '30px', color: '#000' }}>
-                        {account.icon}
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                        <div style={{
+                          width: '56px',
+                          height: '56px',
+                          background: 'linear-gradient(135deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 100%)',
+                          borderRadius: '14px',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          flexShrink: 0,
+                        }}>
+                          <div style={{ width: '28px', height: '28px', color: '#000' }}>
+                            {account.icon}
+                          </div>
+                        </div>
+                        <div>
+                          <h3 style={{ fontSize: '1.2rem', fontWeight: '700', color: '#111827', margin: '0 0 0.35rem' }}>{account.name}</h3>
+                          <p style={{ color: '#6b7280', margin: 0 }}>{account.desc}</p>
+                        </div>
                       </div>
                     </div>
-                    <div>
-                      <h3 style={{ fontSize: '1.1rem', fontWeight: '600', color: '#111827', marginBottom: '0.5rem' }}>{account.name}</h3>
-                      <p style={{ color: '#6b7280', margin: 0 }}>{account.desc}</p>
+
+                    <div style={{ padding: '1.5rem', flex: 1, display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+                      <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))',
+                        gap: '1rem',
+                      }}>
+                        <div style={{
+                          padding: '1rem',
+                          background: '#f9fafb',
+                          border: '1px solid #eef0f3',
+                          borderRadius: '12px',
+                        }}>
+                          <h4 style={{ fontSize: '0.92rem', fontWeight: '700', color: '#111827', margin: '0 0 0.75rem' }}>Features</h4>
+                          <ul style={{ margin: 0, paddingLeft: '1.1rem', color: '#4b5563', lineHeight: '1.7' }}>
+                            {account.features.map((feature) => (
+                              <li key={feature}>{feature}</li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        <div style={{
+                          padding: '1rem',
+                          background: '#f9fafb',
+                          border: '1px solid #eef0f3',
+                          borderRadius: '12px',
+                        }}>
+                          <h4 style={{ fontSize: '0.92rem', fontWeight: '700', color: '#111827', margin: '0 0 0.75rem' }}>Requirements</h4>
+                          <ul style={{ margin: 0, paddingLeft: '1.1rem', color: '#4b5563', lineHeight: '1.7' }}>
+                            {account.requirements.map((requirement) => (
+                              <li key={requirement}>{requirement}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div style={{
+                        border: '1px solid rgba(174, 106, 6, 0.16)',
+                        borderRadius: '12px',
+                        overflow: 'hidden',
+                        marginTop: 'auto',
+                      }}>
+                        <div style={{
+                          padding: '0.85rem 1rem',
+                          background: 'rgba(255, 222, 74, 0.16)',
+                          color: '#111827',
+                          fontSize: '0.92rem',
+                          fontWeight: '700',
+                        }}>
+                          Account Conditions
+                        </div>
+                        {account.conditions.map((condition, index) => (
+                          <div key={condition.label} style={{
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            alignItems: 'center',
+                            gap: '1rem',
+                            padding: '0.85rem 1rem',
+                            background: '#fff',
+                            borderTop: index > 0 ? '1px solid #f3f4f6' : 'none',
+                          }}>
+                            <span style={{ color: '#4b5563' }}>{condition.label}</span>
+                            <span style={{ fontWeight: '600', color: 'rgb(174, 106, 6)', textAlign: 'right' }}>{condition.value}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 ))}
               </div>
 
-              <h3 style={{ fontSize: '1.1rem', fontWeight: '600', color: '#111827', marginTop: '2rem', marginBottom: '1rem' }}>Account Conditions</h3>
-
               <div style={{
-                background: '#fff',
-                border: '1px solid #e5e7eb',
-                borderRadius: '16px',
-                overflow: 'hidden',
-              }}>
-                {accountConditions.map((condition, index) => (
-                  <div key={condition.label} style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    padding: '1rem 1.5rem',
-                    borderBottom: index < accountConditions.length - 1 ? '1px solid #f3f4f6' : 'none',
-                  }}>
-                    <span style={{ color: '#4b5563' }}>{condition.label}</span>
-                    <span style={{ fontWeight: '600', color: 'rgb(174, 106, 6)' }}>{condition.value}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div style={{ marginTop: '2rem' }}>
-                <Link to="/contact" className="cta-btn cta-btn-primary">
-                  Open an Account
-                </Link>
-              </div>
-            </div>
-            <div className="story-image">
-              <div className="about-hub-icon" style={{
-                width: '160px',
-                height: '160px',
-                margin: '0 auto',
+                marginTop: '2rem',
+                padding: '1.25rem',
+                background: '#f9fafb',
+                border: '1px solid #eef0f3',
+                borderRadius: '14px',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center',
+                justifyContent: 'space-between',
+                gap: '1rem',
+                flexWrap: 'wrap',
               }}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="1.5" style={{ width: '80px', height: '80px' }}>
-                  <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
-                  <line x1="1" y1="10" x2="23" y2="10"/>
-                </svg>
+                <p style={{ color: '#4b5563', margin: 0 }}>
+                  For account opening support, contact the Diaspora Banking team.
+                </p>
+                <a href="mailto:diasporabanking@tncybertechbank.co.zw" className="cta-btn cta-btn-primary">
+                  Open an Account
+                </a>
               </div>
-            </div>
           </div>
         </div>
       </section>
