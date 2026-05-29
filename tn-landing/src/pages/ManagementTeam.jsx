@@ -46,6 +46,28 @@ As a seasoned Chartered Accountant, Mr. Ramanzi possesses deep expertise in fina
 She holds a Bachelor of Science Degree in Human Resource Management from Midlands State University and is currently studying for a master's degree with the same institution.`
     },
     {
+      name: 'Sisa Sibanda',
+      title: 'Group Chief Operations Officer - Marketing, Innovation Processes, ESG & Research',
+      subtitle: '',
+      image: '/management-pics/sisa-sibanda.png',
+      bio: `Sisa P. Sibanda is a seasoned marketing, research, and innovation executive with over 15 years of experience driving brand growth, consumer intelligence, and strategic transformation across industries including financial services, FMCG, telecommunications, manufacturing, retail, automotive, construction, and development sectors.
+
+She currently serves as Group Chief Operations Officer - Marketing, Innovation Processes, ESG & Research at TN CyberTech Investments Holdings, where she leads integrated strategies focused on marketing excellence, innovation, research, and sustainable business growth.
+
+Sisa holds an MBA in Marketing Management from Guglielmo Marconi University (Italy), an MSc in International Relations from the University of Zimbabwe, and a BA (Hons) in History & Development Studies from Midlands State University.`
+    },
+    {
+      name: 'Trymore Mangezi',
+      title: 'Group Chief Procurement Officer',
+      subtitle: '',
+      image: '/management-pics/Trymore-Mangezi.png',
+      bio: `Trymore is the Group Chief Procurement Officer, providing strategic leadership and oversight for the Group's procurement, sourcing, and supply chain. With extensive exposure in both the public sector and private sector, Trymore brings a balanced governance-driven and service-oriented approach to procurement leadership.
+
+Her strong background in Human Resource Management enhances her ability to build high-performing teams, cultivate stakeholder trust, and drive sustainable procurement transformation.
+
+She holds a Master of Science in Human Resource Management, a Bachelor of Commerce in Human Resources and Labour Relations Management, and a certificate in Human Resource Management. She is a member of IPMZ.`
+    },
+    {
       name: 'Patricia Chizengeya',
       title: 'Chief Channels & Agency Officer',
       subtitle: '',
@@ -105,6 +127,17 @@ He is a registered legal practitioner, conveyancer, and notary public, and an As
       bio: `Vimbai Chinyadza is Head of Internal Audit at TN CyberTech Bank, where she leads the Internal Audit function. With over a decade of expertise in internal audit, enterprise risk management, and ESG integration across the banking and public sectors, she is recognised for strengthening corporate governance frameworks and advising executive committees.
 
 A Certified Internal Auditor (CIA) and Certified Enterprise Risk Manager (CERM), Vimbai also serves as a board member, inspiring excellence in leadership.`
+    },
+    {
+      name: 'Ngoni Mombeshora',
+      title: 'Sales Powerhouse',
+      subtitle: '',
+      image: '/management-pics/Ngoni-Mombeshora.png',
+      bio: `Ngoni Mombeshora is a seasoned sales professional with over 20 years' experience across various sectors including mining, ICT, and manufacturing. Ngoni previously served as Director of Regional Expansion for Flex Corporate Services in Tanzania.
+
+Ngoni's experience has seen him work in various markets in Africa including South Africa, Zambia, and Tanzania, where he has specialised in setting up and driving sales operations for new country offices and products with financial institutions as a key target segment, and it is this experience he brings to the bank.
+
+Ngoni holds a BBA Marketing and multiple diplomas in Marketing and Sales, as well as training certificates in AI, Customer Experience, and Management.`
     },
     {
       name: 'Musiwa Chirimuuta',
