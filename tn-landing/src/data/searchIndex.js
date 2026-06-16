@@ -596,6 +596,13 @@ const searchIndex = [
     keywords: ['media', 'news', 'press', 'releases'],
   },
   {
+    title: "The Final Stretch: TN CyberTech Bank's Nationwide Rebranding Journey",
+    description: 'Nationwide rebranding update from Steward Bank branding to TN CyberTech Bank identity',
+    category: 'Support',
+    path: '/media-centre/blog/tn-cybertech-bank-nationwide-rebranding-journey',
+    keywords: ['blog', 'rebranding', 'steward bank', 'tn cybertech', 'news'],
+  },
+  {
     title: 'Corporate Social Investment',
     description: 'Our community initiatives and CSI programs',
     category: 'Support',

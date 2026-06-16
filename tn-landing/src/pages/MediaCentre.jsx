@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { blogPosts } from '../data/blogPosts'
 import '../components/PageStyles.css'
 
 function MediaCentre() {
@@ -93,6 +94,36 @@ function MediaCentre() {
                 <h3>{section.title}</h3>
                 <p>{section.desc}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Posts */}
+      <section className="content-section light-section">
+        <div className="container">
+          <div className="section-header">
+            <span className="section-label">Blog</span>
+            <h2>Latest Stories</h2>
+            <p>Updates from across TN CyberTech Bank and the communities we serve.</p>
+          </div>
+
+          <div className="blog-card-grid">
+            {blogPosts.map((post) => (
+              <Link key={post.slug} to={`/media-centre/blog/${post.slug}`} className="blog-card">
+                <img src={post.image} alt={post.imageAlt} />
+                <div className="blog-card-body">
+                  <span>{post.category} | {post.date}</span>
+                  <h3>{post.title}</h3>
+                  <p>{post.excerpt}</p>
+                  <div className="service-card-arrow">
+                    Read Article
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                </div>
+              </Link>
             ))}
           </div>
         </div>

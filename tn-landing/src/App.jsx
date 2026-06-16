@@ -108,6 +108,7 @@ import ZimswitchCorporateCard from './pages/forbusiness/ZimswitchCorporateCard'
 
 import CustomerService from './pages/CustomerService'
 import MediaCentre from './pages/MediaCentre'
+import BlogPost from './pages/BlogPost'
 import BoardOfDirectors from './pages/BoardOfDirectors'
 import ManagementTeam from './pages/ManagementTeam'
 import CorporateSocialInvestment from './pages/CorporateSocialInvestment'
@@ -235,6 +236,7 @@ function App() {
         {/* Support and Media */}
         <Route path="/customer-service" element={<CustomerService />} />
         <Route path="/media-centre" element={<MediaCentre />} />
+        <Route path="/media-centre/blog/:slug" element={<BlogPost />} />
         <Route path="/board-of-directors" element={<BoardOfDirectors />} />
         <Route path="/management-team" element={<ManagementTeam />} />
         <Route path="/corporate-social-investment" element={<CorporateSocialInvestment />} />
