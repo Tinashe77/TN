@@ -176,15 +176,6 @@ Holds various certifications and qualifications in management, information secur
 He holds an MSc and BSc in Economics from the University of Zimbabwe, an MSc in Banking and Financial Services from the National University of Science and Technology, and certificates in Project Planning and Management, Portfolio Management, Bonds and Swaps, Money and Capital Markets, and FX Technical Analysis and Trading.`
     },
     {
-      name: 'Fungai Kambarami',
-      title: 'Acting: Head of Risk',
-      subtitle: '',
-      image: '/management-pics/Fungai-Kambarami.png',
-      bio: `Mr Kambarami is the Acting Head of Risk, with 15 years of experience developing and implementing risk management frameworks, policies, procedures, and training programs. He has a proven track record in business continuity management, identifying and evaluating potential risks, implementing risk management strategies, and improving stakeholder satisfaction. He previously worked for Nedbank Zimbabwe.
-
-He Holds a Bachelor of Commerce Honours Degree in Banking and a Master's of Business Degree in Banking and Finance from NUST. He also holds a certificate in the Senior Management Development Program from Stellenbosch University.`
-    },
-    {
       name: 'Chiedza Shana',
       title: 'Acting Company Secretary',
       subtitle: '',
