@@ -9,7 +9,7 @@ function LoanHowItWorks() {
     {
       id: 'eligibility',
       title: 'Check Eligibility',
-      description: 'You need an EcoCash wallet or TN CyberTech Bank account to access Nano Loans.',
+      description: 'You need an EcoCash wallet or TN CyberTech Bank account to access Soft Loans.',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
@@ -69,7 +69,7 @@ function LoanHowItWorks() {
           <span className="separator">/</span>
           <Link to="/for-you">For You</Link>
           <span className="separator">/</span>
-          <Link to="/for-you/loans">Nano Loans</Link>
+          <Link to="/for-you/loans">Soft Loans</Link>
           <span className="separator">/</span>
           <span className="current">How It Works</span>
         </div>
@@ -82,7 +82,7 @@ function LoanHowItWorks() {
               <line x1="19" y1="12" x2="5" y2="12"/>
               <polyline points="12 19 5 12 12 5"/>
             </svg>
-            Back to Nano Loans
+            Back to Soft Loans
           </Link>
 
           <div className="section-header" style={{ marginBottom: '3rem' }}>

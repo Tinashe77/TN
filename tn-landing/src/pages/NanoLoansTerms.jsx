@@ -12,7 +12,7 @@ function NanoLoansTerms() {
       content: [
         { clause: '1.1', text: '"Bank" means TN CyberTech Bank of 79 Oliver Tambo Avenue, Corner 7th Street, Harare, or any of its branches within Zimbabwe.' },
         { clause: '1.2', text: '"Equipment" includes mobile phone handset, SIM Card, and/or other equipment which when used together enables the mobile banking services customer to access the network.' },
-        { clause: '1.3', text: '"Charges" means the NANO loans charges and any other charges pertaining to the provision of the Nano loan services.' },
+        { clause: '1.3', text: '"Charges" means the SOFT loans charges and any other charges pertaining to the provision of the Soft loan services.' },
         { clause: '1.4', text: '"Parties" means the Bank and the Customer.' },
         { clause: '1.5', text: '"Agreed Rate" means the rate of interest per month which will be indicated, or the loan-handling fee or the penalty fee in the event of default.' },
         { clause: '1.6', text: '"We," "our," and "us," means the Bank and include the successors and assigns of the Bank.' },
@@ -24,31 +24,31 @@ function NanoLoansTerms() {
       number: '2',
       title: 'COMMENCEMENT AND ACCEPTANCE',
       content: [
-        { clause: '2.1', text: 'The Agreement shall commence upon acceptance of the terms and conditions and approval of the Nano loan application by the Bank.' },
-        { clause: '2.2', text: 'The customer shall be deemed to have read, understood, and accepted the NANO loans terms and conditions:' },
-        { clause: '2.2.1', text: 'On clicking the "accept" on the NANO loans menu.' },
-        { clause: '2.2.2', text: 'Using and continuing to use and operate the *236# menu, or any other platform through which the Bank provides NANO loans from.' },
-        { clause: '2.2.3', text: 'By applying to access the NANO loans offered by the Bank, you agree to be bound by the terms and conditions and that the terms and conditions herein are without prejudice to any right that the Bank may have with respect to the NANO loans in law or otherwise.' },
-        { clause: '2.2.4', text: 'The Terms and Conditions may be amended or varied by the Bank from time to time and your continued use of *236# or any other platform or channel where NANO loans can be accessed constitutes your agreement to be bound by the terms and conditions as amended or varied from time to time.' },
+        { clause: '2.1', text: 'The Agreement shall commence upon acceptance of the terms and conditions and approval of the Soft loan application by the Bank.' },
+        { clause: '2.2', text: 'The customer shall be deemed to have read, understood, and accepted the SOFT loans terms and conditions:' },
+        { clause: '2.2.1', text: 'On clicking the "accept" on the SOFT loans menu.' },
+        { clause: '2.2.2', text: 'Using and continuing to use and operate the *236# menu, or any other platform through which the Bank provides SOFT loans from.' },
+        { clause: '2.2.3', text: 'By applying to access the SOFT loans offered by the Bank, you agree to be bound by the terms and conditions and that the terms and conditions herein are without prejudice to any right that the Bank may have with respect to the SOFT loans in law or otherwise.' },
+        { clause: '2.2.4', text: 'The Terms and Conditions may be amended or varied by the Bank from time to time and your continued use of *236# or any other platform or channel where SOFT loans can be accessed constitutes your agreement to be bound by the terms and conditions as amended or varied from time to time.' },
       ],
     },
     {
       number: '3',
-      title: 'NANO LOAN APPLICATION',
+      title: 'SOFT LOAN APPLICATION',
       content: [
-        { clause: '3.1', text: 'The existing or prospective NANO loans Customer must be at least 18 years old and be a registered TN CyberTech Bank Account Holder. The Bank has the right to request further information from you pertaining to your application, even during the tenure of your NANO loan.' },
-        { clause: '3.2', text: 'You access your NANO loan by way of an electronic application made by you using your Equipment via the *236# Menu and any other channel that the Bank may specify.' },
+        { clause: '3.1', text: 'The existing or prospective SOFT loans Customer must be at least 18 years old and be a registered TN CyberTech Bank Account Holder. The Bank has the right to request further information from you pertaining to your application, even during the tenure of your SOFT loan.' },
+        { clause: '3.2', text: 'You access your SOFT loan by way of an electronic application made by you using your Equipment via the *236# Menu and any other channel that the Bank may specify.' },
         { clause: '3.3', text: 'You hereby consent to the disclosure of personal information from any source to the Bank including information held by the Credit Reference Bureau and the Registrar Generals Officer.' },
-        { clause: '3.4', text: 'Acceptance by the Bank of your application for your NANO loan does not create any contractual relationships between you and the Bank beyond the terms and conditions that apply to your NANO loan from time to time.' },
+        { clause: '3.4', text: 'Acceptance by the Bank of your application for your SOFT loan does not create any contractual relationships between you and the Bank beyond the terms and conditions that apply to your SOFT loan from time to time.' },
         { clause: '3.5', text: 'The Bank has the right to decline your application or to revoke the same at any stage at its sole discretion and without assigning any reason or giving any notice thereto.' },
-        { clause: '3.6', text: 'The NANO loan minimum application amount is USD20.00 and the maximum is USD100.00 based on account activity. This may be reviewed from time to time. The Bank will advise the Customer of any change in minimum lending rates, charges, or fees by the publication of a notice in a local or national newspaper or by notice at its branches in Zimbabwe or through publication on the TN CyberTech Bank website or by statement messaging. The Customer understands and agrees that the Bank is not obliged to obtain the Customer\'s signature for receipt of such communication.' },
+        { clause: '3.6', text: 'The SOFT loan minimum application amount is USD20.00 and the maximum is USD100.00 based on account activity. This may be reviewed from time to time. The Bank will advise the Customer of any change in minimum lending rates, charges, or fees by the publication of a notice in a local or national newspaper or by notice at its branches in Zimbabwe or through publication on the TN CyberTech Bank website or by statement messaging. The Customer understands and agrees that the Bank is not obliged to obtain the Customer\'s signature for receipt of such communication.' },
       ],
     },
     {
       number: '3a',
-      title: 'NANO LOAN ACCOUNT',
+      title: 'SOFT LOAN ACCOUNT',
       content: [
-        { clause: '3.7', text: 'Subject to terms and conditions, a qualifying borrowing customer may apply for a NANO loan from the Bank using the *236# menu or any other channel the Bank may specify on your equipment.' },
+        { clause: '3.7', text: 'Subject to terms and conditions, a qualifying borrowing customer may apply for a SOFT loan from the Bank using the *236# menu or any other channel the Bank may specify on your equipment.' },
         { clause: '3.8', text: 'The loan application shall be appraised electronically.' },
         { clause: '3.9', text: 'The Bank reserves the right at its sole discretion and without assigning any reason to approve or decline your application for a loan.' },
         { clause: '3.10', text: 'Subject to the approval of your application for a loan, the bank shall disburse to you a loan amount based on the Bank\'s discretion and subject to the deduction of a handling fee of 15% of the loan amount.' },
@@ -66,10 +66,10 @@ function NanoLoansTerms() {
     },
     {
       number: '4',
-      title: 'SUSPENSION OF NANO LOANS',
-      intro: 'The Bank may at any time, and upon giving notice to the customer where possible, suspend its provision of NANO loan services to the customer in the event that:',
+      title: 'SUSPENSION OF SOFT LOANS',
+      intro: 'The Bank may at any time, and upon giving notice to the customer where possible, suspend its provision of SOFT loan services to the customer in the event that:',
       content: [
-        { clause: '4.1', text: 'Any modification, maintenance, or remedial work is required to be undertaken pertaining to any matter whatsoever to the Nano loans Application Service Platforms or the Network.' },
+        { clause: '4.1', text: 'Any modification, maintenance, or remedial work is required to be undertaken pertaining to any matter whatsoever to the Soft loans Application Service Platforms or the Network.' },
         { clause: '4.2', text: 'The customer fails to perform any of his obligations, or breaches any term of this agreement.' },
       ],
     },
@@ -83,17 +83,17 @@ function NanoLoansTerms() {
       number: '6',
       title: 'INTELLECTUAL PROPERTY RIGHTS',
       content: [
-        { clause: '6.1', text: 'You shall not duplicate, reproduce or in any way tamper with the NANO loans feature and associated documentation without the prior written consent of the Bank.' },
+        { clause: '6.1', text: 'You shall not duplicate, reproduce or in any way tamper with the SOFT loans feature and associated documentation without the prior written consent of the Bank.' },
       ],
     },
     {
       number: '7',
-      title: 'APPLICABLE LAW, JURISDICTION & TERMINATION OF NANO LOANS SERVICE',
+      title: 'APPLICABLE LAW, JURISDICTION & TERMINATION OF SOFT LOANS SERVICE',
       content: [
         { clause: '7.1', text: 'This agreement shall be governed by, construed or otherwise interpreted in accordance with the laws of Zimbabwe.' },
         { clause: '7.2', text: 'The parties shall comply with all applicable laws and governmental regulations issued from time to time. None of the parties is authorized or otherwise expected to take any action in the name of or otherwise on behalf of the other which would violate applicable laws and regulations, and any such representation shall be null and void.' },
         { clause: '7.3', text: 'The Customer hereby submits to the jurisdiction of the Magistrates Court in the event of any dispute leading to litigation arising out of matters in terms of this contract or connected thereto, and in any such event, the customer, if found liable, shall be obliged to pay the Bank\'s costs at the legal-practitioner-client scale, and any and all other costs and collection commission incidental thereto and so charged.' },
-        { clause: '7.4', text: 'The Bank may at any time upon notice to you terminate the NANO loans service.' },
+        { clause: '7.4', text: 'The Bank may at any time upon notice to you terminate the SOFT loans service.' },
       ],
     },
     {
@@ -104,7 +104,7 @@ function NanoLoansTerms() {
         { clause: '8.1', text: 'It was the position of or known to the receiving party or disclosure thereof by the disclosing party other than pursuant to a breach by the receiving party of its obligation in terms of this clause; or' },
         { clause: '8.2', text: 'It is or becomes publicly known otherwise than pursuant to a breach of its obligation in terms of this clause by the receiving party; or' },
         { clause: '8.3', text: 'The receiving party is required, pursuant to the order of a court of competent jurisdiction or otherwise as authorized by law to disclose such information; or' },
-        { clause: '8.4', text: 'The Bank transfers the Borrower\'s information and data to third parties as is necessary for it to carry out its legitimate professional and business needs under this Agreement, to carry out the Borrower\'s requests, and/or as required or permitted by law or professional standards. This includes but is not limited to entities in partnership with the Bank for the provision of NANO loan services, real estate companies, legal practitioners, insurers, auditors, courts, tribunals, law enforcement or regulatory bodies etc.' },
+        { clause: '8.4', text: 'The Bank transfers the Borrower\'s information and data to third parties as is necessary for it to carry out its legitimate professional and business needs under this Agreement, to carry out the Borrower\'s requests, and/or as required or permitted by law or professional standards. This includes but is not limited to entities in partnership with the Bank for the provision of SOFT loan services, real estate companies, legal practitioners, insurers, auditors, courts, tribunals, law enforcement or regulatory bodies etc.' },
       ],
       outro: 'The obligations of the parties in terms of this clause shall survive any termination of this agreement.',
     },
@@ -162,8 +162,8 @@ function NanoLoansTerms() {
       <section className="page-hero">
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
-          <h1>Nano Loans Terms &amp; Conditions</h1>
-          <p>Terms and Conditions Applicable to NANO Loans — 2026</p>
+          <h1>Soft Loans Terms &amp; Conditions</h1>
+          <p>Terms and Conditions Applicable to SOFT Loans — 2026</p>
         </div>
       </section>
 
@@ -172,7 +172,7 @@ function NanoLoansTerms() {
         <div className="container">
           <Link to="/">Home</Link>
           <span className="separator">/</span>
-          <Link to="/for-you/loans">Nano Loans</Link>
+          <Link to="/for-you/loans">Soft Loans</Link>
           <span className="separator">/</span>
           <span className="current">Terms &amp; Conditions</span>
         </div>
@@ -206,7 +206,7 @@ function NanoLoansTerms() {
               marginBottom: '3rem',
             }}>
               <p style={{ color: '#374151', lineHeight: '1.9', fontSize: '0.9375rem', margin: 0 }}>
-                Please read the following Terms and Conditions carefully. By applying for or using a NANO loan from TN CyberTech Bank Limited, you acknowledge that you have read, understood and agree to be bound by these Terms and Conditions as may be amended from time to time.
+                Please read the following Terms and Conditions carefully. By applying for or using a SOFT loan from TN CyberTech Bank Limited, you acknowledge that you have read, understood and agree to be bound by these Terms and Conditions as may be amended from time to time.
               </p>
             </div>
 
@@ -270,12 +270,12 @@ function NanoLoansTerms() {
               borderLeft: '4px solid rgb(174,106,6)',
             }}>
               <p style={{ color: '#374151', lineHeight: '1.8', fontSize: '0.9375rem', margin: 0 }}>
-                <strong>I/We have read and understood the Nano Loans Terms and Conditions and agree to be bound by them.</strong>
+                <strong>I/We have read and understood the Soft Loans Terms and Conditions and agree to be bound by them.</strong>
               </p>
             </div>
 
             <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-              <Link to="/for-you/loans" className="cta-btn cta-btn-primary">Apply for a Nano Loan</Link>
+              <Link to="/for-you/loans" className="cta-btn cta-btn-primary">Apply for a Soft Loan</Link>
               <Link to="/contact" className="cta-btn cta-btn-secondary">Contact Us</Link>
             </div>
           </div>

@@ -23,7 +23,7 @@ function LoanAbout() {
           <span className="separator">/</span>
           <Link to="/for-you">For You</Link>
           <span className="separator">/</span>
-          <Link to="/for-you/loans">Nano Loans</Link>
+          <Link to="/for-you/loans">Soft Loans</Link>
           <span className="separator">/</span>
           <span className="current">60 Second Approval</span>
         </div>
@@ -36,11 +36,11 @@ function LoanAbout() {
               <line x1="19" y1="12" x2="5" y2="12"/>
               <polyline points="12 19 5 12 12 5"/>
             </svg>
-            Back to Nano Loans
+            Back to Soft Loans
           </Link>
           <div className="story-grid">
             <div className="story-content">
-              <span className="section-label">About Nano Loans</span>
+              <span className="section-label">About Soft Loans</span>
               <h2>Bridge Your Financial Gaps</h2>
               <p>
                 Our short term loan is designed to take care of those moments where you need to bridge gaps in one's finances for a short while. The loan application and disbursement process takes place in <strong style={{ color: 'rgb(174, 106, 6)' }}>under 60 seconds</strong>.
@@ -53,7 +53,7 @@ function LoanAbout() {
             <div className="story-image">
               <img
                 src="/Business/nano-loans.png"
-                alt="Nano Loans"
+                alt="Soft Loans"
                 style={{
                   width: '100%',
                   maxWidth: '400px',

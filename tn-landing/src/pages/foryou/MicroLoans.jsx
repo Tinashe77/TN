@@ -38,7 +38,7 @@ function MicroLoans() {
       <section className="page-hero about-hero" style={{ background: "url('/nano-loans-banner.jpg') no-repeat center center / cover" }}>
         <div className="page-hero-overlay"></div>
         <div className="page-hero-content">
-          <h1>Nano Loans</h1>
+          <h1>Soft Loans</h1>
           <p>Quick loans disbursed in under 60 seconds.</p>
         </div>
       </section>
@@ -49,7 +49,7 @@ function MicroLoans() {
           <span className="separator">/</span>
           <Link to="/for-you">For You</Link>
           <span className="separator">/</span>
-          <span className="current">Nano Loans</span>
+          <span className="current">Soft Loans</span>
         </div>
       </nav>
 

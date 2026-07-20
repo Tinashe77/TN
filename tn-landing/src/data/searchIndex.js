@@ -161,35 +161,35 @@ const searchIndex = [
 
   // Loans
   {
-    title: 'Nano Loans',
+    title: 'Soft Loans',
     description: 'Quick loans disbursed in under 60 seconds',
     category: 'For You',
     path: '/for-you/loans',
-    keywords: ['loans', 'nano', 'quick', 'instant', 'micro', '60 seconds'],
+    keywords: ['loans', 'soft', 'nano', 'quick', 'instant', 'micro', '60 seconds'],
   },
   {
-    title: 'About Nano Loans',
+    title: 'About Soft Loans',
     description: 'Learn about our instant loan products',
     category: 'For You',
     path: '/for-you/loans/about',
-    keywords: ['loans', 'nano', 'about', 'information'],
+    keywords: ['loans', 'soft', 'nano', 'about', 'information'],
   },
   {
-    title: 'How Nano Loans Work',
+    title: 'How Soft Loans Work',
     description: 'Four easy steps to get your loan',
     category: 'For You',
     path: '/for-you/loans/how-it-works',
     keywords: ['loans', 'how', 'process', 'steps'],
   },
   {
-    title: 'Nano Loans via Bank',
+    title: 'Soft Loans via Bank',
     description: 'Apply for loans by dialing *236#',
     category: 'For You',
     path: '/for-you/loans/bank',
     keywords: ['loans', 'bank', '*236#', 'ussd'],
   },
   {
-    title: 'Nano Loans via EcoCash',
+    title: 'Soft Loans via EcoCash',
     description: 'Apply for loans by dialing *151#',
     category: 'For You',
     path: '/for-you/loans/ecocash',

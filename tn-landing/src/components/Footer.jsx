@@ -65,7 +65,7 @@ function Footer() {
             </a>
             <Link to="/digital-banking-terms">Digital Banking T&amp;Cs</Link>
             <Link to="/business-terms">Business T&amp;Cs</Link>
-            <Link to="/nano-loans-terms">Nano Loans T&amp;Cs</Link>
+            <Link to="/nano-loans-terms">Soft Loans T&amp;Cs</Link>
             <Link to="/customer-service">Customer Service</Link>
           </div>
         </div>

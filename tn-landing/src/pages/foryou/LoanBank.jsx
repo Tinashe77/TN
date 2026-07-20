@@ -23,7 +23,7 @@ function LoanBank() {
           <span className="separator">/</span>
           <Link to="/for-you">For You</Link>
           <span className="separator">/</span>
-          <Link to="/for-you/loans">Nano Loans</Link>
+          <Link to="/for-you/loans">Soft Loans</Link>
           <span className="separator">/</span>
           <span className="current">TN CyberTech Bank</span>
         </div>
@@ -36,14 +36,14 @@ function LoanBank() {
               <line x1="19" y1="12" x2="5" y2="12"/>
               <polyline points="12 19 5 12 12 5"/>
             </svg>
-            Back to Nano Loans
+            Back to Soft Loans
           </Link>
           <div className="story-grid">
             <div className="story-content">
               <span className="section-label">Apply via Bank</span>
               <h2>Dial *236#</h2>
               <p>
-                Access Nano Loans directly from your TN CyberTech Bank account. Simply dial *236# to check your credit limit and apply for a loan instantly.
+                Access Soft Loans directly from your TN CyberTech Bank account. Simply dial *236# to check your credit limit and apply for a loan instantly.
               </p>
               <p>
                 The approval process takes place in under 60 seconds, and funds are disbursed immediately to your account. You'll receive an SMS with your disbursement amount.
