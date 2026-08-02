@@ -273,6 +273,53 @@ function VisaCards() {
             </p>
           </div>
 
+          <div style={{
+            maxWidth: '820px',
+            margin: '2.5rem auto 0',
+            padding: '1.5rem',
+            background: '#fff',
+            border: '1px solid rgba(255, 222, 74, 0.28)',
+            borderRadius: '16px',
+            boxShadow: '0 8px 28px rgba(0, 0, 0, 0.04)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '1.25rem',
+            flexWrap: 'wrap',
+          }}>
+            <div style={{ flex: '1 1 320px' }}>
+              <h3 style={{ color: '#111827', fontSize: '1.125rem', fontWeight: '700', marginBottom: '0.35rem' }}>
+                Updating your online subscriptions?
+              </h3>
+              <p style={{ color: '#6b7280', fontSize: '0.9375rem', lineHeight: '1.6', margin: 0 }}>
+                Follow the VISA Account Updater steps for Cybercash App or Internet Banking.
+              </p>
+            </div>
+            <Link
+              to="/for-you/cards/visa/account-updater"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.5rem',
+                flex: '0 0 auto',
+                padding: '0.875rem 1.1rem',
+                background: 'linear-gradient(90deg, rgb(174, 106, 6) 0%, rgb(255, 222, 74) 50%, rgb(174, 106, 6) 100%)',
+                color: '#000',
+                fontSize: '0.9rem',
+                fontWeight: '700',
+                textDecoration: 'none',
+                borderRadius: '10px',
+              }}
+            >
+              View update steps
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ width: '18px', height: '18px' }}>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </Link>
+          </div>
+
           <div style={{ textAlign: 'center', marginTop: '2rem' }}>
             <p style={{ color: '#6b7280', marginBottom: '1rem' }}>
               Email us at <a href="mailto:cardcentre@tncybertechbank.co.zw" style={{ color: 'rgb(174, 106, 6)' }}>cardcentre@tncybertechbank.co.zw</a>
@@ -285,7 +332,7 @@ function VisaCards() {
       <section className="content-section white-section">
         <div className="container">
           <div className="section-header" style={{ marginBottom: '2rem' }}>
-            <span className="section-label">Important Notice</span>
+            <span  className="section-label">Important Notice</span>
             <h2 style={{ color: '#111827' }}>Digital Services Withholding Tax (DSWT) — FAQs</h2>
             
           </div>

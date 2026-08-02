@@ -56,6 +56,7 @@ import VisaDebit from './pages/foryou/VisaDebit'
 import VisaDebitInfinite from './pages/foryou/VisaDebitInfinite'
 import VisaCreditClassic from './pages/foryou/VisaCreditClassic'
 import VisaCreditInfinite from './pages/foryou/VisaCreditInfinite'
+import VisaAccountUpdater from './pages/foryou/VisaAccountUpdater'
 import MicroLoans from './pages/foryou/MicroLoans'
 import LoanAbout from './pages/foryou/LoanAbout'
 import LoanHowItWorks from './pages/foryou/LoanHowItWorks'
@@ -183,6 +184,7 @@ function App() {
         <Route path="/for-you/cards/visa/debit-infinite" element={<VisaDebitInfinite />} />
         <Route path="/for-you/cards/visa/credit-classic" element={<VisaCreditClassic />} />
         <Route path="/for-you/cards/visa/credit-infinite" element={<VisaCreditInfinite />} />
+        <Route path="/for-you/cards/visa/account-updater" element={<VisaAccountUpdater />} />
         <Route path="/for-you/cards/terms" element={<CardsTerms />} />
         <Route path="/for-you/loans" element={<MicroLoans />} />
         <Route path="/for-you/loans/about" element={<LoanAbout />} />
