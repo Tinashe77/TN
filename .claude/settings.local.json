@@ -4,7 +4,19 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(git pull:*)",
+      "Bash(tree:*)",
+      "Bash(wc:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npx eslint:*)",
+      "Bash(git checkout:*)",
+      "Bash(ls:*)",
+      "Bash(git stash:*)",
+      "Bash(npm install:*)",
+      "Bash(SMTP_USER=\"tncustomer@tncybertechbank.co.zw\" SMTP_PASS=\"%tn@w3bS3rv1c3\" node server.js:*)",
+      "Bash(node --input-type=module --eval:*)",
+      "Bash(git -C:*)"
     ]
   }
 }
