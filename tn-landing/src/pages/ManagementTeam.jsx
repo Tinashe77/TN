@@ -120,6 +120,17 @@ He is a registered legal practitioner, conveyancer, and notary public, and an As
       bio: `With more than 30 years of experience in banking, David rose to become the Regional Head of Retail Credit at a local international financial institution. He joined TN Cybertech Bank in 2013 and has held senior management roles in credit and general risk management. He is currently the Head of Credit at TN Cybertech Bank. He holds a BSc in Economics and certificates in risk management, credit, lending, and general management.`
     },
     {
+      name: 'Mabasa Mwakutuya',
+      title: 'Head of Risk',
+      subtitle: '',
+      image: '/Mabasa-Mwakutuya.jpg',
+      bio: `Mr Mwakutuya is a seasoned Risk Management and Actuarial professional with over 13 years' experience. He previously worked as a Risk and Actuarial Consultant for Starz Risk Solutions and Modworld Consulting Pvt Ltd on ERM, Actuarial, IFRS 9, Basel II/III, Tariff Modelling, and Financial Modelling projects in Zimbabwe, Tanzania, Ghana, Lesotho, Botswana, and Zambia.
+
+Before this role, he served as the Quantitative Risk and Modelling Manager in the Risk Department.
+
+He is a Certified Expert in Risk Management, a designation awarded by the Frankfurt School of Finance and Management (Germany). He holds a Master of Science in Actuarial Finance from the University of Leeds (UK) and a Bachelor of Commerce Honours Degree in Actuarial Science from the National University of Science and Technology (NUST) Zimbabwe.`
+    },
+    {
       name: 'Vimbai Chinyadza',
       title: 'Head: Internal Audit',
       subtitle: '',
