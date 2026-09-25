@@ -86,6 +86,13 @@
 .invest-success .invest-submit { margin-top: 28px; }
 .invest-reference { overflow-wrap: anywhere; font-size: .85rem; background: #faf9f6; border-radius: 8px; padding: 16px; }
 .invest-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.invest-brands { background: #050707; padding: 36px 0 40px; border-bottom: 1px solid #b0832933; }
+.invest-brands h2 { color: #c8ba95; font-size: .75rem; font-weight: 500; letter-spacing: .14em; text-align: center; text-transform: uppercase; margin-bottom: 24px; }
+.invest-brand-logos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; list-style: none; padding: 0; margin: 0; }
+.invest-brand-logos li { display: flex; align-items: center; justify-content: center; min-width: 0; padding: 8px 24px; }
+.invest-brand-logos li + li { border-left: 1px solid #b0832933; }
+.invest-brand-logos img { display: block; width: 100%; max-width: 320px; height: 132px; object-fit: contain; }
+@media (max-width: 640px) { .invest-brands { padding: 30px 0; } .invest-brand-logos { grid-template-columns: 1fr; max-width: 350px; margin: 0 auto; } .invest-brand-logos li { padding: 14px 20px; } .invest-brand-logos li + li { border-left: 0; border-top: 1px solid #b0832933; } .invest-brand-logos img { height: 112px; } }
 @media (max-width: 1000px) { .invest-layout { gap: 32px; grid-template-columns: .7fr 1.5fr; } .invest-card { padding: 28px; } .invest-contact-options { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 800px) { .invest-layout { grid-template-columns: 1fr; } .invest-intro { display: none; } .invest-card { max-width: 700px; width: 100%; margin: 0 auto; } }
 @media (max-width: 560px) { .invest-hero { padding: 38px 0; } .invest-layout { padding: 24px 16px 48px; } .invest-card { padding: 24px 18px; border-radius: 14px; } .invest-grid, .invest-options { grid-template-columns: 1fr; } .invest-form-heading h2 { font-size: 1.45rem; } .invest-progress { gap: 6px; } .invest-progress button { flex-direction: column; align-items: flex-start; font-size: .68rem; gap: 6px; } .invest-review { padding: 16px; } .invest-review dl > div { grid-template-columns: 1fr; gap: 3px; } .invest-submit { min-width: 0; flex: 1; } }

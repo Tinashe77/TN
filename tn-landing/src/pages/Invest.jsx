@@ -159,6 +159,16 @@ export default function Invest() {
             </>}
           </section>
         </div>
+        <section className="invest-brands" aria-labelledby="invest-brands-heading">
+          <div className="container">
+            <h2 id="invest-brands-heading">Explore opportunities across TN</h2>
+            <ul className="invest-brand-logos">
+              <li><img src="/Tn-asset.png" alt="TN Asset Management (Private) Limited" width="4480" height="1545" loading="lazy" decoding="async" /></li>
+              <li><img src="/TN-cybertech.png" alt="TN CyberTech Bank Limited" width="3295" height="1621" loading="lazy" decoding="async" /></li>
+              <li><img src="/TN-livestock.png" alt="TN Livestock Trust (Private) Limited" width="3925" height="1621" loading="lazy" decoding="async" /></li>
+            </ul>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
