@@ -40,6 +40,7 @@ function Footer() {
           {/* Quick Links Column */}
           <div className="footer-links-col">
             <h4>Quick Links</h4>
+            <Link to="/invest">Invest in Zimbabwe</Link>
             <Link to="/diaspora">Diaspora Banking</Link>
             <Link to="/partners">Partners</Link>
             <Link to="/about">About Us</Link>

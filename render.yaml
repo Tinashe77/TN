@@ -1,0 +1,43 @@
+# Local deployment definition only. Creating this Blueprint provisions paid resources.
+services:
+  - type: web
+    name: tn-investment-api
+    runtime: node
+    region: frankfurt
+    plan: starter
+    rootDir: tn-api
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    healthCheckPath: /ready
+    autoDeployTrigger: "off"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "22"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: tn-investments
+          property: connectionString
+      - key: DATABASE_SSL
+        value: "true"
+      - key: ADMIN_USERNAME
+        sync: false
+      - key: ADMIN_PASSWORD
+        generateValue: true
+      - key: ADMIN_URL
+        sync: false
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASS
+        sync: false
+      - key: INVESTMENT_ENQUIRY_TO
+        sync: false
+
+databases:
+  - name: tn-investments
+    region: frankfurt
+    plan: 0.1c-256mb
+    databaseName: tn_investments
+    user: tn_api
+    ipAllowList: []

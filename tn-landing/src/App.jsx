@@ -28,6 +28,7 @@ import ZimswitchCardsGallery from './pages/ZimswitchCardsGallery'
 import Calculators from './pages/Calculators'
 import FinancialStatements from './pages/FinancialStatements'
 import Contact from './pages/Contact'
+import Invest from './pages/Invest'
 import Diaspora from './pages/Diaspora'
 import DiasporaAccounts from './pages/diaspora/DiasporaAccounts'
 import DiasporaBenefits from './pages/diaspora/DiasporaBenefits'
@@ -157,6 +158,7 @@ function App() {
         <Route path="/partners/:partnerId" element={<PartnerDetail />} />
         <Route path="/financial-statements" element={<FinancialStatements />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/invest" element={<Invest />} />
         <Route path="/diaspora" element={<Diaspora />} />
         <Route path="/diaspora/accounts" element={<DiasporaAccounts />} />
         <Route path="/diaspora/benefits" element={<DiasporaBenefits />} />

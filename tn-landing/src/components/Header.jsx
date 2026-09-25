@@ -24,6 +24,7 @@ function Header() {
   const isActive = (path) => location.pathname === path || location.pathname.startsWith(path + '/')
 
   const forYouItems = [
+    { label: 'Invest in Zimbabwe', path: '/invest', desc: 'Explore investment opportunities with TN' },
     { label: 'Mobile Banking', path: '/for-you/mobile-banking', desc: 'App, Online & USSD Banking' },
     { label: 'Personal Accounts', path: '/for-you/accounts', desc: 'Savings, Current & Student Accounts' },
     { label: 'Cards', path: '/for-you/cards', desc: 'Zimswitch & VISA Cards' },

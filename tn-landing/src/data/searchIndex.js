@@ -2,6 +2,7 @@
 // Each item contains title, description, category, path, and keywords
 
 const searchIndex = [
+  { title: 'Invest in Zimbabwe', description: 'Register your interest in TN investment opportunities', category: 'For You', path: '/invest', keywords: ['invest', 'investment', 'money market', 'capital markets', 'cattle', 'tokenisation', 'NovaCity'] },
   // Home
   {
     title: 'Home',

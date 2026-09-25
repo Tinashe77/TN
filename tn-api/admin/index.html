@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Investment enquiries | TN staff</title><link rel="stylesheet" href="/admin/style.css"><script src="/admin/app.js" defer></script></head>
+<body>
+<header><strong>TN <span>CYBERTECH BANK</span></strong><span>Investment enquiries · Staff portal</span></header>
+<main>
+  <div class="heading"><div><p class="eyebrow">INVEST IN ZIMBABWE</p><h1>Investment enquiries</h1><p>Review applications and manage follow-ups.</p></div><button id="refresh">Refresh</button></div>
+  <p class="notice">Contains personal information. Use an authorised device and close all private browsing windows when finished to clear your sign-in.</p>
+  <form id="filters"><label>Search<input id="search" type="search" maxlength="100" placeholder="Name, email or reference"></label><label>Status<select id="filter-status"><option value="">All statuses</option><option value="new">New</option><option value="contacted">Contacted</option><option value="closed">Closed</option></select></label><button type="submit">Apply filters</button></form>
+  <p id="feedback" role="status" aria-live="polite"></p>
+  <div class="table-wrap"><table><thead><tr><th>Applicant</th><th>Product</th><th>Received</th><th>Status</th><th>Action</th></tr></thead><tbody id="enquiries"></tbody></table></div>
+  <nav class="pagination" aria-label="Enquiry pages"><button id="previous">Previous</button><span id="page">Page 1</span><button id="next">Next</button></nav>
+  <dialog id="detail"><div class="dialog-heading"><h2>Enquiry details</h2><button id="close-detail" aria-label="Close enquiry details">Close</button></div><div id="detail-content"></div><form id="update-status"><label>Enquiry status<select id="enquiry-status"><option value="new">New</option><option value="contacted">Contacted</option><option value="closed">Closed</option></select></label><button type="submit">Save status</button></form><p id="detail-feedback" role="status"></p></dialog>
+</main>
+</body></html>

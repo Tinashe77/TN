@@ -1,9 +1,25 @@
 import express from 'express'
 import cors from 'cors'
 import nodemailer from 'nodemailer'
+import { investmentHandler } from './investment.js'
+import { createDatabase, migrate } from './database.js'
+import { createInvestmentStore } from './investment-store.js'
+import { createNotificationWorker } from './notifications.js'
+import { createAdminRouter } from './admin.js'
+import { createRateLimit } from './rate-limit.js'
 
 const app = express()
 const PORT = process.env.PORT || 8080
+// Render has one trusted ingress hop. Do not trust arbitrary forwarded headers locally.
+app.set('trust proxy', process.env.RENDER ? 1 : false)
+const database = createDatabase()
+if (database) {
+  try { await migrate(database) }
+  catch { console.error('Database migration failed; server startup stopped'); await database.end(); process.exit(1) }
+}
+const store = database ? createInvestmentStore(database) : null
+const rateLimit = createRateLimit()
+app.use((req, res, next) => { res.set('X-Content-Type-Options', 'nosniff'); next() })
 
 // CORS - allow requests from the frontend
 const allowedOrigins = [
@@ -13,7 +29,7 @@ const allowedOrigins = [
   'http://localhost:4173',
 ]
 
-app.use(cors({
+const publicCors = cors({
   origin: (origin, callback) => {
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true)
@@ -21,34 +37,13 @@ app.use(cors({
       callback(new Error('Not allowed by CORS'))
     }
   },
-}))
+})
+app.use((req, res, next) => req.path === '/admin' || req.path.startsWith('/admin/') ? next() : publicCors(req, res, next))
+// Preflights finish in CORS; rate-limit submissions before parsing enquiry details.
+app.use('/api/investment-enquiries', rateLimit)
 
+app.use('/api/investment-enquiries', express.json({ limit: '16kb' }))
 app.use(express.json({ limit: '1mb' }))
-
-// Rate limiting (simple in-memory)
-const submissions = new Map()
-const RATE_LIMIT_WINDOW = 60 * 1000 // 1 minute
-const RATE_LIMIT_MAX = 3 // max 3 submissions per minute per IP
-
-function rateLimit(req, res, next) {
-  const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress
-  const now = Date.now()
-  const windowStart = now - RATE_LIMIT_WINDOW
-
-  if (!submissions.has(ip)) {
-    submissions.set(ip, [])
-  }
-
-  const timestamps = submissions.get(ip).filter(t => t > windowStart)
-  submissions.set(ip, timestamps)
-
-  if (timestamps.length >= RATE_LIMIT_MAX) {
-    return res.status(429).json({ error: 'Too many requests. Please try again later.' })
-  }
-
-  timestamps.push(now)
-  next()
-}
 
 // SMTP transporter using Office 365
 const transporter = nodemailer.createTransport({
@@ -59,15 +54,11 @@ const transporter = nodemailer.createTransport({
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PASS,
   },
-  tls: {
-    ciphers: 'SSLv3',
-  },
+  requireTLS: true,
+  connectionTimeout: 10000,
+  greetingTimeout: 10000,
+  socketTimeout: 20000,
 })
-
-// Verify SMTP connection on startup
-transporter.verify()
-  .then(() => console.log('SMTP connection verified'))
-  .catch((err) => console.error('SMTP connection error:', err.message))
 
 // Health check
 app.get('/health', (req, res) => {
@@ -161,6 +152,39 @@ app.post('/api/contact', rateLimit, async (req, res) => {
   }
 })
 
-app.listen(PORT, () => {
+app.post('/api/investment-enquiries', investmentHandler({ store }))
+app.use('/admin', (req, res, next) => {
+  if (process.env.NODE_ENV === 'production' && !req.secure) return res.status(400).send('HTTPS is required for staff access.')
+  next()
+}, createAdminRouter({ pool: database,
+  username: process.env.ADMIN_USERNAME, password: process.env.ADMIN_PASSWORD,
+  rateLimit: createRateLimit({ max: 120 }),
+}))
+const notifications = createNotificationWorker({ pool: database,
+  sendMail: options => transporter.sendMail(options), sender: process.env.SMTP_USER,
+  recipient: process.env.INVESTMENT_ENQUIRY_TO, adminUrl: process.env.ADMIN_URL,
+})
+const stopNotifications = notifications.start()
+app.get('/ready', async (req, res) => {
+  try {
+    if (!database) throw new Error('Database unavailable')
+    await database.query('SELECT 1')
+    res.json({ status: 'ready' })
+  } catch { res.status(503).json({ status: 'unavailable' }) }
+})
+
+app.use((err, req, res, next) => {
+  if (err.type === 'entity.too.large') return res.status(413).json({ error: 'Your request is too large. Please submit only the enquiry details.' })
+  if (err.type === 'entity.parse.failed') return res.status(400).json({ error: 'Invalid request.' })
+  console.error('Request failed')
+  res.status(500).json({ error: 'The request could not be completed.' })
+})
+
+const server = app.listen(PORT, '0.0.0.0', () => {
   console.log(`TN API server running on port ${PORT}`)
+})
+
+process.on('SIGTERM', () => {
+  stopNotifications()
+  server.close(async () => { await database?.end(); transporter.close() })
 })
