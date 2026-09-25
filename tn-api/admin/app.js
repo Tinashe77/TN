@@ -43,7 +43,7 @@ async function showDetail(id) {
     if (selectedId !== id) return
     const values = [
       ['Reference', enquiry.id], ['Name', `${enquiry.first_name} ${enquiry.last_name}`], ['Email', enquiry.email],
-      ['Mobile', enquiry.phone], ['ID type', enquiry.id_type], ['ID number', enquiry.id_number],
+      ['Mobile', enquiry.phone], ['ID type', enquiry.id_type || 'Not provided'], ['ID number', enquiry.id_number || 'Not provided'],
       ['Preferred contact', enquiry.contact_method], ['Product', enquiry.product], ['Other interest', enquiry.other_product || '—'],
       ['Received', date(enquiry.created_at)], ['Consent accepted', date(enquiry.consent_accepted_at)],
       ['Consent version', enquiry.consent_version], ['Consent', enquiry.consent_text],

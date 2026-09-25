@@ -47,3 +47,16 @@ test('frontend and independently deployed API use matching form definitions', as
   const backend = await import('./investment-config.js')
   assert.deepEqual({ ...frontend }, { ...backend })
 })
+
+test('identity fields are independently optional and normalized to null', () => {
+  for (const value of [undefined, null, '', '   ']) {
+    const both = validateInvestment({ ...enquiry, idType: value, idNumber: value }).data
+    assert.equal(both.idType, null)
+    assert.equal(both.idNumber, null)
+    assert.equal(validateInvestment({ ...enquiry, idType: value }).data.idNumber, enquiry.idNumber)
+    assert.equal(validateInvestment({ ...enquiry, idNumber: value }).data.idType, enquiry.idType)
+  }
+  for (const change of [{ idType: 'invalid' }, { idNumber: {} }, { idNumber: 'x'.repeat(61) }, { idNumber: 'a\nb' }]) {
+    assert.throws(() => validateInvestment({ ...enquiry, ...change }))
+  }
+})

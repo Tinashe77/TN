@@ -105,3 +105,20 @@ test('staff HTTP routes enforce authentication and audit updates without documen
     await request(app).get('/admin/').auth(username, password).expect(200).expect(/Investment enquiries/)
   } finally { await close() }
 })
+
+test('enquiries persist with either or both identity fields omitted', async () => {
+  const { pool, close } = await fixture()
+  const { validateInvestment } = await import('./investment.js')
+  try {
+    const store = createInvestmentStore(pool)
+    for (const identity of [{ idType: '', idNumber: '' }, { idType: 'Passport', idNumber: '' }, { idType: '', idNumber: 'TEST123' }]) {
+      const validated = validateInvestment({ ...data, ...identity, consent: true }).data
+      const id = randomUUID()
+      await store.save({ id, data: validated })
+      assert.equal((await store.save({ id, data: validated })).duplicate, true)
+      const row = (await pool.query('SELECT id_type, id_number FROM investment_enquiries WHERE id = $1', [id])).rows[0]
+      assert.equal(row.id_type, identity.idType || null)
+      assert.equal(row.id_number, identity.idNumber || null)
+    }
+  } finally { await close() }
+})

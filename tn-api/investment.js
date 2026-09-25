@@ -2,15 +2,20 @@ import { investmentProducts, contactMethods } from './investment-config.js'
 
 export function validateInvestment(body) {
   if (!body || typeof body !== 'object' || Array.isArray(body)) throw new Error('Please provide your enquiry details.')
-  const fields = { firstName: 100, lastName: 100, email: 254, phone: 30, idType: 20, idNumber: 60, contactMethod: 20, product: 120 }
+  const fields = { firstName: 100, lastName: 100, email: 254, phone: 30, contactMethod: 20, product: 120 }
   const data = {}
   for (const [key, max] of Object.entries(fields)) {
     if (typeof body[key] !== 'string' || !body[key].trim() || body[key].length > max || /[\r\n\x00]/.test(body[key])) throw new Error('Please complete all required fields with valid details.')
     data[key] = body[key].trim()
   }
+  for (const [key, max] of Object.entries({ idType: 20, idNumber: 60 })) {
+    const value = body[key]
+    if (value != null && (typeof value !== 'string' || value.length > max || /[\r\n\x00]/.test(value))) throw new Error('Please provide valid optional identity details.')
+    data[key] = value == null ? null : value.trim() || null
+  }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) throw new Error('Please enter a valid email address.')
   if (!/^\+?[\d ()-]+$/.test(data.phone) || data.phone.replace(/\D/g, '').length < 7 || data.phone.replace(/\D/g, '').length > 15) throw new Error('Please enter a valid phone number, including your country code.')
-  if (!['ID', 'Passport'].includes(data.idType) || !contactMethods.includes(data.contactMethod) || !investmentProducts.includes(data.product)) throw new Error('Please select valid identity, contact and product options.')
+  if ((data.idType !== null && !['ID', 'Passport'].includes(data.idType)) || !contactMethods.includes(data.contactMethod) || !investmentProducts.includes(data.product)) throw new Error('Please select valid identity, contact and product options.')
   if (body.consent !== true) throw new Error('Please accept the declaration and consent to continue.')
   if (data.product === 'Other') {
     if (typeof body.otherProduct !== 'string' || !body.otherProduct.trim() || body.otherProduct.length > 300) throw new Error('Please describe the product you are interested in.')

@@ -85,7 +85,7 @@ export default function Invest() {
   }
 
   function textField(name, label, options = {}) {
-    return <label>{label} <span aria-hidden="true">*</span><input type="text" name={name} value={details[name]} onChange={change} required {...options} /></label>
+    return <label>{label} {options.required === false ? <span>(optional)</span> : <span aria-hidden="true">*</span>}<input type="text" name={name} value={details[name]} onChange={change} required {...options} /></label>
   }
 
   return (
@@ -124,7 +124,7 @@ export default function Invest() {
                 <fieldset disabled={sending} className="invest-fields">
                   <legend className="invest-sr-only">{steps[step].title}</legend>
                   {step === 0 && <div className="invest-step-content">
-                    <p className="invest-required">All fields are required.</p>
+                    <p className="invest-required">Fields marked * are required. Identity details are optional.</p>
                     <div className="invest-grid">
                       {textField('firstName', 'First name', { autoComplete: 'given-name', maxLength: 100 })}
                       {textField('lastName', 'Last name', { autoComplete: 'family-name', maxLength: 100 })}
@@ -133,8 +133,8 @@ export default function Invest() {
                     </div>
                     <p id="phone-help" className="invest-hint">Include your country code in your phone number.</p>
                     <div className="invest-identity"><h3>Identity details</h3><div className="invest-grid">
-                      <label>Type of ID <span aria-hidden="true">*</span><select name="idType" value={details.idType} onChange={change} required><option value="" disabled>Select ID type</option><option value="ID">National ID</option><option value="Passport">Passport</option></select></label>
-                      {textField('idNumber', details.idType === 'Passport' ? 'Passport number' : 'ID number', { maxLength: 60 })}
+                      <label>Type of ID <span>(optional)</span><select name="idType" value={details.idType} onChange={change}><option value="">Prefer not to provide</option><option value="ID">National ID</option><option value="Passport">Passport</option></select></label>
+                      {textField('idNumber', details.idType === 'Passport' ? 'Passport number' : 'ID number', { maxLength: 60, required: false })}
                     </div></div>
                   </div>}
                   {step === 1 && <div className="invest-step-content">
@@ -146,7 +146,7 @@ export default function Invest() {
                   </div>}
                   {step === 2 && <div className="invest-step-content">
                     <div className="invest-review"><div className="invest-review-heading"><h3>Your details</h3><button type="button" onClick={() => navigate(0)}>Edit details</button></div><dl>
-                      <div><dt>Full name</dt><dd>{details.firstName} {details.lastName}</dd></div><div><dt>Mobile number</dt><dd>{details.phone}</dd></div><div><dt>Email address</dt><dd>{details.email}</dd></div><div><dt>{details.idType === 'ID' ? 'National ID' : 'Passport'}</dt><dd>{details.idNumber}</dd></div>
+                      <div><dt>Full name</dt><dd>{details.firstName} {details.lastName}</dd></div><div><dt>Mobile number</dt><dd>{details.phone}</dd></div><div><dt>Email address</dt><dd>{details.email}</dd></div><div><dt>ID type</dt><dd>{details.idType === 'ID' ? 'National ID' : details.idType || 'Not provided'}</dd></div><div><dt>ID number</dt><dd>{details.idNumber.trim() || 'Not provided'}</dd></div>
                     </dl></div>
                     <div className="invest-review"><div className="invest-review-heading"><h3>Your interests</h3><button type="button" onClick={() => navigate(1)}>Edit interests</button></div><dl><div><dt>Investment opportunity</dt><dd>{details.product === 'Other' ? details.otherProduct : details.product}</dd></div><div><dt>Preferred contact</dt><dd>{details.contactMethod}</dd></div></dl></div>
                     <div className="invest-consent"><label><input type="checkbox" name="consent" checked={details.consent} onChange={change} required /><span>{consentText}</span></label><p>Read our <Link to="/privacy-statement" target="_blank" rel="noopener noreferrer">Privacy Statement (opens in a new tab)</Link>.</p></div>
