@@ -2,7 +2,8 @@ import express from 'express'
 import cors from 'cors'
 import nodemailer from 'nodemailer'
 import { investmentHandler } from './investment.js'
-import { createDatabase, migrate } from './database.js'
+import { createDatabase } from './database.js'
+import { databaseErrorSummary } from './database-errors.js'
 import { createInvestmentStore } from './investment-store.js'
 import { createNotificationWorker } from './notifications.js'
 import { createAdminRouter } from './admin.js'
@@ -12,10 +13,14 @@ const app = express()
 const PORT = process.env.PORT || 8080
 // Render has one trusted ingress hop. Do not trust arbitrary forwarded headers locally.
 app.set('trust proxy', process.env.RENDER ? 1 : false)
-const database = createDatabase()
-if (database) {
-  try { await migrate(database) }
-  catch { console.error('Database migration failed; server startup stopped'); await database.end(); process.exit(1) }
+let database
+try {
+  database = createDatabase()
+  if (database) await database.initialize()
+} catch (error) {
+  console.error('MongoDB startup failed.', databaseErrorSummary(error))
+  await database?.close()
+  process.exit(1)
 }
 const store = database ? createInvestmentStore(database) : null
 const rateLimit = createRateLimit()
@@ -156,11 +161,11 @@ app.post('/api/investment-enquiries', investmentHandler({ store }))
 app.use('/admin', (req, res, next) => {
   if (process.env.NODE_ENV === 'production' && !req.secure) return res.status(400).send('HTTPS is required for staff access.')
   next()
-}, createAdminRouter({ pool: database,
+}, createAdminRouter({ store,
   username: process.env.ADMIN_USERNAME, password: process.env.ADMIN_PASSWORD,
   rateLimit: createRateLimit({ max: 120 }),
 }))
-const notifications = createNotificationWorker({ pool: database,
+const notifications = createNotificationWorker({ store,
   sendMail: options => transporter.sendMail(options), sender: process.env.SMTP_USER,
   recipient: process.env.INVESTMENT_ENQUIRY_TO, adminUrl: process.env.ADMIN_URL,
 })
@@ -168,7 +173,7 @@ const stopNotifications = notifications.start()
 app.get('/ready', async (req, res) => {
   try {
     if (!database) throw new Error('Database unavailable')
-    await database.query('SELECT 1')
+    await database.ping()
     res.json({ status: 'ready' })
   } catch { res.status(503).json({ status: 'unavailable' }) }
 })
@@ -186,5 +191,5 @@ const server = app.listen(PORT, '0.0.0.0', () => {
 
 process.on('SIGTERM', () => {
   stopNotifications()
-  server.close(async () => { await database?.end(); transporter.close() })
+  server.close(async () => { await database?.close(); transporter.close() })
 })
