@@ -1,4 +1,5 @@
 import express from 'express'
+import { enquiriesCsv } from './csv.js'
 import { createHash, timingSafeEqual } from 'node:crypto'
 import { fileURLToPath } from 'node:url'
 
@@ -40,6 +41,17 @@ export function createAdminRouter({ store, username, password, rateLimit }) {
     const status = ['new', 'contacted', 'closed'].includes(req.query.status) ? req.query.status : null
     const search = typeof req.query.search === 'string' ? req.query.search.trim().slice(0, 100) : ''
     res.json(await store.list({ page, status, search, actor: req.staffUser }))
+  }))
+  router.get('/api/enquiries.csv', wrap(async (req, res) => {
+    const status = ['new', 'contacted', 'closed'].includes(req.query.status) ? req.query.status : null
+    const search = typeof req.query.search === 'string' ? req.query.search.trim().slice(0, 100) : ''
+    let rows
+    try { rows = await store.exportRows({ status, search, actor: req.staffUser }) }
+    catch (error) {
+      if (error.status === 422) return res.status(422).json({ error: error.message })
+      throw error
+    }
+    res.type('text/csv').attachment(`tn-enquiries-${new Date().toISOString().slice(0, 10)}.csv`).send(enquiriesCsv(rows))
   }))
   router.param('id', (req, res, next, id) => {
     if (!/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(id)) return res.status(400).json({ error: 'Invalid enquiry reference.' })

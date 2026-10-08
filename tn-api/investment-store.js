@@ -7,6 +7,17 @@ const publicFields = {
   consent_accepted_at: 1, status: 1, created_at: 1, updated_at: 1, notification_sent_at: 1,
 }
 
+function enquiryFilter(status, search) {
+  const filter = {}
+  if (status) filter.status = status
+  if (search) {
+    const literal = search.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+    filter.$or = ['first_name', 'last_name', 'email', 'id'].map(field => ({ [field]: { $regex: literal, $options: 'i' } }))
+    filter.$or.push({ $expr: { $regexMatch: { input: { $concat: ['$first_name', ' ', '$last_name'] }, regex: literal, options: 'i' } } })
+  }
+  return filter
+}
+
 export function createInvestmentStore(database) {
   const { enquiries, audit } = database
   return {
@@ -43,17 +54,22 @@ export function createInvestmentStore(database) {
       }
     },
     async list({ page, status, search, actor }) {
-      const filter = {}
-      if (status) filter.status = status
-      if (search) {
-        const literal = search.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-        filter.$or = ['first_name', 'last_name', 'email', 'id'].map(field => ({ [field]: { $regex: literal, $options: 'i' } }))
-        filter.$or.push({ $expr: { $regexMatch: { input: { $concat: ['$first_name', ' ', '$last_name'] }, regex: literal, options: 'i' } } })
-      }
+      const filter = enquiryFilter(status, search)
       const rows = await enquiries.find(filter, { projection: { _id: 0, id: 1, first_name: 1, last_name: 1, product: 1, status: 1, created_at: 1 }, maxTimeMS: 5000 })
         .sort({ created_at: -1, _id: -1 }).skip((page - 1) * 25).limit(26).toArray()
       await audit.insertOne({ actor, action: 'list', created_at: new Date() })
       return { enquiries: rows.slice(0, 25), hasMore: rows.length > 25, page }
+    },
+    async exportRows({ status, search, actor }) {
+      const rows = await enquiries.find(enquiryFilter(status, search), { projection: publicFields, maxTimeMS: 10000 })
+        .sort({ created_at: -1, _id: -1 }).limit(10001).toArray()
+      if (rows.length > 10000) {
+        const error = new Error('Export exceeds 10,000 enquiries. Narrow your search or status filter and try again.')
+        error.status = 422
+        throw error
+      }
+      await audit.insertOne({ actor, action: 'export_csv', count: rows.length, created_at: new Date() })
+      return rows
     },
     async get(id, actor) {
       const row = await enquiries.findOne({ _id: id.toLowerCase() }, { projection: publicFields })

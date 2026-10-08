@@ -83,3 +83,7 @@ The suite starts a temporary local MongoDB 7.0.14 server using `mongodb-memory-s
 ## Operations
 
 Configure the organisation's retention period and database backups before collecting live data. Do not log request bodies, database credentials or ID numbers. The request limiter is in-process for the single-instance deployment; use shared limiting before scaling. Archive historical status events according to the organisation's policy if records accumulate very large histories.
+
+### Export form responses
+
+Open the API's `/admin/` portal and sign in with `ADMIN_USERNAME` and `ADMIN_PASSWORD`. Use **Export CSV** to download all enquiries matching the search and status currently selected, across all pages. Clear the filters to export everything. Exports include contact details, optional identity fields, product interest, status and consent timestamps; each export is audited. Above 10,000 matches, narrow the filters before exporting. CSV files use UTF-8 and quote/escape values; formula-like values are prefixed with an apostrophe for spreadsheet safety. When importing into Excel, select Text for phone and ID columns to preserve leading zeros. Store downloaded files securely as they contain personal information.

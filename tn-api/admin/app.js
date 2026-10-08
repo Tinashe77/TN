@@ -75,3 +75,27 @@ byId('update-status').addEventListener('submit', async event => {
   finally { button.disabled = false }
 })
 void load()
+
+byId('export-csv').addEventListener('click', async () => {
+  const button = byId('export-csv')
+  button.disabled = true
+  byId('feedback').textContent = 'Preparing CSV…'
+  try {
+    const query = new URLSearchParams({ search: byId('search').value, status: byId('filter-status').value })
+    const response = await fetch(`/admin/api/enquiries.csv?${query}`, { cache: 'no-store' })
+    if (!response.ok) {
+      const data = await response.json().catch(() => ({}))
+      throw new Error(data.error || 'Unable to export enquiries. Check your sign-in and try again.')
+    }
+    const url = URL.createObjectURL(await response.blob())
+    const link = document.createElement('a')
+    link.href = url
+    link.download = `tn-enquiries-${new Date().toISOString().slice(0, 10)}.csv`
+    document.body.append(link)
+    link.click()
+    link.remove()
+    setTimeout(() => URL.revokeObjectURL(url), 60000)
+    byId('feedback').textContent = 'CSV downloaded.'
+  } catch (error) { byId('feedback').textContent = error.message }
+  finally { button.disabled = false }
+})
