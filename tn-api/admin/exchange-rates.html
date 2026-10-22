@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Exchange rates | TN staff</title><link rel="stylesheet" href="/admin/style.css"><script src="/admin/exchange-rates.js" defer></script></head>
+<body>
+<header><strong>TN <span>CYBERTECH BANK</span></strong><span>Exchange rates · Staff portal</span></header>
+<main>
+  <nav class="staff-nav" aria-label="Staff sections"><a href="/admin/">Investment enquiries</a><a href="/admin/exchange-rates.html" aria-current="page">Exchange rates</a></nav>
+  <div class="heading"><div><p class="eyebrow">TREASURY</p><h1>Exchange rates</h1><p>Prepare, review and publish the website’s indicative rates.</p></div><button id="reload" type="button">Reload published rates</button></div>
+  <p id="published-status" class="notice">Loading published rates…</p>
+  <section class="rate-import" aria-labelledby="upload-title"><h2 id="upload-title">1. Upload or enter rates</h2><p>Upload the daily .xlsx template (up to 5 MB), or edit the table below. Uploading replaces the editor only.</p>
+    <form id="import-form"><label>Daily rate workbook<input id="workbook" type="file" accept=".xlsx" required></label><button type="submit">Import workbook</button></form>
+    <p class="help">Recalculate and save in Excel before uploading. Saved formula results are imported. Only the foreign exchange table is used.</p>
+  </section>
+  <form id="rates-form" class="rates-form">
+    <fieldset id="editor" disabled>
+      <div class="rate-settings"><label>Effective date<input id="effective-date" type="date" required></label><label>Base currency<input value="ZWG" readonly aria-label="Base currency"></label></div>
+      <p class="help">Preserve the template’s quote convention. Mark currencies shown with * as indirect quotes. Change is a percentage value: enter −0.10 for −0.10%.</p>
+      <div class="table-wrap"><table class="rate-editor"><caption>Rates to publish</caption><thead><tr><th scope="col">Code</th><th scope="col">Currency name</th><th scope="col">Buying</th><th scope="col">Mid</th><th scope="col">Selling</th><th scope="col">Change %</th><th scope="col">Indirect *</th><th scope="col">Action</th></tr></thead><tbody id="rate-rows"></tbody></table></div>
+      <div class="rate-actions"><button id="add-row" type="button">Add currency</button><button type="submit">2. Review for publication</button></div>
+    </fieldset>
+  </form>
+  <p id="feedback" role="status" aria-live="polite"></p>
+  <section class="rate-history"><h2>Recent publications</h2><p>The last 100 publications are retained for review.</p><ul id="history"></ul></section>
+  <dialog id="review" aria-labelledby="review-heading"><div class="dialog-heading"><h2 id="review-heading">Review exchange rates</h2><button id="close-review" type="button">Back to editing</button></div><p id="review-date"></p><p id="date-warning" class="notice" hidden></p><div id="review-table" class="table-wrap"></div><p class="help">This preview uses the website’s display precision. Full entered values are retained. * Denotes indirect quotes. Rates are indicative and subject to availability of matching assets. Please confirm with Treasury.</p><p>Publishing replaces the rate table shown on the website.</p><button id="publish" type="button">Publish rates to website</button><p id="publish-feedback" role="status" aria-live="polite"></p></dialog>
+</main>
+</body></html>

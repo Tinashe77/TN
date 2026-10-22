@@ -1,4 +1,5 @@
 import express from 'express'
+import { createExchangeRateStore, publicRatesHandler } from './exchange-rates.js'
 import cors from 'cors'
 import nodemailer from 'nodemailer'
 import { investmentHandler } from './investment.js'
@@ -22,6 +23,7 @@ try {
   await database?.close()
   process.exit(1)
 }
+const rateStore = database ? createExchangeRateStore(database) : null
 const store = database ? createInvestmentStore(database) : null
 const rateLimit = createRateLimit()
 app.use((req, res, next) => { res.set('X-Content-Type-Options', 'nosniff'); next() })
@@ -66,6 +68,8 @@ const transporter = nodemailer.createTransport({
 })
 
 // Health check
+app.get('/api/exchange-rates', publicRatesHandler(rateStore))
+
 app.get('/health', (req, res) => {
   res.json({ status: 'ok' })
 })
@@ -161,7 +165,7 @@ app.post('/api/investment-enquiries', investmentHandler({ store }))
 app.use('/admin', (req, res, next) => {
   if (process.env.NODE_ENV === 'production' && !req.secure) return res.status(400).send('HTTPS is required for staff access.')
   next()
-}, createAdminRouter({ store,
+}, createAdminRouter({ store, rateStore,
   username: process.env.ADMIN_USERNAME, password: process.env.ADMIN_PASSWORD,
   rateLimit: createRateLimit({ max: 120 }),
 }))

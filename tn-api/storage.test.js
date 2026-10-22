@@ -1,3 +1,4 @@
+import { createExchangeRateStore, publicRatesHandler } from './exchange-rates.js'
 import { test, before, after } from 'node:test'
 import assert from 'node:assert/strict'
 import { randomUUID } from 'node:crypto'
@@ -136,5 +137,40 @@ test('staff routes authenticate, search literally, paginate and atomically audit
     assert.equal(empty.text.trim().split('\r\n').length, 1)
     assert.equal(await database.audit.countDocuments({ action: 'export_csv', actor: username }), 3)
 
+  } finally { await close() }
+})
+
+test('exchange rate publication is authenticated, atomic, audited and protects against stale edits', async () => {
+  const { database, store, close } = await fixture()
+  try {
+    const rateStore = createExchangeRateStore(database)
+    const username = 'treasury'; const password = 'test-treasury-password-12345'
+    const app = express(); app.use(express.json())
+    app.get('/api/exchange-rates', publicRatesHandler(rateStore))
+    app.use('/admin', createAdminRouter({ store, rateStore, username, password, rateLimit: (req, res, next) => next() }))
+    const payload = { effectiveDate: '2020-10-09', baseCurrency: 'ZWG', expectedRevision: 0, rates: [{ code: 'USD', name: 'US Dollar', buying: 26, mid: 27, selling: 28, change: 0, indirect: true }] }
+    assert.equal((await request(app).get('/api/exchange-rates').expect(200)).body.table, null)
+    await request(app).post('/admin/api/exchange-rates/publish').send(payload).expect(401)
+    await request(app).post('/admin/api/exchange-rates/publish').auth(username, password).send(payload).expect(403)
+    await request(app).post('/admin/api/exchange-rates/publish').auth(username, password).set('X-TN-Admin', '1').set('Sec-Fetch-Site', 'cross-site').send(payload).expect(403)
+    await request(app).post('/admin/api/exchange-rates/import').auth(username, password).set('X-TN-Admin', '1').set('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet').send(Buffer.from('invalid')).expect(400)
+    assert.equal(await rateStore.current(), null)
+    const published = await request(app).post('/admin/api/exchange-rates/publish').auth(username, password).set('X-TN-Admin', '1').send(payload).expect(200)
+    assert.equal(published.body.table.revision, 1)
+    const publicResponse = await request(app).get('/api/exchange-rates').expect(200)
+    assert.equal(publicResponse.body.table.publishedBy, undefined)
+    assert.equal(publicResponse.body.table.rates[0].mid, 27)
+    assert.equal(publicResponse.headers['cache-control'], 'no-store')
+    await request(app).post('/admin/api/exchange-rates/publish').auth(username, password).set('X-TN-Admin', '1').send(payload).expect(409)
+    await request(app).post('/admin/api/exchange-rates/publish').auth(username, password).set('X-TN-Admin', '1').send({ ...payload, expectedRevision: 1, rates: [] }).expect(400)
+    const results = await Promise.allSettled([rateStore.publish({ ...payload, expectedRevision: 1 }, username), rateStore.publish({ ...payload, expectedRevision: 1 }, username)])
+    assert.equal(results.filter(r => r.status === 'fulfilled').length, 1)
+    assert.equal(results.find(r => r.status === 'rejected').reason.status, 409)
+    const history = await request(app).get('/admin/api/exchange-rates/history').auth(username, password).expect(200)
+    assert.equal(history.body.history.length, 2)
+    assert.equal(history.body.history[0].publishedBy, username)
+    assert.equal((await rateStore.current()).revision, 2)
+    const unavailable = express(); unavailable.get('/', publicRatesHandler(null))
+    await request(unavailable).get('/').expect(503)
   } finally { await close() }
 })

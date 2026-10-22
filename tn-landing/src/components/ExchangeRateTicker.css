@@ -1,0 +1,63 @@
+:root { --fx-height: 58px; }
+.site-with-rates { padding-top: var(--fx-height); min-height: 100%; }
+.site-with-rates .site-header, .site-with-rates .header, .site-with-rates .mobile-header { top: var(--fx-height); }
+.site-with-rates .mobile-menu, .site-with-rates .mobile-menu-overlay, .site-with-rates .menu-overlay { top: var(--fx-height); }
+.fx-ticker { position: fixed; inset: 0 0 auto; height: var(--fx-height); z-index: 1100; display: flex; align-items: stretch; background: #14130f; border-bottom: 1px solid #514426; color: #f6f2e5; font: 12px/1.4 Inter, system-ui, sans-serif; }
+.fx-label { flex: 0 0 auto; display: flex; flex-direction: column; justify-content: center; padding: 0 24px; border-right: 1px solid #393427; background: #211d12; z-index: 1; }
+.fx-label-title { color: #ffde4a; text-transform: uppercase; font-weight: 700; letter-spacing: .1em; font-size: 10px; display: flex; align-items: center; gap: 8px; }
+.fx-dot { width: 5px; height: 5px; border-radius: 50%; background: #ffde4a; }
+.fx-date { font-size: 10px; color: #cec5ae; margin-top: 4px; white-space: nowrap; }
+.fx-window { overflow: hidden; flex: 1; min-width: 0; mask-image: linear-gradient(to right, transparent, black 20px, black calc(100% - 20px), transparent); }
+.fx-track { display: flex; width: max-content; height: 100%; animation: fx-scroll 160s linear infinite; }
+.fx-group { display: flex; align-items: center; flex-shrink: 0; }
+.fx-item { display: flex; gap: 18px; align-items: center; padding: 0 28px; border-right: 1px solid #393427; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.fx-item strong { color: #ffde4a; font-size: 13px; letter-spacing: .04em; }
+.fx-item small { font-size: 9px; color: #a9a18d; margin-right: 6px; }
+.fx-change { font-size: 11px; }
+.fx-up { color: #85d9ab; } .fx-down { color: #f2a59a; }
+.fx-controls { display: flex; align-items: center; gap: 8px; padding: 0 18px 0 10px; z-index: 1; }
+.fx-controls button { border: 1px solid #534930; border-radius: 5px; background: transparent; color: #ffde4a; cursor: pointer; font: inherit; min-height: 32px; }
+.fx-controls .fx-pause { width: 32px; font-size: 15px; }
+.fx-controls .fx-view { padding: 0 10px; white-space: nowrap; font-weight: 600; }
+.fx-ticker:focus-within .fx-track, .fx-ticker:hover .fx-track, .fx-paused .fx-track { animation-play-state: paused; }
+.fx-empty { align-self: center; padding: 0 24px; color: #cbc5b7; font-size: 12px; }
+@keyframes fx-scroll { to { transform: translateX(-50%); } }
+.fx-dialog { margin: auto; width: min(920px, calc(100vw - 32px)); max-height: 88dvh; padding: 32px; border: 1px solid #d9cfb9; border-radius: 16px; background: #faf9f5; color: #29261f; box-shadow: 0 32px 100px #0008; color-scheme: light; }
+.fx-dialog::backdrop { background: #000b; backdrop-filter: blur(4px); }
+.fx-dialog-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.fx-dialog .fx-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: .16em; color: #86631e; margin: 0 0 8px; }
+.fx-dialog h2 { font-size: 26px; line-height: 1.2; letter-spacing: -.04em; margin: 0; }
+.fx-dialog-header button { width: 36px; height: 36px; border: 1px solid #d9cfb9; border-radius: 50%; color: #29261f; background: white; cursor: pointer; flex-shrink: 0; }
+.fx-table-date { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; color: #625a49; font-size: 13px; margin: 24px 0 16px; }
+.fx-table-scroll { overflow-x: auto; border: 1px solid #e3dfd3; border-radius: 8px; }
+.fx-dialog table { width: 100%; border-collapse: collapse; text-align: right; font-size: 13px; font-variant-numeric: tabular-nums; }
+.fx-dialog th, .fx-dialog td { padding: 13px 16px; border-bottom: 1px solid #e7e3d8; white-space: nowrap; }
+.fx-dialog thead { background: #ede9de; color: #625a49; font-size: 11px; }
+.fx-dialog th:first-child { text-align: left; }
+.fx-dialog tbody th span { display: block; font-weight: 400; font-size: 11px; color: #766e5c; margin-top: 3px; }
+.fx-dialog tbody tr:last-child > * { border-bottom: none; }
+.fx-dialog .fx-up { color: #24704a; } .fx-dialog .fx-down { color: #a03c32; }
+.fx-dialog .fx-footnote { font-size: 11px; color: #746c5c; margin: 16px 0 0; line-height: 1.7; }
+.fx-notice { padding: 12px 16px; border-radius: 6px; background: #f5eac9; font-size: 12px; margin: 12px 0; }
+.fx-sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+@media (max-width: 700px) {
+  :root { --fx-height: 80px; }
+  .fx-ticker { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: 32px 48px; }
+  .fx-label { grid-column: 1 / -1; width: 100%; height: 32px; flex-direction: row; align-items: center; justify-content: space-between; padding: 0 12px; border-right: 0; gap: 8px; }
+  .fx-date { margin: 0; font-size: 9px; }
+  .fx-label-title { font-size: 9px; letter-spacing: .06em; }
+  .fx-window { height: 48px; }
+  .fx-controls { height: 48px; padding-right: 10px; }
+  .fx-controls .fx-view { font-size: 11px; }
+  .fx-item { padding: 0 20px; gap: 14px; }
+  .fx-empty { grid-column: 1 / -1; font-size: 11px; padding: 0 12px; height: 48px; display: flex; align-items: center; }
+  .fx-dialog { padding: 20px; }
+  .fx-dialog h2 { font-size: 21px; }
+  .fx-dialog th, .fx-dialog td { padding: 11px 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fx-track { animation: none; }
+  .fx-group + .fx-group { display: none; }
+  .fx-window { overflow-x: auto; }
+  .fx-pause { display: none; }
+}

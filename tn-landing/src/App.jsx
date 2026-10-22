@@ -12,6 +12,7 @@ function RouteTracker() {
   }, [location])
   return null
 }
+import ExchangeRateTicker from './components/ExchangeRateTicker'
 import Home from './pages/Home'
 import About from './pages/About'
 import OurBelief from './pages/about/OurBelief'
@@ -140,6 +141,8 @@ function App() {
   return (
     <Router>
       <RouteTracker />
+      <div className="site-with-rates">
+      <ExchangeRateTicker />
       <Routes>
         {/* Main pages */}
         <Route path="/" element={<Home />} />
@@ -256,6 +259,7 @@ function App() {
         {/* Catch-all route - redirects unknown paths to home */}
         <Route path="*" element={<Home />} />
       </Routes>
+      </div>
     </Router>
   )
 }

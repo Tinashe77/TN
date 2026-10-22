@@ -11,6 +11,7 @@ export function createDatabase(env = process.env) {
   })
   const db = client.db(env.MONGODB_DB_NAME || 'tn_investments')
   return {
+    exchangeRates: db.collection('exchange_rates'),
     enquiries: db.collection('investment_enquiries'),
     audit: db.collection('investment_audit_log'),
     async initialize() {
