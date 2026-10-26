@@ -12,8 +12,8 @@ import { createRateLimit } from './rate-limit.js'
 
 const app = express()
 const PORT = process.env.PORT || 8080
-// Render has one trusted ingress hop. Do not trust arbitrary forwarded headers locally.
-app.set('trust proxy', process.env.RENDER ? 1 : false)
+// Render and Vercel have one trusted ingress hop. Do not trust arbitrary forwarded headers locally.
+app.set('trust proxy', process.env.RENDER || process.env.VERCEL ? 1 : false)
 let database
 try {
   database = createDatabase()
@@ -34,6 +34,7 @@ const allowedOrigins = [
   'https://www.tncybertechbank.co.zw',
   'http://localhost:5173',
   'http://localhost:4173',
+  ...(process.env.ALLOWED_ORIGINS || '').split(',').map(origin => origin.trim()).filter(Boolean),
 ]
 
 const publicCors = cors({
@@ -189,11 +190,14 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'The request could not be completed.' })
 })
 
-const server = app.listen(PORT, '0.0.0.0', () => {
+// Vercel serves the exported app; other hosts run a long-lived listener.
+const server = process.env.VERCEL ? null : app.listen(PORT, '0.0.0.0', () => {
   console.log(`TN API server running on port ${PORT}`)
 })
 
 process.on('SIGTERM', () => {
   stopNotifications()
-  server.close(async () => { await database?.close(); transporter.close() })
+  server?.close(async () => { await database?.close(); transporter.close() })
 })
+
+export default app
