@@ -93,6 +93,9 @@ function Home() {
 
         {/* Footer text */}
         <p className="mobile-tagline">The Future of Banking</p>
+        <a className="mobile-business-conditions" href="/TNCB-Business-Conditions-October-2026.pdf" target="_blank" rel="noopener noreferrer">
+          Business Conditions · October 2026
+        </a>
       </div>
     )
   }
@@ -180,7 +183,7 @@ function Home() {
           <Link to="/privacy-statement">Privacy Statement</Link>
           <Link to="/terms-of-use">Terms of Use</Link>
           <a
-            href="/TNCB-Business-Conditions.pdf"
+            href="/TNCB-Business-Conditions-October-2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

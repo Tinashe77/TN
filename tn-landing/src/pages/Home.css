@@ -245,6 +245,21 @@ body {
   opacity: 0.7;
 }
 
+.mobile-business-conditions {
+  display: block;
+  text-align: center;
+  padding: 0 1.5rem 1.5rem;
+  color: #b8b8b8;
+  font-size: 0.75rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.mobile-business-conditions:hover,
+.mobile-business-conditions:focus-visible {
+  color: var(--gold-light);
+}
+
 /* ========================================
    DESKTOP VIEW STYLES
    ======================================== */

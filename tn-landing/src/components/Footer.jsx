@@ -58,7 +58,7 @@ function Footer() {
             <Link to="/privacy-statement">Privacy Statement</Link>
             <Link to="/terms-of-use">Terms of Use</Link>
             <a
-              href="/TNCB-Business-Conditions.pdf"
+              href="/TNCB-Business-Conditions-October-2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
