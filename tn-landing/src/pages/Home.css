@@ -720,3 +720,34 @@ body {
 .mobile-main-content .cta-app { animation-delay: 0.2s; }
 .mobile-main-content .icon-container { animation-delay: 0.4s; }
 .mobile-main-content .cta-browser { animation-delay: 0.6s; }
+
+/* Card collection landing page */
+.home-landing { background: radial-gradient(ellipse at 13% 35%, #34270c29, transparent 38%), #070808 !important; }
+.home-landing .header { background: linear-gradient(#070808 50%, #070808e8 80%, transparent); padding: 24px max(32px, calc((100vw - 1280px) / 2)); }
+.home-landing .menu-button, .home-quick-links .desktop-cta-button { transition: none; }
+.home-main { width: min(1180px, calc(100% - 96px)); margin: 0 auto; padding: 135px 0 55px; display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: clamp(50px, 7vw, 110px); align-items: center; flex: 1; }
+.home-welcome { padding-bottom: 80px; }
+.home-brand-mark { text-align: center; }
+.home-rotating-logo { width: 190px; height: 190px; object-fit: contain; filter: drop-shadow(0 0 45px #c39c4d36); }
+.home-brand-mark p { color: #b69c62; font-size: 9px; letter-spacing: .2em; margin: 24px 0 38px; }
+.home-quick-links { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.home-quick-links .desktop-cta-button { display: flex; align-items: center; justify-content: space-between; max-width: 260px; font-size: 12px; padding: 15px 22px; border-width: 1px; border-radius: 9px; }
+.home-quick-links .desktop-cta-app { background: linear-gradient(110deg, #bd8c27, #f5d772); }
+.home-quick-links .desktop-cta-browser { border-color: #ac915655; color: #d7c594; }
+.home-explore-link { color: #a6a39a; font-size: 11px; padding: 10px; display: flex; align-items: center; gap: 20px; }
+.home-explore-link:hover { color: #f0d68b; }
+.home-footer { border-top: 1px solid #ffffff0c; padding-top: 25px; }
+.home-footer .desktop-footer-links a { font-size: 10px; }.home-footer .desktop-copyright { font-size: 9px; }
+.home-navigation { position: fixed; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none; padding: 80px 24px 40px; margin: 0; border: 0; background: #080808fa; color: #fff; overflow: auto; }
+.home-navigation::backdrop { background: #000b; }.home-navigation .menu-content { min-height: 100%; justify-content: center; gap: 24px; }.home-navigation .menu-nav { gap: 16px; }.home-navigation .menu-link { font-size: 20px; }
+.home-menu-close { position: absolute; top: 24px; right: 32px; background: transparent; color: #eee; border: 1px solid #ffffff40; padding: 10px 20px; border-radius: 30px; cursor: pointer; display: flex; align-items: center; gap: 20px; }.home-menu-close span { font-size: 24px; line-height: 1; }
+@media (max-width: 1100px) and (min-width: 769px) { .home-main { width: calc(100% - 64px); grid-template-columns: 230px minmax(0, 1fr); gap: 40px; }.home-rotating-logo { width: 160px; height: 160px; } }
+@media (max-width: 768px) {
+  .home-landing .header { padding: 16px 22px; }.home-landing .header-logo-img { height: 38px; }.home-landing .menu-button { padding: 8px 0 8px 12px; gap: 12px; }.home-landing .menu-text { font-size: 12px; }
+  .home-main { width: calc(100% - 40px); display: flex; flex-direction: column; padding: 100px 0 35px; gap: 30px; }
+  .home-welcome { display: grid; grid-template-columns: 115px minmax(0, 1fr); width: 100%; gap: 18px; align-items: center; padding: 0 0 28px; border-bottom: 1px solid #ffffff16; }
+  .home-rotating-logo { width: 100px; height: 100px; }.home-brand-mark p { font-size: 7px; letter-spacing: .08em; margin: 10px 0 0; white-space: nowrap; }
+  .home-quick-links { gap: 8px; }.home-quick-links .desktop-cta-button { font-size: 10px; padding: 11px 12px; width: 100%; min-width: 0; }.home-explore-link { font-size: 9px; gap: 10px; padding: 6px 0; }
+  .home-footer { padding: 24px 20px; }.home-footer .desktop-footer-links { gap: 12px 20px; }.home-footer .desktop-copyright { line-height: 1.8; }
+}
+@media (max-width: 360px) { .home-welcome { grid-template-columns: 95px minmax(0, 1fr); gap: 12px; }.home-rotating-logo { width: 85px; height: 85px; }.home-main { width: calc(100% - 32px); } }
