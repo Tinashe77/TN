@@ -1,0 +1,40 @@
+.card-promotion { background: #080909; border-top: 1px solid #b998492b; color: #f5f2e9; padding: 36px 24px; }
+.card-promotion-inner { position: relative; max-width: 880px; margin: auto; display: flex; align-items: center; justify-content: center; gap: 50px; padding: 0 40px; }
+.card-promotion-preview { background: transparent; border: 0; color: #c9b98f; cursor: pointer; width: 220px; flex-shrink: 0; padding: 10px; }
+.card-promotion-preview img { width: 100%; height: 136px; object-fit: contain; transform: rotate(-5deg); filter: drop-shadow(0 12px 16px #0009); }
+.card-promotion-preview > span { margin-top: 16px; display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 11px; }
+.card-promotion-preview small { color: #888; font-size: 9px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.card-promotion-copy .card-promotion-eyebrow { color: #d5b46d; font-size: 9px; letter-spacing: .16em; margin-bottom: 10px; }
+.card-promotion-copy h2 { font-size: 24px; font-weight: 500; letter-spacing: -.025em; margin-bottom: 9px; }
+.card-promotion-copy > p { font-size: 12px; line-height: 1.8; color: #a8a59e; }
+.card-promotion-open { margin-top: 18px; display: inline-flex; align-items: center; gap: 24px; border: 1px solid #bda26766; border-radius: 30px; background: transparent; color: #ead095; padding: 12px 20px; font-size: 12px; cursor: pointer; }
+.card-promotion-open:hover { background: #b9984917; }
+.card-promotion-pause { position: absolute; right: 0; bottom: 0; border: 0; background: transparent; color: #a8a59e; font-size: 10px; padding: 12px 0 12px 12px; min-height: 44px; cursor: pointer; }
+.card-promotion :focus-visible { outline: 2px solid #e8cb7a; outline-offset: 4px; }
+.card-dialog { position: fixed; inset: 0; margin: auto; width: min(780px, calc(100% - 40px)); max-width: none; max-height: calc(100dvh - 40px); padding: 0; border: 1px solid #b9984955; border-radius: 22px; color: #f8f6f0; background: #0d0e10; box-shadow: 0 30px 100px #000b; overflow-y: auto; overscroll-behavior: contain; }
+.card-dialog::backdrop { background: #000c; backdrop-filter: blur(7px); }
+.card-dialog-toolbar { position: sticky; top: 0; z-index: 3; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 28px; background: #0d0e10; border-bottom: 1px solid #ffffff0d; }
+.card-dialog-toolbar > span { color: #ab9871; font-size: 9px; letter-spacing: .12em; }
+.card-dialog-toolbar button { display: flex; align-items: center; gap: 16px; background: transparent; border: 1px solid #ffffff26; border-radius: 30px; color: #eee; min-height: 44px; padding: 8px 16px; font-size: 12px; cursor: pointer; }
+.card-dialog-toolbar button span { font-size: 23px; line-height: 1; }
+.card-dialog-content { padding: 26px 32px 30px; }
+.card-dialog .card-showcase h2 { font-size: 38px; }
+.card-dialog .card-showcase-heading { margin-bottom: 22px; }
+.card-dialog .card-artwork { height: 230px; }
+.card-dialog .card-feature-image { max-width: 330px; }
+.card-dialog .card-stage-bottom { flex-direction: column; align-items: flex-start; gap: 8px; }
+.card-dialog .card-caption p { max-width: none; min-height: 42px; }
+.card-dialog .card-detail-link { max-width: none; }
+@media (max-width: 600px) {
+  .card-promotion { padding: 30px 22px; }
+  .card-promotion-inner { flex-direction: column; gap: 24px; text-align: center; padding: 0 0 38px; }
+  .card-promotion-preview { width: 200px; }
+  .card-promotion-preview img { height: 125px; }
+  .card-promotion-copy h2 { font-size: 23px; }
+  .card-promotion-pause { right: 50%; transform: translateX(50%); padding: 12px; }
+  .card-dialog { width: calc(100% - 20px); max-height: calc(100dvh - 20px); border-radius: 16px; }
+  .card-dialog-toolbar { padding: 10px 16px; }
+  .card-dialog-content { padding: 24px 16px; }
+  .card-dialog .card-showcase h2 { font-size: 32px; }
+  .card-dialog .card-artwork { height: 210px; }
+}
