@@ -87,3 +87,19 @@ Configure the organisation's retention period and database backups before collec
 ### Export form responses
 
 Open the API's `/admin/` portal and sign in with `ADMIN_USERNAME` and `ADMIN_PASSWORD`. Use **Export CSV** to download all enquiries matching the search and status currently selected, across all pages. Clear the filters to export everything. Exports include contact details, optional identity fields, product interest, status and consent timestamps; each export is audited. Above 10,000 matches, narrow the filters before exporting. CSV files use UTF-8 and quote/escape values; formula-like values are prefixed with an apostrophe for spreadsheet safety. When importing into Excel, select Text for phone and ID columns to preserve leading zeros. Store downloaded files securely as they contain personal information.
+
+### Publish exchange rates
+
+1. Open `/admin/` and select **Exchange rates**, or go directly to `/admin/exchange-rates.html`. The existing staff credentials apply.
+2. Recalculate and save the daily rate workbook in Excel. Upload the `.xlsx` file (maximum 5 MB), then select **Import workbook**. Alternatively, enter the effective date and currency rows manually.
+3. Check the date, currency names, buying/mid/selling rates, percentage changes and indirect quote markers. The import reads the template's date from **E13**, ZWG base-currency text from **F18**, headers from **F20:K20** and currency rows starting at **F22**. A leading `*` on the currency name is preserved as an indirect quote marker. The money-market section is excluded.
+4. Select **Review for publication**. This opens the full table and flags an earlier effective date. Importing and editing do not change the website.
+5. Select **Publish rates to website** to store the approved table. The public ticker is currently hidden on `main` by `SHOW_EXCHANGE_RATE_TICKER = false` in `tn-landing/src/App.jsx`. When the Bank approves its launch, change the flag to `true` and redeploy the website; the ticker will then load the published table within one minute, with the effective date, Treasury disclaimer, pause control and **All rates** table.
+
+The importer uses saved formula results; it does not calculate Excel formulas or retrieve external links. A missing/error formula result rejects the upload. Recalculate and save the file in Excel before importing. Percentage-change values in the supplied template are already percentage points: `-0.10` means `-0.10%`. Excel percentage-formatted cells are converted accordingly. Imported numeric precision is retained; the public rate display uses four decimal places, matching the supplied template. Rates and quote conventions are not inverted or recalculated.
+
+Publishing requires positive buying/mid/selling values in ascending order, unique currency codes, a ZWG base, 1–40 currencies and a valid date no later than today in Africa/Harare. An earlier date is displayed as **Latest available**, not today's rates. Before the first publication, the ticker shows an empty state; a network failure shows an availability message, or marks the last loaded table as unable to refresh.
+
+MongoDB stores the published table in the `exchange_rates` collection in the existing database. Each publication atomically updates the public table and retains a snapshot, timestamp and staff username (last 100 publications). Simultaneous edits return a conflict instead of silently overwriting another staff member's publication. Raw workbooks are not retained. Shared credentials identify the shared account only.
+
+No new environment variables or database migration are needed. Deploy the API and rebuild/deploy the website with the existing `VITE_API_BASE_URL`. Public data is served by `GET /api/exchange-rates`; staff routes remain behind authentication. Deploying code does not publish the sample workbook: staff must review and publish a table first.

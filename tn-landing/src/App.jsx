@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import ExchangeRateTicker from './components/ExchangeRateTicker'
 
 function RouteTracker() {
   const location = useLocation()
@@ -123,6 +124,8 @@ import NanoLoansTerms from './pages/NanoLoansTerms'
 
 // Set to true to show maintenance page, false to show normal site
 const MAINTENANCE_MODE = false
+// Keep the public ticker off on main until the Bank approves its launch.
+const SHOW_EXCHANGE_RATE_TICKER = false
 
 function App() {
   // Show maintenance page for all routes when maintenance mode is enabled
@@ -140,7 +143,9 @@ function App() {
   return (
     <Router>
       <RouteTracker />
-      <Routes>
+      <div className={SHOW_EXCHANGE_RATE_TICKER ? 'site-with-rates' : undefined}>
+        {SHOW_EXCHANGE_RATE_TICKER && <ExchangeRateTicker />}
+        <Routes>
         {/* Main pages */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -255,7 +260,8 @@ function App() {
 
         {/* Catch-all route - redirects unknown paths to home */}
         <Route path="*" element={<Home />} />
-      </Routes>
+        </Routes>
+      </div>
     </Router>
   )
 }

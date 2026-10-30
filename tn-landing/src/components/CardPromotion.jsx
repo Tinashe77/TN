@@ -50,6 +50,11 @@ export default function CardPromotion({ suspended = false }) {
   const card = cards[active]
   return (
     <section className="card-promotion" aria-label="Discover the TN card collection">
+      {!open && !suspended && <button className="card-promotion-launcher" onClick={openCards} aria-haspopup="dialog" aria-controls="tn-card-dialog">
+        <img src={cards[0].image} alt="" />
+        <span><small>OUR NEW LOOK</small>Explore our cards</span>
+        <span aria-hidden="true">↗</span>
+      </button>}
       <div className="card-promotion-inner">
         <button className="card-promotion-preview" onClick={openCards} aria-label={`Explore ${card.name} and the TN card collection`} aria-haspopup="dialog" aria-controls="tn-card-dialog"
           onMouseEnter={() => setInteracting(true)} onMouseLeave={() => setInteracting(false)} onFocus={() => setInteracting(true)} onBlur={() => setInteracting(false)}>

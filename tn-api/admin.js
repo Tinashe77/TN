@@ -1,4 +1,5 @@
 import express from 'express'
+import { exchangeAdminRouter } from './exchange-admin.js'
 import { enquiriesCsv } from './csv.js'
 import { createHash, timingSafeEqual } from 'node:crypto'
 import { fileURLToPath } from 'node:url'
@@ -28,9 +29,10 @@ export function adminAuth({ username, password }) {
   }
 }
 
-export function createAdminRouter({ store, username, password, rateLimit }) {
+export function createAdminRouter({ store, rateStore, username, password, rateLimit }) {
   const router = express.Router()
   router.use(rateLimit, adminAuth({ username, password }))
+  router.use('/api/exchange-rates', exchangeAdminRouter(rateStore))
   router.use('/api', (req, res, next) => {
     if (!store) return res.status(503).json({ error: 'Database unavailable.' })
     next()
