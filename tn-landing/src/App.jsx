@@ -124,8 +124,8 @@ import NanoLoansTerms from './pages/NanoLoansTerms'
 
 // Set to true to show maintenance page, false to show normal site
 const MAINTENANCE_MODE = false
-// Keep the public ticker off on main until the Bank approves its launch.
-const SHOW_EXCHANGE_RATE_TICKER = false
+// The Bank has approved the public exchange-rate ticker.
+const SHOW_EXCHANGE_RATE_TICKER = true
 
 function App() {
   // Show maintenance page for all routes when maintenance mode is enabled
