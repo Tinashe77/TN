@@ -59,7 +59,7 @@ export default function CardPromotion({ suspended = false }) {
         <button className="card-promotion-preview" onClick={openCards} aria-label={`Explore ${card.name} and the TN card collection`} aria-haspopup="dialog" aria-controls="tn-card-dialog"
           onMouseEnter={() => setInteracting(true)} onMouseLeave={() => setInteracting(false)} onFocus={() => setInteracting(true)} onBlur={() => setInteracting(false)}>
           <img src={card.image} alt={card.name} loading="lazy" />
-          <span>{card.name}<small>{String(active + 1).padStart(2, '0')} / 06</small></span>
+          <span>{card.name}<small>{String(active + 1).padStart(2, '0')} / {String(cards.length).padStart(2, '0')}</small></span>
         </button>
         <div className="card-promotion-copy">
           <p className="card-promotion-eyebrow">THE TN CARD COLLECTION</p>

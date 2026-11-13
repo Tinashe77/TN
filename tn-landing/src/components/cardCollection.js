@@ -12,6 +12,12 @@ export const cards = [
     link: '/for-you/cards/visa', linkLabel: 'Explore Visa cards',
   },
   {
+    name: 'Visa Corporate Prepaid', shortName: 'Corporate', network: 'VISA', category: 'CORPORATE', theme: 'blue',
+    image: '/cards/visa/ank-Visa-Corporate-prepaid.jpg',
+    description: 'A reloadable international prepaid card for secure business purchases, online payments and cash withdrawals worldwide.',
+    link: '/for-business/visa-corporate-card', linkLabel: 'Explore Visa Corporate',
+  },
+  {
     name: 'Visa Infinite Credit', shortName: 'Infinite Credit', network: 'VISA', category: 'CREDIT', theme: 'gold',
     image: '/cards/visa/visa---card.png',
     description: 'A distinctive black-and-gold design. Discover Visa Infinite Credit and learn about eligibility and benefits.',
