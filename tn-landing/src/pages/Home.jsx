@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
 import CardPromotion from '../components/CardPromotion'
+import SurveyResultsPromotion from '../components/SurveyResultsPromotion'
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -99,6 +100,7 @@ function Home() {
           Business Conditions · October 2026
         </a>
       </div>
+      <SurveyResultsPromotion suspended={menuOpen} />
       <CardPromotion suspended={menuOpen} />
       </>
     )
@@ -201,6 +203,7 @@ function Home() {
         </p>
       </footer>
     </div>
+    <SurveyResultsPromotion suspended={menuOpen} />
     <CardPromotion suspended={menuOpen} />
     </>
   )
